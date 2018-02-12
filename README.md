@@ -10,7 +10,7 @@ Here's a 4-line image crawler:
 And of course, you can make it grow as bigger as you can.
 
 ## Dependencies
-lxml==3.8.0
-PyMySQL==0.7.11
-selenium==3.4.3
-requests==2.18.3
+- lxml==3.8.0
+- PyMySQL==0.7.11
+- selenium==3.4.3
+- requests==2.18.3
