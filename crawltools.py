@@ -21,7 +21,7 @@ from lxml.html import etree
 from selenium import webdriver
 
 
-__all__ = ["get_source", "link_mysql", "run_selenium", "save_img", "save_imgs"]
+__all__ = ["send_request", "get_source", "retrieve_html", "link_mysql", "run_selenium", "save_img", "save_imgs"]
 
 
 try:
@@ -49,14 +49,12 @@ def perf(f):
 
 
 @perf
-def get_source(url, **kwargs):
+def send_request(url, **kwargs):
     """
     usage:
-        Get the element tree of a HTML page. Use xpath to parse it.
+        Send request to a page.
 
     params:
-        encoding: res.encoding
-        type: content
         timeout: 60
     """
     print(f"Sending requests to {url}...")
@@ -65,12 +63,38 @@ def get_source(url, **kwargs):
     res = requests.get(url, headers=headers, timeout=timeout)
     res.raise_for_status()
     print("Successfully requested.")
+    return res
+
+
+def get_source(url, **kwargs):
+    """
+    usage:
+        Get the element tree of a HTML page. Use xpath to parse it.
+
+    params:
+        encoding: res.encoding
+        type: content
+    """
+    res = send_request(url)
     encoding = kwargs.get('encoding', res.encoding)
     res.encoding = encoding
     type_ = kwargs.get('type', 'content')
     html = res.content if type_ == 'content' else res.text
     src = etree.HTML(html)
     return src
+
+
+def retrieve_html(url, **kwargs):
+    """
+    usage:
+        Save .html file directly to local disk.(Usually for testing purpose)
+
+    params:
+        encoding: utf-8
+    """
+    encoding = kwargs.get('encoding', 'utf-8')
+    with open('test.html', 'w', encoding=encoding) as f:
+        f.write(send_request(url).text)
 
 
 @perf
