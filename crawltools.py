@@ -4,7 +4,7 @@ Author: alphardex  QQ:2582347430
 If any suggestion, please contact me. Thank you for cooperation!
 
 How to realize a image crawler in just four lines:
-    >>> from crawltools import get_source, save_imgs
+    >>> from crawltools import *
     >>> src = get_source('https://konachan.net/post')
     >>> links = src.cssselect('a.directlink')
     >>> save_imgs(links)

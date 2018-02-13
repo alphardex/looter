@@ -2,9 +2,9 @@
 With it, you can write a mini-crawler within 10 lines!
 Here's a 4-line image crawler:
 ``` python
->>> from crawltools import get_source, save_imgs
+>>> from crawltools import *
 >>> src = get_source('https://konachan.net/post')
->>> links = src.xpath('//a[@class="directlink largeimg"]/@href')
+>>> links = src.cssselect('a.directlink')
 >>> save_imgs(links)
 ```
 And of course, you can make it grow as bigger as you can.
