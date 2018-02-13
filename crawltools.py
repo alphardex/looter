@@ -100,8 +100,7 @@ def retrieve_html(url, **kwargs):
 def rectify(name):
     if any(symbol in name for symbol in ['?', '<', '>', '|', '*', '"', ":"]):
         name = ''.join([c for c in name if c not in ['?', '<', '>', '|', '*', '"', ":"]])
-    else:
-        return name
+    return name
 
 
 @perf
