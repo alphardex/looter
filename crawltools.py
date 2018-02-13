@@ -4,9 +4,9 @@ Author: alphardex  QQ:2582347430
 If any suggestion, please contact me. Thank you for cooperation!
 
 How to realize a image crawler in just four lines:
-    >>> from crawltools import get_source, save_imgs
+    >>> from crawltools import *
     >>> src = get_source('https://konachan.net/post')
-    >>> links = src.xpath('//a[@class="directlink largeimg"]/@href')
+    >>> links = src.cssselect('a.directlink')
     >>> save_imgs(links)
 
 Although it only crawls one page, its function can be easily extended,
@@ -112,6 +112,8 @@ def save_img(url, **kwargs):
     params:
         max_length: 66
     """
+    if hasattr(url, 'tag') and url.tag == 'a':
+        url = url.get('href')
     name = rectify(url.split('/')[-1])
     ext = name.split('.')[-1]
     max_length = kwargs.get('max_length', 66)
