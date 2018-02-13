@@ -114,6 +114,8 @@ def save_img(url, **kwargs):
     """
     if hasattr(url, 'tag') and url.tag == 'a':
         url = url.get('href')
+    elif hasattr(url, 'tag') and url.tag == 'img':
+        url = url.get('src')
     name = rectify(url.split('/')[-1])
     ext = name.split('.')[-1]
     max_length = kwargs.get('max_length', 66)
