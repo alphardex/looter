@@ -1,7 +1,7 @@
 """
 A simple linear spider, you can crawl whole site slowly with it.
 """ 
-from crawltools import get_source, save_imgs
+from crawltools import *
 def download(url):
     src = get_source(url)
     links = src.cssselect('a.directlink')
