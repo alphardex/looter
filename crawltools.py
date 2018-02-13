@@ -4,12 +4,12 @@ Author: alphardex  QQ:2582347430
 If any suggestion, please contact me. Thank you for cooperation!
 
 How to realize a image crawler in just four lines:
-    >>> from crawltools import get_source, save_img
+    >>> from crawltools import get_source, save_imgs
     >>> src = get_source('https://konachan.net/post')
     >>> links = src.xpath('//a[@class="directlink largeimg"]/@href')
-    >>> r = [save_img(link) for link in links]
+    >>> save_imgs(links)
 
-Although it only crawls one page, but you can easily extend its function,
+Although it only crawls one page, its function can be easily extended,
 that's to say, a whole-site crawler, or even a concurrent one... you name it!
 """
 import time
@@ -21,7 +21,7 @@ from lxml.html import etree
 from selenium import webdriver
 
 
-__all__ = ["get_source", "link_mysql", "run_selenium", "save_img"]
+__all__ = ["get_source", "link_mysql", "run_selenium", "save_img", "save_imgs"]
 
 
 try:
@@ -90,6 +90,14 @@ def save_img(url, **kwargs):
         url = url if url.startswith('http') else f'http:{url}'
         f.write(requests.get(url, stream=True).content)
         print(f'Saved {name}')
+
+
+def save_imgs(urls):
+    """
+    usage:
+        Download images from links.
+    """
+    return [save_img(url) for url in urls]
 
 
 def run_selenium(url):
