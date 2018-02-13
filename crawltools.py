@@ -97,6 +97,13 @@ def retrieve_html(url, **kwargs):
         f.write(send_request(url).text)
 
 
+def rectify(name):
+    if any(symbol in name for symbol in ['?', '<', '>', '|', '*', '"', ":"]):
+        name = ''.join([c for c in name if c not in ['?', '<', '>', '|', '*', '"', ":"]])
+    else:
+        return name
+
+
 @perf
 def save_img(url, **kwargs):
     """
@@ -106,7 +113,7 @@ def save_img(url, **kwargs):
     params:
         max_length: 66
     """
-    name = url.split('/')[-1]
+    name = rectify(url.split('/')[-1])
     ext = name.split('.')[-1]
     max_length = kwargs.get('max_length', 66)
     name = f"{name[:max_length]}.{ext}"
