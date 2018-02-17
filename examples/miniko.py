@@ -1,7 +1,7 @@
 """
 A simplest one page crawler -- Miniko desu!
 """
-from crawltools import *
-src = get_source('https://konachan.net/post')
+import looter as lt
+src = lt.get_source('https://konachan.net/post')
 links = src.cssselect('a.directlink')
-save_imgs(links)
+lt.save_imgs(links)
