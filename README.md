@@ -1,11 +1,11 @@
-# crawltools
+# looter
 With it, you can write a mini-crawler within 10 lines!
 Here's a 4-line image crawler:
 ``` python
->>> from crawltools import *
->>> src = get_source('https://konachan.net/post')
+>>> import looter as lt
+>>> src = lt.get_source('https://konachan.net/post')
 >>> links = src.cssselect('a.directlink')
->>> save_imgs(links)
+>>> lt.save_imgs(links)
 ```
 And of course, you can make it grow as bigger as you can.
 
