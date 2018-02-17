@@ -19,6 +19,7 @@ import functools
 import configparser
 from lxml.html import etree
 from selenium import webdriver
+from urllib.parse import unquote
 
 
 __all__ = ["send_request", "get_source", "retrieve_html", "link_mysql", "run_selenium", "save_img", "save_imgs"]
@@ -125,6 +126,7 @@ def save_img(url, **kwargs):
     max_length = kwargs.get('max_length', 66)
     name = f"{name[:max_length]}.{ext}"
     name = name[:-4] if name.endswith(f'.{ext}.{ext}') else name
+    name = unquote(name)
     with open(name, 'wb') as f:
         url = url if url.startswith('http') else f'http:{url}'
         f.write(requests.get(url, stream=True).content)
