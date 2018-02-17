@@ -123,7 +123,7 @@ def save_img(url, **kwargs):
         url = url.get('src')
     name = rectify(url.split('/')[-1])
     ext = name.split('.')[-1]
-    max_length = kwargs.get('max_length', 66)
+    max_length = kwargs.get('max_length', 160)
     name = f"{name[:max_length]}.{ext}"
     name = name[:-4] if name.endswith(f'.{ext}.{ext}') else name
     name = unquote(name)
