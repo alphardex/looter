@@ -1,4 +1,8 @@
 # looter
+To install, just run
+``` bash
+$ pip install looter
+```
 With it, you can write a mini-crawler within 10 lines!
 Here's a 4-line image crawler:
 ``` python
