@@ -71,7 +71,7 @@ def send_request(url, **kwargs):
 
 def get_source(url, **kwargs):
     """
-    Get the element tree of a HTML page, and use cssselect or xpath to parse it.
+    Get the element tree of an HTML page, use cssselect or xpath to parse it.
     You needn't specify the attribute (like 'href') of the target, just tag is OK. 
     Please refer to the tutorial of this module, and selector tutorial below:
         cssselect: http://www.runoob.com/cssref/css-selectors.html
@@ -103,6 +103,9 @@ def retrieve_html(url, **kwargs):
 
 
 def rectify(name):
+    """
+    Get rid of illegal symbols of a file name.
+    """
     if any(symbol in name for symbol in ['?', '<', '>', '|', '*', '"', ":"]):
         name = ''.join([c for c in name if c not in ['?', '<', '>', '|', '*', '"', ":"]])
     return name
