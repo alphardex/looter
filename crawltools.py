@@ -120,6 +120,7 @@ def save_img(url, **kwargs):
     ext = name.split('.')[-1]
     max_length = kwargs.get('max_length', 66)
     name = f"{name[:max_length]}.{ext}"
+    name = name[:-4] if name.endswith(f'.{ext}.{ext}') else name
     with open(name, 'wb') as f:
         url = url if url.startswith('http') else f'http:{url}'
         f.write(requests.get(url, stream=True).content)
