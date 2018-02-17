@@ -69,17 +69,21 @@ def send_request(url, **kwargs):
 def get_source(url, **kwargs):
     """
     usage:
-        Get the element tree of a HTML page. Use xpath to parse it.
-
+        Get the element tree of a HTML page. Use cssselect or xpath to parse it,
+        and you needn't specify the attribute (like 'href') of the target, just tag is OK. 
+        Please refer to the tutorial of this module, and selector tutorial below:
+            cssselect: http://www.runoob.com/cssref/css-selectors.html
+            xpath: http://www.runoob.com/xpath/xpath-syntax.html
+ 
     params:
         encoding: res.encoding
-        type: content
+        type: text
     """
     res = send_request(url)
     encoding = kwargs.get('encoding', res.encoding)
     res.encoding = encoding
-    type_ = kwargs.get('type', 'content')
-    html = res.content if type_ == 'content' else res.text
+    type_ = kwargs.get('type', 'text')
+    html = res.text if type_ == 'text' else res.content
     src = etree.HTML(html)
     return src
 
@@ -87,7 +91,7 @@ def get_source(url, **kwargs):
 def retrieve_html(url, **kwargs):
     """
     usage:
-        Save .html file directly to local disk.(Usually for testing purpose)
+        Save .html file directly to local disk. (Usually for testing purpose)
 
     params:
         encoding: utf-8
@@ -136,7 +140,10 @@ def save_imgs(urls):
 
 
 def run_selenium(url):
-    """usage: driver = run_selenium(url) """
+    """
+    usage:  
+        Run selenium driver. (driver is headless-chrome by default)
+    """
     ua = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36"
     options = webdriver.ChromeOptions()
     options.add_argument('headless')
