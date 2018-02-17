@@ -39,6 +39,9 @@ except Exception as e:
 
 
 def perf(f):
+    """
+    A decorator to measure the performance of a specific function.
+    """
     @functools.wraps(f)
     def wr(*args, **kwargs):
         start = time.time()
@@ -52,8 +55,7 @@ def perf(f):
 @perf
 def send_request(url, **kwargs):
     """
-    usage:
-        Send request to a page.
+    Send an HTTP request to a url.
 
     params:
         timeout: 60
@@ -69,12 +71,11 @@ def send_request(url, **kwargs):
 
 def get_source(url, **kwargs):
     """
-    usage:
-        Get the element tree of a HTML page. Use cssselect or xpath to parse it,
-        and you needn't specify the attribute (like 'href') of the target, just tag is OK. 
-        Please refer to the tutorial of this module, and selector tutorial below:
-            cssselect: http://www.runoob.com/cssref/css-selectors.html
-            xpath: http://www.runoob.com/xpath/xpath-syntax.html
+    Get the element tree of a HTML page, and use cssselect or xpath to parse it.
+    You needn't specify the attribute (like 'href') of the target, just tag is OK. 
+    Please refer to the tutorial of this module, and selector tutorial below:
+        cssselect: http://www.runoob.com/cssref/css-selectors.html
+        xpath: http://www.runoob.com/xpath/xpath-syntax.html
  
     params:
         encoding: res.encoding
@@ -91,8 +92,7 @@ def get_source(url, **kwargs):
 
 def retrieve_html(url, **kwargs):
     """
-    usage:
-        Save .html file directly to local disk. (Usually for testing purpose)
+    Save .html file directly to local disk. (Usually for testing purpose)
 
     params:
         encoding: utf-8
@@ -111,8 +111,7 @@ def rectify(name):
 @perf
 def save_img(url, **kwargs):
     """
-    usage:
-        Download image and save it to local disk.
+    Download image and save it to local disk.
 
     params:
         max_length: 66
@@ -135,16 +134,14 @@ def save_img(url, **kwargs):
 
 def save_imgs(urls):
     """
-    usage:
-        Download images from links.
+    Download images from links.
     """
     return [save_img(url) for url in urls]
 
 
 def run_selenium(url):
     """
-    usage:  
-        Run selenium driver. (driver is headless-chrome by default)
+    Run selenium driver. (driver is headless-chrome by default)
     """
     ua = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36"
     options = webdriver.ChromeOptions()
@@ -165,17 +162,16 @@ def run_selenium(url):
 
 def link_mysql(fun):
     """
-    usage:
-        A decorator to connect to MySQL, it will return a cursor.
-        But first you need to create a file named 'db_config.conf',
-        and this file should be like this:
-        [db]
-        host = 127.0.0.1
-        port = 3306
-        user = root
-        passwd = ...
-        dbname = ...
-        charset = ...
+    A decorator to connect to MySQL, it will return a cursor.
+    But first you need to create a file named 'db_config.conf',
+    and this file should be like this:
+    [db]
+    host = 127.0.0.1
+    port = 3306
+    user = root
+    passwd = ...
+    dbname = ...
+    charset = ...
     """
     def wr(*args, **kwargs):
         with pymysql.connect(host=host, port=3306, user=user, passwd=passwd, db=dbname, charset=charset) as cur:
