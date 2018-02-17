@@ -1,13 +1,13 @@
-""" Crawltools, a python package aiming at avoiding unnecessary repetition in
+""" Looter, a python package aiming at avoiding unnecessary repetition in
 making common crawlers.
 Author: alphardex  QQ:2582347430
 If any suggestion, please contact me. Thank you for cooperation!
 
 How to realize a image crawler in just four lines:
-    >>> from crawltools import *
-    >>> src = get_source('https://konachan.net/post')
+    >>> import looter as lt
+    >>> src = lt.get_source('https://konachan.net/post')
     >>> links = src.cssselect('a.directlink')
-    >>> save_imgs(links)
+    >>> lt.save_imgs(links)
 
 Although it only crawls one page, its function can be easily extended,
 that's to say, a whole-site crawler, or even a concurrent one... you name it!
