@@ -22,7 +22,6 @@ setup(
     platforms=["all"],
     url='https://github.com/alphardex/looter',
     py_modules=['looter'],
-    scripts=['looter.py'],
     classifiers=[
     'Development Status :: 3 - Alpha',
     "Intended Audience :: Developers",
