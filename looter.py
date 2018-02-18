@@ -108,7 +108,7 @@ def rectify(name):
     """
     if any(symbol in name for symbol in ['?', '<', '>', '|', '*', '"', ":"]):
         name = ''.join([c for c in name if c not in ['?', '<', '>', '|', '*', '"', ":"]])
-    return name
+    return unquote(name)
 
 
 @perf
@@ -128,7 +128,6 @@ def save_img(url, **kwargs):
     max_length = kwargs.get('max_length', 160)
     name = f"{name[:max_length]}.{ext}"
     name = name[:-4] if name.endswith(f'.{ext}.{ext}') else name
-    name = unquote(name)
     with open(name, 'wb') as f:
         url = url if url.startswith('http') else f'http:{url}'
         f.write(requests.get(url, stream=True).content)
