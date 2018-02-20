@@ -17,7 +17,7 @@ import pymysql
 import requests
 import functools
 import configparser
-from lxml.html import etree
+from lxml import etree
 from selenium import webdriver
 from urllib.parse import unquote
 
