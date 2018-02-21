@@ -8,7 +8,7 @@ here = os.path.abspath(os.path.dirname(__file__))
 
 setup(
     name='looter',
-    version='v1.21',
+    version='v1.22',
     description=(
         'A python package aiming at avoiding unnecessary repetition in making common crawlers.'
     ),

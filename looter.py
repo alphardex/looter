@@ -59,13 +59,17 @@ def send_request(url, **kwargs):
 
     params:
         timeout: 60
+        verbose: True
     """
-    print(f"Sending requests to {url}...")
+    verbose = kwargs.get('verbose', True)
+    if verbose:
+        print(f"Sending requests to {url}...")
     headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.3319.102 Safari/537.36'}
     timeout = kwargs.get('timeout', 60)
     res = requests.get(url, headers=headers, timeout=timeout)
     res.raise_for_status()
-    print("Successfully requested.")
+    if verbose:
+        print("Successfully requested.")
     return res
 
 
@@ -80,8 +84,10 @@ def get_source(url, **kwargs):
     params:
         encoding: res.encoding
         type: text
+        verbose: True
     """
-    res = send_request(url)
+    verbose = kwargs.get('verbose', True)
+    res = send_request(url, verbose=verbose)
     encoding = kwargs.get('encoding', res.encoding)
     res.encoding = encoding
     type_ = kwargs.get('type', 'text')
