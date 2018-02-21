@@ -52,7 +52,6 @@ def perf(f):
     return wr
 
 
-@perf
 def send_request(url, **kwargs):
     """
     Send an HTTP request to a url.
