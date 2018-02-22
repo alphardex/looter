@@ -12,7 +12,7 @@ def crawl(url):
         title = post.cssselect('h1 a')[0]
         data['name'] = title.text
         data['url'] = domain + title.get('href')
-        data['artist'] = post.cssselect('.artist-list')[0].text.strip()
+        data['artist'] = post.cssselect('.artist-list')[0].text
         dj_content = post.cssselect('.dj-content .dj-desc')[0]
         td = dj_content.cssselect('tr td')
         data['series'] = td[1].text.strip() or 'N/A'
@@ -25,6 +25,6 @@ def crawl(url):
 
 
 if __name__ == '__main__':
-    tasklist = list(f'{domain}/type/gamecg-all-{i}.html' for i in range(1, 20))
+    tasklist = list(f'{domain}/type/gamecg-all-{i}.html' for i in range(1, 2000))
     with futures.ThreadPoolExecutor(10) as executor:
         executor.map(crawl, tasklist)
