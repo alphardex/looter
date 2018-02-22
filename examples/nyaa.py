@@ -3,7 +3,6 @@ from pprint import pprint
 from concurrent import futures
 
 domain = 'https://nyaa.si'
-limit = 4000
 
 def crawl(url):
     src = lt.get_source(url)
@@ -25,6 +24,6 @@ def crawl(url):
 
 
 if __name__ == '__main__':
-    tasklist = list(f'{domain}/?p={limit-i}' for i in range(1, limit))
+    tasklist = list(f'{domain}/?p={i}' for i in range(1, 4000))
     with futures.ThreadPoolExecutor(20) as executor:
         executor.map(crawl, tasklist)
