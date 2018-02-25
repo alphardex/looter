@@ -12,3 +12,10 @@ Here's a 4-line image crawler:
 >>> lt.save_imgs(links)
 ```
 And of course, you can make it grow as bigger as you can.
+
+## cmdline
+Now looter supports cmdline! You can create a spider using template!
+``` bash
+$ looter genspider <name> <tmpl>
+```
+Templates available: data, image

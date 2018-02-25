@@ -190,12 +190,12 @@ def link_mysql(fun):
 
 
 def cli():
-    argv = docopt(__doc__, version='v1.24')
+    argv = docopt(__doc__, version='v1.26')
     template = argv['<tmpl>']
     name = argv['<name>']
     if template not in ['data', 'image']:
         exit('Plz provide a template (data or image)')
-    with open(f'templates/{template}.tmpl', 'r') as i, open(f'{name}.py', 'w') as o:
+    with open(f'{template}.tmpl', 'r') as i, open(f'{name}.py', 'w') as o:
         o.write(i.read())
 
 
