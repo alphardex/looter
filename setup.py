@@ -8,7 +8,7 @@ here = os.path.abspath(os.path.dirname(__file__))
 
 setup(
     name='looter',
-    version='v1.24',
+    version='v1.25',
     description=(
         'A python package aiming at avoiding unnecessary repetition in making common crawlers.'
     ),
@@ -24,6 +24,7 @@ setup(
     py_modules=['looter'],
     classifiers=[
     'Development Status :: 3 - Alpha',
+    "Environment :: Console",
     "Intended Audience :: Developers",
     "Intended Audience :: End Users/Desktop",
     'License :: OSI Approved :: MIT License',
@@ -32,6 +33,11 @@ setup(
     "Topic :: Internet :: WWW/HTTP",
     "Topic :: Utilities"
     ],
+    entry_points={
+        'console_scripts': [
+            'looter = looter:cli',
+        ]
+    },
     install_requires=[
         'PyMySQL',
         'selenium',

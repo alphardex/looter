@@ -11,6 +11,16 @@ How to realize a image crawler in just four lines:
 
 Although it only crawls one page, its function can be easily extended,
 that's to say, a whole-site crawler, or even a concurrent one... you name it!
+
+And you can also create a spider using template! (data or image)
+
+Usage:
+  looter genspider <name> <tmpl>
+  looter (-h | --help | --version)
+
+Options:
+  -h --help        Show this screen.
+  --version        Show version.
 """
 import time
 import pymysql
@@ -18,6 +28,7 @@ import requests
 import functools
 import configparser
 from lxml import etree
+from docopt import docopt
 from selenium import webdriver
 from urllib.parse import unquote
 
@@ -176,3 +187,17 @@ def link_mysql(fun):
         with pymysql.connect(host=host, port=3306, user=user, passwd=passwd, db=dbname, charset=charset) as cur:
             fun(cur, *args, **kwargs)
     return wr
+
+
+def cli():
+    argv = docopt(__doc__, version='v1.24')
+    template = argv['<tmpl>']
+    name = argv['<name>']
+    if template not in ['data', 'image']:
+        exit('Plz provide a template (data or image)')
+    with open(f'templates/{template}.tmpl', 'r') as i, open(f'{name}.py', 'w') as o:
+        o.write(i.read())
+
+
+if __name__ == '__main__':
+    cli()
