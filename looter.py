@@ -22,6 +22,7 @@ Options:
   -h --help        Show this screen.
   --version        Show version.
 """
+import os
 import time
 import pymysql
 import requests
@@ -195,7 +196,7 @@ def cli():
     name = argv['<name>']
     if template not in ['data', 'image']:
         exit('Plz provide a template (data or image)')
-    with open(f'{template}.tmpl', 'r') as i, open(f'{name}.py', 'w') as o:
+    with open(f'{os.getcwd()}\\{template}.tmpl', 'r') as i, open(f'{name}.py', 'w') as o:
         o.write(i.read())
 
 
