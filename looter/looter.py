@@ -34,9 +34,6 @@ from selenium import webdriver
 from urllib.parse import unquote
 
 
-__all__ = ["send_request", "get_source", "retrieve_html", "link_mysql", "run_selenium", "save_img", "save_imgs"]
-
-
 try:
     cf = configparser.ConfigParser()
     cf.read("db_config.conf")
@@ -191,7 +188,7 @@ def link_mysql(fun):
 
 
 def cli():
-    argv = docopt(__doc__, version='v1.29')
+    argv = docopt(__doc__, version='v1.30')
     template = argv['<tmpl>']
     name = argv['<name>']
     if template not in ['data', 'image']:

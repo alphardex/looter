@@ -8,7 +8,7 @@ here = os.path.abspath(os.path.dirname(__file__))
 
 setup(
     name='looter',
-    version='v1.29',
+    version='v1.30',
     description=(
         'A python package aiming at avoiding unnecessary repetition in making common crawlers.'
     ),
@@ -35,7 +35,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'looter = looter:cli',
+            'looter = looter.looter:cli',
         ]
     },
     install_requires=[

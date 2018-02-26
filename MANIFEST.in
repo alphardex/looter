@@ -1,1 +1,8 @@
-recursive-include templates *
+include LICENSE
+include MANIFEST.in
+include README.md
+
+graft looter
+
+global-exclude __pycache__
+global-exclude *.py[co]
