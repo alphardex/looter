@@ -19,6 +19,7 @@ setup(
     maintainer_email='2582347430@qq.com',
     license='MIT',
     packages=find_packages(),
+    include_package_data=True,
     platforms=["all"],
     url='https://github.com/alphardex/looter',
     py_modules=['looter'],
