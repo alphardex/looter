@@ -196,7 +196,8 @@ def cli():
     name = argv['<name>']
     if template not in ['data', 'image']:
         exit('Plz provide a template (data or image)')
-    with open(f'{os.getcwd()}\\{template}.tmpl', 'r') as i, open(f'{name}.py', 'w') as o:
+    package_path = os.path.dirname(__file__)
+    with open(f'{package_path}\\{template}.tmpl', 'r') as i, open(f'{name}.py', 'w') as o:
         o.write(i.read())
 
 
