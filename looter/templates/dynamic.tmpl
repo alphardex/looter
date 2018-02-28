@@ -1,0 +1,36 @@
+import looter as lt
+from pprint import pprint
+
+domain = ''
+
+
+def get_tasklist(home):
+    # get all the links to crawl.
+    return tasklist
+
+
+def parse(res):
+    items = res.css(...).extract(...)
+    for item in items:
+        data = dict()
+        # data['name'] = item.css(...).extract_first(...)
+        pprint(data)
+        # You can define your save_data function in advance and call it here :)
+
+
+if __name__ == '__main__':
+    home = lt.dynamic_get(domain)
+    tasklist = get_tasklist(home)
+    while tasklist:
+        task = tasklist.pop()
+        res = lt.dynamic_get(task)
+        while True:
+            parse(res)
+            try:
+                next_url = res.css(...)
+                next_url.click()
+            except Exception as e:
+                print('No followed page!')
+                break
+    else:
+        print('Done')

@@ -1,5 +1,6 @@
-docopt==0.6.2
-lxml==4.1.1
 requests==2.18.4
 selenium==3.9.0
+requestium==0.1.9
 PyMySQL==0.8.0
+lxml==4.1.1
+docopt==0.6.2

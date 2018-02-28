@@ -12,7 +12,7 @@ How to realize a image crawler in just four lines:
 Although it only crawls one page, its function can be easily extended,
 that's to say, a whole-site crawler, or even a concurrent one... you name it!
 
-And you can also create a spider using template! (data or image)
+And you can also create a spider using template! (data, image, dynamic)
 
 Usage:
   looter genspider <name> <tmpl>
@@ -26,11 +26,13 @@ import os
 import time
 import pymysql
 import requests
+import warnings
 import functools
 import configparser
 from lxml import etree
 from docopt import docopt
 from selenium import webdriver
+from requestium import Session
 from urllib.parse import unquote
 
 
@@ -149,8 +151,11 @@ def save_imgs(urls):
 
 def run_selenium(url):
     """
+    Deprecated
+
     Run selenium driver. (driver is headless-chrome by default)
     """
+    warnings.warn("Module `looter.run_selenium` is deprecated, use `looter.dynamic_get` instead.")
     ua = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36"
     options = webdriver.ChromeOptions()
     options.add_argument('headless')
@@ -166,6 +171,26 @@ def run_selenium(url):
         raise e
     print("Successfully connected.")
     return driver
+
+
+def dynamic_get(url, **kwargs):
+    """
+    Get a JS-based dynamic webpage using selenium + headless chrome.
+
+    Plz refer to https://github.com/tryolabs/requestium
+
+    params:
+        webdriver_path: D:\\Program Files (x86)\\chromedriver\\chromedriver.exe
+        timeout: 60
+    """
+    webdriver_path = kwargs.get('driver_path', 'D:\\Program Files (x86)\\chromedriver\\chromedriver.exe')
+    timeout = kwargs.get('timeout', 60)
+    s = Session(webdriver_path=webdriver_path,
+                browser='chrome',
+                default_timeout=timeout,
+                webdriver_options={'arguments': ['headless']})
+    res = s.get(url)
+    return res
 
 
 def link_mysql(fun):
@@ -188,11 +213,11 @@ def link_mysql(fun):
 
 
 def cli():
-    argv = docopt(__doc__, version='v1.31')
+    argv = docopt(__doc__, version='v1.32')
     template = argv['<tmpl>']
     name = argv['<name>']
-    if template not in ['data', 'image']:
-        exit('Plz provide a template (data or image)')
+    if template not in ['data', 'image', 'dynamic']:
+        exit('Plz provide a template (data, image or dynamic)')
     package_path = os.path.dirname(__file__)
     with open(f'{package_path}\\templates\\{template}.tmpl', 'r') as i, open(f'{name}.py', 'w') as o:
         o.write(i.read())

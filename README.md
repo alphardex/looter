@@ -18,4 +18,4 @@ Now looter supports cmdline! You can create a spider using template!
 ``` bash
 $ looter genspider <name> <tmpl>
 ```
-Templates available: data, image
+Templates available: data, image, dynamic
