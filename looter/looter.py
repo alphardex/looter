@@ -213,7 +213,7 @@ def link_mysql(fun):
 
 
 def cli():
-    argv = docopt(__doc__, version='v1.32')
+    argv = docopt(__doc__, version='v1.33')
     template = argv['<tmpl>']
     name = argv['<name>']
     if template not in ['data', 'image', 'dynamic']:
