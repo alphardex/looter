@@ -16,15 +16,18 @@ def get_targets(url):
 
 def crawl(url):
     src = lt.send_request(url).text
+    site = url.split('=')[-1]
     reach_rank = re.findall('REACH[^\d]*(\d+)', src)
     popularity_rank = re.findall('POPULARITY[^\d]*(\d+)', src)
     if reach_rank and popularity_rank:
         data = {}
-        site = url.split('=')[-1]
+        print(f'ADD {site}')
         data['site'] = site
         data['reach'] = reach_rank[0]
         data['popularity'] = popularity_rank[0]
         total_rank.append(data)
+    else:
+        print(f'SKIP {site}')
 
 
 if __name__ == '__main__':
