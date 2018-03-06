@@ -3,7 +3,7 @@ import looter as lt
 from concurrent import futures
 from operator import itemgetter
 
-domain = 'http://data.alexa.com'
+domain = 'https://github.com/tuna/blogroll/blob/master/README.md'
 total_rank = []
 
 def get_tasklist(url):
@@ -17,13 +17,13 @@ def crawl(url):
     if rank:
         data = {}
         data['site'] = rank[0]
-        data['reach'] = rank[1]
-        data['popularity'] = rank[2]
+        data['reach'] = int(rank[1])
+        data['popularity'] = int(rank[2])
         total_rank.append(data)
 
 
 if __name__ == '__main__':
-    tasklist = get_tasklist('https://github.com/tuna/blogroll/blob/master/README.md')
+    tasklist = get_tasklist(domain)
     with futures.ThreadPoolExecutor(20) as executor:
         executor.map(crawl, tasklist)
     r = sorted(total_rank, key=itemgetter('popularity'))
