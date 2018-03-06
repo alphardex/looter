@@ -227,7 +227,7 @@ def get_alexa_rank(url):
 
 
 def cli():
-    argv = docopt(__doc__, version='v1.33')
+    argv = docopt(__doc__, version='v1.34')
     template = argv['<tmpl>']
     name = argv['<name>']
     if template not in ['data', 'image', 'dynamic']:
