@@ -214,6 +214,11 @@ def link_mysql(fun):
 
 
 def get_alexa_rank(url):
+    """
+    Get the reach and popularity of a site in alexa.
+    It will return a tuple:
+    (url, reach_rank, popularity_rank)
+    """
     alexa = f'http://data.alexa.com/data?cli=10&dat=snbamz&url={url}'
     src = send_request(alexa).text
     reach_rank = re.findall('REACH[^\d]*(\d+)', src)
@@ -227,7 +232,7 @@ def get_alexa_rank(url):
 
 
 def cli():
-    argv = docopt(__doc__, version='v1.34')
+    argv = docopt(__doc__, version='v1.35')
     template = argv['<tmpl>']
     name = argv['<name>']
     if template not in ['data', 'image', 'dynamic']:
