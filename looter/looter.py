@@ -23,6 +23,7 @@ Options:
   --version        Show version.
 """
 import os
+import re
 import time
 import pymysql
 import requests
@@ -210,6 +211,19 @@ def link_mysql(fun):
         with pymysql.connect(host=host, port=3306, user=user, passwd=passwd, db=dbname, charset=charset) as cur:
             fun(cur, *args, **kwargs)
     return wr
+
+
+def get_alexa_rank(url):
+    alexa = f'http://data.alexa.com/data?cli=10&dat=snbamz&url={url}'
+    src = send_request(alexa).text
+    reach_rank = re.findall('REACH[^\d]*(\d+)', src)
+    popularity_rank = re.findall('POPULARITY[^\d]*(\d+)', src)
+    if reach_rank and popularity_rank:
+        print(f'[{url}] REACH: {reach_rank[0]} POPULARITY: {popularity_rank[0]}')
+        return url, reach_rank[0], popularity_rank[0]
+    else:
+        print(f'[{url}] Get rank failed.')
+        return
 
 
 def cli():

@@ -1,38 +1,29 @@
-import re
 import json
 import looter as lt
-from pprint import pprint
 from concurrent import futures
 from operator import itemgetter
 
 domain = 'http://data.alexa.com'
 total_rank = []
 
-def get_targets(url):
+def get_tasklist(url):
     src = lt.get_source(url)
     links = src.cssselect('table tbody tr td:nth-child(3) a')
     return [link.get('href') for link in links]
 
 
 def crawl(url):
-    src = lt.send_request(url).text
-    site = url.split('=')[-1]
-    reach_rank = re.findall('REACH[^\d]*(\d+)', src)
-    popularity_rank = re.findall('POPULARITY[^\d]*(\d+)', src)
-    if reach_rank and popularity_rank:
+    rank = lt.get_alexa_rank(url)
+    if rank:
         data = {}
-        print(f'ADD {site}')
-        data['site'] = site
-        data['reach'] = reach_rank[0]
-        data['popularity'] = popularity_rank[0]
+        data['site'] = rank[0]
+        data['reach'] = rank[1]
+        data['popularity'] = rank[2]
         total_rank.append(data)
-    else:
-        print(f'SKIP {site}')
 
 
 if __name__ == '__main__':
-    targets = get_targets('https://github.com/tuna/blogroll/blob/master/README.md')
-    tasklist = list(f'{domain}/data?cli=10&dat=snbamz&url={target}' for target in targets)
+    tasklist = get_tasklist('https://github.com/tuna/blogroll/blob/master/README.md')
     with futures.ThreadPoolExecutor(20) as executor:
         executor.map(crawl, tasklist)
     r = sorted(total_rank, key=itemgetter('popularity'))
