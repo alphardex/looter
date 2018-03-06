@@ -232,6 +232,9 @@ def get_alexa_rank(url):
 
 
 def cli():
+    """
+    Commandline for looter!
+    """
     argv = docopt(__doc__, version='v1.35')
     template = argv['<tmpl>']
     name = argv['<name>']
