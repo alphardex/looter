@@ -16,6 +16,7 @@ And you can also create a spider using template! (data, image, dynamic)
 
 Usage:
   looter genspider <name> <tmpl>
+  looter shell [<url>]
   looter (-h | --help | --version)
 
 Options:
@@ -24,6 +25,7 @@ Options:
 """
 import os
 import re
+import code
 import time
 import pymysql
 import requests
@@ -236,13 +238,37 @@ def cli():
     Commandline for looter!
     """
     argv = docopt(__doc__, version='v1.35')
-    template = argv['<tmpl>']
-    name = argv['<name>']
-    if template not in ['data', 'image', 'dynamic']:
-        exit('Plz provide a template (data, image or dynamic)')
-    package_path = os.path.dirname(__file__)
-    with open(f'{package_path}\\templates\\{template}.tmpl', 'r') as i, open(f'{name}.py', 'w') as o:
-        o.write(i.read())
+
+    if argv['genspider']:
+        template = argv['<tmpl>']
+        name = argv['<name>']
+        if template not in ['data', 'image', 'dynamic']:
+            exit('Plz provide a template (data, image or dynamic)')
+        package_path = os.path.dirname(__file__)
+        with open(f'{package_path}\\templates\\{template}.tmpl', 'r') as i, open(f'{name}.py', 'w') as o:
+            o.write(i.read())
+
+    if argv['shell']:
+        if not argv['<url>']:
+            url = input('Which site do u want to crawl?\nurl: ')
+        else:
+            url = argv['<url>']
+        url = 'http://' + url if not url.startswith('http://') else url
+        src = get_source(url)
+        banner = f"""
+        [{url[7:]}] crawled.
+        Available objects:
+        url    The url of the site you crawled.
+        src    can be parsed by xpath and cssselect.
+        And all the functions in looter also available! (view them with dir())
+
+        For more info, plz refer to tutorial:
+        [cssselect]: http://www.runoob.com/cssref/css-selectors.html
+        [xpath]: http://www.runoob.com/xpath/xpath-syntax.html
+        """
+        banner = '\n'.join([line.lstrip() for line in banner.split('\n')])
+        allvars = {**locals(), **globals()}
+        code.interact(local=allvars, banner=banner)
 
 
 if __name__ == '__main__':
