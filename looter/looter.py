@@ -39,6 +39,9 @@ from requestium import Session
 from urllib.parse import unquote
 
 
+VERSION = 'v1.36'
+
+
 try:
     cf = configparser.ConfigParser()
     cf.read("db_config.conf")
@@ -237,7 +240,7 @@ def cli():
     """
     Commandline for looter!
     """
-    argv = docopt(__doc__, version='v1.35')
+    argv = docopt(__doc__, version=VERSION)
 
     if argv['genspider']:
         template = argv['<tmpl>']

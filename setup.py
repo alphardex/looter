@@ -1,18 +1,18 @@
 #!/usr/bin/env python
 # coding=utf-8
 import os
-import looter
+import looter as lt
 from setuptools import setup, find_packages
 
 here = os.path.abspath(os.path.dirname(__file__))
 
 setup(
     name='looter',
-    version='v1.35',
+    version=lt.VERSION,
     description=(
         'A python package aiming at avoiding unnecessary repetition in making common crawlers.'
     ),
-    long_description=looter.__doc__,
+    long_description=lt.__doc__,
     author='alphardex',
     author_email='2582347430@qq.com',
     maintainer='alphardex',
