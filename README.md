@@ -23,7 +23,7 @@ Then, extract with css and grab images you want!
 ```
 And of course, there are more functions for you to discover.
 
-## Usage
+## usage
 ``` bash
 Usage:
   looter genspider <name> <tmpl>
