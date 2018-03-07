@@ -39,7 +39,7 @@ from requestium import Session
 from urllib.parse import unquote
 
 
-VERSION = 'v1.36'
+VERSION = 'v1.37'
 
 
 try:
@@ -257,11 +257,13 @@ def cli():
         else:
             url = argv['<url>']
         url = 'http://' + url if not url.startswith('http://') else url
-        src = get_source(url)
+        res = send_request(url)
+        src = etree.HTML(res.text)
         banner = f"""
         [{url[7:]}] crawled.
         Available objects:
         url    The url of the site you crawled.
+        res    The response of the site.
         src    can be parsed by xpath and cssselect.
         And all the functions in looter also available! (view them with dir())
 
