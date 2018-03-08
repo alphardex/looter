@@ -7,13 +7,13 @@ domain = 'https://github.com/tuna/blogroll/blob/master/README.md'
 total_rank = []
 
 def get_tasklist(url):
-    src = lt.get_source(url)
-    links = src.cssselect('table tbody tr td:nth-child(3) a')
+    tree = lt.fetch(url)
+    links = tree.cssselect('table tbody tr td:nth-child(3) a')
     return [link.get('href') for link in links]
 
 
 def crawl(url):
-    rank = lt.get_alexa_rank(url)
+    rank = lt.alexa_rank(url)
     if rank:
         data = {}
         data['site'] = rank[0]

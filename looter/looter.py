@@ -3,17 +3,6 @@ making common crawlers.
 Author: alphardex  QQ:2582347430
 If any suggestion, please contact me. Thank you for cooperation!
 
-How to realize a image crawler in just four lines:
-    >>> import looter as lt
-    >>> src = lt.get_source('https://konachan.net/post')
-    >>> links = src.cssselect('a.directlink')
-    >>> lt.save_imgs(links)
-
-Although it only crawls one page, its function can be easily extended,
-that's to say, a whole-site crawler, or even a concurrent one... you name it!
-
-And you can also create a spider using template! (data, image, dynamic)
-
 Usage:
   looter genspider <name> <tmpl>
   looter shell [<url>]
@@ -29,18 +18,33 @@ import code
 import time
 import pymysql
 import requests
-import warnings
 import functools
+import webbrowser
 import configparser
 from lxml import etree
 from docopt import docopt
-from selenium import webdriver
-from requestium import Session
 from urllib.parse import unquote
 
 
-VERSION = 'v1.37'
+VERSION = 'v1.38'
+allvars = {**locals(), **globals()}
+banner = f"""
+[{url[7:]}] crawled.
+Available objects:
+    url          The url of the site you crawled.
+    res          The response of the site.
+    tree         The source tree, can be parsed by xpath and cssselect.
 
+Available functions:
+    fetch        Get the element tree of an HTML page.
+    view         View the page in your browser. (test rendering)
+    save_imgs    Download images from links.
+    alexa_rank   Get the reach and popularity of a site in alexa.
+
+For more info, plz refer to tutorial:
+    [cssselect]: http://www.runoob.com/cssref/css-selectors.html
+    [xpath]: http://www.runoob.com/xpath/xpath-syntax.html
+"""
 
 try:
     cf = configparser.ConfigParser()
@@ -83,7 +87,7 @@ def send_request(url, **kwargs):
     return res
 
 
-def get_source(url, **kwargs):
+def fetch(url, **kwargs):
     """
     Get the element tree of an HTML page, use cssselect or xpath to parse it.
     You needn't specify the attribute (like 'href') of the target, just tag is OK. 
@@ -100,20 +104,22 @@ def get_source(url, **kwargs):
     res.encoding = encoding
     type_ = kwargs.get('type', 'text')
     html = res.text if type_ == 'text' else res.content
-    src = etree.HTML(html)
-    return src
+    tree = etree.HTML(html)
+    return tree
 
 
-def retrieve_html(url, **kwargs):
+def view(url, **kwargs):
     """
-    Save .html file directly to local disk. (Usually for testing purpose)
-
+    View the page whether rendered properly. (Usually for testing purpose)
     params:
         encoding: utf-8
+        name: test
     """
     encoding = kwargs.get('encoding', 'utf-8')
-    with open('test.html', 'w', encoding=encoding) as f:
+    name = kwargs.get('name', 'test')
+    with open(name, 'w', encoding=encoding) as f:
         f.write(send_request(url).text)
+    webbrowser.open(name, new=1)
 
 
 def rectify(name):
@@ -155,50 +161,6 @@ def save_imgs(urls):
     return [save_img(url) for url in urls]
 
 
-def run_selenium(url):
-    """
-    Deprecated
-
-    Run selenium driver. (driver is headless-chrome by default)
-    """
-    warnings.warn("Module `looter.run_selenium` is deprecated, use `looter.dynamic_get` instead.")
-    ua = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36"
-    options = webdriver.ChromeOptions()
-    options.add_argument('headless')
-    options.add_argument(f"user-agent={ua}")
-    path = r'D:\Program Files (x86)\chromedriver\chromedriver.exe'
-    driver = webdriver.Chrome(chrome_options=options, executable_path=path)
-    print(f"Headless Chrome is connecting to {url}...")
-    try:
-        driver.set_window_size(1640, 688)
-        driver.get(url)
-    except TimeoutError as e:
-        print("Sorry, but connection timed out.")
-        raise e
-    print("Successfully connected.")
-    return driver
-
-
-def dynamic_get(url, **kwargs):
-    """
-    Get a JS-based dynamic webpage using selenium + headless chrome.
-
-    Plz refer to https://github.com/tryolabs/requestium
-
-    params:
-        webdriver_path: D:\\Program Files (x86)\\chromedriver\\chromedriver.exe
-        timeout: 60
-    """
-    webdriver_path = kwargs.get('driver_path', 'D:\\Program Files (x86)\\chromedriver\\chromedriver.exe')
-    timeout = kwargs.get('timeout', 60)
-    s = Session(webdriver_path=webdriver_path,
-                browser='chrome',
-                default_timeout=timeout,
-                webdriver_options={'arguments': ['headless']})
-    res = s.get(url)
-    return res
-
-
 def link_mysql(fun):
     """
     A decorator to connect to MySQL, it will return a cursor.
@@ -218,16 +180,16 @@ def link_mysql(fun):
     return wr
 
 
-def get_alexa_rank(url):
+def alexa_rank(url):
     """
     Get the reach and popularity of a site in alexa.
     It will return a tuple:
     (url, reach_rank, popularity_rank)
     """
     alexa = f'http://data.alexa.com/data?cli=10&dat=snbamz&url={url}'
-    src = send_request(alexa).text
-    reach_rank = re.findall('REACH[^\d]*(\d+)', src)
-    popularity_rank = re.findall('POPULARITY[^\d]*(\d+)', src)
+    page = send_request(alexa).text
+    reach_rank = re.findall('REACH[^\d]*(\d+)', page)
+    popularity_rank = re.findall('POPULARITY[^\d]*(\d+)', page)
     if reach_rank and popularity_rank:
         print(f'[{url}] REACH: {reach_rank[0]} POPULARITY: {popularity_rank[0]}')
         return url, reach_rank[0], popularity_rank[0]
@@ -258,21 +220,7 @@ def cli():
             url = argv['<url>']
         url = 'http://' + url if not url.startswith('http://') else url
         res = send_request(url)
-        src = etree.HTML(res.text)
-        banner = f"""
-        [{url[7:]}] crawled.
-        Available objects:
-        url    The url of the site you crawled.
-        res    The response of the site.
-        src    can be parsed by xpath and cssselect.
-        And all the functions in looter also available! (view them with dir())
-
-        For more info, plz refer to tutorial:
-        [cssselect]: http://www.runoob.com/cssref/css-selectors.html
-        [xpath]: http://www.runoob.com/xpath/xpath-syntax.html
-        """
-        banner = '\n'.join([line.lstrip() for line in banner.split('\n')])
-        allvars = {**locals(), **globals()}
+        tree = etree.HTML(res.text)
         code.interact(local=allvars, banner=banner)
 
 

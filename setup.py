@@ -1,10 +1,8 @@
 #!/usr/bin/env python
 # coding=utf-8
-import os
 import looter as lt
 from setuptools import setup, find_packages
 
-here = os.path.abspath(os.path.dirname(__file__))
 
 setup(
     name='looter',
@@ -41,10 +39,8 @@ setup(
     },
     install_requires=[
         'PyMySQL',
-        'selenium',
         'requests',
         'lxml',
-        'docopt',
-        'requestium'
+        'docopt'
     ]
 )

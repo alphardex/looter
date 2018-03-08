@@ -18,7 +18,7 @@ $ looter shell konachan.net/post
 ```
 Then, extract with css and grab images you want!
 ``` python
->>> links = src.cssselect('a.directlink')
+>>> links = tree.cssselect('a.directlink')
 >>> save_imgs(links)
 ```
 And of course, there are more functions for you to discover.
@@ -34,7 +34,7 @@ Options:
   -h --help        Show this screen.
   --version        Show version.
 ```
-Templates available: data, image, dynamic
+Templates available: data, image
 You can also view [examples](https://github.com/alphardex/looter/tree/master/looter/examples).
 
 ## tutorial

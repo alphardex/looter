@@ -5,7 +5,7 @@ from concurrent import futures
 domain = 'https://hitomi.la'
 
 def crawl(url):
-    src = lt.get_source(url)
+    src = lt.fetch(url)
     posts = src.cssselect('.cg')
     for post in posts:
         data = dict()

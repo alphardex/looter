@@ -4,8 +4,8 @@ from concurrent import futures
 domain = 'https://konachan.net'
 
 def crawl(url):
-    src = lt.get_source(url)
-    links = src.cssselect('a.directlink')
+    tree = lt.fetch(url)
+    links = tree.cssselect('a.directlink')
     lt.save_imgs(links)
 
 
