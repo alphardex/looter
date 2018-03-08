@@ -5,7 +5,7 @@ from concurrent import futures
 domain = 'https://nyaa.si'
 
 def crawl(url):
-    tree = lt.get_source(url)
+    tree = lt.fetch(url)
     posts = tree.cssselect('tr.default')
     for post in posts:
         data = dict()
