@@ -27,7 +27,7 @@ from urllib.parse import unquote
 from requests.exceptions import MissingSchema
 
 
-VERSION = 'v1.38'
+VERSION = 'v1.39'
 banner = f"""
 Available objects:
     url          The url of the site you crawled.
@@ -209,8 +209,8 @@ def cli():
     if argv['genspider']:
         template = argv['<tmpl>']
         name = argv['<name>']
-        if template not in ['data', 'image', 'dynamic']:
-            exit('Plz provide a template (data, image or dynamic)')
+        if template not in ['data', 'image']:
+            exit('Plz provide a template (data or image)')
         package_path = os.path.dirname(__file__)
         with open(f'{package_path}\\templates\\{template}.tmpl', 'r') as i, open(f'{name}.py', 'w') as o:
             o.write(i.read())
