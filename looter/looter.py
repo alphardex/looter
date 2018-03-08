@@ -31,6 +31,7 @@ import pymysql
 import requests
 import warnings
 import functools
+import webbrowser
 import configparser
 from lxml import etree
 from docopt import docopt
@@ -104,16 +105,19 @@ def get_source(url, **kwargs):
     return src
 
 
-def retrieve_html(url, **kwargs):
+def view(url, **kwargs):
     """
-    Save .html file directly to local disk. (Usually for testing purpose)
+    View the page whether rendered properly. (Usually for testing purpose)
 
     params:
         encoding: utf-8
+        name: test
     """
     encoding = kwargs.get('encoding', 'utf-8')
-    with open('test.html', 'w', encoding=encoding) as f:
+    name = kwargs.get('name', 'test')
+    with open(name, 'w', encoding=encoding) as f:
         f.write(send_request(url).text)
+    webbrowser.open(name, new=1）
 
 
 def rectify(name):
