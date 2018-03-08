@@ -3,3 +3,18 @@ python:
   - "3.6"
 # command to install dependencies
 install: "pip install -r requirements.txt"
+
+# Assuming you have installed the travis-ci CLI tool, after you
+# create the Github repo and add it to Travis, run the
+# following command to finish PyPI deployment setup:
+# $ travis encrypt --add deploy.password
+deploy:
+  provider: pypi
+  distributions: sdist build
+  user: alphardex
+  password:
+    secure: wang7251
+  on:
+    tags: true
+    repo: alphardex/looter
+    python: 3.6

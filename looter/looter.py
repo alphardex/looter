@@ -1,6 +1,5 @@
 import os
 import re
-import code
 import time
 import pymysql
 import requests
@@ -8,26 +7,8 @@ import functools
 import webbrowser
 import configparser
 from lxml import etree
-from docopt import docopt
 from urllib.parse import unquote
 
-
-banner = f"""
-Available objects:
-    url          The url of the site you crawled.
-    res          The response of the site.
-    tree         The source tree, can be parsed by xpath and cssselect.
-
-Available functions:
-    fetch        Get the element tree of an HTML page.
-    view         View the page in your browser. (test rendering)
-    save_imgs    Download images from links.
-    alexa_rank   Get the reach and popularity of a site in alexa.
-
-For more info, plz refer to tutorial:
-    [cssselect]: http://www.runoob.com/cssref/css-selectors.html
-    [xpath]: http://www.runoob.com/xpath/xpath-syntax.html
-"""
 
 if os.path.exists('db_config.conf'):
     cf = configparser.ConfigParser()
@@ -181,32 +162,3 @@ def alexa_rank(url):
     else:
         print(f'[{url}] Get rank failed.')
         return
-
-
-def cli():
-    """
-    Commandline for looter!
-    """
-    argv = docopt(__doc__, version='1.41')
-    if argv['genspider']:
-        template = argv['<tmpl>']
-        name = argv['<name>']
-        if template not in ['data', 'image']:
-            exit('Plz provide a template (data or image)')
-        package_path = os.path.dirname(__file__)
-        with open(f'{package_path}\\templates\\{template}.tmpl', 'r') as i, open(f'{name}.py', 'w') as o:
-            o.write(i.read())
-
-    if argv['shell']:
-        if not argv['<url>']:
-            url = input('Which site do u want to crawl?\nurl: ')
-        else:
-            url = argv['<url>']
-        res = send_request(url)
-        tree = etree.HTML(res.text)
-        allvars = {**locals(), **globals()}
-        code.interact(local=allvars, banner=banner)
-
-
-if __name__ == '__main__':
-    cli()
