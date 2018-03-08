@@ -4,8 +4,9 @@ from concurrent import futures
 domain = ''
 
 def crawl(url):
-    src = lt.get_source(url)
-    links = src.cssselect()
+    tree = lt.fetch(url)
+    # use cssselect to extract your images
+    links = tree.cssselect()
     lt.save_imgs(links)
 
 

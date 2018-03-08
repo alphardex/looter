@@ -5,8 +5,8 @@ from concurrent import futures
 domain = ''
 
 def crawl(url):
-    src = lt.get_source(url)
-    items = src.cssselect()
+    tree = lt.fetch(url)
+    items = tree.cssselect()
     for item in items:
         data = dict()
         # data['<col>'] = post.cssselect(...)
