@@ -6,7 +6,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='looter',
-    version=lt.VERSION,
+    version=lt.__version__,
     description=(
         'A python package aiming at avoiding unnecessary repetition in making common crawlers.'
     ),

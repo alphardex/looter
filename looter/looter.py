@@ -1,17 +1,3 @@
-""" Looter, a python package aiming at avoiding unnecessary repetition in
-making common crawlers.
-Author: alphardex  QQ:2582347430
-If any suggestion, please contact me. Thank you for cooperation!
-
-Usage:
-  looter genspider <name> <tmpl>
-  looter shell [<url>]
-  looter (-h | --help | --version)
-
-Options:
-  -h --help        Show this screen.
-  --version        Show version.
-"""
 import os
 import re
 import code
@@ -24,10 +10,8 @@ import configparser
 from lxml import etree
 from docopt import docopt
 from urllib.parse import unquote
-from requests.exceptions import MissingSchema
 
 
-VERSION = 'v1.40'
 banner = f"""
 Available objects:
     url          The url of the site you crawled.
@@ -45,7 +29,7 @@ For more info, plz refer to tutorial:
     [xpath]: http://www.runoob.com/xpath/xpath-syntax.html
 """
 
-try:
+if os.path.exists('db_config.conf'):
     cf = configparser.ConfigParser()
     cf.read("db_config.conf")
     host = cf.get("db", "host")
@@ -54,8 +38,6 @@ try:
     passwd = cf.get("db", "passwd")
     charset = cf.get("db", "charset")
     dbname = cf.get("db", "dbname")
-except Exception as e:
-    pass
 
 
 def perf(f):
@@ -84,7 +66,7 @@ def send_request(url, **kwargs):
     try:
         res = requests.get(url, headers=headers, timeout=timeout)
         res.raise_for_status()
-    except MissingSchema as e:
+    except requests.exceptions.MissingSchema as e:
         res = requests.get('http://' + url, headers=headers, timeout=timeout)
     return res
 
@@ -92,7 +74,7 @@ def send_request(url, **kwargs):
 def fetch(url, **kwargs):
     """
     Get the element tree of an HTML page, use cssselect or xpath to parse it.
-    You needn't specify the attribute (like 'href') of the target, just tag is OK. 
+
     Please refer to the tutorial of this module, and selector tutorial below:
         cssselect: http://www.runoob.com/cssref/css-selectors.html
         xpath: http://www.runoob.com/xpath/xpath-syntax.html
@@ -113,6 +95,7 @@ def fetch(url, **kwargs):
 def view(url, **kwargs):
     """
     View the page whether rendered properly. (Usually for testing purpose)
+
     params:
         encoding: utf-8
         name: test
@@ -139,7 +122,7 @@ def save_img(url, **kwargs):
     Download image and save it to local disk.
 
     params:
-        max_length: 66
+        max_length: 160
     """
     if hasattr(url, 'tag') and url.tag == 'a':
         url = url.get('href')
@@ -204,8 +187,7 @@ def cli():
     """
     Commandline for looter!
     """
-    argv = docopt(__doc__, version=VERSION)
-
+    argv = docopt(__doc__, version='1.41')
     if argv['genspider']:
         template = argv['<tmpl>']
         name = argv['<name>']
