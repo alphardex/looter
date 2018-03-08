@@ -24,6 +24,7 @@ import configparser
 from lxml import etree
 from docopt import docopt
 from urllib.parse import unquote
+from requests.exceptions import MissingSchema
 
 
 VERSION = 'v1.38'
@@ -80,8 +81,11 @@ def send_request(url, **kwargs):
     """
     headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.3319.102 Safari/537.36'}
     timeout = kwargs.get('timeout', 60)
-    res = requests.get(url, headers=headers, timeout=timeout)
-    res.raise_for_status()
+    try:
+        res = requests.get(url, headers=headers, timeout=timeout)
+        res.raise_for_status()
+    except MissingSchema as e:
+        res = requests.get('http://' + url, headers=headers, timeout=timeout)
     return res
 
 
@@ -216,7 +220,6 @@ def cli():
             url = input('Which site do u want to crawl?\nurl: ')
         else:
             url = argv['<url>']
-        url = 'http://' + url if not url.startswith('http://') else url
         res = send_request(url)
         tree = etree.HTML(res.text)
         allvars = {**locals(), **globals()}
