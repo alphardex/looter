@@ -10,7 +10,7 @@ setup(
     description=(
         'A python package aiming at avoiding unnecessary repetition in making common crawlers.'
     ),
-    long_description=lt.__doc__,
+    long_description=open('README.rst').read(),
     author='alphardex',
     author_email='2582347430@qq.com',
     maintainer='alphardex',
