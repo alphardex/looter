@@ -115,9 +115,9 @@ def view(url, **kwargs):
     """
     encoding = kwargs.get('encoding', 'utf-8')
     name = kwargs.get('name', 'test')
-    with open(name, 'w', encoding=encoding) as f:
+    with open(f'{name}.html', 'w', encoding=encoding) as f:
         f.write(send_request(url).text)
-    webbrowser.open(name, new=1)
+    webbrowser.open(f'{name}.html', new=1)
 
 
 def rectify(name):
