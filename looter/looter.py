@@ -27,7 +27,6 @@ from urllib.parse import unquote
 
 
 VERSION = 'v1.38'
-allvars = {**locals(), **globals()}
 banner = f"""
 Available objects:
     url          The url of the site you crawled.
@@ -220,6 +219,7 @@ def cli():
         url = 'http://' + url if not url.startswith('http://') else url
         res = send_request(url)
         tree = etree.HTML(res.text)
+        allvars = {**locals(), **globals()}
         code.interact(local=allvars, banner=banner)
 
 
