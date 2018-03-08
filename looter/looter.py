@@ -29,7 +29,6 @@ from urllib.parse import unquote
 VERSION = 'v1.38'
 allvars = {**locals(), **globals()}
 banner = f"""
-[{url[7:]}] crawled.
 Available objects:
     url          The url of the site you crawled.
     res          The response of the site.
