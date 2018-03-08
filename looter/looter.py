@@ -27,7 +27,7 @@ from urllib.parse import unquote
 from requests.exceptions import MissingSchema
 
 
-VERSION = 'v1.39'
+VERSION = 'v1.40'
 banner = f"""
 Available objects:
     url          The url of the site you crawled.
