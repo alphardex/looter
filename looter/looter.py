@@ -66,7 +66,7 @@ def fetch(url:str, **kwargs) -> etree._Element:
  
     Args:
         url: The url of the site.
-        **kwargs: encoding, type_
+        **kwargs: encoding, type
     
     Returns:
         The element tree of the HTML page.
