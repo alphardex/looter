@@ -35,12 +35,16 @@ def perf(f):
     return wr
 
 
-def send_request(url, **kwargs):
+def send_request(url:str, **kwargs) -> requests.models.Response:
     """
     Send an HTTP request to a url.
 
-    params:
-        timeout: 60
+    Args:
+        url: The url of the site.
+        **kwargs: timeout
+    
+    Returns:
+        The response of the HTTP request.
     """
     headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.3319.102 Safari/537.36'}
     timeout = kwargs.get('timeout', 60)
@@ -52,7 +56,7 @@ def send_request(url, **kwargs):
     return res
 
 
-def fetch(url, **kwargs):
+def fetch(url:str, **kwargs) -> etree._Element:
     """
     Get the element tree of an HTML page, use cssselect or xpath to parse it.
 
@@ -60,9 +64,12 @@ def fetch(url, **kwargs):
         cssselect: http://www.runoob.com/cssref/css-selectors.html
         xpath: http://www.runoob.com/xpath/xpath-syntax.html
  
-    params:
-        encoding: res.encoding
-        type: text
+    Args:
+        url: The url of the site.
+        **kwargs: encoding, type_
+    
+    Returns:
+        The element tree of the HTML page.
     """
     res = send_request(url)
     encoding = kwargs.get('encoding', res.encoding)
@@ -73,13 +80,13 @@ def fetch(url, **kwargs):
     return tree
 
 
-def view(url, **kwargs):
+def view(url:str, **kwargs):
     """
     View the page whether rendered properly. (Usually for testing purpose)
 
-    params:
-        encoding: utf-8
-        name: test
+    Args:
+        url: The url of the site.
+        **kwargs: encoding, name
     """
     encoding = kwargs.get('encoding', 'utf-8')
     name = kwargs.get('name', 'test')
@@ -88,9 +95,15 @@ def view(url, **kwargs):
     webbrowser.open(f'{name}.html', new=1)
 
 
-def rectify(name):
+def rectify(name:str) -> str:
     """
-    Get rid of illegal symbols of a file name.
+    Get rid of illegal symbols of a filename.
+
+    Args:
+        name: The filename.
+    
+    Returns:
+        The rectified filename.
     """
     if any(symbol in name for symbol in ['?', '<', '>', '|', '*', '"', ":"]):
         name = ''.join([c for c in name if c not in ['?', '<', '>', '|', '*', '"', ":"]])
@@ -98,12 +111,13 @@ def rectify(name):
 
 
 @perf
-def save_img(url, **kwargs):
+def save_img(url:str, **kwargs):
     """
     Download image and save it to local disk.
 
-    params:
-        max_length: 160
+    Args:
+        url: The url of the site.
+        **kwargs: max_length
     """
     if hasattr(url, 'tag') and url.tag == 'a':
         url = url.get('href')
@@ -146,11 +160,17 @@ def link_mysql(fun):
     return wr
 
 
-def alexa_rank(url):
+def alexa_rank(url:str) -> tuple:
     """
     Get the reach and popularity of a site in alexa.
     It will return a tuple:
     (url, reach_rank, popularity_rank)
+
+    Args:
+        url: The url of the site.
+    
+    Returns:
+        (url, reach_rank, popularity_rank)
     """
     alexa = f'http://data.alexa.com/data?cli=10&dat=snbamz&url={url}'
     page = send_request(alexa).text
