@@ -10,6 +10,6 @@ def crawl(url):
 
 
 if __name__ == '__main__':
-    tasklist = list(f'{domain}/post?page={i}' for i in range(1, 9777))
+    tasklist = [f'{domain}/post?page={i}' for i in range(1, 9777)]
     with futures.ThreadPoolExecutor(20) as executor:
         executor.map(crawl, tasklist)

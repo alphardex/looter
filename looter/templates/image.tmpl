@@ -5,12 +5,11 @@ domain = ''
 
 def crawl(url):
     tree = lt.fetch(url)
-    # use cssselect to extract your images
     links = tree.cssselect()
     lt.save_imgs(links)
 
 
 if __name__ == '__main__':
-    tasklist = list()
+    tasklist = []
     with futures.ThreadPoolExecutor(20) as executor:
         executor.map(crawl, tasklist)

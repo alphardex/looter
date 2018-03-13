@@ -9,12 +9,11 @@ def crawl(url):
     items = tree.cssselect()
     for item in items:
         data = dict()
-        # data['<col>'] = post.cssselect(...)
+        # data[...] = item.cssselect(...)
         pprint(data)
-        # You can define your save_data function in advance and call it here :)
 
 
 if __name__ == '__main__':
-    tasklist = list()
+    tasklist = []
     with futures.ThreadPoolExecutor(20) as executor:
         executor.map(crawl, tasklist)

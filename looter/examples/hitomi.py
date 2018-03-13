@@ -25,6 +25,6 @@ def crawl(url):
 
 
 if __name__ == '__main__':
-    tasklist = list(f'{domain}/type/gamecg-all-{i}.html' for i in range(1, 2000))
+    tasklist = [f'{domain}/type/gamecg-all-{i}.html' for i in range(1, 2000)]
     with futures.ThreadPoolExecutor(10) as executor:
         executor.map(crawl, tasklist)
