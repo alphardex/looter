@@ -1,6 +1,8 @@
 import os
 import re
 import time
+import asyncio
+import aiohttp
 import pymysql
 import requests
 import functools
@@ -9,6 +11,8 @@ import configparser
 from lxml import etree
 from urllib.parse import unquote
 
+
+headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.3319.102 Safari/537.36'}
 
 if os.path.exists('db_config.conf'):
     cf = configparser.ConfigParser()
@@ -46,7 +50,6 @@ def send_request(url:str, **kwargs) -> requests.models.Response:
     Returns:
         The response of the HTTP request.
     """
-    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.3319.102 Safari/537.36'}
     timeout = kwargs.get('timeout', 60)
     try:
         res = requests.get(url, headers=headers, timeout=timeout)
@@ -110,14 +113,15 @@ def rectify(name:str) -> str:
     return unquote(name)
 
 
-@perf
-def save_img(url:str, **kwargs):
-    """
-    Download image and save it to local disk.
-
+def get_img_name(url:str, **kwargs) -> str:
+    """Get the name of an image.
+    
     Args:
         url: The url of the site.
         **kwargs: max_length
+    
+    Returns:
+        The name of an image and its url.
     """
     if hasattr(url, 'tag') and url.tag == 'a':
         url = url.get('href')
@@ -128,9 +132,21 @@ def save_img(url:str, **kwargs):
     max_length = kwargs.get('max_length', 160)
     name = f"{name[:max_length]}.{ext}"
     name = name[:-4] if name.endswith(f'.{ext}.{ext}') else name
+    return url, name
+
+
+@perf
+def save_img(url:str):
+    """
+    Download image and save it to local disk.
+
+    Args:
+        url: The url of the site.
+    """
+    url, name = get_img_name(url)
     with open(name, 'wb') as f:
         url = url if url.startswith('http') else f'http:{url}'
-        f.write(requests.get(url, stream=True).content)
+        f.write(requests.get(url ,headers=headers).content)
         print(f'Saved {name}')
 
 
@@ -182,3 +198,46 @@ def alexa_rank(url:str) -> tuple:
     else:
         print(f'[{url}] Get rank failed.')
         return
+
+
+async def async_fetch(url:str, **kwargs) -> etree._Element:
+    """Fetch a webpage in an async style.
+    
+    Args:
+        url: The url of the site.
+        **kwargs: type
+    
+    Returns:
+        The element tree of the HTML page.
+    """
+    type_ = kwargs.get('type', 'text')
+    async with aiohttp.ClientSession() as ses:
+        async with ses.get(url, headers=headers) as res:
+            html = await res.text() if type_ == 'text' else res.read()
+            tree = etree.HTML(html)
+            return tree
+
+
+async def async_save_img(url:str, **kwargs):
+    """Save an image in an async style.
+    
+    Args:
+        url: The url of the site.
+        **kwargs: max_length
+    """
+
+    url, name = get_img_name(url)
+    url = url if url.startswith('http') else f'http:{url}'
+    with open(name, 'wb') as f:
+        async with aiohttp.ClientSession() as ses:
+            async with ses.get(url, headers=headers) as res:
+                data = await res.read()
+                f.write(data)
+                print(f'Saved {name}')
+
+
+def async_save_imgs(urls:str):
+    """
+    Download images from links in an async style.
+    """
+    return [async_save_img(url) for url in urls]
