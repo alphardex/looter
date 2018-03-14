@@ -41,6 +41,7 @@ setup(
         'PyMySQL',
         'requests',
         'lxml',
-        'docopt'
+        'docopt',
+        'aiohttp'
     ]
 )
