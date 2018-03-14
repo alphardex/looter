@@ -47,7 +47,7 @@ usage
       -h --help        Show this screen.
       --version        Show version.
 
-Templates available: data, image. You can also view
+Templates available: data, image and async. You can also view
 `examples <https://github.com/alphardex/looter/tree/master/looter/examples>`__.
 
 tutorial
