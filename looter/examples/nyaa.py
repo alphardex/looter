@@ -1,11 +1,11 @@
+import asyncio
 import looter as lt
 from pprint import pprint
-from concurrent import futures
 
 domain = 'https://nyaa.si'
 
-def crawl(url):
-    tree = lt.fetch(url)
+async def crawl(url):
+    tree = await lt.async_fetch(url)
     posts = tree.cssselect('tr.default')
     for post in posts:
         data = dict()
@@ -24,6 +24,7 @@ def crawl(url):
 
 
 if __name__ == '__main__':
-    tasklist = [f'{domain}/?p={i}' for i in range(1, 4000)]
-    with futures.ThreadPoolExecutor(20) as executor:
-        executor.map(crawl, tasklist)
+    tasklist = [f'{domain}/?p={i}' for i in range(1, 900)]
+    loop = asyncio.get_event_loop()
+    result = [crawl(task) for task in tasklist]
+    loop.run_until_complete(asyncio.wait(result))
