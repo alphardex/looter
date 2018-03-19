@@ -4,6 +4,7 @@ import time
 import asyncio
 import aiohttp
 import pymysql
+import random
 import requests
 import functools
 import webbrowser
@@ -136,25 +137,28 @@ def get_img_name(url:str, **kwargs) -> str:
 
 
 @perf
-def save_img(url:str):
+def save_img(url:str, random_name=False):
     """
     Download image and save it to local disk.
 
     Args:
         url: The url of the site.
+        random_name: If names of images is duplicated, use this.
     """
     url, name = get_img_name(url)
+    if random_name:
+        name = f'{name[:-4]}{str(random.randint(1, 1000000))}{name[-4:]}'
     with open(name, 'wb') as f:
         url = url if url.startswith('http') else f'http:{url}'
         f.write(requests.get(url ,headers=headers).content)
         print(f'Saved {name}')
 
 
-def save_imgs(urls):
+def save_imgs(urls, random_name=False):
     """
     Download images from links.
     """
-    return [save_img(url) for url in urls]
+    return [save_img(url, random_name=random_name) for url in urls]
 
 
 def link_mysql(fun):
@@ -218,16 +222,18 @@ async def async_fetch(url:str, **kwargs) -> etree._Element:
             return tree
 
 
-async def async_save_img(url:str, **kwargs):
+async def async_save_img(url:str, random_name=False):
     """Save an image in an async style.
     
     Args:
         url: The url of the site.
-        **kwargs: max_length
+        random_name: If names of images is duplicated, use this.
     """
 
     url, name = get_img_name(url)
     url = url if url.startswith('http') else f'http:{url}'
+    if random_name:
+        name = f'{name[:-4]}{str(random.randint(1, 1000000))}{name[-4:]}'
     with open(name, 'wb') as f:
         async with aiohttp.ClientSession() as ses:
             async with ses.get(url, headers=headers) as res:
@@ -236,8 +242,8 @@ async def async_save_img(url:str, **kwargs):
                 print(f'Saved {name}')
 
 
-def async_save_imgs(urls:str):
+def async_save_imgs(urls:str, random_name=False):
     """
     Download images from links in an async style.
     """
-    return [async_save_img(url) for url in urls]
+    return [async_save_img(url, random_name=random_name) for url in urls]
