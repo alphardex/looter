@@ -31,6 +31,12 @@ Then, extract with css and grab images you want!
     >>> links = tree.cssselect('a.directlink')
     >>> save_imgs(links)
 
+Or, just in a more simple way :d
+
+.. code:: python
+
+    >>> save_imgs(links(res, search='jpg'))
+
 And of course, there are more functions for you to discover.
 
 usage
