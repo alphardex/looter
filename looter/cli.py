@@ -38,7 +38,7 @@ def main():
     """
     Commandline for looter!
     """
-    argv = docopt(__doc__, version='1.49')
+    argv = docopt(__doc__, version='1.50')
     if argv['genspider']:
         template = argv['<tmpl>']
         name = argv['<name>']

@@ -18,7 +18,7 @@ features
 example
 -------
 
-Here's a 3-line image crawler: First, open it with shell
+Here's a very simple image crawler: First, open it with shell
 
 .. code:: bash
 
@@ -28,10 +28,10 @@ Then, extract with css and grab images you want!
 
 .. code:: python
 
-    >>> links = tree.cssselect('a.directlink')
-    >>> save_imgs(links)
+    >>> imgs = tree.cssselect('a.directlink')
+    >>> save_imgs(imgs)
 
-Or, just in a more simple way :d
+Or, just in a more crude way :d
 
 .. code:: python
 

@@ -5,9 +5,9 @@ domain = 'https://www.doutula.com'
 
 def crawl(url):
     tree = lt.fetch(url)
-    links = tree.cssselect('img.lazy')
-    links = [link.get('data-original') for link in links]
-    lt.save_imgs(links)
+    imgs = tree.cssselect('img.lazy')
+    imgs = [img.get('data-original') for img in imgs]
+    lt.save_imgs(imgs)
 
 
 if __name__ == '__main__':

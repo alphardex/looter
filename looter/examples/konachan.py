@@ -5,8 +5,8 @@ domain = 'https://konachan.net'
 
 def crawl(url):
     tree = lt.fetch(url)
-    links = tree.cssselect('a.directlink')
-    lt.save_imgs(links)
+    imgs = tree.cssselect('a.directlink')
+    lt.save_imgs(imgs)
 
 
 if __name__ == '__main__':

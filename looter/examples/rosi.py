@@ -5,8 +5,8 @@ domain = 'http://www.rosi.cc'
 
 def crawl(url):
     tree = lt.fetch(url)
-    links = tree.cssselect('ul.b_ul li a img')
-    lt.save_imgs(links, random_name=True)
+    imgs = tree.cssselect('ul.b_ul li a img')
+    lt.save_imgs(imgs, random_name=True)
 
 
 if __name__ == '__main__':

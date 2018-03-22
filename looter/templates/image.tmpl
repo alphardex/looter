@@ -5,8 +5,8 @@ domain = ''
 
 def crawl(url):
     tree = lt.fetch(url)
-    links = tree.cssselect()
-    lt.save_imgs(links)
+    imgs = tree.cssselect()
+    lt.save_imgs(imgs)
 
 
 if __name__ == '__main__':

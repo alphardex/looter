@@ -5,8 +5,8 @@ domain = 'https://xkcd.com'
 
 def crawl(url):
     tree = lt.fetch(url)
-    links = tree.cssselect('#comic img')
-    lt.save_imgs(links)
+    imgs = tree.cssselect('#comic img')
+    lt.save_imgs(imgs)
 
 
 if __name__ == '__main__':
