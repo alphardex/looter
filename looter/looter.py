@@ -260,7 +260,6 @@ def links(res:requests.models.Response, search=None, absolute=False) -> list:
     Returns:
         All the links of the page.
     """
-
     domain = res.url
     tree = etree.HTML(res.text)
     links = [link.get('href') for link in tree.cssselect('a') if link.get('href')]
