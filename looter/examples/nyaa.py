@@ -2,7 +2,7 @@ import asyncio
 import looter as lt
 from pprint import pprint
 
-domain = 'https://nyaa.si'
+domain = 'https://sukebei.nyaa.si'
 
 async def crawl(url):
     tree = await lt.async_fetch(url)

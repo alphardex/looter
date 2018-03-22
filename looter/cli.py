@@ -25,6 +25,7 @@ Available objects:
 Available functions:
     fetch        Get the element tree of an HTML page.
     view         View the page in your browser. (test rendering)
+    links        Get all the links of the page.
     save_imgs    Download images from links.
     alexa_rank   Get the reach and popularity of a site in alexa.
 
@@ -37,7 +38,7 @@ def main():
     """
     Commandline for looter!
     """
-    argv = docopt(__doc__, version='1.48')
+    argv = docopt(__doc__, version='1.49')
     if argv['genspider']:
         template = argv['<tmpl>']
         name = argv['<name>']

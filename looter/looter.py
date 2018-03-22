@@ -247,3 +247,25 @@ def async_save_imgs(urls:str, random_name=False):
     Download images from links in an async style.
     """
     return [async_save_img(url, random_name=random_name) for url in urls]
+
+
+def links(res:requests.models.Response, search=None, absolute=False) -> list:
+    """Get all the links of the page.
+    
+    Args:
+        res: The response of the page.
+        search: Search the links you want.  (default: {None})
+        absolute: Get the absolute links.   (default: {False})
+    
+    Returns:
+        All the links of the page.
+    """
+
+    domain = res.url
+    tree = etree.HTML(res.text)
+    links = [link.get('href') for link in tree.cssselect('a') if link.get('href')]
+    if search:
+        links = [link for link in links if search in link]
+    if absolute:
+        links = [domain + link for link in links if not link.startswith('http')]
+    return links
