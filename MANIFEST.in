@@ -1,8 +1,7 @@
 include LICENSE
 include README.rst
 
-recursive-include examples *.py
-recursive-include templates *.tmpl
+graft looter
 
 global-exclude __pycache__
 global-exclude *.py[co]
