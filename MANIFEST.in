@@ -1,9 +1,8 @@
 include LICENSE
-include MANIFEST.in
 include README.rst
-include .travis.yml
 
-graft looter
+recursive-include examples *.py
+recursive-include templates *.tmpl
 
 global-exclude __pycache__
 global-exclude *.py[co]

@@ -6,7 +6,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='looter',
-    version=lt.__version__,
+    version=lt.VERSION,
     description=(
         'A python package aiming at avoiding unnecessary repetition in making common crawlers.'
     ),
@@ -34,14 +34,14 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'looter = looter.cli:main',
+            'looter = looter:main',
         ]
     },
     install_requires=[
-        'PyMySQL',
         'requests',
         'lxml',
         'docopt',
+        'fake-useragent',
         'aiohttp'
     ]
 )
