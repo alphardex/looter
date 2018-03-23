@@ -34,7 +34,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'looter = looter:main',
+            'looter = looter:cli',
         ]
     },
     install_requires=[

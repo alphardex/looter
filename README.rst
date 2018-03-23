@@ -54,7 +54,7 @@ usage
       --version        Show version.
 
 Templates available: data, image and async. You can also view
-`examples <https://github.com/alphardex/looter/tree/master/looter/examples>`__.
+`examples <https://github.com/alphardex/looter/tree/master/examples>`__.
 
 tutorial
 --------

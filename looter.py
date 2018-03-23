@@ -26,7 +26,7 @@ from lxml import etree
 from fake_useragent import UserAgent
 from docopt import docopt
 
-VERSION = '1.51'
+VERSION = '1.52'
 UA = UserAgent()
 HEADERS = {'User-Agent': UA.random}
 
