@@ -2,4 +2,5 @@ aiohttp==3.0.8
 requests==2.18.4
 lxml==4.1.1
 fake-useragent==0.1.10
+cssselect==1.0.3
 docopt==0.6.2

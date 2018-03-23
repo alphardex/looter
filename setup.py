@@ -42,6 +42,7 @@ setup(
         'lxml',
         'docopt',
         'fake-useragent',
+        'cssselect',
         'aiohttp'
     ]
 )
