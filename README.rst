@@ -45,15 +45,16 @@ usage
 .. code:: bash
 
     Usage:
-      looter genspider <name> <tmpl>
+      looter genspider <name> <tmpl> [--async]
       looter shell [<url>]
       looter (-h | --help | --version)
 
     Options:
       -h --help        Show this screen.
       --version        Show version.
+      --async          Use async instead of concurrent.
 
-Templates available: data, image and async. You can also view
+Templates available: data, image. You can also view
 `examples <https://github.com/alphardex/looter/tree/master/looter/examples>`__.
 
 tutorial

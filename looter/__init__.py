@@ -1,16 +1,17 @@
-""" Looter, a python package designed for web crawler lovers :)
+"""Looter, a python package designed for web crawler lovers :)
 Author: alphardex  QQ:2582347430
 If any suggestion, please contact me. 
 Thank you for cooperation!
 
 Usage:
-  looter genspider <name> <tmpl>
+  looter genspider <name> <tmpl> [--async]
   looter shell [<url>]
   looter (-h | --help | --version)
 
 Options:
   -h --help        Show this screen.
   --version        Show version.
+  --async          Use async instead of concurrent.
 """
 import os
 import code
@@ -20,13 +21,14 @@ import random
 import webbrowser
 import functools
 from urllib.parse import unquote
+import asyncio
 import aiohttp
 import requests
 from lxml import etree
 from fake_useragent import UserAgent
 from docopt import docopt
 
-VERSION = '1.54'
+VERSION = '1.55'
 UA = UserAgent()
 HEADERS = {'User-Agent': UA.random}
 
@@ -251,7 +253,9 @@ def async_save_imgs(urls: str, random_name=False):
     """
     Download images from links in an async style.
     """
-    return [async_save_img(url, random_name=random_name) for url in urls]
+    loop = asyncio.get_event_loop()
+    result = [async_save_img(url, random_name=random_name) for url in urls]
+    loop.run_until_complete(asyncio.wait(result))
 
 
 def links(res: requests.models.Response, search=None, absolute=False) -> list:
@@ -284,8 +288,11 @@ def cli():
     if argv['genspider']:
         template = argv['<tmpl>']
         name = argv['<name>']
-        if template not in ['data', 'image', 'async']:
-            exit('Plz provide a template (data, image or async)')
+        async_ = argv['--async']
+        if template not in ['data', 'image']:
+            exit('Plz provide a template (data, image)')
+        if async_:
+            template = template + '_async'
         package_path = os.path.dirname(__file__)
         with open(f'{package_path}\\templates\\{template}.tmpl', 'r') as i, open(f'{name}.py', 'w') as o:
             o.write(i.read())
