@@ -28,7 +28,7 @@ from lxml import etree
 from fake_useragent import UserAgent
 from docopt import docopt
 
-VERSION = '1.55'
+VERSION = '1.56'
 UA = UserAgent()
 HEADERS = {'User-Agent': UA.random}
 
@@ -256,6 +256,7 @@ def async_save_imgs(urls: str, random_name=False):
     loop = asyncio.get_event_loop()
     result = [async_save_img(url, random_name=random_name) for url in urls]
     loop.run_until_complete(asyncio.wait(result))
+    loop.close()
 
 
 def links(res: requests.models.Response, search=None, absolute=False) -> list:
