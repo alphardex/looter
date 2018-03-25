@@ -30,7 +30,7 @@ from lxml import etree
 from fake_useragent import UserAgent
 from docopt import docopt
 
-VERSION = '1.57'
+VERSION = '1.58'
 UA = UserAgent()
 HEADERS = {'User-Agent': UA.random}
 
@@ -294,7 +294,7 @@ def save_as_json(total: list, name='data', sort_by=None):
     """
     if sort_by:
         total = sorted(total, key=itemgetter(sort_by))
-    with open(f'{name}.json', 'w') as f:
+    with open(f'{name}.json', 'w', encoding='utf-8') as f:
         f.write(json.dumps(total))
 
 

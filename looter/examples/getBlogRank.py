@@ -26,4 +26,4 @@ if __name__ == '__main__':
     tasklist = get_tasklist(domain)
     with futures.ThreadPoolExecutor(20) as executor:
         executor.map(crawl, tasklist)
-    save_as_json(total_rank, name='BlogRank', sort_by='popularity')
+    lt.save_as_json(total_rank, name='BlogRank', sort_by='popularity')

@@ -24,4 +24,4 @@ if __name__ == '__main__':
     loop = asyncio.get_event_loop()
     result = [crawl(task) for task in tasklist]
     loop.run_until_complete(asyncio.wait(result))
-    save_as_json(total, name='qsbk', sort_by='vote')
+    lt.save_as_json(total, name='qsbk', sort_by='vote')
