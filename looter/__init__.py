@@ -14,12 +14,14 @@ Options:
   --async          Use async instead of concurrent.
 """
 import os
+import json
 import code
 import re
 import time
 import random
 import webbrowser
 import functools
+from operator import itemgetter
 from urllib.parse import unquote
 import asyncio
 import aiohttp
@@ -28,22 +30,23 @@ from lxml import etree
 from fake_useragent import UserAgent
 from docopt import docopt
 
-VERSION = '1.56'
+VERSION = '1.57'
 UA = UserAgent()
 HEADERS = {'User-Agent': UA.random}
 
-BANNER = f"""
+BANNER = """
 Available objects:
-    url          The url of the site you crawled.
-    res          The response of the site.
-    tree         The source tree, can be parsed by xpath and cssselect.
+    url           The url of the site you crawled.
+    res           The response of the site.
+    tree          The source tree, can be parsed by xpath and cssselect.
 
 Available functions:
-    fetch        Get the element tree of an HTML page.
-    view         View the page in your browser. (test rendering)
-    links        Get all the links of the page.
-    save_imgs    Download images from links.
-    alexa_rank   Get the reach and popularity of a site in alexa.
+    fetch         Get the element tree of an HTML page.
+    view          View the page in your browser. (test rendering)
+    links         Get all the links of the page.
+    save_imgs     Download images from links.
+    alexa_rank    Get the reach and popularity of a site in alexa.
+    save_as_json  Save what you crawled as a json file.
 
 For more info, plz refer to tutorial:
     [cssselect]: http://www.runoob.com/cssref/css-selectors.html
@@ -279,6 +282,20 @@ def links(res: requests.models.Response, search=None, absolute=False) -> list:
     if absolute:
         hrefs = [domain + href for href in hrefs if not href.startswith('http')]
     return hrefs
+
+
+def save_as_json(total: list, name='data', sort_by=None):
+    """Save what you crawled as a json file.
+    
+    Args:
+        total: Total of data you crawled.
+        name: The name of json. (default: {'data'})
+        sort_by: Sort items by a specific key. (default: {None})
+    """
+    if sort_by:
+        total = sorted(total, key=itemgetter(sort_by))
+    with open(f'{name}.json', 'w') as f:
+        f.write(json.dumps(total))
 
 
 def cli():

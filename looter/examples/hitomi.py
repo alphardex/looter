@@ -21,7 +21,6 @@ def crawl(url):
         data['tags'] = ', '.join([tag.text for tag in td[7].cssselect('.relatedtags ul li a')]) or 'N/A'
         data['date'] = post.cssselect('.dj-content p.cg-date')[0].text
         pprint(data)
-        # You can define your save_data function in advance and call it here :)
 
 
 if __name__ == '__main__':

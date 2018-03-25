@@ -3,6 +3,7 @@ import looter as lt
 from pprint import pprint
 
 domain = 'https://www.qiushibaike.com'
+total = []
 
 async def crawl(url):
     tree = await lt.async_fetch(url)
@@ -15,6 +16,7 @@ async def crawl(url):
         data['comments'] = int(item.cssselect('.stats-comments .number')[0].text)
         data['url'] = domain + item.cssselect('a.contentHerf')[0].get('href')
         pprint(data)
+        total.append(data)
 
 
 if __name__ == '__main__':
@@ -22,3 +24,4 @@ if __name__ == '__main__':
     loop = asyncio.get_event_loop()
     result = [crawl(task) for task in tasklist]
     loop.run_until_complete(asyncio.wait(result))
+    save_as_json(total, name='qsbk', sort_by='vote')

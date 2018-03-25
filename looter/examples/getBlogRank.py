@@ -26,6 +26,4 @@ if __name__ == '__main__':
     tasklist = get_tasklist(domain)
     with futures.ThreadPoolExecutor(20) as executor:
         executor.map(crawl, tasklist)
-    r = sorted(total_rank, key=itemgetter('popularity'))
-    with open('blogRank.json', 'w') as f:
-        f.write(json.dumps(r))
+    save_as_json(total_rank, name='BlogRank', sort_by='popularity')
