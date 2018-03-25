@@ -295,7 +295,7 @@ def save_as_json(total: list, name='data', sort_by=None):
     if sort_by:
         total = sorted(total, key=itemgetter(sort_by))
     with open(f'{name}.json', 'w', encoding='utf-8') as f:
-        f.write(json.dumps(total))
+        f.write(json.dumps(total, ensure_ascii=False))
 
 
 def cli():
