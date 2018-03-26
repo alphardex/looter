@@ -1,7 +1,6 @@
 import json
 import looter as lt
 from concurrent import futures
-from operator import itemgetter
 
 domain = 'https://github.com/tuna/blogroll/blob/master/README.md'
 total_rank = []
