@@ -30,7 +30,7 @@ from lxml import etree
 from fake_useragent import UserAgent
 from docopt import docopt
 
-VERSION = '1.62'
+VERSION = '1.63'
 
 BANNER = """
 Available objects:
@@ -205,21 +205,6 @@ def alexa_rank(url: str) -> tuple:
         return None
 
 
-async def async_request(url: str):
-    """Send async request to a url.
-
-    Args:
-        url (str): The url of the site.
-
-    Returns:
-        The response of the page.
-    """
-    headers = {'User-Agent': UserAgent().random}
-    async with aiohttp.ClientSession() as ses:
-        async with ses.get(url, headers=headers) as res:
-            return res
-
-
 async def async_fetch(url: str):
     """Fetch the element tree in an async style.
 
@@ -229,10 +214,12 @@ async def async_fetch(url: str):
     Returns:
         The element tree of html.
     """
-    res = await async_request(url)
-    html = res.text()
-    tree = etree.HTML(html)
-    return tree
+    headers = {'User-Agent': UserAgent().random}
+    async with aiohttp.ClientSession() as ses:
+        async with ses.get(url, headers=headers) as res:
+            data = await res.text()
+            tree = etree.HTML(html)
+            return tree
 
 
 async def async_save_img(url: str, random_name=False):
@@ -242,14 +229,16 @@ async def async_save_img(url: str, random_name=False):
         url (str): The url of the site.
         random_name (int, optional): Defaults to False. If names of images are duplicated, use this.
     """
+    headers = {'User-Agent': UserAgent().random}
     url, name = get_img_info(url)
     if random_name:
         name = f'{name[:-4]}{str(uuid.uuid1())[:8]}{name[-4:]}'
     with open(name, 'wb') as f:
-        res = await async_request(url)
-        data = res.read()
-        f.write(data)
-        print(f'Saved {name}')
+        async with aiohttp.ClientSession() as ses:
+            async with ses.get(url, headers=headers) as res:
+                data = await res.read()
+                f.write(data)
+                print(f'Saved {name}')
 
 
 def async_save_imgs(urls: str, random_name=False):
