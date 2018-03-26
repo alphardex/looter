@@ -18,7 +18,7 @@ import json
 import code
 import re
 import time
-import hashlib
+import uuid
 import webbrowser
 import functools
 from operator import itemgetter
@@ -169,8 +169,7 @@ def save_img(url: str, random_name=False):
     headers = {'User-Agent': UA.random}
     url, name = get_img_name(url)
     if random_name:
-        name_hash = hashlib.md5(name.encode('utf-8')).hexdigest()[:10]
-        name = f'{name[:-4]}{name_hash}{name[-4:]}'
+        name = f'{name[:-4]}{str(uuid.uuid4())[:8]}{name[-4:]}'
     with open(name, 'wb') as f:
         url = url if url.startswith('http') else f'http:{url}'
         f.write(requests.get(url, headers=headers).content)
@@ -237,8 +236,7 @@ async def async_save_img(url: str, random_name=False):
     url, name = get_img_name(url)
     url = url if url.startswith('http') else f'http:{url}'
     if random_name:
-        name_hash = hashlib.md5(name.encode('utf-8')).hexdigest()[:10]
-        name = f'{name[:-4]}{name_hash}{name[-4:]}'
+        name = f'{name[:-4]}{str(uuid.uuid4())[:8]}{name[-4:]}'
     with open(name, 'wb') as f:
         async with aiohttp.ClientSession() as ses:
             async with ses.get(url, headers=headers) as res:
