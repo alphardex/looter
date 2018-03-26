@@ -1,8 +1,12 @@
 language: python
 python:
-  - "3.6"
+  - 3.6
 # command to install dependencies
-install: "pip install -r requirements.txt"
+install:
+  - pip install -r requirements.txt
+# command to run the dependencies
+script:
+  - pytest
 
 # Assuming you have installed the travis-ci CLI tool, after you
 # create the Github repo and add it to Travis, run the
@@ -11,9 +15,8 @@ install: "pip install -r requirements.txt"
 deploy:
   provider: pypi
   distributions: sdist build
-  user: alphardex
-  password:
-    secure: wang7251
+  user: $PYPI_USERNAME
+  password: $PYPI_PASSWORD
   on:
     tags: true
     repo: alphardex/looter

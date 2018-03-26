@@ -30,8 +30,7 @@ from lxml import etree
 from fake_useragent import UserAgent
 from docopt import docopt
 
-VERSION = '1.61'
-UA = UserAgent()
+VERSION = '1.62'
 
 BANNER = """
 Available objects:
@@ -77,7 +76,7 @@ def send_request(url: str, timeout=60) -> requests.models.Response:
     Returns:
         requests.models.Response: The response of the HTTP request.
     """
-    headers = {'User-Agent': UA.random}
+    headers = {'User-Agent': UserAgent().random}
     try:
         res = requests.get(url, headers=headers, timeout=timeout)
         res.raise_for_status()
@@ -136,20 +135,21 @@ def rectify(name: str) -> str:
     return unquote(name)
 
 
-def get_img_name(url: str, max_length=160) -> str:
-    """Get the name of an image.
+def get_img_info(url: str, max_length=160) -> tuple:
+    """Get the info of an image.
 
     Args:
         url (str): The url of the site.
         max_length (int, optional): Defaults to 160. The maximal length of the filename.
 
     Returns:
-        The name of an image and its url.
+        tuple: The url of an image and its name.
     """
     if hasattr(url, 'tag') and url.tag == 'a':
         url = url.get('href')
     elif hasattr(url, 'tag') and url.tag == 'img':
         url = url.get('src')
+    url = url if url.startswith('http') else f'http:{url}'
     name = rectify(url.split('/')[-1])
     ext = name.split('.')[-1]
     name = f"{name[:max_length]}.{ext}"
@@ -166,13 +166,11 @@ def save_img(url: str, random_name=False):
         url (str): The url of the site.
         random_name (int, optional): Defaults to False. If names of images are duplicated, use this.
     """
-    headers = {'User-Agent': UA.random}
-    url, name = get_img_name(url)
+    url, name = get_img_info(url)
     if random_name:
-        name = f'{name[:-4]}{str(uuid.uuid4())[:8]}{name[-4:]}'
+        name = f'{name[:-4]}{str(uuid.uuid1())[:8]}{name[-4:]}'
     with open(name, 'wb') as f:
-        url = url if url.startswith('http') else f'http:{url}'
-        f.write(requests.get(url, headers=headers).content)
+        f.write(send_request(url).content)
         print(f'Saved {name}')
 
 
@@ -207,22 +205,34 @@ def alexa_rank(url: str) -> tuple:
         return None
 
 
-async def async_fetch(url: str, res_type='text'):
-    """Fetch a webpage in an async style.
+async def async_request(url: str):
+    """Send async request to a url.
 
     Args:
-        url: The url of the site.
-        res_type: The type of response: text, content
+        url (str): The url of the site.
 
     Returns:
-        The element tree of the HTML page.
+        The response of the page.
     """
-    headers = {'User-Agent': UA.random}
+    headers = {'User-Agent': UserAgent().random}
     async with aiohttp.ClientSession() as ses:
         async with ses.get(url, headers=headers) as res:
-            html = await res.text() if res_type == 'text' else res.read()
-            tree = etree.HTML(html)
-            return tree
+            return res
+
+
+async def async_fetch(url: str):
+    """Fetch the element tree in an async style.
+
+    Args:
+        url (str): The url of the site.
+
+    Returns:
+        The element tree of html.
+    """
+    res = await async_request(url)
+    html = res.text()
+    tree = etree.HTML(html)
+    return tree
 
 
 async def async_save_img(url: str, random_name=False):
@@ -232,17 +242,14 @@ async def async_save_img(url: str, random_name=False):
         url (str): The url of the site.
         random_name (int, optional): Defaults to False. If names of images are duplicated, use this.
     """
-    headers = {'User-Agent': UA.random}
-    url, name = get_img_name(url)
-    url = url if url.startswith('http') else f'http:{url}'
+    url, name = get_img_info(url)
     if random_name:
-        name = f'{name[:-4]}{str(uuid.uuid4())[:8]}{name[-4:]}'
+        name = f'{name[:-4]}{str(uuid.uuid1())[:8]}{name[-4:]}'
     with open(name, 'wb') as f:
-        async with aiohttp.ClientSession() as ses:
-            async with ses.get(url, headers=headers) as res:
-                data = await res.read()
-                f.write(data)
-                print(f'Saved {name}')
+        res = await async_request(url)
+        data = res.read()
+        f.write(data)
+        print(f'Saved {name}')
 
 
 def async_save_imgs(urls: str, random_name=False):
