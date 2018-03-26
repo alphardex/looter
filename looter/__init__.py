@@ -44,8 +44,8 @@ Available functions:
     fetch         Get the element tree of an HTML page.
     view          View the page in your browser. (test rendering)
     links         Get all the links of the page.
-    save_imgs     Download images from links.
     alexa_rank    Get the reach and popularity of a site in alexa.
+    save_imgs     Save the images you crawled.
     save_as_json  Save what you crawled as a json file.
 
 For more info, plz refer to tutorial:
@@ -68,18 +68,17 @@ def perf(f):
     return wr
 
 
-def send_request(url: str, **kwargs) -> requests.models.Response:
+def send_request(url: str, timeout=60) -> requests.models.Response:
     """
     Send an HTTP request to a url.
 
     Args:
         url: The url of the site.
-        **kwargs: timeout
+        timeout: The maxium time of request.
 
     Returns:
         The response of the HTTP request.
     """
-    timeout = kwargs.get('timeout', 60)
     try:
         res = requests.get(url, headers=HEADERS, timeout=timeout)
         res.raise_for_status()
@@ -88,7 +87,7 @@ def send_request(url: str, **kwargs) -> requests.models.Response:
     return res
 
 
-def fetch(url: str, **kwargs):
+def fetch(url: str, res_type='text'):
     """
     Get the element tree of an HTML page, use cssselect or xpath to parse it.
 
@@ -98,30 +97,26 @@ def fetch(url: str, **kwargs):
 
     Args:
         url: The url of the site.
-        **kwargs: encoding, type
+        res_type: The type of response: text, content
 
     Returns:
         The element tree of the HTML page.
     """
     res = send_request(url)
-    encoding = kwargs.get('encoding', res.encoding)
-    res.encoding = encoding
-    type_ = kwargs.get('type', 'text')
-    html = res.text if type_ == 'text' else res.content
+    html = res.text if res_type == 'text' else res.content
     tree = etree.HTML(html)
     return tree
 
 
-def view(url: str, **kwargs):
+def view(url: str, encoding='utf-8', name='test'):
     """
     View the page whether rendered properly. (Usually for testing purpose)
 
     Args:
         url: The url of the site.
-        **kwargs: encoding, name
+        encoding: The encoding of the file.
+        name: The name of the file.
     """
-    encoding = kwargs.get('encoding', 'utf-8')
-    name = kwargs.get('name', 'test')
     with open(f'{name}.html', 'w', encoding=encoding) as f:
         f.write(send_request(url).text)
     webbrowser.open(f'{name}.html', new=1)
@@ -143,12 +138,12 @@ def rectify(name: str) -> str:
     return unquote(name)
 
 
-def get_img_name(url: str, **kwargs) -> str:
+def get_img_name(url: str, max_length=160) -> str:
     """Get the name of an image.
 
     Args:
         url: The url of the site.
-        **kwargs: max_length
+        max_length: The maximal length of the filename.
 
     Returns:
         The name of an image and its url.
@@ -159,7 +154,6 @@ def get_img_name(url: str, **kwargs) -> str:
         url = url.get('src')
     name = rectify(url.split('/')[-1])
     ext = name.split('.')[-1]
-    max_length = kwargs.get('max_length', 160)
     name = f"{name[:max_length]}.{ext}"
     name = name[:-4] if name.endswith(f'.{ext}.{ext}') else name
     return url, name
@@ -214,20 +208,19 @@ def alexa_rank(url: str) -> tuple:
         return None
 
 
-async def async_fetch(url: str, **kwargs):
+async def async_fetch(url: str, res_type='text'):
     """Fetch a webpage in an async style.
 
     Args:
         url: The url of the site.
-        **kwargs: type
+        res_type: The type of response: text, content
 
     Returns:
         The element tree of the HTML page.
     """
-    type_ = kwargs.get('type', 'text')
     async with aiohttp.ClientSession() as ses:
         async with ses.get(url, headers=HEADERS) as res:
-            html = await res.text() if type_ == 'text' else res.read()
+            html = await res.text() if res_type == 'text' else res.read()
             tree = etree.HTML(html)
             return tree
 
