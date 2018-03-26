@@ -18,7 +18,7 @@ import json
 import code
 import re
 import time
-import random
+import hashlib
 import webbrowser
 import functools
 from operator import itemgetter
@@ -30,9 +30,8 @@ from lxml import etree
 from fake_useragent import UserAgent
 from docopt import docopt
 
-VERSION = '1.59'
+VERSION = '1.60'
 UA = UserAgent()
-HEADERS = {'User-Agent': UA.random}
 
 BANNER = """
 Available objects:
@@ -69,25 +68,25 @@ def perf(f):
 
 
 def send_request(url: str, timeout=60) -> requests.models.Response:
-    """
-    Send an HTTP request to a url.
-
+    """Send an HTTP request to a url.
+    
     Args:
-        url: The url of the site.
-        timeout: The maxium time of request.
+        url (str): The url of the site.
+        timeout (int, optional): Defaults to 60. The maxium time of request.
 
     Returns:
-        The response of the HTTP request.
+        requests.models.Response: The response of the HTTP request.
     """
+    headers = {'User-Agent': UA.random}
     try:
-        res = requests.get(url, headers=HEADERS, timeout=timeout)
+        res = requests.get(url, headers=headers, timeout=timeout)
         res.raise_for_status()
     except requests.exceptions.MissingSchema:
-        res = requests.get('http://' + url, headers=HEADERS, timeout=timeout)
+        res = requests.get('http://' + url, headers=headers, timeout=timeout)
     return res
 
 
-def fetch(url: str, res_type='text'):
+def fetch(url: str):
     """
     Get the element tree of an HTML page, use cssselect or xpath to parse it.
 
@@ -96,14 +95,13 @@ def fetch(url: str, res_type='text'):
         xpath: http://www.runoob.com/xpath/xpath-syntax.html
 
     Args:
-        url: The url of the site.
-        res_type: The type of response: text, content
-
+        url (str): The url of the site.
+    
     Returns:
-        The element tree of the HTML page.
+        The element tree of html.
     """
     res = send_request(url)
-    html = res.text if res_type == 'text' else res.content
+    html = res.text
     tree = etree.HTML(html)
     return tree
 
@@ -113,9 +111,9 @@ def view(url: str, encoding='utf-8', name='test'):
     View the page whether rendered properly. (Usually for testing purpose)
 
     Args:
-        url: The url of the site.
-        encoding: The encoding of the file.
-        name: The name of the file.
+        url (str): The url of the site.
+        encoding (str, optional): Defaults to 'utf-8'. The encoding of the file.
+        name (str, optional): Defaults to 'test'. The name of the file.
     """
     with open(f'{name}.html', 'w', encoding=encoding) as f:
         f.write(send_request(url).text)
@@ -127,7 +125,7 @@ def rectify(name: str) -> str:
     Get rid of illegal symbols of a filename.
 
     Args:
-        name: The filename.
+        name (str): The filename.
 
     Returns:
         The rectified filename.
@@ -142,8 +140,8 @@ def get_img_name(url: str, max_length=160) -> str:
     """Get the name of an image.
 
     Args:
-        url: The url of the site.
-        max_length: The maximal length of the filename.
+        url (str): The url of the site.
+        max_length (int, optional): Defaults to 160. The maximal length of the filename.
 
     Returns:
         The name of an image and its url.
@@ -165,15 +163,17 @@ def save_img(url: str, random_name=False):
     Download image and save it to local disk.
 
     Args:
-        url: The url of the site.
-        random_name: If names of images is duplicated, use this.
+        url (str): The url of the site.
+        random_name (int, optional): Defaults to False. If names of images are duplicated, use this.
     """
+    headers = {'User-Agent': UA.random}
     url, name = get_img_name(url)
     if random_name:
-        name = f'{name[:-4]}{str(random.randint(1, 1000000))}{name[-4:]}'
+        name_hash = hashlib.md5(name.encode('utf-8')).hexdigest()[:10]
+        name = f'{name[:-4]}{name_hash)}{name[-4:]}'
     with open(name, 'wb') as f:
         url = url if url.startswith('http') else f'http:{url}'
-        f.write(requests.get(url, headers=HEADERS).content)
+        f.write(requests.get(url, headers=headers).content)
         print(f'Saved {name}')
 
 
@@ -191,10 +191,10 @@ def alexa_rank(url: str) -> tuple:
     (url, reach_rank, popularity_rank)
 
     Args:
-        url: The url of the site.
+        url (str): The url of the site.
 
     Returns:
-        (url, reach_rank, popularity_rank)
+        tuple: (url, reach_rank, popularity_rank)
     """
     alexa = f'http://data.alexa.com/data?cli=10&dat=snbamz&url={url}'
     page = send_request(alexa).text
@@ -218,8 +218,9 @@ async def async_fetch(url: str, res_type='text'):
     Returns:
         The element tree of the HTML page.
     """
+    headers = {'User-Agent': UA.random}
     async with aiohttp.ClientSession() as ses:
-        async with ses.get(url, headers=HEADERS) as res:
+        async with ses.get(url, headers=headers) as res:
             html = await res.text() if res_type == 'text' else res.read()
             tree = etree.HTML(html)
             return tree
@@ -229,17 +230,18 @@ async def async_save_img(url: str, random_name=False):
     """Save an image in an async style.
 
     Args:
-        url: The url of the site.
-        random_name: If names of images is duplicated, use this.
+        url (str): The url of the site.
+        random_name (int, optional): Defaults to False. If names of images are duplicated, use this.
     """
-
+    headers = {'User-Agent': UA.random}
     url, name = get_img_name(url)
     url = url if url.startswith('http') else f'http:{url}'
     if random_name:
-        name = f'{name[:-4]}{str(random.randint(1, 1000000))}{name[-4:]}'
+        name_hash = hashlib.md5(name.encode('utf-8')).hexdigest()[:10]
+        name = f'{name[:-4]}{name_hash)}{name[-4:]}'
     with open(name, 'wb') as f:
         async with aiohttp.ClientSession() as ses:
-            async with ses.get(url, headers=HEADERS) as res:
+            async with ses.get(url, headers=headers) as res:
                 data = await res.read()
                 f.write(data)
                 print(f'Saved {name}')
@@ -257,14 +259,14 @@ def async_save_imgs(urls: str, random_name=False):
 
 def links(res: requests.models.Response, search=None, absolute=False) -> list:
     """Get all the links of the page.
-
+    
     Args:
-        res: The response of the page.
-        search: Search the links you want.  (default: {None})
-        absolute: Get the absolute links.   (default: {False})
-
+        res (requests.models.Response): The response of the page.
+        search ([type], optional): Defaults to None. Search the links you want.
+        absolute (bool, optional): Defaults to False. Get the absolute links.
+    
     Returns:
-        All the links of the page.
+        list: All the links of the page.
     """
     domain = res.url
     tree = etree.HTML(res.text)
@@ -281,9 +283,9 @@ def save_as_json(total: list, name='data', sort_by=None):
     """Save what you crawled as a json file.
     
     Args:
-        total: Total of data you crawled.
-        name: The name of json. (default: {'data'})
-        sort_by: Sort items by a specific key. (default: {None})
+        total (list): Total of data you crawled.
+        name (str, optional): Defaults to 'data'. The name of the json file.
+        sort_by ([type], optional): Defaults to None. Sort items by a specific key.
     """
     if sort_by:
         total = sorted(total, key=itemgetter(sort_by))
