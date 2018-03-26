@@ -3,6 +3,7 @@ import looter as lt
 from pprint import pprint
 
 domain = 'https://www.javbus.pw'
+total = []
 
 async def crawl(url):
     tree = await lt.async_fetch(url)
@@ -15,6 +16,7 @@ async def crawl(url):
         data['bango'] = item.cssselect('date')[0].text
         data['date'] = item.cssselect('date')[1].text
         pprint(data)
+        total.append(data)
 
 
 if __name__ == '__main__':
@@ -22,3 +24,4 @@ if __name__ == '__main__':
     loop = asyncio.get_event_loop()
     result = [crawl(task) for task in tasklist]
     loop.run_until_complete(asyncio.wait(result))
+    lt.save_as_json(total, name='jav')
