@@ -1,12 +1,8 @@
 import asyncio
-import pymongo
 import looter as lt
 from pprint import pprint
 
 domain = 'http://sou.zhaopin.com'
-client = pymongo.MongoClient('localhost', 27017)
-db = client['zhilian']
-col = db['python']
 
 async def crawl(url):
     tree = await lt.async_fetch(url)
@@ -24,7 +20,6 @@ async def crawl(url):
             data['salary_max'] = int(salary.split('-')[1])
         data['place'] = item.cssselect('td.gzdd')[0].text
         pprint(data)
-        col.insert_one(data)
 
 
 if __name__ == '__main__':

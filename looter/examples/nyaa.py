@@ -2,7 +2,7 @@ import asyncio
 import looter as lt
 from pprint import pprint
 
-domain = 'https://sukebei.nyaa.si'
+domain = 'https://nyaa.si'
 
 async def crawl(url):
     tree = await lt.async_fetch(url)
@@ -24,7 +24,7 @@ async def crawl(url):
 
 
 if __name__ == '__main__':
-    tasklist = [f'{domain}/?p={i}' for i in range(1, 900)]
+    tasklist = [f'{domain}/?p={i}' for i in range(1, 500)]
     loop = asyncio.get_event_loop()
     result = [crawl(task) for task in tasklist]
     loop.run_until_complete(asyncio.wait(result))

@@ -4,7 +4,7 @@ from pprint import pprint
 
 domain = 'https://www.torrentkitty.tv'
 keyword = 'uncensored'
-limit = 531
+limit = 500
 
 async def crawl(url):
     tree = await lt.async_fetch(url)
