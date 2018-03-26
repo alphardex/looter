@@ -30,7 +30,7 @@ from lxml import etree
 from fake_useragent import UserAgent
 from docopt import docopt
 
-VERSION = '1.63'
+VERSION = '1.64'
 
 BANNER = """
 Available objects:
@@ -217,7 +217,7 @@ async def async_fetch(url: str):
     headers = {'User-Agent': UserAgent().random}
     async with aiohttp.ClientSession() as ses:
         async with ses.get(url, headers=headers) as res:
-            data = await res.text()
+            html = await res.text()
             tree = etree.HTML(html)
             return tree
 
