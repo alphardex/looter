@@ -30,7 +30,7 @@ from lxml import etree
 from fake_useragent import UserAgent
 from docopt import docopt
 
-VERSION = '1.60'
+VERSION = '1.61'
 UA = UserAgent()
 
 BANNER = """
