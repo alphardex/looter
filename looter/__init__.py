@@ -170,7 +170,7 @@ def save_img(url: str, random_name=False):
     url, name = get_img_name(url)
     if random_name:
         name_hash = hashlib.md5(name.encode('utf-8')).hexdigest()[:10]
-        name = f'{name[:-4]}{name_hash)}{name[-4:]}'
+        name = f'{name[:-4]}{name_hash}{name[-4:]}'
     with open(name, 'wb') as f:
         url = url if url.startswith('http') else f'http:{url}'
         f.write(requests.get(url, headers=headers).content)
@@ -238,7 +238,7 @@ async def async_save_img(url: str, random_name=False):
     url = url if url.startswith('http') else f'http:{url}'
     if random_name:
         name_hash = hashlib.md5(name.encode('utf-8')).hexdigest()[:10]
-        name = f'{name[:-4]}{name_hash)}{name[-4:]}'
+        name = f'{name[:-4]}{name_hash}{name[-4:]}'
     with open(name, 'wb') as f:
         async with aiohttp.ClientSession() as ses:
             async with ses.get(url, headers=headers) as res:
