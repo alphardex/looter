@@ -278,13 +278,14 @@ def links(res: requests.models.Response, search=None, absolute=False) -> list:
 
 
 def re_links(res: requests.models.Response, pattern: str) -> list:
-    """
-        Args:
-            res (requests.models.Response): The response of the page.
-            pattern (str): Regular expression.
+    """Get the links using regex pattern.
+    
+    Args:
+        res (requests.models.Response): The response of the page.
+        pattern (str): Regular expression.
 
-        Returns:
-            list: Regular expressions that match the rules.
+    Returns:
+        list: Links that match the rules.
     """
     hrefs = links(res, absolute=True)
     hrefs = [href for href in hrefs if re.findall(pattern,href)]

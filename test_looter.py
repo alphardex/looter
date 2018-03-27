@@ -52,7 +52,7 @@ def test_absolute_links():
     assert len([href for href in hrefs if "//" in href])==0
 
 
-@pytest.mark
+# TODO: Let proxies work.
 def test_proxies():
     res = lt.send_request('http://httpbin.org/get', use_proxies=True)
     assert res.status_code == 200
