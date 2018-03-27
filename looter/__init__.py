@@ -268,7 +268,20 @@ def links(res: requests.models.Response, search=None, absolute=False) -> list:
     if search:
         hrefs = [href for href in hrefs if search in href]
     if absolute:
-        hrefs = [domain + href for href in hrefs if not href.startswith('http')]
+        hrefs = [domain[:-1] + href for href in hrefs if not href.startswith('http')]
+    return hrefs
+
+def re_links(res: requests.models.Response, pattern: str) -> list:
+    """
+        Args:
+            res (requests.models.Response): The response of the page.
+            pattern (str): Regular expression.
+
+        Returns:
+            list: Regular expressions that match the rules.
+    """
+    hrefs = links(res,absolute=True)
+    hrefs = [href for href in hrefs if re.findall(pattern,href)]
     return hrefs
 
 
