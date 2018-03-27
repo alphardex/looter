@@ -19,6 +19,7 @@ import code
 import re
 import time
 import uuid
+import random
 import webbrowser
 import functools
 from operator import itemgetter
@@ -30,7 +31,7 @@ from lxml import etree
 from fake_useragent import UserAgent
 from docopt import docopt
 
-VERSION = '1.65'
+VERSION = '1.66'
 
 BANNER = """
 Available objects:
@@ -42,6 +43,7 @@ Available functions:
     fetch         Get the element tree of an HTML page.
     view          View the page in your browser. (test rendering)
     links         Get all the links of the page.
+    re_links      Get the links with a regex pattern.
     alexa_rank    Get the reach and popularity of a site in alexa.
     save_imgs     Save the images you crawled.
     save_as_json  Save what you crawled as a json file.
@@ -66,22 +68,25 @@ def perf(f):
     return wr
 
 
-def send_request(url: str, timeout=60) -> requests.models.Response:
+def send_request(url: str, timeout=60, use_proxies=False) -> requests.models.Response:
     """Send an HTTP request to a url.
     
     Args:
         url (str): The url of the site.
         timeout (int, optional): Defaults to 60. The maxium time of request.
+        use_proxies (bool, optional): Defaults to False. If you want use it, a 'proxies.json' file is a must.
+        Tips: You can run xicidaili.py in examples to get 'proxies.json'
 
     Returns:
         requests.models.Response: The response of the HTTP request.
     """
     headers = {'User-Agent': UserAgent().random}
+    proxies = read_proxies('proxies.json') if use_proxies else dict()
     try:
-        res = requests.get(url, headers=headers, timeout=timeout)
+        res = requests.get(url, headers=headers, timeout=timeout, proxies=proxies)
         res.raise_for_status()
     except requests.exceptions.MissingSchema:
-        res = requests.get('http://' + url, headers=headers, timeout=timeout)
+        res = requests.get('http://' + url, headers=headers, timeout=timeout, proxies=proxies)
     return res
 
 
@@ -271,6 +276,7 @@ def links(res: requests.models.Response, search=None, absolute=False) -> list:
         hrefs = [domain[:-1] + href for href in hrefs if not href.startswith('http')]
     return hrefs
 
+
 def re_links(res: requests.models.Response, pattern: str) -> list:
     """
         Args:
@@ -280,7 +286,7 @@ def re_links(res: requests.models.Response, pattern: str) -> list:
         Returns:
             list: Regular expressions that match the rules.
     """
-    hrefs = links(res,absolute=True)
+    hrefs = links(res, absolute=True)
     hrefs = [href for href in hrefs if re.findall(pattern,href)]
     return hrefs
 
@@ -297,6 +303,25 @@ def save_as_json(total: list, name='data', sort_by=None):
         total = sorted(total, key=itemgetter(sort_by))
     with open(f'{name}.json', 'w', encoding='utf-8') as f:
         f.write(json.dumps(total, ensure_ascii=False))
+
+
+def read_proxies(proxies_json:str) -> dict:
+    """Read a random proxies from a json file.
+    
+    Args:
+        proxies_json (str): The name of the proxies json file.
+    
+    Returns:
+        dict: The dict of a random proxies.
+    """
+    with open(proxies_json, 'r') as f:
+        proxy_pool = json.loads(f.read())
+        https_proxies = [proxy for proxy in proxy_pool if proxy.startswith('https')]
+        http_proxies = list(set(https_proxies)^set(proxy_pool))
+        http_proxy = random.choice(http_proxies)
+        https_proxy = f"http://{random.choice(https_proxies).split('//')[-1]}"
+        proxies = {"http": http_proxy, "https": https_proxy}
+        return proxies
 
 
 def cli():

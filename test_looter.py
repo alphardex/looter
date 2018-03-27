@@ -44,8 +44,15 @@ def test_re_links():
     hrefs = lt.re_links(res,'https?://www.spbeen.com//p/.*?')
     assert type(hrefs) == list
 
+
 @pytest.mark.ok
 def test_absolute_links():
     res = lt.send_request('http://www.spbeen.com')
     hrefs = [href.replace('http://','') for href in lt.links(res, absolute=True)]
     assert len([href for href in hrefs if "//" in href])==0
+
+
+@pytest.mark
+def test_proxies():
+    res = lt.send_request('http://httpbin.org/get', use_proxies=True)
+    assert res.status_code == 200
