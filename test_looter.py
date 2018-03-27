@@ -36,3 +36,16 @@ def test_links():
     res = lt.send_request(domain)
     r = lt.links(res)
     assert type(r) == list
+
+
+@pytest.mark.ok
+def test_re_links():
+    res = lt.send_request('http://www.spbeen.com')
+    hrefs = lt.re_links(res,'https?://www.spbeen.com//p/.*?')
+    assert type(hrefs) == list
+
+@pytest.mark.ok
+def test_absolute_links():
+    res = lt.send_request('http://www.spbeen.com')
+    hrefs = [href.replace('http://','') for href in lt.links(res, absolute=True)]
+    assert len([href for href in hrefs if "//" in href])==0
