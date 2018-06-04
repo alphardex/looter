@@ -31,7 +31,7 @@ from lxml import etree
 from fake_useragent import UserAgent
 from docopt import docopt
 
-VERSION = '1.66'
+VERSION = '1.67'
 
 BANNER = """
 Available objects:

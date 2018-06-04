@@ -10,7 +10,7 @@ async def crawl(url):
     items = tree.cssselect('.newlist_list_content table.newlist')[1:]
     for item in items:
         data = dict()
-        data['name'] = 'python'
+        data['name'] = '深度学习'
         data['link'] = item.cssselect('a')[0].get('href')
         data['company'] = item.cssselect('a')[1].text
         salary = item.cssselect('td.zwyx')[0].text
@@ -25,7 +25,7 @@ async def crawl(url):
 
 
 if __name__ == '__main__':
-    tasklist = [f'{domain}/jobs/searchresult.ashx?jl=上海%2B苏州&kw=python&sm=0&p={i}' for i in range(1, 73)]
+    tasklist = [f'{domain}/jobs/searchresult.ashx?jl=上海%2B苏州&kw=深度学习&sm=0&p={i}' for i in range(1, 12)]
     loop = asyncio.get_event_loop()
     result = [crawl(task) for task in tasklist]
     loop.run_until_complete(asyncio.wait(result))
