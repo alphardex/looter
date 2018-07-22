@@ -5,7 +5,7 @@ from pprint import pprint
 
 domain = 'http://xz.58.com'
 client = pymongo.MongoClient()
-db = client.58zf
+db = client.wbzf
 col = db.xz
 
 async def crawl(url):
