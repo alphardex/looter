@@ -10,7 +10,7 @@ async def crawl(url):
     items = tree.cssselect('.newlist_list_content table.newlist')[1:]
     for item in items:
         data = dict()
-        data['name'] = '深度学习'
+        data['name'] = 'Python后端'
         data['link'] = item.cssselect('a')[0].get('href')
         data['company'] = item.cssselect('a')[1].text
         salary = item.cssselect('td.zwyx')[0].text

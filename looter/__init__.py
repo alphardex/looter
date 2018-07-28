@@ -31,7 +31,7 @@ from lxml import etree
 from fake_useragent import UserAgent
 from docopt import docopt
 
-VERSION = '1.67'
+VERSION = '1.68'
 
 BANNER = """
 Available objects:
@@ -68,19 +68,20 @@ def perf(f):
     return wr
 
 
-def send_request(url: str, timeout=60, use_proxies=False) -> requests.models.Response:
+def send_request(url: str, timeout=60, use_proxies=False, headers=None) -> requests.models.Response:
     """Send an HTTP request to a url.
     
     Args:
         url (str): The url of the site.
         timeout (int, optional): Defaults to 60. The maxium time of request.
         use_proxies (bool, optional): Defaults to False. If you want use it, a 'proxies.json' file is a must.
-        Tips: You can run xicidaili.py in examples to get 'proxies.json'
+        headers (optional): Defaults to fake-useragent, can be customed by user.
 
     Returns:
         requests.models.Response: The response of the HTTP request.
     """
-    headers = {'User-Agent': UserAgent().random}
+    if not headers:
+        headers = {'User-Agent': UserAgent().random}
     proxies = read_proxies('proxies.json') if use_proxies else dict()
     try:
         res = requests.get(url, headers=headers, timeout=timeout, proxies=proxies)
@@ -90,7 +91,7 @@ def send_request(url: str, timeout=60, use_proxies=False) -> requests.models.Res
     return res
 
 
-def fetch(url: str):
+def fetch(url: str, headers=None):
     """
     Get the element tree of an HTML page, use cssselect or xpath to parse it.
 
@@ -100,11 +101,12 @@ def fetch(url: str):
 
     Args:
         url (str): The url of the site.
+        headers (optional): Defaults to fake-useragent, can be customed by user.
     
     Returns:
         The element tree of html.
     """
-    res = send_request(url)
+    res = send_request(url, headers=headers)
     html = res.text
     tree = etree.HTML(html)
     return tree

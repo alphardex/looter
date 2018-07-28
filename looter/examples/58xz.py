@@ -28,7 +28,7 @@ async def crawl(url):
 
 
 if __name__ == '__main__':
-    tasklist = [f'{domain}/xztongshan/chuzu/pn{n}/?PGTID=0d3090a7-02c5-7dac-62a2-11ee90567837&ClickID=2' for n in range(1, 71)]
+    tasklist = [f'{domain}/xztswd/chuzu/pn{n}/?PGTID=0d3090a7-02c5-7dac-62a2-11ee90567837&ClickID=2' for n in range(1, 71)]
     loop = asyncio.get_event_loop()
     result = [crawl(task) for task in tasklist]
     loop.run_until_complete(asyncio.wait(result))
