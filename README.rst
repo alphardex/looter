@@ -1,11 +1,11 @@
 looter
 ======
 
-A super-lightweight crawler tool.
-
 .. image:: https://api.travis-ci.org/alphardex/looter.svg
     :target: https://api.travis-ci.org/alphardex/looter
     :alt: Build Status
+
+A super-lightweight crawler tool.
 
 To install, just run
 
