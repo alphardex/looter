@@ -24,7 +24,7 @@ from lxml import etree
 from docopt import docopt
 from .utils import *
 
-VERSION = '1.76'
+VERSION = '1.77'
 
 BANNER = """
 Available objects:
@@ -42,7 +42,15 @@ Available functions:
     save_as_json  Save what you crawled as a json file.
     parse_robots  Parse the robots.txt of the site and retrieve its urls.
 
-For more info, plz refer to tutorial:
+Examples:
+    Crawl all the <li> items of a <ul> table:
+        >>> items = tree.cssselect('ul li')
+
+    Crawl images just in 1-line :d
+        >>> save_imgs(links(res, search='jpg'))
+
+For more info, plz refer to these sites:
+    [looter]: https://github.com/alphardex/looter
     [cssselect]: http://www.runoob.com/cssref/css-selectors.html
     [xpath]: http://www.runoob.com/xpath/xpath-syntax.html
 """
@@ -156,7 +164,7 @@ def links(res: requests.models.Response, search=None, absolute=False) -> list:
     Returns:
         list: All the links of the page.
     """
-    domain = get_domain(res.url)
+    domain = ensure_schema(get_domain(res.url))
     tree = etree.HTML(res.text)
     hrefs = [link.get('href')
              for link in tree.cssselect('a') if link.get('href')]
@@ -213,7 +221,7 @@ def parse_robots(url: str) -> list:
         matches = re.findall(r'Allow: (.*)|Disallow: (.*)', res.text)
         if matches:
             matches = [''.join(match) for match in matches]
-            robots_urls = [f'{domain}{match}' for match in matches if '*' not in match]
+            robots_urls = [f'https://{domain}{match}' for match in matches if '*' not in match]
             print(f'URLs retrieved from robots.txt: {len(robots_urls)}')
             return robots_urls
     else:

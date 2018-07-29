@@ -22,18 +22,18 @@ def perf(f):
 
 
 def ensure_schema(url: str) -> str:
-    """Ensure the url starts with a http schema.
+    """Ensure the url starts with a https schema.
 
     Args:
-        url (str): A url without http schema such as konachan.com.
+        url (str): A url without https schema such as konachan.com.
 
     Returns:
-        str: A url with http schema such as http://konachan.com.
+        str: A url with https schema such as https://konachan.com.
     """
-    if not (url.startswith('http') or url.startswith('https')):
-        return f'http://{url}'
-    else:
+    if url.startswith('http'):
         return url
+    else:
+        return f'https://{url}'
 
 
 def get_domain(url: str) -> str:
@@ -45,7 +45,7 @@ def get_domain(url: str) -> str:
     Returns:
         str: the domain(hostname) of the site.
     """
-    return f'http://{urlparse(url).netloc}'
+    return urlparse(url).netloc
 
 
 def send_request(url: str, timeout=60, headers=None) -> requests.models.Response:

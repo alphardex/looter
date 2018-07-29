@@ -31,7 +31,7 @@ def test_links():
 @pytest.mark.ok
 def test_re_links():
     res = lt.send_request(f'{domain}/post')
-    hrefs = lt.re_links(res, r'http://konachan.net/wiki/.*?')
+    hrefs = lt.re_links(res, r'https://konachan.net/wiki/.*?')
     assert type(hrefs) == list and len(hrefs) > 5
 
 
@@ -51,8 +51,8 @@ def test_ensure_schema():
 
 @pytest.mark.ok
 def test_get_domain():
-    assert lt.get_domain(f'http://{domain}') == f'http://{domain}'
-    assert lt.get_domain(f'https://{domain}/post') == f'http://{domain}'
+    assert lt.get_domain(f'http://{domain}') == domain
+    assert lt.get_domain(f'https://{domain}/post') == domain
 
 
 @pytest.mark.ok
