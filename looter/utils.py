@@ -50,7 +50,7 @@ def get_domain(url: str) -> str:
     return domain
 
 
-def send_request(url: str, timeout=60, use_proxies=False, headers=None) -> requests.models.Response:
+def send_request(url: str, timeout=60, headers=None) -> requests.models.Response:
     """Send an HTTP request to a url.
 
     Args:
