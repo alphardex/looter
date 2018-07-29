@@ -55,6 +55,7 @@ def test_get_domain():
     assert lt.get_domain(f'https://{domain}/post') == f'http://{domain}'
 
 
+@pytest.mark.ok
 def test_send_request():
     res = lt.send_request(domain)
     assert type(res) == requests.models.Response
