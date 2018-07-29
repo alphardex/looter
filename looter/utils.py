@@ -1,7 +1,7 @@
 import time
 import uuid
 import functools
-from urllib.parse import unquote
+from urllib.parse import unquote, urlparse
 import requests
 import aiohttp
 from fake_useragent import UserAgent
@@ -45,9 +45,7 @@ def get_domain(url: str) -> str:
     Returns:
         str: the domain(hostname) of the site.
     """
-    url = url[8:] if url.startswith('https') else url[7:]
-    domain = f"http://{url.split('/')[0]}"
-    return domain
+    return urlparse(url).netloc
 
 
 def send_request(url: str, timeout=60, headers=None) -> requests.models.Response:
