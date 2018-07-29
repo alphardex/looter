@@ -61,8 +61,8 @@ def send_request(url: str, timeout=60, headers=None) -> requests.models.Response
     Returns:
         requests.models.Response: The response of the HTTP request.
     """
-    # if not headers:
-    #     headers = {'User-Agent': UserAgent().random}
+    if not headers:
+        headers = {'User-Agent': UserAgent().random}
     url = ensure_schema(url)
     try:
         res = requests.get(url, headers=headers, timeout=timeout)
