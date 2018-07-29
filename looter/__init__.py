@@ -24,7 +24,7 @@ from lxml import etree
 from docopt import docopt
 from .utils import *
 
-VERSION = '1.75'
+VERSION = '1.76'
 
 BANNER = """
 Available objects:
@@ -164,6 +164,7 @@ def links(res: requests.models.Response, search=None, absolute=False) -> list:
         hrefs = [href for href in hrefs if search in href]
     if absolute:
         hrefs = [domain + href for href in hrefs if not href.startswith('http')]
+    hrefs = [href for href in hrefs if '#' not in href]
     return hrefs
 
 
