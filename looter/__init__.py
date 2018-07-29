@@ -24,7 +24,7 @@ from lxml import etree
 from docopt import docopt
 from .utils import *
 
-VERSION = '1.70'
+VERSION = '1.71'
 
 BANNER = """
 Available objects:
@@ -209,7 +209,7 @@ def parse_robots(url: str) -> list:
         matches = re.findall(r'Allow: (.*)|Disallow: (.*)', res.text)
         if matches:
             matches = [''.join(match) for match in matches]
-            robots_urls = [f'{url}{match}' for match in matches if '*' not in match]
+            robots_urls = [f'{domain}{match}' for match in matches if '*' not in match]
             print(f'URLs retrieved from robots.txt: {len(robots_urls)}')
             return robots_urls
 
