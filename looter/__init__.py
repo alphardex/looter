@@ -24,7 +24,7 @@ from lxml import etree
 from docopt import docopt
 from .utils import *
 
-VERSION = '1.72'
+VERSION = '1.73'
 
 BANNER = """
 Available objects:
@@ -64,9 +64,12 @@ def fetch(url: str, headers=None):
         The element tree of html.
     """
     res = send_request(url, headers=headers)
-    html = res.text
-    tree = etree.HTML(html)
-    return tree
+    if res:
+        html = res.text
+        tree = etree.HTML(html)
+        return tree
+    else:
+        exit('Failed to fetch the page.')
 
 
 async def async_fetch(url: str, headers=None):
