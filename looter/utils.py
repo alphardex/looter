@@ -45,7 +45,7 @@ def get_domain(url: str) -> str:
     Returns:
         str: the domain(hostname) of the site.
     """
-    return urlparse(url).netloc
+    return f'http://{urlparse(url).netloc}'
 
 
 def send_request(url: str, timeout=60, headers=None) -> requests.models.Response:
