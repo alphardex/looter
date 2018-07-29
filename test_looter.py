@@ -25,7 +25,7 @@ def test_alexa_rank():
 def test_links():
     res = lt.send_request(domain)
     r = lt.links(res)
-    assert type(r) == list
+    assert type(r) == list and '#' not in r
 
 
 @pytest.mark.ok
