@@ -203,7 +203,8 @@ def parse_robots(url: str) -> list:
     Returns:
         list: The url list of the robots.txt.
     """
-    res = send_request(f'{url}/robots.txt')
+    domain = get_domain(ensure_schema(url))
+    res = send_request(f'{domain}/robots.txt')
     if res.status_code != 404:
         matches = re.findall(r'Allow: (.*)|Disallow: (.*)', res.text)
         if matches:
@@ -211,8 +212,6 @@ def parse_robots(url: str) -> list:
             robots_urls = [f'{url}{match}' for match in matches if '*' not in match]
             print(f'URLs retrieved from robots.txt: {len(robots_urls)}')
             return robots_urls
-    else:
-        print('Parse failed, make sure url is the hostname, not the path!')
 
 
 def cli():

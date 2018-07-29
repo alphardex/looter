@@ -64,8 +64,11 @@ def send_request(url: str, timeout=60, use_proxies=False, headers=None) -> reque
     if not headers:
         headers = {'User-Agent': UserAgent().random}
     url = ensure_schema(url)
-    res = requests.get(url, headers=headers, timeout=timeout)
-    res.raise_for_status()
+    try:
+        res = requests.get(url, headers=headers, timeout=timeout)
+        res.raise_for_status()
+    except Exception as e:
+        print(f'[Err] {e}')
     return res
 
 

@@ -37,7 +37,7 @@ def test_re_links():
 
 @pytest.mark.ok
 def test_parse_robots():
-    robots_url = lt.parse_robots(domain)
+    robots_url = lt.parse_robots(f'{domain}/post')
     assert type(robots_url) == list and len(robots_url) > 5
 
 
