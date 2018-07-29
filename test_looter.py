@@ -5,7 +5,8 @@ import pytest
 
 domain = 'konachan.net'
 
-## test main functions (excluding async and io functions, which can be tested through running examples)
+# test main functions (excluding async and io functions, which can be tested through running examples)
+
 
 @pytest.mark.ok
 def test_fetch():
@@ -40,11 +41,11 @@ def test_parse_robots():
     assert type(robots_url) == list and len(robots_url) > 5
 
 
-## test utils
+# test utils
 
 @pytest.mark.ok
 def test_ensure_schema():
-    assert lt.ensure_schema(domain).startswith('http') 
+    assert lt.ensure_schema(domain).startswith('http')
     assert not lt.ensure_schema(f'http://{domain}').startswith('https')
 
 

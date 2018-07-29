@@ -23,10 +23,10 @@ def perf(f):
 
 def ensure_schema(url: str) -> str:
     """Ensure the url starts with a http schema.
-    
+
     Args:
         url (str): A url without http schema such as konachan.com.
-    
+
     Returns:
         str: A url with http schema such as http://konachan.com.
     """
@@ -38,10 +38,10 @@ def ensure_schema(url: str) -> str:
 
 def get_domain(url: str) -> str:
     """Get the domain(hostname) of the site.
-    
+
     Args:
         url (str): A url with http schema.
-    
+
     Returns:
         str: the domain(hostname) of the site.
     """
@@ -52,7 +52,7 @@ def get_domain(url: str) -> str:
 
 def send_request(url: str, timeout=60, use_proxies=False, headers=None) -> requests.models.Response:
     """Send an HTTP request to a url.
-    
+
     Args:
         url (str): The url of the site.
         timeout (int, optional): Defaults to 60. The maxium time of request.
@@ -79,7 +79,8 @@ def rectify(name: str) -> str:
     Returns:
         The rectified filename.
     """
-    name = ''.join([c for c in unquote(name) if c not in {'?', '<', '>', '|', '*', '"', ":"}])
+    name = ''.join([c for c in unquote(name) if c not in {
+                   '?', '<', '>', '|', '*', '"', ":"}])
     return name
 
 
