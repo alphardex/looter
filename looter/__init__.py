@@ -47,6 +47,7 @@ Available functions:
     alexa_rank    Get the reach and popularity of a site in alexa.
     save_imgs     Save the images you crawled.
     save_as_json  Save what you crawled as a json file.
+    parse_robots  Parse the robots.txt of the site and retrieve its urls.
 
 For more info, plz refer to tutorial:
     [cssselect]: http://www.runoob.com/cssref/css-selectors.html
@@ -74,7 +75,6 @@ def send_request(url: str, timeout=60, use_proxies=False, headers=None) -> reque
     Args:
         url (str): The url of the site.
         timeout (int, optional): Defaults to 60. The maxium time of request.
-        use_proxies (bool, optional): Defaults to False. If you want use it, a 'proxies.json' file is a must.
         headers (optional): Defaults to fake-useragent, can be customed by user.
 
     Returns:
@@ -82,9 +82,8 @@ def send_request(url: str, timeout=60, use_proxies=False, headers=None) -> reque
     """
     if not headers:
         headers = {'User-Agent': UserAgent().random}
-    proxies = read_proxies('proxies.json') if use_proxies else dict()
     try:
-        res = requests.get(url, headers=headers, timeout=timeout, proxies=proxies)
+        res = requests.get(url, headers=headers, timeout=timeout)
         res.raise_for_status()
     except requests.exceptions.MissingSchema:
         res = requests.get('http://' + url, headers=headers, timeout=timeout, proxies=proxies)
@@ -136,9 +135,7 @@ def rectify(name: str) -> str:
     Returns:
         The rectified filename.
     """
-    if any(symbol in name for symbol in ['?', '<', '>', '|', '*', '"', ":"]):
-        name = ''.join([c for c in name if c not in {
-            '?', '<', '>', '|', '*', '"', ":"}])
+    name = ''.join([c for c in name if c not in {'?', '<', '>', '|', '*', '"', ":"}])
     return unquote(name)
 
 
@@ -212,16 +209,18 @@ def alexa_rank(url: str) -> tuple:
         return None
 
 
-async def async_fetch(url: str):
+async def async_fetch(url: str, headers=None):
     """Fetch the element tree in an async style.
 
     Args:
         url (str): The url of the site.
+        headers (optional): Defaults to fake-useragent, can be customed by user.
 
     Returns:
         The element tree of html.
     """
-    headers = {'User-Agent': UserAgent().random}
+    if not headers:
+        headers = {'User-Agent': UserAgent().random}
     async with aiohttp.ClientSession() as ses:
         async with ses.get(url, headers=headers) as res:
             html = await res.text()
@@ -308,23 +307,25 @@ def save_as_json(total: list, name='data', sort_by=None):
         f.write(json.dumps(total, ensure_ascii=False))
 
 
-def read_proxies(proxies_json:str) -> dict:
-    """Read a random proxies from a json file.
+def parse_robots(url: str) -> list:
+    """Parse the robots.txt of the site and retrieve its urls.
     
     Args:
-        proxies_json (str): The name of the proxies json file.
+        url (str): The url of the site.
     
     Returns:
-        dict: The dict of a random proxies.
+        list: The url list of the robots.txt.
     """
-    with open(proxies_json, 'r') as f:
-        proxy_pool = json.loads(f.read())
-        https_proxies = [proxy for proxy in proxy_pool if proxy.startswith('https')]
-        http_proxies = list(set(https_proxies)^set(proxy_pool))
-        http_proxy = random.choice(http_proxies)
-        https_proxy = f"http://{random.choice(https_proxies).split('//')[-1]}"
-        proxies = {"http": http_proxy, "https": https_proxy}
-        return proxies
+    res = send_request(f'{url}/robots.txt')
+    if res.status_code != 404:
+        matches = re.findall(r'Allow: (.*)|Disallow: (.*)', res.text)
+        if matches:
+            matches = [''.join(match) for match in matches]
+            robots_urls = [f'{url}{match}' for match in matches if '*' not in match]
+            print(f'URLs retrieved from robots.txt: {len(robots_urls)}')
+            return robots_urls
+    else:
+        print('Parse failed, make sure url is the hostname, not the path!')
 
 
 def cli():
