@@ -61,15 +61,16 @@ def send_request(url: str, timeout=60, use_proxies=False, headers=None) -> reque
     Returns:
         requests.models.Response: The response of the HTTP request.
     """
-    if not headers:
-        headers = {'User-Agent': UserAgent().random}
+    # if not headers:
+    #     headers = {'User-Agent': UserAgent().random}
     url = ensure_schema(url)
     try:
         res = requests.get(url, headers=headers, timeout=timeout)
         res.raise_for_status()
     except Exception as e:
         print(f'[Err] {e}')
-    return res
+    else:
+        return res
 
 
 def rectify(name: str) -> str:

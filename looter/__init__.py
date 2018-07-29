@@ -24,7 +24,7 @@ from lxml import etree
 from docopt import docopt
 from .utils import *
 
-VERSION = '1.71'
+VERSION = '1.72'
 
 BANNER = """
 Available objects:
@@ -205,13 +205,15 @@ def parse_robots(url: str) -> list:
     """
     domain = get_domain(ensure_schema(url))
     res = send_request(f'{domain}/robots.txt')
-    if res.status_code != 404:
+    if res:
         matches = re.findall(r'Allow: (.*)|Disallow: (.*)', res.text)
         if matches:
             matches = [''.join(match) for match in matches]
             robots_urls = [f'{domain}{match}' for match in matches if '*' not in match]
             print(f'URLs retrieved from robots.txt: {len(robots_urls)}')
             return robots_urls
+    else:
+        print('Parse failed, plz ensure that the url is a valid one.')
 
 
 def cli():
