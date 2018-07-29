@@ -5,7 +5,7 @@ import pytest
 
 domain = 'konachan.net'
 
-## test main functions (excluding async and io functions)
+## test main functions (excluding async and io functions, which can be tested through running examples)
 
 @pytest.mark.ok
 def test_fetch():
@@ -73,4 +73,3 @@ def test_get_img_info():
     img = tree.cssselect('a.directlink')[0]
     url, name = lt.get_img_info(img)
     assert url == img.get('href') and '%' not in name
-

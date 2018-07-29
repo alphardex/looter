@@ -195,6 +195,7 @@ def save_as_json(total: list, name='data', sort_by=None):
 
 def parse_robots(url: str) -> list:
     """Parse the robots.txt of the site and retrieve its urls.
+    With this, maybe you are able to recursively crawl the site :)
     
     Args:
         url (str): The url of the site.
