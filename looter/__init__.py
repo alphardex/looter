@@ -24,7 +24,7 @@ from lxml import etree
 from docopt import docopt
 from .utils import *
 
-VERSION = '1.73'
+VERSION = '1.74'
 
 BANNER = """
 Available objects:
@@ -242,6 +242,8 @@ def cli():
         else:
             url = argv['<url>']
         res = send_request(url)
+        if not res:
+            exit('Failed to fetch the page.')
         tree = etree.HTML(res.text)
         allvars = {**locals(), **globals()}
         code.interact(local=allvars, banner=BANNER)
