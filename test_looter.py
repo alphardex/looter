@@ -1,6 +1,7 @@
 import looter as lt
 import requests
 import pytest
+import re
 
 
 domain = 'konachan.net'
@@ -75,3 +76,17 @@ def test_get_img_info():
     img = tree.cssselect('a.directlink')[0]
     url, name = lt.get_img_info(img)
     assert url == img.get('href') and '%' not in name
+
+
+@pytest.mark.ok
+def test_login():
+    params = {'df': 'mail126_letter', 'from': 'web', 'funcid': 'loginone', 'iframe': '1', 'language': '-1', 'passtype': '1', 'product': 'mail126',
+              'verifycookie': '-1', 'net': 'failed', 'style': '-1', 'race': '-2_-2_-2_db', 'uid': 'webscraping123@126.com', 'hid': '10010102'}
+    postdata = {'username': 'webscraping123@126.com', 'savelogin': '1',
+                'url2': 'http://mail.126.com/errorpage/error126.htm', 'password': '0up3VmfKCh22'}
+    url = "https://mail.126.com/entry/cgi/ntesdoor?"
+    res, ses = lt.login(url, postdata, params=params)
+    index_url = re.findall(r'href = "(.*?)"', res.text)[0]
+    index = ses.get(index_url)
+    message_count = re.findall(r"('messageCount'.*?).*?('unreadMessageCount'.*?),", index.text)[0]
+    assert message_count == ("'messageCount'", "'unreadMessageCount':0")

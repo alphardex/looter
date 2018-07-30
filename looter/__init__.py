@@ -19,12 +19,13 @@ import code
 import re
 import webbrowser
 from operator import itemgetter
+from http import cookiejar
 import asyncio
 from lxml import etree
 from docopt import docopt
 from .utils import *
 
-VERSION = '1.77'
+VERSION = '1.78'
 
 BANNER = """
 Available objects:
@@ -41,6 +42,7 @@ Available functions:
     re_links      Get the links with a regex pattern.
     save_as_json  Save what you crawled as a json file.
     parse_robots  Parse the robots.txt of the site and retrieve its urls.
+    login         Login the site using POST request, data required.
 
 Examples:
     Crawl all the <li> items of a <ul> table:
@@ -226,6 +228,34 @@ def parse_robots(url: str) -> list:
             return robots_urls
     else:
         print('Parse failed, plz ensure that the url is a valid one.')
+
+
+def login(url: str, data: dict, headers: dict=None, params: dict= dict(), use_cookies=False) -> tuple:
+    """Login the site using POST request, data required.
+
+    Args:
+        url (str): The login_page url of the site.
+        data (dict): The POST request form data.
+        headers (dict, optional): Defaults to fake-useragent, can be customed by user.
+        params (dict, optional): Defaults to {}, can be customed by user.
+        use_cookies (bool, optional): Defaults to False, use cookies to login (needs a 'cookies.txt' file)
+
+    Returns:
+        tuple: If succeeded, the response and session will be returned to access the site.
+    """
+    if not headers:
+        headers = {'User-Agent': UserAgent().random}
+    session = requests.Session()
+    if use_cookies:
+        session.cookies = cookiejar.LWPCookieJar(filename='cookies.txt')
+        session.cookies.load(ignore_discard=True)
+    try:
+        res = session.post(url, data=data, headers=headers, params=params)
+        print(res.status_code)
+        print(res.text)
+        return res, session
+    except Exception as e:
+        print(f'[Err] {e}')
 
 
 def cli():
