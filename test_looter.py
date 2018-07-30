@@ -89,4 +89,4 @@ def test_login():
     index_url = re.findall(r'href = "(.*?)"', res.text)[0]
     index = ses.get(index_url)
     message_count = re.findall(r"('messageCount'.*?).*?('unreadMessageCount'.*?),", index.text)[0]
-    assert message_count == ("'messageCount'", "'unreadMessageCount':0")
+    assert message_count[0] == "'messageCount'"
