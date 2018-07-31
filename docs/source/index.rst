@@ -202,10 +202,3 @@ Login the site using POST request, data required.
     >>> res, ses = login(url, postdata, params=params)
     >>> index_url = re.findall(r'href = "(.*?)"', res.text)[0]
     >>> index = ses.get(index_url)
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
