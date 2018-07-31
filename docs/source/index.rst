@@ -203,56 +203,6 @@ Login the site using POST request, data required.
     >>> index_url = re.findall(r'href = "(.*?)"', res.text)[0]
     >>> index = ses.get(index_url)
 
-API Documentation
-=================
-
-.. module:: looter
-
-Main Functions
------------------
-
-.. autofunction:: fetch
-
-.. autofunction:: async_fetch
-
-.. autofunction:: view
-
-.. autofunction:: save_imgs
-
-.. autofunction:: async_save_imgs
-
-.. autofunction:: alexa_rank
-
-.. autofunction:: links
-
-.. autofunction:: re_links
-
-.. autofunction:: save_as_json
-
-.. autofunction:: parse_robots
-
-.. autofunction:: login
-
-Utility Functions
------------------
-
-.. autofunction:: perf
-
-.. autofunction:: ensure_schema
-
-.. autofunction:: get_domain
-
-.. autofunction:: send_request
-
-.. autofunction:: rectify
-
-.. autofunction:: get_img_info
-
-.. autofunction:: save_img
-
-.. autofunction:: async_save_img
-
-
 Indices and tables
 ==================
 
