@@ -12,6 +12,7 @@ setup(
     long_description=open('README.rst', encoding='utf-8').read(),
     author='alphardex',
     author_email='2582347430@qq.com',
+    python_requires='>=3.6.0',
     license='MIT',
     packages=find_packages(),
     include_package_data=True,
