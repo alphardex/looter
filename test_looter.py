@@ -48,6 +48,7 @@ def test_parse_robots():
 def test_ensure_schema():
     assert lt.ensure_schema(domain).startswith('http')
     assert not lt.ensure_schema(f'http://{domain}').startswith('https')
+    assert lt.ensure_schema('//fuckshit.png').startswith('https://')
 
 
 @pytest.mark.ok

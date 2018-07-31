@@ -33,7 +33,7 @@ def ensure_schema(url: str) -> str:
     if url.startswith('http'):
         return url
     else:
-        return f'https://{url}'
+        return f'https:{url}' if url.startswith('//') else f'https://{url}'
 
 
 def get_domain(url: str) -> str:
