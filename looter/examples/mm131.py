@@ -18,7 +18,7 @@ def crawl(url):
         pagination = detail.cssselect('.content-page .page-ch')[0].text
         max_page = int(re.findall(r'\d+', pagination)[0])
         img_urls = [f'http://img1.mm131.me/pic/{bango}/{n}.jpg' for n in range(1, max_page+1)]
-        lt.async_save_imgs(img_urls, headers=headers)
+        lt.async_save_imgs(img_urls, headers=headers, random_name=True)
 
 
 if __name__ == '__main__':
