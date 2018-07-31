@@ -14,7 +14,7 @@ def crawl(url):
     for img in imgs:
         link = img.cssselect('a')[0].get('href')
         bango = link.split('/')[-1][:-5]
-        detail = lt.fetch(link)
+        detail = lt.fetch(link, headers=headers)
         pagination = detail.cssselect('.content-page .page-ch')[0].text
         max_page = int(re.findall(r'\d+', pagination)[0])
         img_urls = [f'http://img1.mm131.me/pic/{bango}/{n}.jpg' for n in range(1, max_page+1)]
