@@ -107,14 +107,17 @@ def get_img_info(url: str, max_length=160) -> tuple:
 
 
 @perf
-def save_img(url: str, random_name=False):
+def save_img(url: str, random_name=False, headers=None):
     """
     Download image and save it to local disk.
 
     Args:
         url (str): The url of the site.
         random_name (int, optional): Defaults to False. If names of images are duplicated, use this.
+        headers (optional): Defaults to fake-useragent, can be customed by user.
     """
+    if not headers:
+        headers = {'User-Agent': UserAgent().random}
     url, name = get_img_info(url)
     if random_name:
         name = f'{name[:-4]}{str(uuid.uuid1())[:8]}{name[-4:]}'
@@ -123,14 +126,16 @@ def save_img(url: str, random_name=False):
         print(f'Saved {name}')
 
 
-async def async_save_img(url: str, random_name=False):
+async def async_save_img(url: str, random_name=False, headers=None):
     """Save an image in an async style.
 
     Args:
         url (str): The url of the site.
         random_name (int, optional): Defaults to False. If names of images are duplicated, use this.
+        headers (optional): Defaults to fake-useragent, can be customed by user.
     """
-    headers = {'User-Agent': UserAgent().random}
+    if not headers:
+        headers = {'User-Agent': UserAgent().random}
     url, name = get_img_info(url)
     if random_name:
         name = f'{name[:-4]}{str(uuid.uuid1())[:8]}{name[-4:]}'

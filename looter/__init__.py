@@ -25,7 +25,7 @@ from lxml import etree
 from docopt import docopt
 from .utils import *
 
-VERSION = '1.78'
+VERSION = '1.79'
 
 BANNER = """
 Available objects:
@@ -115,19 +115,19 @@ def view(url: str, encoding='utf-8', name='test'):
     webbrowser.open(f'{name}.html', new=1)
 
 
-def save_imgs(urls, random_name=False):
+def save_imgs(urls, random_name=False, headers=None):
     """
     Download images from links.
     """
-    return [save_img(url, random_name=random_name) for url in urls]
+    return [save_img(url, random_name=random_name, headers=headers) for url in urls]
 
 
-def async_save_imgs(urls: str, random_name=False):
+def async_save_imgs(urls: str, random_name=False, headers=None):
     """
     Download images from links in an async style.
     """
     loop = asyncio.get_event_loop()
-    result = [async_save_img(url, random_name=random_name) for url in urls]
+    result = [async_save_img(url, random_name=random_name, headers=headers) for url in urls]
     loop.run_until_complete(asyncio.wait(result))
 
 
