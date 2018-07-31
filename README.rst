@@ -12,4 +12,4 @@ A super-lightweight crawler tool.
     $ pip install looter
 
 
-中文教程：\ `猛戳这里 <https://zhuanlan.zhihu.com/p/34917713>`__
+Documentation：\ `Click Here <https://looter.readthedocs.io/en/latest/>`__
