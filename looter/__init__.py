@@ -25,7 +25,7 @@ from lxml import etree
 from docopt import docopt
 from .utils import *
 
-VERSION = '1.79'
+VERSION = '1.80'
 
 BANNER = """
 Available objects:
