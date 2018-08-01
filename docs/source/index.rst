@@ -10,8 +10,13 @@ Looter: Web-Scraping for Humans!
    :maxdepth: 2
    :caption: Contents:
 
-.. image:: https://travis-ci.org/alphardex/looter.svg?branch=master
-    :target: https://travis-ci.org/alphardex/looter
+|build| |grade|
+
+.. |build| image:: https://api.travis-ci.org/alphardex/looter.svg
+    :target: https://api.travis-ci.org/alphardex/looter
+
+.. |grade| image:: https://api.codacy.com/project/badge/Grade/78dbe75cccef4c5887ea236e9afcb89e    
+    :target: https://www.codacy.com/project/alphardex/looter/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=alphardex/looter&amp;utm_campaign=Badge_Grade_Dashboard
 
 A super-lightweight crawler tool.
 
