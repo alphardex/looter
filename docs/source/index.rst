@@ -209,7 +209,7 @@ Login the site using POST request, data required.
     >>> index = ses.get(index_url)
 
 Anti-anti-spider
-=========
+================
 
 -  Throttle: time.sleep(n)
 -  Proxy pool: `scylla <https://github.com/imWildCat/scylla/>`_
