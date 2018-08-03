@@ -207,3 +207,12 @@ Login the site using POST request, data required.
     >>> res, ses = login(url, postdata, params=params)
     >>> index_url = re.findall(r'href = "(.*?)"', res.text)[0]
     >>> index = ses.get(index_url)
+
+Anti-anti-spider
+=========
+
+-  Throttle: time.sleep(n)
+-  Proxy pool: `scylla <https://github.com/imWildCat/scylla/>`_
+-  Dynamic JS site: `requestium <https://github.com/tryolabs/requestium>`_ or Sniffer
+-  Login: `fuck-login <https://github.com/xchaoinfo/fuck-login>`_
+-  Captcha: Tesseract or OpenCV or Keras or captcha human bypass

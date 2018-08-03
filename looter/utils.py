@@ -48,13 +48,14 @@ def get_domain(url: str) -> str:
     return urlparse(url).netloc
 
 
-def send_request(url: str, timeout=60, headers=None) -> requests.models.Response:
+def send_request(url: str, timeout=60, headers=None, proxies=None) -> requests.models.Response:
     """Send an HTTP request to a url.
 
     Args:
         url (str): The url of the site.
         timeout (int, optional): Defaults to 60. The maxium time of request.
         headers (optional): Defaults to fake-useragent, can be customed by user.
+        proxies (optional): Defaults to None, can be customed by user.
 
     Returns:
         requests.models.Response: The response of the HTTP request.
@@ -63,7 +64,7 @@ def send_request(url: str, timeout=60, headers=None) -> requests.models.Response
         headers = {'User-Agent': UserAgent().random}
     url = ensure_schema(url)
     try:
-        res = requests.get(url, headers=headers, timeout=timeout)
+        res = requests.get(url, headers=headers, timeout=timeout, proxies=proxies)
         res.raise_for_status()
     except Exception as e:
         print(f'[Err] {e}')
@@ -107,7 +108,7 @@ def get_img_info(url: str, max_length=160) -> tuple:
 
 
 @perf
-def save_img(url: str, random_name=False, headers=None):
+def save_img(url: str, random_name=False, headers=None, proxies=None):
     """
     Download image and save it to local disk.
 
@@ -115,6 +116,7 @@ def save_img(url: str, random_name=False, headers=None):
         url (str): The url of the site.
         random_name (int, optional): Defaults to False. If names of images are duplicated, use this.
         headers (optional): Defaults to fake-useragent, can be customed by user.
+        proxies (optional): Defaults to None, can be customed by user.
     """
     if not headers:
         headers = {'User-Agent': UserAgent().random}
@@ -122,17 +124,18 @@ def save_img(url: str, random_name=False, headers=None):
     if random_name:
         name = f'{name[:-4]}{str(uuid.uuid1())[:8]}{name[-4:]}'
     with open(name, 'wb') as f:
-        f.write(send_request(url).content)
+        f.write(send_request(url, headers=headers, proxies=proxies).content)
         print(f'Saved {name}')
 
 
-async def async_save_img(url: str, random_name=False, headers=None):
+async def async_save_img(url: str, random_name=False, headers=None, proxies=None):
     """Save an image in an async style.
 
     Args:
         url (str): The url of the site.
         random_name (int, optional): Defaults to False. If names of images are duplicated, use this.
         headers (optional): Defaults to fake-useragent, can be customed by user.
+        proxies (optional): Defaults to None, can be customed by user.
     """
     if not headers:
         headers = {'User-Agent': UserAgent().random}
@@ -141,7 +144,7 @@ async def async_save_img(url: str, random_name=False, headers=None):
         name = f'{name[:-4]}{str(uuid.uuid1())[:8]}{name[-4:]}'
     with open(name, 'wb') as f:
         async with aiohttp.ClientSession() as ses:
-            async with ses.get(url, headers=headers) as res:
+            async with ses.get(url, headers=headers, proxies=proxies) as res:
                 data = await res.read()
                 f.write(data)
                 print(f'Saved {name}')
