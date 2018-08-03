@@ -25,7 +25,7 @@ from lxml import etree
 from docopt import docopt
 from .utils import *
 
-VERSION = '1.81'
+VERSION = '1.82'
 
 BANNER = """
 Available objects:
@@ -70,7 +70,7 @@ def fetch(url: str, headers=None, proxies=None):
         url (str): The url of the site.
         headers (optional): Defaults to fake-useragent, can be customed by user.
         proxies (optional): Defaults to None, can be customed by user.
-    
+
     Returns:
         The element tree of html.
     """
@@ -160,12 +160,12 @@ def alexa_rank(url: str) -> tuple:
 
 def links(res: requests.models.Response, search=None, absolute=False) -> list:
     """Get all the links of the page.
-    
+
     Args:
         res (requests.models.Response): The response of the page.
         search ([type], optional): Defaults to None. Search the links you want.
         absolute (bool, optional): Defaults to False. Get the absolute links.
-    
+
     Returns:
         list: All the links of the page.
     """
@@ -184,7 +184,7 @@ def links(res: requests.models.Response, search=None, absolute=False) -> list:
 
 def re_links(res: requests.models.Response, pattern: str) -> list:
     """Get the links using regex pattern.
-    
+
     Args:
         res (requests.models.Response): The response of the page.
         pattern (str): Regular expression.
@@ -199,7 +199,7 @@ def re_links(res: requests.models.Response, pattern: str) -> list:
 
 def save_as_json(total: list, name='data', sort_by=None):
     """Save what you crawled as a json file.
-    
+
     Args:
         total (list): Total of data you crawled.
         name (str, optional): Defaults to 'data'. The name of the json file.
@@ -214,10 +214,10 @@ def save_as_json(total: list, name='data', sort_by=None):
 def parse_robots(url: str) -> list:
     """Parse the robots.txt of the site and retrieve its urls.
     With this, maybe you are able to recursively crawl the site :)
-    
+
     Args:
         url (str): The url of the site.
-    
+
     Returns:
         list: The url list of the robots.txt.
     """
