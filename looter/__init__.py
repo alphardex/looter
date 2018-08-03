@@ -80,7 +80,7 @@ def fetch(url: str, headers=None, proxies=None):
         tree = etree.HTML(html)
         return tree
     else:
-        exit('Failed to fetch the page.')
+        print('Failed to fetch the page.')
 
 
 async def async_fetch(url: str, headers=None, proxies=None):
@@ -129,7 +129,8 @@ def async_save_imgs(urls: str, random_name=False, headers=None, proxies=None):
     Download images from links in an async style.
     """
     loop = asyncio.get_event_loop()
-    result = [async_save_img(url, random_name=random_name, headers=headers, proxies=proxies) for url in urls]
+    result = [async_save_img(url, random_name=random_name,
+                             headers=headers, proxies=proxies) for url in urls]
     loop.run_until_complete(asyncio.wait(result))
 
 
@@ -175,7 +176,8 @@ def links(res: requests.models.Response, search=None, absolute=False) -> list:
     if search:
         hrefs = [href for href in hrefs if search in href]
     if absolute:
-        hrefs = [domain + href for href in hrefs if not href.startswith('http')]
+        hrefs = [
+            domain + href for href in hrefs if not href.startswith('http')]
     hrefs = [href for href in hrefs if '#' not in href]
     return hrefs
 
@@ -225,7 +227,8 @@ def parse_robots(url: str) -> list:
         matches = re.findall(r'Allow: (.*)|Disallow: (.*)', res.text)
         if matches:
             matches = [''.join(match) for match in matches]
-            robots_urls = [f'https://{domain}{match}' for match in matches if '*' not in match]
+            robots_urls = [
+                f'https://{domain}{match}' for match in matches if '*' not in match]
             print(f'URLs retrieved from robots.txt: {len(robots_urls)}')
             return robots_urls
     else:
@@ -287,7 +290,12 @@ def cli():
             exit('Failed to fetch the page.')
         tree = etree.HTML(res.text)
         allvars = {**locals(), **globals()}
-        code.interact(local=allvars, banner=BANNER)
+        try:
+            from ptpython.repl import embed
+            print(BANNER)
+            embed(allvars)
+        except ImportError:
+            code.interact(local=allvars, banner=BANNER)
 
 
 if __name__ == '__main__':
