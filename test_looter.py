@@ -42,6 +42,20 @@ def test_parse_robots():
     assert type(robots_url) == list and len(robots_url) > 5
 
 
+@pytest.mark.ok
+def test_login():
+    params = {'df': 'mail126_letter', 'from': 'web', 'funcid': 'loginone', 'iframe': '1', 'language': '-1', 'passtype': '1', 'product': 'mail126',
+              'verifycookie': '-1', 'net': 'failed', 'style': '-1', 'race': '-2_-2_-2_db', 'uid': 'webscraping123@126.com', 'hid': '10010102'}
+    postdata = {'username': 'webscraping123@126.com', 'savelogin': '1',
+                'url2': 'http://mail.126.com/errorpage/error126.htm', 'password': '0up3VmfKCh22'}
+    url = "https://mail.126.com/entry/cgi/ntesdoor?"
+    res, ses = lt.login(url, postdata, params=params)
+    index_url = re.findall(r'href = "(.*?)"', res.text)[0]
+    index = ses.get(index_url)
+    message_count = re.findall(
+        r"('messageCount'.*?).*?('unreadMessageCount'.*?),", index.text)[0]
+    assert message_count[0] == "'messageCount'"
+
 # test utils
 
 @pytest.mark.ok
@@ -80,14 +94,8 @@ def test_get_img_info():
 
 
 @pytest.mark.ok
-def test_login():
-    params = {'df': 'mail126_letter', 'from': 'web', 'funcid': 'loginone', 'iframe': '1', 'language': '-1', 'passtype': '1', 'product': 'mail126',
-              'verifycookie': '-1', 'net': 'failed', 'style': '-1', 'race': '-2_-2_-2_db', 'uid': 'webscraping123@126.com', 'hid': '10010102'}
-    postdata = {'username': 'webscraping123@126.com', 'savelogin': '1',
-                'url2': 'http://mail.126.com/errorpage/error126.htm', 'password': '0up3VmfKCh22'}
-    url = "https://mail.126.com/entry/cgi/ntesdoor?"
-    res, ses = lt.login(url, postdata, params=params)
-    index_url = re.findall(r'href = "(.*?)"', res.text)[0]
-    index = ses.get(index_url)
-    message_count = re.findall(r"('messageCount'.*?).*?('unreadMessageCount'.*?),", index.text)[0]
-    assert message_count[0] == "'messageCount'"
+def test_expand_num():
+    assert lt.expand_num('61.8K') == 61800
+    assert lt.expand_num('61.8M') == 61800000
+    assert lt.expand_num('61.8') == 61.8
+    assert lt.expand_num('61') == 61

@@ -148,3 +148,20 @@ async def async_save_img(url: str, random_name=False, headers=None, proxies=None
                 data = await res.read()
                 f.write(data)
                 print(f'Saved {name}')
+
+
+def expand_num(num: str) -> int:
+    """Expand the number abbr to the actual one.
+    
+    Args:
+        number (str): The number to expand, e.g.: 61.8K, 78.4M
+    
+    Returns:
+        int: The expanded number.
+    """
+    num = num.lower()
+    abbrs = {'k': 1000, 'm': 1000000}
+    if num[-1] in abbrs.keys():
+        return int(float(num[:-1]) * abbrs.get(num[-1]))
+    else:
+        return float(num) if '.' in num else int(num)

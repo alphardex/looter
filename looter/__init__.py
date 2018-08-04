@@ -25,7 +25,7 @@ from lxml import etree
 from docopt import docopt
 from .utils import *
 
-VERSION = '1.82'
+VERSION = '1.83'
 
 BANNER = """
 Available objects:
@@ -137,8 +137,6 @@ def async_save_imgs(urls: str, random_name=False, headers=None, proxies=None):
 def alexa_rank(url: str) -> tuple:
     """
     Get the reach and popularity of a site in alexa.
-    It will return a tuple:
-    (url, reach_rank, popularity_rank)
 
     Args:
         url (str): The url of the site.
@@ -159,7 +157,7 @@ def alexa_rank(url: str) -> tuple:
 
 
 def links(res: requests.models.Response, search=None, absolute=False) -> list:
-    """Get all the links of the page.
+    """Get the links of the page.
 
     Args:
         res (requests.models.Response): The response of the page.
@@ -176,8 +174,7 @@ def links(res: requests.models.Response, search=None, absolute=False) -> list:
     if search:
         hrefs = [href for href in hrefs if search in href]
     if absolute:
-        hrefs = [
-            domain + href for href in hrefs if not href.startswith('http')]
+        hrefs = [f'{domain}{href}' for href in hrefs if not href.startswith('http')]
     hrefs = [href for href in hrefs if '#' not in href]
     return hrefs
 
@@ -275,7 +272,7 @@ def cli():
         if template not in ['data', 'image']:
             exit('Plz provide a template (data, image)')
         if async_:
-            template = template + '_async'
+            template = f'{template}_async'
         package_path = os.path.dirname(__file__)
         with open(f'{package_path}\\templates\\{template}.tmpl', 'r') as i, open(f'{name}.py', 'w') as o:
             o.write(i.read())
