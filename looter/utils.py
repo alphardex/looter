@@ -172,7 +172,7 @@ def expand_num(num: str) -> int:
 
 def read_cookies(filename: str='cookies.txt') -> requests.cookies.RequestsCookieJar:
     """Read cookies from a 'cookies.txt' file, which can be created from document.cookie.
-    
+
     Args:
         filename (str): Defaults to 'cookies.txt'.
 
