@@ -19,27 +19,27 @@ def test_fetch():
 @pytest.mark.ok
 def test_alexa_rank():
     r = lt.alexa_rank(domain)
-    assert type(r) == tuple and len(r) == 3
+    assert isinstance(r, tuple) and len(r) == 3
 
 
 @pytest.mark.ok
 def test_links():
     res = lt.send_request(domain)
     r = lt.links(res)
-    assert type(r) == list and '#' not in r
+    assert isinstance(r, list) and '#' not in r
 
 
 @pytest.mark.ok
 def test_re_links():
     res = lt.send_request(f'{domain}/post')
     hrefs = lt.re_links(res, r'https://konachan.net/wiki/.*?')
-    assert type(hrefs) == list and len(hrefs) > 5
+    assert isinstance(hrefs, list) and len(hrefs) > 5
 
 
 @pytest.mark.ok
 def test_parse_robots():
     robots_url = lt.parse_robots(f'{domain}/post')
-    assert type(robots_url) == list and len(robots_url) > 5
+    assert isinstance(robots_url, list) and len(robots_url) > 5
 
 
 @pytest.mark.ok
@@ -74,7 +74,7 @@ def test_get_domain():
 @pytest.mark.ok
 def test_send_request():
     res = lt.send_request(domain)
-    assert type(res) == requests.models.Response
+    assert isinstance(res, requests.models.Response)
     assert res.status_code == 200
 
 

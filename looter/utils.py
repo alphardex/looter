@@ -155,7 +155,7 @@ async def async_save_img(url: str, random_name=False, headers=None, proxies=None
 
 def expand_num(num: str) -> int:
     """Expand the number abbr to the actual one.
-    
+
     Args:
         number (str): The number to expand, e.g.: 61.8K, 78.4M
     

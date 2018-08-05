@@ -1,6 +1,6 @@
 """Looter, a python package designed for web crawler lovers :)
 Author: alphardex  QQ:2582347430
-If any suggestion, please contact me. 
+If any suggestion, please contact me.
 Thank you for cooperation!
 
 Usage:
