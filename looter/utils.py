@@ -175,7 +175,7 @@ def read_cookies(filename: str='cookies.txt') -> requests.cookies.RequestsCookie
     
     Args:
         filename (str): Defaults to 'cookies.txt'.
-    
+
     Returns:
         requests.cookies.RequestsCookieJar: A cookiejar object that can be passed to cookies param.
     """
