@@ -158,7 +158,7 @@ def expand_num(num: str) -> int:
 
     Args:
         number (str): The number to expand, e.g.: 61.8K, 78.4M
-    
+
     Returns:
         int: The expanded number.
     """
