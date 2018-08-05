@@ -48,7 +48,7 @@ def get_domain(url: str) -> str:
     return urlparse(url).netloc
 
 
-def send_request(url: str, timeout=60, headers=None, proxies=None) -> requests.models.Response:
+def send_request(url: str, timeout=60, headers=None, proxies=None, cookies=None) -> requests.models.Response:
     """Send an HTTP request to a url.
 
     Args:
@@ -56,6 +56,7 @@ def send_request(url: str, timeout=60, headers=None, proxies=None) -> requests.m
         timeout (int, optional): Defaults to 60. The maxium time of request.
         headers (optional): Defaults to fake-useragent, can be customed by user.
         proxies (optional): Defaults to None, can be customed by user.
+        cookies (optional): Defaults to None, if needed, use read_cookies().
 
     Returns:
         requests.models.Response: The response of the HTTP request.
@@ -64,7 +65,7 @@ def send_request(url: str, timeout=60, headers=None, proxies=None) -> requests.m
         headers = {'User-Agent': UserAgent().random}
     url = ensure_schema(url)
     try:
-        res = requests.get(url, headers=headers, timeout=timeout, proxies=proxies)
+        res = requests.get(url, headers=headers, timeout=timeout, proxies=proxies, cookies=cookies)
         res.raise_for_status()
     except Exception as e:
         print(f'[Err] {e}')
@@ -108,7 +109,7 @@ def get_img_info(url: str, max_length=160) -> tuple:
 
 
 @perf
-def save_img(url: str, random_name=False, headers=None, proxies=None):
+def save_img(url: str, random_name=False, headers=None, proxies=None, cookies=None):
     """
     Download image and save it to local disk.
 
@@ -117,6 +118,7 @@ def save_img(url: str, random_name=False, headers=None, proxies=None):
         random_name (int, optional): Defaults to False. If names of images are duplicated, use this.
         headers (optional): Defaults to fake-useragent, can be customed by user.
         proxies (optional): Defaults to None, can be customed by user.
+        cookies (optional): Defaults to None, if needed, use read_cookies().
     """
     if not headers:
         headers = {'User-Agent': UserAgent().random}
@@ -124,11 +126,11 @@ def save_img(url: str, random_name=False, headers=None, proxies=None):
     if random_name:
         name = f'{name[:-4]}{str(uuid.uuid1())[:8]}{name[-4:]}'
     with open(name, 'wb') as f:
-        f.write(send_request(url, headers=headers, proxies=proxies).content)
+        f.write(send_request(url, headers=headers, proxies=proxies, cookies=cookies).content)
         print(f'Saved {name}')
 
 
-async def async_save_img(url: str, random_name=False, headers=None, proxies=None):
+async def async_save_img(url: str, random_name=False, headers=None, proxies=None, cookies=None):
     """Save an image in an async style.
 
     Args:
@@ -136,6 +138,7 @@ async def async_save_img(url: str, random_name=False, headers=None, proxies=None
         random_name (int, optional): Defaults to False. If names of images are duplicated, use this.
         headers (optional): Defaults to fake-useragent, can be customed by user.
         proxies (optional): Defaults to None, can be customed by user.
+        cookies (optional): Defaults to None, if needed, use read_cookies().
     """
     if not headers:
         headers = {'User-Agent': UserAgent().random}
@@ -144,7 +147,7 @@ async def async_save_img(url: str, random_name=False, headers=None, proxies=None
         name = f'{name[:-4]}{str(uuid.uuid1())[:8]}{name[-4:]}'
     with open(name, 'wb') as f:
         async with aiohttp.ClientSession() as ses:
-            async with ses.get(url, headers=headers, proxies=proxies) as res:
+            async with ses.get(url, headers=headers, proxies=proxies, cookies=cookies) as res:
                 data = await res.read()
                 f.write(data)
                 print(f'Saved {name}')
@@ -165,3 +168,21 @@ def expand_num(num: str) -> int:
         return int(float(num[:-1]) * abbrs.get(num[-1]))
     else:
         return float(num) if '.' in num else int(num)
+
+
+def read_cookies(filename: str='cookies.txt') -> requests.cookies.RequestsCookieJar:
+    """Read cookies from a 'cookies.txt' file, which can be created from document.cookie.
+    
+    Args:
+        filename (str): Defaults to 'cookies.txt'.
+    
+    Returns:
+        requests.cookies.RequestsCookieJar: A cookiejar object that can be passed to cookies param.
+    """
+    jar = requests.cookies.RequestsCookieJar()
+    with open(filename) as f:
+        cookies = f.read()
+        for cookie in cookies.split(';'):
+            name, value = cookie.strip().split('=', 1)
+            jar.set(name, value)
+        return jar

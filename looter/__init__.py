@@ -25,7 +25,7 @@ from lxml import etree
 from docopt import docopt
 from .utils import *
 
-VERSION = '1.83'
+VERSION = '1.84'
 
 BANNER = """
 Available objects:
@@ -58,7 +58,7 @@ For more info, plz refer to these sites:
 """
 
 
-def fetch(url: str, headers=None, proxies=None):
+def fetch(url: str, headers=None, proxies=None, use_cookies=False):
     """
     Get the element tree of an HTML page, use cssselect or xpath to parse it.
 
@@ -70,11 +70,13 @@ def fetch(url: str, headers=None, proxies=None):
         url (str): The url of the site.
         headers (optional): Defaults to fake-useragent, can be customed by user.
         proxies (optional): Defaults to None, can be customed by user.
+        use_cookies (bool, optional): Defaults to False, if turn it on, paste document.cookie to a 'cookies.txt' file.
 
     Returns:
         The element tree of html.
     """
-    res = send_request(url, headers=headers, proxies=proxies)
+    cookies = read_cookies() if use_cookies else None
+    res = send_request(url, headers=headers, proxies=proxies, cookies=cookies)
     if res:
         html = res.text
         tree = etree.HTML(html)
@@ -83,21 +85,23 @@ def fetch(url: str, headers=None, proxies=None):
         print('Failed to fetch the page.')
 
 
-async def async_fetch(url: str, headers=None, proxies=None):
+async def async_fetch(url: str, headers=None, proxies=None, use_cookies=False):
     """Fetch the element tree in an async style.
 
     Args:
         url (str): The url of the site.
         headers (optional): Defaults to fake-useragent, can be customed by user.
         proxies (optional): Defaults to None, can be customed by user.
+        use_cookies (bool, optional): Defaults to False, if turn it on, paste document.cookie to a 'cookies.txt' file.
 
     Returns:
         The element tree of html.
     """
+    cookies = read_cookies() if use_cookies else None
     if not headers:
         headers = {'User-Agent': UserAgent().random}
     async with aiohttp.ClientSession() as ses:
-        async with ses.get(url, headers=headers, proxies=proxies) as res:
+        async with ses.get(url, headers=headers, proxies=proxies, cookies=cookies) as res:
             html = await res.text()
             tree = etree.HTML(html)
             return tree
@@ -117,20 +121,20 @@ def view(url: str, encoding='utf-8', name='test'):
     webbrowser.open(f'{name}.html', new=1)
 
 
-def save_imgs(urls, random_name=False, headers=None, proxies=None):
+def save_imgs(urls, random_name=False, headers=None, proxies=None, cookies=None):
     """
     Download images from links.
     """
-    return [save_img(url, random_name=random_name, headers=headers, proxies=proxies) for url in urls]
+    return [save_img(url, random_name=random_name, headers=headers, proxies=proxies, cookies=cookies) for url in urls]
 
 
-def async_save_imgs(urls: str, random_name=False, headers=None, proxies=None):
+def async_save_imgs(urls: str, random_name=False, headers=None, proxies=None, cookies=None):
     """
     Download images from links in an async style.
     """
     loop = asyncio.get_event_loop()
     result = [async_save_img(url, random_name=random_name,
-                             headers=headers, proxies=proxies) for url in urls]
+                             headers=headers, proxies=proxies, cookies=cookies) for url in urls]
     loop.run_until_complete(asyncio.wait(result))
 
 
@@ -249,8 +253,7 @@ def login(url: str, data: dict, headers: dict=None, params: dict=None, use_cooki
         headers = {'User-Agent': UserAgent().random}
     session = requests.Session()
     if use_cookies:
-        session.cookies = cookiejar.LWPCookieJar(filename='cookies.txt')
-        session.cookies.load(ignore_discard=True)
+        session.cookies = read_cookies()
     try:
         res = session.post(url, data=data, headers=headers, params=params)
         print(res.status_code)
