@@ -1,12 +1,15 @@
-import asyncio
+import pymongo
 import looter as lt
 from pprint import pprint
+from concurrent import futures
 
 domain = 'https://www.javbus.pw'
-total = []
+client = pymongo.MongoClient()
+db = client.jav
+col = db.torrents
 
-async def crawl(url):
-    tree = await lt.async_fetch(url)
+def crawl(url):
+    tree = lt.fetch(url)
     items = tree.cssselect('#waterfall .item')
     for item in items:
         data = dict()
@@ -16,12 +19,10 @@ async def crawl(url):
         data['bango'] = item.cssselect('date')[0].text
         data['date'] = item.cssselect('date')[1].text
         pprint(data)
-        total.append(data)
+        col.insert_one(data)
 
 
 if __name__ == '__main__':
     tasklist = [f'{domain}/page/{i}' for i in range(1, 90)]
-    loop = asyncio.get_event_loop()
-    result = [crawl(task) for task in tasklist]
-    loop.run_until_complete(asyncio.wait(result))
-    lt.save_as_json(total, name='jav')
+    with futures.ThreadPoolExecutor(50) as executor:
+        executor.map(crawl, tasklist)

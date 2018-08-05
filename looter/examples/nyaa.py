@@ -20,7 +20,6 @@ async def crawl(url):
         data['leechers'] = int(post.cssselect('td.text-center')[4].text)
         data['downloads'] = int(post.cssselect('td.text-center')[5].text)
         pprint(data)
-        # You can define your save_data function in advance and call it here :)
 
 
 if __name__ == '__main__':
