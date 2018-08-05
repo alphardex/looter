@@ -25,7 +25,7 @@ from lxml import etree
 from docopt import docopt
 from .utils import *
 
-VERSION = '1.84'
+VERSION = '1.85'
 
 BANNER = """
 Available objects:
@@ -85,13 +85,13 @@ def fetch(url: str, headers=None, proxies=None, use_cookies=False):
         print('Failed to fetch the page.')
 
 
-async def async_fetch(url: str, headers=None, proxies=None, use_cookies=False):
+async def async_fetch(url: str, headers=None, proxy=None, use_cookies=False):
     """Fetch the element tree in an async style.
 
     Args:
         url (str): The url of the site.
         headers (optional): Defaults to fake-useragent, can be customed by user.
-        proxies (optional): Defaults to None, can be customed by user.
+        proxy (optional): Defaults to None, can be customed by user.
         use_cookies (bool, optional): Defaults to False, if turn it on, paste document.cookie to a 'cookies.txt' file.
 
     Returns:
@@ -100,8 +100,8 @@ async def async_fetch(url: str, headers=None, proxies=None, use_cookies=False):
     cookies = read_cookies() if use_cookies else None
     if not headers:
         headers = {'User-Agent': UserAgent().random}
-    async with aiohttp.ClientSession() as ses:
-        async with ses.get(url, headers=headers, proxies=proxies, cookies=cookies) as res:
+    async with aiohttp.ClientSession(cookies=cookies) as ses:
+        async with ses.get(url, headers=headers, proxy=proxy) as res:
             html = await res.text()
             tree = etree.HTML(html)
             return tree
@@ -128,13 +128,13 @@ def save_imgs(urls, random_name=False, headers=None, proxies=None, cookies=None)
     return [save_img(url, random_name=random_name, headers=headers, proxies=proxies, cookies=cookies) for url in urls]
 
 
-def async_save_imgs(urls: str, random_name=False, headers=None, proxies=None, cookies=None):
+def async_save_imgs(urls: str, random_name=False, headers=None, proxy=None, cookies=None):
     """
     Download images from links in an async style.
     """
     loop = asyncio.get_event_loop()
     result = [async_save_img(url, random_name=random_name,
-                             headers=headers, proxies=proxies, cookies=cookies) for url in urls]
+                             headers=headers, proxy=proxy, cookies=cookies) for url in urls]
     loop.run_until_complete(asyncio.wait(result))
 
 

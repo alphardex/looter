@@ -130,14 +130,14 @@ def save_img(url: str, random_name=False, headers=None, proxies=None, cookies=No
         print(f'Saved {name}')
 
 
-async def async_save_img(url: str, random_name=False, headers=None, proxies=None, cookies=None):
+async def async_save_img(url: str, random_name=False, headers=None, proxy=None, cookies=None):
     """Save an image in an async style.
 
     Args:
         url (str): The url of the site.
         random_name (int, optional): Defaults to False. If names of images are duplicated, use this.
         headers (optional): Defaults to fake-useragent, can be customed by user.
-        proxies (optional): Defaults to None, can be customed by user.
+        proxy (optional): Defaults to None, can be customed by user.
         cookies (optional): Defaults to None, if needed, use read_cookies().
     """
     if not headers:
@@ -146,8 +146,8 @@ async def async_save_img(url: str, random_name=False, headers=None, proxies=None
     if random_name:
         name = f'{name[:-4]}{str(uuid.uuid1())[:8]}{name[-4:]}'
     with open(name, 'wb') as f:
-        async with aiohttp.ClientSession() as ses:
-            async with ses.get(url, headers=headers, proxies=proxies, cookies=cookies) as res:
+        async with aiohttp.ClientSession(cookies=cookies) as ses:
+            async with ses.get(url, headers=headers, proxy=proxy) as res:
                 data = await res.read()
                 f.write(data)
                 print(f'Saved {name}')
