@@ -104,6 +104,6 @@ def test_expand_num():
 @pytest.mark.ok
 def test_read_cookies():
     url = 'http://httpbin.org/cookies'
-    cookies = lt.read_cookies()
+    cookies = lt.read_cookies(filename='./looter/examples/cookies.txt')
     r = lt.send_request(url, cookies=cookies)
     assert dict(cookies.items()) == r.json()['cookies']
