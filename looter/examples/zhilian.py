@@ -1,6 +1,5 @@
 import pymongo
 import looter as lt
-from pprint import pprint
 from concurrent import futures
 
 domain = 'https://sou.zhaopin.com'

@@ -260,7 +260,7 @@ jav\_settings.py
 
 The 'datasource' refers to the 'torrents' collection in the 'jav' database, and the data is sorted in descending order by 'date'.
 
-Run jav\_api.py，and go to [this link](http://127.0.0.1:5000/jav), you can find your api right away.
+Run jav\_api.py，and go to \ `this link <http://127.0.0.1:5000/jav>`__, you can find your api right away.
 
 If you want to do a query, use 'where' querystring and a regex pattern. 
 
