@@ -222,7 +222,7 @@ Build your api
 
 Sometimes it's not enough to simply crawl data to the database. If you want to "publish" your data, you need to build an api. Once built, you can show your data to others in the form of web pages, apps, and even WeChat miniprograms.
 
-A framework named \ `eve <https://github.com/pyeve/eve>`__\ can do the job.
+A framework named \ `eve <https://github.com/pyeve/eve>`__ can do the job.
 
 .. code:: python
 
