@@ -216,3 +216,58 @@ Anti-anti-spider
 -  Dynamic JS site: `requestium <https://github.com/tryolabs/requestium>`_ or Sniffer
 -  Login: `fuck-login <https://github.com/xchaoinfo/fuck-login>`_
 -  Captcha: Tesseract or OpenCV or Keras or captcha human bypass
+
+Build your api
+==============
+
+Sometimes it's not enough to simply crawl data to the database. If you want to "publish" your data, you need to build an api. Once built, you can show your data to others in the form of web pages, apps, and even WeChat miniprograms.
+
+A framework named \ `eve <https://github.com/pyeve/eve>`__\ can do the job.
+
+.. code:: python
+
+    $ pip install eve
+
+Supposing you've used the crawler to crawl the jav data and store it in the MongoDB, creating the api only needs two files: one is the api file (essentially a flask app instance), and the other is the api configuration file.
+
+jav\_api.py
+
+.. code:: python
+
+    from eve import Eve
+
+    app = Eve(settings='jav_settings.py')
+
+    if __name__ == '__main__':
+        app.run()
+
+jav\_settings.py
+
+.. code:: python
+
+    # validation rules: http://docs.python-cerberus.org/en/stable/validation-rules.html
+    jav = {
+        'datasource': {
+            'source': 'torrents',
+            'default_sort': [('date', -1)]
+        }
+    }
+    ALLOW_UNKNOWN = True
+    DOMAIN = {'jav': jav}
+    MONGO_DBNAME = 'jav'
+    MONGO_QUERY_BLACKLIST = ['$where']
+    RENDERERS = ['eve.render.JSONRenderer']
+
+The 'datasource' refers to the 'torrents' collection in the 'jav' database, and the data is sorted in descending order by 'date'.
+
+Run jav\_api.py，and go to [this link](http://127.0.0.1:5000/jav), you can find your api right away.
+
+If you want to do a query, use 'where' querystring and a regex pattern. 
+
+::
+
+    http://127.0.0.1:5000/jav?where={"name":{"$regex":"波多"}}
+
+If you want to build a more robust RESTful Api, plz refer to \ `eve's documentation <http://python-eve.org/>`__\.
+
+And your api is done :)
