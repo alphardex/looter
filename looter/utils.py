@@ -1,3 +1,4 @@
+import os
 import time
 import uuid
 import functools
@@ -124,7 +125,8 @@ def save_img(url: str, random_name=False, headers=None, proxies=None, cookies=No
         headers = {'User-Agent': UserAgent().random}
     url, name = get_img_info(url)
     if random_name:
-        name = f'{name[:-4]}{str(uuid.uuid1())[:8]}{name[-4:]}'
+        fname, ext = os.path.splitext(name)
+        name = f'{fname}{str(uuid.uuid1())[:8]}{ext}'
     with open(name, 'wb') as f:
         f.write(send_request(url, headers=headers, proxies=proxies, cookies=cookies).content)
         print(f'Saved {name}')
@@ -144,7 +146,8 @@ async def async_save_img(url: str, random_name=False, headers=None, proxy=None, 
         headers = {'User-Agent': UserAgent().random}
     url, name = get_img_info(url)
     if random_name:
-        name = f'{name[:-4]}{str(uuid.uuid1())[:8]}{name[-4:]}'
+        fname, ext = os.path.splitext(name)
+        name = f'{fname}{str(uuid.uuid1())[:8]}{ext}'
     with open(name, 'wb') as f:
         async with aiohttp.ClientSession(cookies=cookies) as ses:
             async with ses.get(url, headers=headers, proxy=proxy) as res:
