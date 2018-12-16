@@ -1,0 +1,20 @@
+import looter as lt
+from pprint import pprint
+from concurrent import futures
+
+domain = ''
+
+
+def crawl(url):
+    tree = lt.fetch(url)
+    items = tree.css()
+    for item in items:
+        data = {}
+        # data[...] = item.css(...)
+        pprint(data)
+
+
+if __name__ == '__main__':
+    tasklist = []
+    with futures.ThreadPoolExecutor(20) as executor:
+        executor.map(crawl, tasklist)

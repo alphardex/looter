@@ -1,0 +1,7 @@
+include LICENSE
+include README.rst
+
+graft looter
+
+global-exclude __pycache__
+global-exclude *.py[co]
