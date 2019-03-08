@@ -28,3 +28,4 @@ if __name__ == '__main__':
     tasklist = [f'{domain}/?i=1;m_Sort=relevance;page={n}' for n in range(1, 1196)]
     with futures.ThreadPoolExecutor(50) as executor:
         executor.map(crawl, tasklist)
+    

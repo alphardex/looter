@@ -1,4 +1,5 @@
 import asyncio
+from pathlib import Path
 import looter as lt
 
 domain = 'https://konachan.net'
@@ -16,6 +17,4 @@ if __name__ == '__main__':
     loop = asyncio.get_event_loop()
     result = [crawl(task) for task in tasklist]
     loop.run_until_complete(asyncio.wait(result))
-    with open('konachan.txt', 'w') as f:
-        for img in total:
-            f.write(f'{img}\n')
+    Path('konachan.txt').write_text('\n'.join(total))
