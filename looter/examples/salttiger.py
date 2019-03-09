@@ -21,4 +21,4 @@ def crawl(url):
 if __name__ == '__main__':
     task = f'{domain}/archives/'
     result = crawl(task)
-    lt.save_as_json(result, name='salttiger.json', sort_by='comments')
+    lt.save_as_json(result, name='salttiger.json', sort_by='comments', order='desc')

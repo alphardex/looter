@@ -139,7 +139,7 @@ def links(res: requests.models.Response, search: str=None, pattern: str=None) ->
     return list(set(hrefs))
 
 
-def save_as_json(total: list, name='data.json', sort_by: str=None, no_duplicate=False):
+def save_as_json(total: list, name='data.json', sort_by: str=None, no_duplicate=False, order='asc'):
     """Save what you crawled as a json file.
 
     Args:
@@ -147,9 +147,11 @@ def save_as_json(total: list, name='data.json', sort_by: str=None, no_duplicate=
         name (str, optional): Defaults to 'data'. The name of the file.
         sort_by (str, optional): Defaults to None. Sort items by a specific key.
         no_duplicate (bool, optional): Defaults to False. If True, it will remove duplicated data.
+        order (str, optional): Defaults to 'asc'. The opposite option is 'desc'.
     """
     if sort_by:
-        total = sorted(total, key=itemgetter(sort_by))
+        reverse = True if order == 'desc' else False
+        total = sorted(total, key=itemgetter(sort_by), reverse=reverse)
     if no_duplicate:
         unique = []
         for obj in total:
