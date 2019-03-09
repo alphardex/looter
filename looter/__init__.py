@@ -26,7 +26,7 @@ from docopt import docopt
 from boltons.urlutils import find_all_links
 from .utils import *
 
-VERSION = '2.11'
+VERSION = '2.12'
 DEFAULT_HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'}
 BANNER = """
 Available objects:
