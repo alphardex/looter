@@ -61,7 +61,13 @@ Or another elegant way :d
 
     >>> imgs = links(res, pattern=r'.*/(jpeg|image)/.*')
 
-Then, you can use **wget** to download them to your local disk :)
+Save these urls to 'konachan.txt'
+
+.. code:: python
+
+    >>> Path('konachan.txt').write_text('\n'.join(imgs))
+
+Then, you can use **wget** to download these images to your local disk :)
 
 .. code:: bash
 
