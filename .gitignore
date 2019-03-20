@@ -12,3 +12,6 @@ dist/
 .coverage
 coverage.xml
 htmlcov
+
+# Sphinx documentation
+docs/_build/
