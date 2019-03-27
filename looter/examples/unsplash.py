@@ -1,7 +1,9 @@
+import os
 from pprint import pprint
 from concurrent import futures
 import requests
 import looter as lt
+import pandas as pd
 
 domain = 'https://unsplash.com'
 total = []
@@ -23,3 +25,5 @@ if __name__ == '__main__':
     with futures.ThreadPoolExecutor(50) as executor:
         executor.map(crawl, tasklist)
     lt.save_as_json(total, name='unsplash.json', sort_by='likes', order='desc')
+    pd.read_json('unsplash.json', encoding='utf-8').to_csv('unsplash.csv', encoding='utf-8')
+    os.remove('unsplash.json')
