@@ -171,7 +171,7 @@ def save_as_json(total: list,
         reverse = order == 'desc'
         total = sorted(total, key=itemgetter(sort_by), reverse=reverse)
     if no_duplicate:
-        total = [dict(key) for key, _ in groupby(total)]
+        total = [key for key, _ in groupby(total)]
     data = json.dumps(total, ensure_ascii=False)
     Path(name).write_text(data, encoding='utf-8')
 
