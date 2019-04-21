@@ -28,7 +28,7 @@ from parsel import Selector
 from docopt import docopt
 from boltons.urlutils import find_all_links
 
-VERSION = '2.13'
+VERSION = '2.14'
 DEFAULT_HEADERS = {
     'User-Agent':
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
@@ -198,12 +198,13 @@ def cli():
         if not res:
             exit('Failed to fetch the page.')
         tree = Selector(text=res.text)
+        allvars = {**locals(), **globals()}
         try:
             from ptpython.repl import embed
             print(BANNER)
-            embed(globals())
+            embed(allvars)
         except ImportError:
-            code.interact(local=globals(), banner=BANNER)
+            code.interact(local=allvars, banner=BANNER)
 
 
 if __name__ == '__main__':
