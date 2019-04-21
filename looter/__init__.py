@@ -19,6 +19,7 @@ import code
 import re
 import webbrowser
 from operator import itemgetter
+from itertools import groupby
 from pathlib import Path
 import tempfile
 import requests
@@ -170,11 +171,7 @@ def save_as_json(total: list,
         reverse = order == 'desc'
         total = sorted(total, key=itemgetter(sort_by), reverse=reverse)
     if no_duplicate:
-        unique = []
-        for obj in total:
-            if obj not in unique:
-                unique.append(obj)
-        total = unique
+        total = [dict(key) for key, _ in groupby(total)]
     data = json.dumps(total, ensure_ascii=False)
     Path(name).write_text(data, encoding='utf-8')
 
