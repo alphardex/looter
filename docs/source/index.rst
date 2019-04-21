@@ -47,7 +47,7 @@ Here's a very simple image crawler: First, open it with shell
 
 .. code:: bash
 
-    $ looter shell konachan.com/post
+    $ looter shell https://konachan.com/post
 
 Then, you can extract all the urls of the images
 
@@ -177,21 +177,6 @@ If you want your data to be converted to another format, use pandas:
     >>> import pandas as pd
     >>> data = pd.read_json('xxx.json')
     >>> data.to_csv()
-
-login
------
-
-Login the site using POST request, data required.
-
-.. code:: python
-
-    >>> params = {'df': 'mail126_letter', 'from': 'web', 'funcid': 'loginone', 'iframe': '1', 'language': '-1', 'passtype': '1', 'product': 'mail126',
-     'verifycookie': '-1', 'net': 'failed', 'style': '-1', 'race': '-2_-2_-2_db', 'uid': 'webscraping123@126.com', 'hid': '10010102'}
-    >>> postdata = {'username': ..., 'savelogin': '1', 'url2': 'http://mail.126.com/errorpage/error126.htm', 'password': ...}
-    >>> url = "https://mail.126.com/entry/cgi/ntesdoor?"
-    >>> res, ses = login(url, postdata, params=params)
-    >>> index_url = re.findall(r'href = "(.*?)"', res.text)[0]
-    >>> index = ses.get(index_url)
 
 Summary
 =======

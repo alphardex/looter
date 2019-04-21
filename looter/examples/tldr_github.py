@@ -33,7 +33,7 @@ def crawl(task: str):
 
 
 if __name__ == "__main__":
-    tasklist = Path('tldr_github.txt').read_text().split(', ')
+    tasklist = Path(r'tldr_github.txt').read_text().split(', ')
     [crawl(task) for task in tasklist]
     save_as_json(total, name='tldr_github.json', sort_by='stars', no_duplicate=True, order='desc')
     pd.read_json('tldr_github.json', encoding='utf-8').to_csv('tldr_github.csv', encoding='utf-8')

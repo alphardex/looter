@@ -9,6 +9,7 @@ docopt = "*"
 parsel = "*"
 requests = "*"
 boltons = "*"
+idna-ssl = "*"
 
 [dev-packages]
 pytest = "*"
@@ -18,4 +19,4 @@ pytest-cov = "*"
 python_version = "3.6"
 
 [scripts]
-tests = "pytest --cov-report html --cov=looter --cov-config .coveragerc -v -m ok"
+coverage = "pytest --cov-report html --cov=looter --cov-config .coveragerc -v -m ok"

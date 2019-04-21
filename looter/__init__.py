@@ -13,21 +13,26 @@ Options:
   --version        Show version.
   --async          Use async instead of concurrent.
 """
+import os
 import json
 import code
 import re
 import webbrowser
 from operator import itemgetter
 from pathlib import Path
+import tempfile
+import requests
 import aiohttp
 from lxml import etree
 from parsel import Selector
 from docopt import docopt
 from boltons.urlutils import find_all_links
-from .utils import *
 
-VERSION = '2.12'
-DEFAULT_HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'}
+VERSION = '2.13'
+DEFAULT_HEADERS = {
+    'User-Agent':
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+}
 BANNER = """
 Available objects:
     url           The url of the site you crawled.
@@ -39,7 +44,6 @@ Available functions:
     view          View the page in your browser. (test rendering)
     links         Get the links of the page.
     save_as_json  Save what you crawled as a json file.
-    login         Login the site using POST request, data required.
 
 Examples:
     Get all the <li> elements of a <ul> table:
@@ -54,24 +58,28 @@ For more info, plz refer to these sites:
 """
 
 
-def fetch(url: str, headers: dict=DEFAULT_HEADERS, proxies: dict=None, use_cookies=False, use_parsel=True):
+def fetch(url: str,
+          headers: dict = DEFAULT_HEADERS,
+          proxies: dict = None,
+          cookies=None,
+          use_parsel=True):
     """
     Send HTTP request and parse it as a tree.
 
     Args:
         url (str): The url of the site.
-        headers (dict, optional): Defaults to DEFAULT_HEADERS, can be customed.
-        proxies (dict, optional): Defaults to None, can be customed.
-        use_cookies (bool, optional): Defaults to False, if turn it on, paste document.cookie to a 'cookies.txt' file.
+        headers (dict, optional): Defaults to DEFAULT_HEADERS.
+        proxies (dict, optional): Defaults to None.
+        cookies (optional): Defaults to None.
         use_parsel (bool, optional): Defaults to True, use parsel to parse the page. (Just like scrapy)
 
     Returns:
         The element tree of html.
     """
-    url = ensure_schema(url)
-    cookies = read_cookies() if use_cookies else requests.cookies.RequestsCookieJar()
+    cookies = cookies or requests.cookies.RequestsCookieJar()
     try:
-        res = requests.get(url, headers=headers, proxies=proxies, cookies=cookies)
+        res = requests.get(
+            url, headers=headers, proxies=proxies, cookies=cookies)
         res.raise_for_status()
     except Exception as e:
         print(f'[Err] {e}')
@@ -81,21 +89,24 @@ def fetch(url: str, headers: dict=DEFAULT_HEADERS, proxies: dict=None, use_cooki
         return tree
 
 
-async def async_fetch(url: str, headers: dict=DEFAULT_HEADERS, proxy: dict=None, use_cookies=False, use_parsel=True):
+async def async_fetch(url: str,
+                      headers: dict = DEFAULT_HEADERS,
+                      proxy: dict = None,
+                      cookies=None,
+                      use_parsel=True):
     """Parse the element tree in an async style.
 
     Args:
         url (str): The url of the site.
-        headers (dict, optional): Defaults to DEFAULT_HEADERS, can be customed.
-        proxy (dict, optional): Defaults to None, can be customed.
-        use_cookies (bool, optional): Defaults to False, if turn it on, paste document.cookie to a 'cookies.txt' file.
+        headers (dict, optional): Defaults to DEFAULT_HEADERS.
+        proxy (dict, optional): Defaults to None.
+        cookies (optional): Defaults to None.
         use_parsel (bool, optional): Defaults to True, use parsel to parse the page. (Just like scrapy)
 
     Returns:
         The element tree of html.
     """
-    url = ensure_schema(url)
-    cookies = read_cookies() if use_cookies else None
+    cookies = cookies or requests.cookies.RequestsCookieJar()
     async with aiohttp.ClientSession(cookies=cookies) as ses:
         async with ses.get(url, headers=headers, proxy=proxy) as res:
             html = await res.text()
@@ -103,24 +114,26 @@ async def async_fetch(url: str, headers: dict=DEFAULT_HEADERS, proxy: dict=None,
             return tree
 
 
-def view(url: str, encoding='utf-8', name='test.html'):
+def view(url: str):
     """
     View the page whether rendered properly. (ensure the <base> tag to make external links work)
 
     Args:
         url (str): The url of the site.
-        encoding (str, optional): Defaults to 'utf-8'. The encoding of the file.
-        name (str, optional): Defaults to 'test.html'. The name of the file.
     """
-    url = ensure_schema(url)
-    html = requests.get(url, headers=DEFAULT_HEADERS).text
-    if '<base' not in html:
-        html = html.replace('<head>', f'<head><base href="{url}">')
-    Path(name).write_text(html, encoding=encoding)
-    webbrowser.open(name, new=1)
+    html = requests.get(url, headers=DEFAULT_HEADERS).content
+    if b'<base' not in html:
+        repl = f'<head><base href="{url}">'
+        html = html.replace(b'<head>', repl.encode('utf-8'))
+    fd, fname = tempfile.mkstemp('.html')
+    os.write(fd, html)
+    os.close(fd)
+    return webbrowser.open(f'file://{fname}')
 
 
-def links(res: requests.models.Response, search: str=None, pattern: str=None) -> list:
+def links(res: requests.models.Response,
+          search: str = None,
+          pattern: str = None) -> list:
     """Get the links of the page.
 
     Args:
@@ -139,7 +152,11 @@ def links(res: requests.models.Response, search: str=None, pattern: str=None) ->
     return list(set(hrefs))
 
 
-def save_as_json(total: list, name='data.json', sort_by: str=None, no_duplicate=False, order='asc'):
+def save_as_json(total: list,
+                 name='data.json',
+                 sort_by: str = None,
+                 no_duplicate=False,
+                 order='asc'):
     """Save what you crawled as a json file.
 
     Args:
@@ -150,7 +167,7 @@ def save_as_json(total: list, name='data.json', sort_by: str=None, no_duplicate=
         order (str, optional): Defaults to 'asc'. The opposite option is 'desc'.
     """
     if sort_by:
-        reverse = True if order == 'desc' else False
+        reverse = order == 'desc'
         total = sorted(total, key=itemgetter(sort_by), reverse=reverse)
     if no_duplicate:
         unique = []
@@ -160,30 +177,6 @@ def save_as_json(total: list, name='data.json', sort_by: str=None, no_duplicate=
         total = unique
     data = json.dumps(total, ensure_ascii=False)
     Path(name).write_text(data, encoding='utf-8')
-
-
-def login(url: str, data: dict, headers: dict=DEFAULT_HEADERS, params: dict=None, use_cookies=False) -> tuple:
-    """Login the site using POST request, data required.
-
-    Args:
-        url (str): The login_page url of the site.
-        data (dict): The POST request form data.
-        headers (dict, optional): Defaults to DEFAULT_HEADERS, can be customed.
-        params (dict, optional): Defaults to {}, can be customed by user.
-        use_cookies (bool, optional): Defaults to False, use cookies to login (needs a 'cookies.txt' file)
-
-    Returns:
-        tuple: If succeeded, the response and session will be returned to access the site.
-    """
-    session = requests.Session()
-    session.cookies = read_cookies() if use_cookies else requests.cookies.RequestsCookieJar()
-    try:
-        res = session.post(url, data=data, headers=headers, params=params)
-        print(res.status_code)
-        print(res.text)
-        return res, session
-    except Exception as e:
-        print(f'[Err] {e}')
 
 
 def cli():
@@ -199,19 +192,18 @@ def cli():
         template_text = package_dir.joinpath('templates', template).read_text()
         Path(name).write_text(template_text)
     if argv['shell']:
-        url = argv['<url>'] if argv['<url>'] else input('Plz specific a site to crawl\nurl: ')
-        url = ensure_schema(url)
+        url = argv['<url>'] if argv['<url>'] else input(
+            'Plz specific a site to crawl\nurl: ')
         res = requests.get(url, headers=DEFAULT_HEADERS)
         if not res:
             exit('Failed to fetch the page.')
         tree = Selector(text=res.text)
-        allvars = {**locals(), **globals()}
         try:
             from ptpython.repl import embed
             print(BANNER)
-            embed(allvars)
+            embed(globals())
         except ImportError:
-            code.interact(local=allvars, banner=BANNER)
+            code.interact(local=globals(), banner=BANNER)
 
 
 if __name__ == '__main__':
