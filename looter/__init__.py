@@ -24,12 +24,11 @@ from pathlib import Path
 import tempfile
 import requests
 import aiohttp
-from lxml import etree
 from parsel import Selector
 from docopt import docopt
 from boltons.urlutils import find_all_links
 
-VERSION = '2.14'
+VERSION = '2.15'
 DEFAULT_HEADERS = {
     'User-Agent':
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
@@ -53,76 +52,58 @@ Examples:
     Get the links with a regex pattern:
         >>> items = links(res, pattern=r'.*/(jpeg|image)/.*')
 
-For more info, plz refer to these sites:
+For more info, plz refer to documentation:
     [looter]: https://looter.readthedocs.io/en/latest/
-    [parsel]: http://parsel.readthedocs.io/en/latest/
 """
 
 
-def fetch(url: str,
-          headers: dict = DEFAULT_HEADERS,
-          proxies: dict = None,
-          cookies=None,
-          use_parsel=True):
+def fetch(url: str, fail_silent=True, **kwargs) -> Selector:
     """
-    Send HTTP request and parse it as a tree.
+    Send HTTP request and parse it as a DOM tree.
 
     Args:
         url (str): The url of the site.
-        headers (dict, optional): Defaults to DEFAULT_HEADERS.
-        proxies (dict, optional): Defaults to None.
-        cookies (optional): Defaults to None.
-        use_parsel (bool, optional): Defaults to True, use parsel to parse the page. (Just like scrapy)
+        fail_silent (bool, optional): Defaults to True. If False, an exception will be raised when fails.
 
     Returns:
-        The element tree of html.
+        Selector: allows you to select parts of HTML text using CSS or XPath expressions.
     """
-    cookies = cookies or requests.cookies.RequestsCookieJar()
-    try:
-        res = requests.get(
-            url, headers=headers, proxies=proxies, cookies=cookies)
+    kwargs.setdefault('headers', DEFAULT_HEADERS)
+    res = requests.get(url, **kwargs)
+    if not fail_silent:
         res.raise_for_status()
-    except Exception as e:
-        print(f'[Err] {e}')
-    else:
-        html = res.text
-        tree = Selector(text=html) if use_parsel else etree.HTML(html)
-        return tree
+    html = res.text
+    tree = Selector(text=html)
+    return tree
 
 
-async def async_fetch(url: str,
-                      headers: dict = DEFAULT_HEADERS,
-                      proxy: dict = None,
-                      cookies=None,
-                      use_parsel=True):
-    """Parse the element tree in an async style.
+async def async_fetch(url: str, **kwargs) -> Selector:
+    """
+    Do the fetch in an async style.
 
     Args:
         url (str): The url of the site.
-        headers (dict, optional): Defaults to DEFAULT_HEADERS.
-        proxy (dict, optional): Defaults to None.
-        cookies (optional): Defaults to None.
-        use_parsel (bool, optional): Defaults to True, use parsel to parse the page. (Just like scrapy)
 
     Returns:
-        The element tree of html.
+        Selector: allows you to select parts of HTML text using CSS or XPath expressions.
     """
-    cookies = cookies or requests.cookies.RequestsCookieJar()
-    async with aiohttp.ClientSession(cookies=cookies) as ses:
-        async with ses.get(url, headers=headers, proxy=proxy) as res:
+    kwargs.setdefault('headers', DEFAULT_HEADERS)
+    async with aiohttp.ClientSession(**kwargs) as ses:
+        async with ses.get(url, **kwargs) as res:
             html = await res.text()
-            tree = Selector(text=html) if use_parsel else etree.HTML(html)
+            tree = Selector(text=html)
             return tree
 
 
-def view(url: str):
+def view(url: str, **kwargs) -> bool:
     """
     View the page whether rendered properly. (ensure the <base> tag to make external links work)
 
     Args:
         url (str): The url of the site.
     """
-    html = requests.get(url, headers=DEFAULT_HEADERS).content
+    kwargs.setdefault('headers', DEFAULT_HEADERS)
+    html = requests.get(url, **kwargs).content
     if b'<base' not in html:
         repl = f'<head><base href="{url}">'
         html = html.replace(b'<head>', repl.encode('utf-8'))
@@ -162,7 +143,7 @@ def save_as_json(total: list,
 
     Args:
         total (list): Total of data you crawled.
-        name (str, optional): Defaults to 'data'. The name of the file.
+        name (str, optional): Defaults to 'data.json'. The name of the file.
         sort_by (str, optional): Defaults to None. Sort items by a specific key.
         no_duplicate (bool, optional): Defaults to False. If True, it will remove duplicated data.
         order (str, optional): Defaults to 'asc'. The opposite option is 'desc'.
