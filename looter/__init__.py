@@ -28,7 +28,7 @@ from parsel import Selector
 from docopt import docopt
 from boltons.urlutils import find_all_links
 
-VERSION = '2.15'
+VERSION = '2.16'
 DEFAULT_HEADERS = {
     'User-Agent':
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
@@ -57,24 +57,26 @@ For more info, plz refer to documentation:
 """
 
 
-def fetch(url: str, fail_silent=True, **kwargs) -> Selector:
+def fetch(url: str, **kwargs) -> Selector:
     """
     Send HTTP request and parse it as a DOM tree.
 
     Args:
         url (str): The url of the site.
-        fail_silent (bool, optional): Defaults to True. If False, an exception will be raised when fails.
 
     Returns:
         Selector: allows you to select parts of HTML text using CSS or XPath expressions.
     """
     kwargs.setdefault('headers', DEFAULT_HEADERS)
-    res = requests.get(url, **kwargs)
-    if not fail_silent:
+    try:
+        res = requests.get(url, **kwargs)
         res.raise_for_status()
-    html = res.text
-    tree = Selector(text=html)
-    return tree
+    except requests.RequestException as e:
+        print(e)
+    else:
+        html = res.text
+        tree = Selector(text=html)
+        return tree
 
 
 async def async_fetch(url: str, **kwargs) -> Selector:
