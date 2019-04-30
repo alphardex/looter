@@ -34,6 +34,6 @@ if __name__ == '__main__':
     tasklist = [f'{domain}/anime/list/399538/collect?orderby=date&page={n}' for n in range(1, 4)]
     with futures.ThreadPoolExecutor(20) as executor:
         executor.map(crawl, tasklist)
-    lt.save_as_json(total, name='bangumi.json', sort_by='date', order='desc')
+    lt.save(total, name='bangumi.json', sort_by='date', order='desc')
     generate()
     os.remove('bangumi.json')

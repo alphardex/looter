@@ -1,7 +1,6 @@
 import os
 from pprint import pprint
 import looter as lt
-import pandas as pd
 
 domain = 'https://salttiger.com'
 
@@ -23,6 +22,4 @@ def crawl(url):
 if __name__ == '__main__':
     task = f'{domain}/archives/'
     result = crawl(task)
-    lt.save_as_json(result, name='salttiger.json', sort_by='comments', order='desc')
-    pd.read_json('salttiger.json', encoding='utf-8').to_csv('salttiger.csv', encoding='utf-8')
-    os.remove('salttiger.json')
+    lt.save(result, name='salttiger.csv', sort_by='comments', order='desc')

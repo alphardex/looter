@@ -28,7 +28,7 @@ from parsel import Selector
 from docopt import docopt
 from boltons.urlutils import find_all_links
 
-VERSION = '2.16'
+VERSION = '2.17'
 DEFAULT_HEADERS = {
     'User-Agent':
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
@@ -43,7 +43,7 @@ Available functions:
     fetch         Send HTTP request to the site and parse it as a tree. [has async version]
     view          View the page in your browser. (test rendering)
     links         Get the links of the page.
-    save_as_json  Save what you crawled as a json file.
+    save          Save what you crawled as a file. (json or csv)
 
 Examples:
     Get all the <li> elements of a <ul> table:
@@ -118,7 +118,8 @@ def view(url: str, **kwargs) -> bool:
 def links(res: requests.models.Response,
           search: str = None,
           pattern: str = None) -> list:
-    """Get the links of the page.
+    """
+    Get the links of the page.
 
     Args:
         res (requests.models.Response): The response of the page.
@@ -136,12 +137,13 @@ def links(res: requests.models.Response,
     return list(set(hrefs))
 
 
-def save_as_json(total: list,
-                 name='data.json',
-                 sort_by: str = None,
-                 no_duplicate=False,
-                 order='asc'):
-    """Save what you crawled as a json file.
+def save(total: list,
+         name='data.json',
+         sort_by: str = None,
+         no_duplicate=False,
+         order='asc'):
+    """
+    Save what you crawled as a file, default format is json.
 
     Args:
         total (list): Total of data you crawled.
@@ -155,9 +157,18 @@ def save_as_json(total: list,
         total = sorted(total, key=itemgetter(sort_by), reverse=reverse)
     if no_duplicate:
         total = [key for key, _ in groupby(total)]
-    data = json.dumps(total, ensure_ascii=False)
-    Path(name).write_text(data, encoding='utf-8')
-
+    _, ext = name.split('.')
+    if ext == 'json':
+        data = json.dumps(total, ensure_ascii=False)
+        Path(name).write_text(data, encoding='utf-8')
+    elif ext == 'csv':
+        try:
+            import pandas as pd
+            pd.DataFrame(total).to_csv(name, encoding='utf-8')
+        except ImportError:
+            exit('pandas not installed! Plz run `pip install pandas` for csv convertion.')
+    else:
+        exit('Sorry, other formats are not supported yet.\nSupported formats: json, csv')
 
 def cli():
     """

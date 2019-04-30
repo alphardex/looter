@@ -160,23 +160,17 @@ Get the links of the page.
     >>> links(res, search='...')    # search the links you want
     >>> links(res, pattern=r'...')  # search the links with a regex pattern
 
-save\_as\_json
+save
 --------------
 
-Save what you crawled as a json file, supports sorting and duplicate removal.
+Save what you crawled as a file, supports sorting and duplicate removal.
 
 .. code:: python
 
     >>> total = [...]
-    >>> save_as_json(total, sort_by='key', no_duplicate=True)
+    >>> save(total, sort_by='key', no_duplicate=True)
 
-If you want your data to be converted to another format, use pandas:
-
-.. code:: python
-
-    >>> import pandas as pd
-    >>> data = pd.read_json('xxx.json')
-    >>> data.to_csv()
+If you want your data to be converted to csv, just set the file extension to csv, but you should have pandas installed for convertion.
 
 Summary
 =======

@@ -24,4 +24,4 @@ if __name__ == '__main__':
     tasklist = [f'{domain}/page/{i}' for i in range(1, 90)]
     with futures.ThreadPoolExecutor(50) as executor:
         executor.map(crawl, tasklist)
-    lt.save_as_json(total, name='jav.json')
+    lt.save(total, name='jav.json')

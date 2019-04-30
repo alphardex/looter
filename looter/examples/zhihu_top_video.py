@@ -3,7 +3,7 @@ import json
 from pprint import pprint
 from concurrent import futures
 import requests
-from looter import DEFAULT_HEADERS, save_as_json
+from looter import DEFAULT_HEADERS, save
 
 domain = 'https://www.zhihu.com'
 total = []
@@ -35,6 +35,6 @@ if __name__ == '__main__':
     tasklist = [f'{domain}/api/v4/topics/19776749/feeds/essence?&offset={10 * n}&limit=10' for n in range(100)]
     with futures.ThreadPoolExecutor(50) as executor:
         executor.map(crawl, tasklist)
-    save_as_json(total, sort_by='vote', order='desc')
+    save(total, sort_by='vote', order='desc')
     generate()
     os.remove('data.json')

@@ -1,11 +1,8 @@
-import os
 import time
 from pathlib import Path
 from pprint import pprint
-from concurrent import futures
 import requests
-from looter import save_as_json
-import pandas as pd
+from looter import save
 
 url = 'https://api.github.com/search/repositories?q={q}&order=desc'
 headers = {'Authorization': 'token 5cc53c27e2f1e76af222c058651bda84c11ebda8'}
@@ -35,6 +32,4 @@ def crawl(task: str):
 if __name__ == "__main__":
     tasklist = Path(r'tldr_github.txt').read_text().split(', ')
     [crawl(task) for task in tasklist]
-    save_as_json(total, name='tldr_github.json', sort_by='stars', no_duplicate=True, order='desc')
-    pd.read_json('tldr_github.json', encoding='utf-8').to_csv('tldr_github.csv', encoding='utf-8')
-    os.remove('tldr_github.json')
+    save(total, name='tldr_github.csv', sort_by='stars', no_duplicate=True, order='desc')
