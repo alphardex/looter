@@ -28,11 +28,12 @@ from parsel import Selector
 from docopt import docopt
 from boltons.urlutils import find_all_links
 
-VERSION = '2.17'
+VERSION = '2.18'
 DEFAULT_HEADERS = {
     'User-Agent':
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
 }
+DEFAULT_ENCODING = 'utf-8'
 BANNER = """
 Available objects:
     url           The url of the site you crawled.
@@ -70,6 +71,7 @@ def fetch(url: str, **kwargs) -> Selector:
     kwargs.setdefault('headers', DEFAULT_HEADERS)
     try:
         res = requests.get(url, **kwargs)
+        res.encoding = kwargs.get('encoding', DEFAULT_ENCODING)
         res.raise_for_status()
     except requests.RequestException as e:
         print(e)
@@ -186,6 +188,7 @@ def cli():
         url = argv['<url>'] if argv['<url>'] else input(
             'Plz specific a site to crawl\nurl: ')
         res = requests.get(url, headers=DEFAULT_HEADERS)
+        res.encoding = DEFAULT_ENCODING
         if not res:
             exit('Failed to fetch the page.')
         tree = Selector(text=res.text)

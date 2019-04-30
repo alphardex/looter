@@ -17,7 +17,7 @@ def crawl(url):
         data['url'] = item['url']
         data['downloads'] = item['downloads_count']
         data['votes'] = item['votes_count']
-        data['comments'] = items['comments_count']
+        data['comments'] = item['comments_count']
         pprint(data)
         total.append(data)
 
