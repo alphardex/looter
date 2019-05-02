@@ -1,3 +1,6 @@
+"""
+hitomi.la上的游戏cg
+"""
 import pymongo
 from requestium import Session
 from parsel import Selector

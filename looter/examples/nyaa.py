@@ -1,3 +1,6 @@
+"""
+nyaa上的种子，改成sukebei变里版
+"""
 import asyncio
 import looter as lt
 from pprint import pprint

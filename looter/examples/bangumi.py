@@ -1,3 +1,6 @@
+"""
+bangumi上我追的所有番剧
+"""
 import os
 import json
 import re

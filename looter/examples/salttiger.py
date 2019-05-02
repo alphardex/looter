@@ -1,3 +1,6 @@
+"""
+salttiger上的免费国外编程电子书
+"""
 import os
 from pprint import pprint
 import looter as lt

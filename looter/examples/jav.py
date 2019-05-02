@@ -1,3 +1,6 @@
+"""
+8说了你懂的
+"""
 from pprint import pprint
 from concurrent import futures
 import looter as lt

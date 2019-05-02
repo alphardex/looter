@@ -1,3 +1,6 @@
+"""
+konachan上的二次元壁纸原图链接
+"""
 import asyncio
 from pathlib import Path
 import looter as lt

@@ -1,3 +1,6 @@
+"""
+DLsite上的黄油
+"""
 from concurrent import futures
 from pprint import pprint
 import looter as lt

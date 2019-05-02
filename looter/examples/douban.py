@@ -1,3 +1,6 @@
+"""
+豆瓣上的“计算机”标签的书籍
+"""
 import looter as lt
 from pprint import pprint
 from concurrent import futures

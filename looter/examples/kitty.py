@@ -1,3 +1,6 @@
+"""
+种子你懂的
+"""
 import asyncio
 import looter as lt
 from pprint import pprint

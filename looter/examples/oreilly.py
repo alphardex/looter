@@ -1,3 +1,6 @@
+"""
+oreilly上的IT书籍
+"""
 import looter as lt
 from pprint import pprint
 from concurrent import futures

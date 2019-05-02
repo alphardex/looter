@@ -1,3 +1,6 @@
+"""
+tldr手册上的关键字在github上的搜索结果
+"""
 import time
 from pathlib import Path
 from pprint import pprint

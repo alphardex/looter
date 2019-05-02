@@ -1,3 +1,6 @@
+"""
+捷径社区的捷径排行榜
+"""
 from pprint import pprint
 import requests
 import looter as lt
