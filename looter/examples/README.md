@@ -20,6 +20,8 @@
 
 - [konachan](konachan.py): konachan上的二次元壁纸原图链接
 
+- [maoyan_comments](maoyan_comments.py): 猫眼电影影评，以复联4为例
+
 - [nyaa](nyaa.py): nyaa上的种子，改成sukebei变里版
 
 - [oreilly](oreilly.py): oreilly上的IT书籍
@@ -33,5 +35,7 @@
 - [tldr_github](tldr_github.py): tldr手册上的关键字在github上的搜索结果
 
 - [unsplash](unsplash.py): unsplash上的免费壁纸排行
+
+- [v2ex](v2ex.py): v2ex上的Python板块
 
 - [zhihu_top_video](zhihu_top_video.py): 知乎最高点赞的视频排行

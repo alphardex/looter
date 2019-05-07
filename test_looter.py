@@ -57,3 +57,6 @@ def test_save():
         unique_data = json.loads(f.read())
     assert len(dup_data) > len(unique_data)
     os.remove('data.json')
+
+    with pytest.raises(SystemExit):
+        lt.save(data, name='data.csv')
