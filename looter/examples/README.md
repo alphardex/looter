@@ -20,7 +20,7 @@
 
 - [konachan](konachan.py): konachan上的二次元壁纸原图链接
 
-- [maoyan_comments](maoyan_comments.py): 猫眼电影影评，以复联4为例
+- [maoyan_comments](maoyan_comments.py): 猫眼电影影评，以复联4为例，先把时间节点都爬下来，再组合成url用线程池爬，这样效率更高
 
 - [nyaa](nyaa.py): nyaa上的种子，改成sukebei变里版
 
