@@ -1,6 +1,7 @@
 """
 v2ex上的Python板块
 """
+import time
 import looter as lt
 from pprint import pprint
 from concurrent import futures
@@ -21,10 +22,10 @@ def crawl(url):
         data['reply'] = int(reply) if reply else 0
         pprint(data)
         total.append(data)
+    time.sleep(1)
 
 
 if __name__ == '__main__':
     tasklist = [f'{domain}/go/python?p={n}' for n in range(1, 572)]
-    with futures.ThreadPoolExecutor(5) as executor:
-        executor.map(crawl, tasklist)
+    [crawl(task) for task in tasklist]
     lt.save(total, name='v2ex.csv', sort_by='reply', order='desc')
