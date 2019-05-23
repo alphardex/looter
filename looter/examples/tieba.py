@@ -8,7 +8,7 @@ import requests
 from parsel import Selector
 
 domain = 'https://tieba.baidu.com'
-keyword = '四散的尘埃'
+keyword = 'bilibili'
 total = []
 
 
@@ -33,4 +33,4 @@ if __name__ == '__main__':
     tasklist = [f'{domain}/f?kw={keyword}&ie=utf-8&pn={n}' for n in range(501)]
     with futures.ThreadPoolExecutor(50) as executor:
         executor.map(crawl, tasklist)
-    lt.save(total, name='tieba.csv', sort_by='reply', order='desc', no_duplicate=True)
+    lt.save(total, name=f'tieba_{keyword}.csv', sort_by='reply', order='desc', no_duplicate=True)

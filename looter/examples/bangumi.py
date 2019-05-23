@@ -1,5 +1,5 @@
 """
-bangumi上我追的所有番剧
+bangumi上的追番记录
 """
 import os
 import json
@@ -9,6 +9,8 @@ from pprint import pprint
 from concurrent import futures
 
 domain = 'http://bangumi.tv'
+user_id = '399538'
+page_limit = 3
 encoding = 'utf-8'
 total = []
 
@@ -34,7 +36,7 @@ def generate():
 
 
 if __name__ == '__main__':
-    tasklist = [f'{domain}/anime/list/399538/collect?orderby=date&page={n}' for n in range(1, 4)]
+    tasklist = [f'{domain}/anime/list/{user_id}/collect?orderby=date&page={n}' for n in range(1, page_limit+1)]
     with futures.ThreadPoolExecutor(20) as executor:
         executor.map(crawl, tasklist)
     lt.save(total, name='bangumi.json', sort_by='date', order='desc')

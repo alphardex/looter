@@ -1,0 +1,47 @@
+,author,buyCount,desc,price,profile,publishDate,title,url
+0,老錢,19480,大型互联网企业 Redis 实践总结，结合实际问题深入讲解 Redis 内部机制,19.9,掌阅服务端技术专家，互联网分布式高并发技术十年老兵,2018-07-29,Redis 深度历险：核心原理与应用实践,https://juejin.im/book/5afc2e5f6fb9a07a9b362527
+1,小孩子4919,7911,授人以鱼不如授人以渔，从根儿上理解 MySQL，让 MySQL 不再是一个黑盒。,29.9,公众号「我们都是小青蛙」作者，专注将复杂概念简单化,2018-11-29T11:21:45.443Z,MySQL 是怎样运行的：从根儿上理解 MySQL,https://juejin.im/book/5bffcbc9f265da614b11b731
+2,yck,7594,助你建立起完整的前端知识架构体系，探究知识的原理，深入了解大厂常考知识点,49.9,宋小菜高级开发，GitHub 15K Star 项目作者，公众号前端真好玩主笔,2019-02-12,前端面试之道,https://juejin.im/book/5bdc715fe51d454e755f75ef
+3,染陌同学,7087,把原理抽象为小 Demo，以一种对新手友好的方式带领读者漫游 Vue.js 的世界,9.9,BAT 高级前端工程师,2018-02-10,剖析 Vue.js 内部运行机制,https://juejin.im/book/5a36661851882538e2259c0f
+4,闪电侠,6075,基于 Netty 框架实现 IM 核心系统，带你深入学习 Netty 网络编程核心知识,29.9,某大型互联网公司基础架构部技术专家,2018-10-08,Netty 入门与实战：仿写微信 IM 即时通讯系统,https://juejin.im/book/5b4bc28bf265da0f60130116
+5,修言,5823,毫秒必争！深入理解前端性能原理，将晦涩的知识转化为可爱的生产力，建立你自己的优化技能索引目录,19.9,阿里巴巴集团前端工程师,2018-10-24,前端性能优化原理与实践,https://juejin.im/book/5b936540f265da0a9624b04b
+6,阴明,5634,帮助你了解掘金小册产品各项功能，学习如何选题、写作、发布和上线售卖,0.01,掘金创始人,,如何写一本掘金小册,https://juejin.im/book/59e414a5518825541b03ce66
+7,dendoink,5477,熟练掌握 Chrome 调试技巧，直接提升工作效率。,0.01,"Tomek Sułkowski ：Angular Tricity 联合创始人/ `Angular` 专家 , 在 [Medium专栏](https://t.co/IFU5poPEla) 发布多篇文章, Medium `frontend.coach` 专栏作者，拥有 15k 关注，擅长 `Typescript` 等前端技术。",2019-01-22,你不知道的 Chrome 调试技巧,https://juejin.im/book/5c526902e51d4543805ef35e
+8,扔物线,5016,让你不仅用上、更用明白的 Git 实用指南,29.9,hencoder.com 给高级 Android 工程师的进阶手册,,Git 原理详解及实用指南,https://juejin.im/book/5a124b29f265da431d3c472e
+9,阴明,4902,掘金社区的各个功能的官方指南，帮助你玩转掘金，成为一名优秀的开发者,0.0,掘金站长,2019-04-12,如何使用掘金社区,https://juejin.im/book/5c90640c5188252d7941f5bb
+10,teabyii,4407,基于 4.x 版本，从细节和深度上弄懂 webpack，随心所欲定制前端开发环境,19.9,前支付宝前端开发，现唯品会高级开发,2018-03-28,使用 webpack 定制前端开发环境,https://juejin.im/book/5a6abad5518825733c144469
+11,三水清,4307,从基础到实战，从开发环境搭建到开发、调试、上线，打通小程序开发全流程,9.9,资深 Web 前端工程师，十年互联网老司机,2018-08-13T02:46:25.577Z,微信小程序开发入门：从 0 到 1 实现天气小程序,https://juejin.im/book/5b70f101e51d456669381803
+12,Alex007,4243,找工作面试是门技术活，掌握一定技巧可以让你事半功倍,29.9,百度 Web 前端工程师，资深面试官,2018-03-07,Web 前端面试指南与高频考题解析,https://juejin.im/book/5a8f9ddcf265da4e9f6fb959
+13,老錢,4097,通过「造轮子」自建 Python RPC 服务，深入理解分布式高并发原理与实践,19.9,掌阅服务端技术专家，互联网分布式高并发十年老兵,2018-05-12,深入理解 RPC : 基于 Python 自建分布式高并发 RPC 服务,https://juejin.im/book/5af56a3c518825426642e004
+14,Aresn,3463,iView 作者 3 年的 Vue.js 组件开源积累，Vue.js 组件知识深入剖析,29.9,TalkingData 前端架构师，iView 作者,2018-11-30,Vue.js 组件精讲,https://juejin.im/book/5bc844166fb9a05cd676ebca
+15,劳卜,3410,"从构建到开发，帮助 Vue 开发者提升项目构建与开发能力，基于 Vue CLI 3
+",9.9,高级前端工程师，掘金专栏作者，专注 Vue.js 开发,2018-09-19,Vue 项目构建与开发入门,https://juejin.im/book/5b23a5aef265da59716fda09
+16,诚身,3391,基于 React 的企业管理系统开发经验，带你学习如何抽象复杂业务逻辑，帮助团队实现效能提升,19.9,阿里巴巴集团前端工程师，知乎 pure render 专栏核心作者,2018-06-11T06:25:59.263Z,React 组合式开发实践：打造企业管理系统五大核心模块,https://juejin.im/book/5b1e15f76fb9a01e516d14a0
+17,凹凸实验室,3198,剖析 Taro 多端开发框架的实现原理，并通过电商核心的项目实战，帮助开发者快速上手多端项目。,9.9,凹凸实验室,2018-09-15,Taro 多端开发实现原理与项目实战,https://juejin.im/book/5b73a131f265da28065fb1cd
+18,凹凸实验室,3103,京东、腾讯等大厂 H5 开发或 UI 开发工程师的真实实战技巧,19.9,凹凸曼,2018-03-15,大厂 H5 开发实战手册,https://juejin.im/book/5a7bfe595188257a7349b52a
+19,雷克斯,2707,Go 服务器开发大型实战，带你一步步构建 API 开发中的各个功能点，最终完成一个企业级的 API 服务器,39.9,腾讯高级研发工程师，专注于后台服务器架构和开发,2018-06-27,基于 Go 语言构建企业级的 RESTful API 服务,https://juejin.im/book/5b0778756fb9a07aa632301e
+20,凹凸实验室,2665,构建自己的第一个微信小游戏，让你的社交和游戏创意变为现实,9.9,凹凸曼,2018-08-31,微信小游戏开发入门：从 0 到 1 实现井字棋游戏,https://juejin.im/book/5b7be023e51d4538850305d0
+21,有明,2619,带你快速掌握 Docker 这项新时代开发者必备的工具,19.9,全栈工程师，Docker 图书作者，Docker 第三方镜像项目发起者,2018-12-05,开发者必备的 Docker 实践指南,https://juejin.im/book/5b7ba116e51d4556f30b476c
+22,sunshine小小倩,2595,从零开始学习 Canvas 相关知识，分析其特效，最终制作出炫酷的网页背景,9.9,饿了么 RMB FE,2017-12-21,如何使用 Canvas 制作出炫酷的网页背景特效,https://juejin.im/book/5a0ab8e2f265da43111fbab2
+23,叶盛飞,2463,基于 Node.js 搭建敏捷高效的 RESTful 接口服务，走上小程序开发的全栈之路,9.9,前网易高级开发工程师，Adobe 中国认证讲师,2018-08-03T07:01:14.818Z,基于 hapi 的 Node.js 小程序后端开发实践指南,https://juejin.im/book/5b63fdba6fb9a04fde5ae6d0
+24,刘志军,2122,爬虫基本原理、使用、抓包分析、存储数据、分析数据、数据可视化,19.9,CSDN 讲师，公众号 Python 之禅作者,2018-01-25,基于 Python 实现微信公众号爬虫,https://juejin.im/book/5a157c155188254a701eb3c1
+25,王仕军,1999,"抛弃笨重的构建工具，拥抱轻巧而不失强大的 npm
+ script，随小册赠送视频版教程。",19.9,前端周刊主笔，前端老司机，爱折腾爱分享,2017-12-30,用 npm script 打造超溜的前端工作流,https://juejin.im/book/5a1212bc51882531ea64df07
+26,程墨,1868,深入了解 React 应用中的设计模式，总结业界验证的最佳实践，更进一步，了解React 未来新功能 Suspense 和 Hooks。,29.9,Hulu 架构师,2018-09-20T23:07:48.051Z,React 实战：设计模式和最佳实践,https://juejin.im/book/5ba42844f265da0a8a6aa5e9
+27,Easy,1702,职业上的错误是不能回滚的，将陪伴你一生，帮助每一位程序员规划自己的职业生涯,29.9,方糖气球博主，曾创业帮上千名程序员找到知名公司工作,,程序员职业小白书 —— 如何规划和经营你的职业,https://juejin.im/book/59e17a7ff265da430629cc4e
+28,lucefer,1546,介绍 WebGL 与 CSS 3D 开发的点点滴滴，详细阐述 3D 数学库的实现原理与使用，演示 3D 数学库对于 WebGL 开发和普通网页开发的重要作用，助力每个前端开发者轻松掌握 3D 开发的关键技术。,39.9,某大型互联网公司前端工程师,2018-09-26T03:00:05.761Z,WebGL 入门与实践,https://juejin.im/book/5baaf635f265da0ab915cc9f
+29,晓梦轻寒,1388,手把手教你一步步构建一套易扩展、成体系的 App 后端服务器,19.9,腾讯高级后端工程师,2018-04-26,基于 Python 轻松自建 App 服务器,https://juejin.im/book/5ac160745188255c3200df1c
+30,TaoBeier,1373,从上手实践到原理剖析，带你掌握 Kubernetes 必备技能。,19.9,网易有道资深运维开发，骨灰级 Linux 程序员，PyCon China 和 GITC 讲师,2018-12-24,Kubernetes 从上手到实践,https://juejin.im/book/5b9b2dc86fb9a05d0f16c8ac
+31,王仕军,1355,写给前端开发者的第一本区块链开发入门指南，通过 DApp 开发实战（基于以太坊创始人  V 神的 DAICO 设计思想），深入掌握区块链及以太坊技术,69.0,ArcBlock 资深前端工程师，专注区块链端应用开发,2018-06-01,区块链开发入门：从 0 到 1 构建基于以太坊智能合约的 ICO DApp,https://juejin.im/book/5addb2eb6fb9a07abd0d4557
+32,小问iwillwen,1233,使用 JavaScript、ECharts、Vue.js 等开发工具，完成各种数据结构的处理、转换、动态过滤以及数据可视化的开发。,29.9,七牛云高级研发工程师,2018-08-16,基于 JavaScript 开发灵活的数据应用,https://juejin.im/book/5a93727bf265da4e8c452960
+33,有明,1002,深入浅出地带你领略 Laravel 框架的设计模式美学，一本你不可或缺的设计模式范本,19.9,全栈工程师，开源项目贡献者，关注基础理论和前沿技术,2018-01-07,详解 Laravel 源码中优秀的设计模式,https://juejin.im/book/5a261d8f5188253ee45b4b21
+34,拉丁吴,973,研究响应式编程，探讨 ReactiveX 的底层概念和 RxJava 的高阶问题,9.9,糗事百科 Android工程师，喜欢研究问题,2017-12-24,响应式编程 —— RxJava 高阶指南,https://juejin.im/book/5a09997cf265da432002bf6a
+35,廖雪峰,907,深入了解区块链、挖矿、钱包、签名等技术原理，对未来的数字货币世界做好准备,29.9,软件架构师，精通数字货币和区块链,,数字货币与区块链原理,https://juejin.im/book/59f954546fb9a04525776d7c
+36,AsyncIns,753,拒绝裸奔，为你的 Scrapyd 增添权限验证、自定义 API、开发数据统计和美化界面的功能，带你逐步实现「唯你可用」的爬虫部署管理控制台。,29.9,资深爬虫工程师,2018-10-04T08:48:58.186Z,Python 实战：用 Scrapyd 打造个人化的爬虫部署管理控制台,https://juejin.im/book/5bb5d3fa6fb9a05d2a1d819a
+37,朱小厮,702,从基础概念入手，再到原理深入，由浅入深理解 Kafka,29.9,某大型互联网公司基础架构部任职，著有《深入理解Kafka：核心设计与实践原理》和《RabbitMQ实战指南》，,2019-03-04T15:38:38.479Z,图解  Kafka 之实战指南,https://juejin.im/book/5c7d467e5188251b9156fdc0
+38,四两哥,622,从 Node 基础知识点到 API 的使用，到 Node 的程序架构和启动流程，结合轻松易懂的代码案例来学习 Node 最核心的基础技能，帮你度过学习 Node 的晦涩期，轻松上手，轻松迎接跳槽面试。,19.9,Node 技术专家,2018-12-09,10+ 代码案例掌握 NodeJS 核心基础知识,https://juejin.im/book/5bc1bf3e5188255c3272e315
+39,NewbieYoung,599,从 0 到 1，一步步带你基于 ThreeJS 实现一个炫酷的魔方微信小游戏,9.9,腾讯 ISUX UI工程师,2019-01-07,基于 ThreeJS 框架的魔方微信小游戏实践,https://juejin.im/book/5bc6bebee51d450e7e51c19c
+40,Tony沈哲,491,快速上手 Kotlin 独有新特性，整合 Android 常用框架及 MVVM 思想进行 App 开发,19.9,Merculet移动端负责人，<< RxJava 2.x 实战 >> 作者,2019-06-15,Android 进阶：基于 Kotlin 的 Android App 开发实践,https://juejin.im/book/5af1c5ee6fb9a07a9f018368
+41,飞行学校,425,使用 Swift 4 新特性 Codable，用更少的代码，更快地实现数据编解码,29.9,Mattt，AFNetworking 和 Alamofire 作者，苹果前技术作家,2018-04-20T06:26:15.266Z,使用 Swift Codable 进行高效的数据编解码,https://juejin.im/book/5ad19f07518825364001dd49
+42,挖坑的张师傅,313,深入剖析 JVM 字节码，带你分析字节码黑科技、破解软件、从零实现一个 APM,19.9,CVTE 技术经理,2019-03-20,JVM 字节码从入门到精通,https://juejin.im/book/5c25811a6fb9a049ec6b23ee
+43,飞行学校,216,从理论到应用，全面介绍 Swift 4 中面向协议的数字系统,19.9,Mattt，AFNetworking 和 Alamofire 作者，苹果前技术作家,2018-06-17T06:44:32.941Z,Swift 数字详解,https://juejin.im/book/5b260350e51d4558c2322fbe

@@ -1,12 +1,14 @@
 # Examples
 
-- [bangumi](bangumi.py): bangumi上我追的所有番剧
+- [appinn](appinn.py): 小众软件，按评价数排序
+
+- [bangumi](bangumi.py): bangumi上的追番记录
 
 - [bilibili_top_bangumi](bilibili_top_bangumi.py): bilibili番剧排行榜
 
 - [dlsite](dlsite.py): DLsite上的黄油
 
-- [douban](douban.py): 豆瓣上的“计算机”标签的书籍
+- [douban_books](douban_books.py): 豆瓣上的“计算机”标签的书籍
 
 - [gen_index](gen_index.py): 用来自动生成这篇README.md
 
@@ -15,6 +17,8 @@
 - [jav](jav.py): 8说了你懂的
 
 - [jianshu](jianshu.py): 简书上“程序员”专题下的文章
+
+- [juejin_books](juejin_books.py): 掘金小册，按购买量排序
 
 - [kitty](kitty.py): 种子你懂的
 
@@ -32,6 +36,8 @@
 
 - [sharecuts](sharecuts.py): 捷径社区的捷径排行榜
 
+- [sspai](sspai.py): 少数派的文章，按喜好数排序
+
 - [tieba](tieba.py): 百度贴吧的帖子，用HTML注释反爬，把注释去掉再解析HTML就行
 
 - [tldr_github](tldr_github.py): tldr手册上的关键字在github上的搜索结果
@@ -40,4 +46,4 @@
 
 - [v2ex](v2ex.py): v2ex上的Python板块
 
-- [zhihu_top_video](zhihu_top_video.py): 知乎最高点赞的视频排行
+- [zhihu_top](zhihu_top.py): 知乎最高点赞的答案排行
