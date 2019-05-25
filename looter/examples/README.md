@@ -6,13 +6,13 @@
 
 - [bilibili_top_bangumi](bilibili_top_bangumi.py): bilibili番剧排行榜
 
-- [dlsite](dlsite.py): DLsite上的黄油
+- [dlsite](dlsite.py): DLsite上的黄油，按打分排序
 
 - [douban_books](douban_books.py): 豆瓣上的“计算机”标签的书籍
 
 - [gen_index](gen_index.py): 用来自动生成这篇README.md
 
-- [hitomi](hitomi.py): hitomi.la上的游戏cg
+- [ifanr](ifanr.py): 爱范儿的文章，按点赞数排序
 
 - [jav](jav.py): 8说了你懂的
 
@@ -20,19 +20,13 @@
 
 - [juejin_books](juejin_books.py): 掘金小册，按购买量排序
 
-- [kitty](kitty.py): 种子你懂的
-
 - [konachan](konachan.py): konachan上的二次元壁纸原图链接
 
 - [maoyan_comments](maoyan_comments.py): 猫眼电影影评，以复联4为例，先把时间节点都爬下来，再组合成url用线程池爬，这样效率更高
 
-- [nyaa](nyaa.py): nyaa上的种子，改成sukebei变里版
-
 - [oreilly](oreilly.py): oreilly上的IT书籍
 
 - [salttiger](salttiger.py): salttiger上的免费国外编程电子书
-
-- [segmentfault](segmentfault.py): segmentfault上的月热门博客文章
 
 - [sharecuts](sharecuts.py): 捷径社区的捷径排行榜
 

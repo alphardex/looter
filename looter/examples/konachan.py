@@ -1,7 +1,7 @@
 """
 konachan上的二次元壁纸原图链接
 """
-import asyncio
+from concurrent import futures
 from pathlib import Path
 import looter as lt
 
@@ -9,15 +9,14 @@ domain = 'https://konachan.net'
 total = []
 
 
-async def crawl(url):
-    tree = await lt.async_fetch(url)
+def crawl(url):
+    tree = lt.fetch(url)
     imgs = tree.css('a.directlink::attr(href)').extract()
     total.extend(imgs)
 
 
 if __name__ == '__main__':
-    tasklist = [f'{domain}/post?page={i}' for i in range(1, 50)]
-    loop = asyncio.get_event_loop()
-    result = [crawl(task) for task in tasklist]
-    loop.run_until_complete(asyncio.wait(result))
+    tasklist = [f'{domain}/post?page={i}' for i in range(1, 1000)]
+    with futures.ThreadPoolExecutor(50) as executor:
+        executor.map(crawl, tasklist)
     Path('konachan.txt').write_text('\n'.join(total))

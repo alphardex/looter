@@ -1,15 +1,12 @@
 """
-DLsite上的黄油
+DLsite上的黄油，按打分排序
 """
 from concurrent import futures
 from pprint import pprint
 import looter as lt
-import pymongo
 
 domain = 'https://www.dlsite.com'
-client = pymongo.MongoClient()
-db = client.dlsite
-col = db.pro
+total = []
 
 
 def crawl(url):
@@ -32,10 +29,11 @@ def crawl(url):
         if not data['name']:
             continue
         pprint(data)
-        col.insert_one(data)
+        total.append(data)
 
 
 if __name__ == '__main__':
     tasklist = [f'https://www.dlsite.com/pro/fsr/=/language/jp/order%5B0%5D/trend/per_page/30/page/{n}' for n in range(1, 11252)]
     with futures.ThreadPoolExecutor(50) as executor:
         executor.map(crawl, tasklist)
+    lt.save(total, name='dlsite.csv', sort_by='rate', order='desc')
