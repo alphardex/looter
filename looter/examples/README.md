@@ -26,6 +26,8 @@
 
 - [oreilly](oreilly.py): oreilly上的IT书籍
 
+- [ruanyifeng](ruanyifeng.py): 阮一峰的博客文章，按留言数排序
+
 - [salttiger](salttiger.py): salttiger上的免费国外编程电子书
 
 - [sharecuts](sharecuts.py): 捷径社区的捷径排行榜

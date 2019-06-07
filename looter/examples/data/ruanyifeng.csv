@@ -1,0 +1,1790 @@
+,comments,date,title,url
+0,434,2015.03.31,React 入门实例教程,http://www.ruanyifeng.com/blog/2015/03/react.html
+1,395,2011.05.16,我的Google Adsense帐户被关 ,http://www.ruanyifeng.com/blog/2011/05/my_google_adsense_is_disabled.html
+2,347,2010.01.14,壮士断腕，义无再辱,http://www.ruanyifeng.com/blog/2010/01/google_to_quit_china.html
+3,282,2011.08.09,数字签名是什么？,http://www.ruanyifeng.com/blog/2011/08/what_is_a_digital_signature.html
+4,278,2006.03.16,为什么越南阮姓多？,http://www.ruanyifeng.com/blog/2006/03/post_190.html
+5,237,2008.07.12,中国和津巴布韦,http://www.ruanyifeng.com/blog/2008/07/china_and_zimbabwe.html
+6,230,2007.10.28,字符编码笔记：ASCII，Unicode 和 UTF-8,http://www.ruanyifeng.com/blog/2007/10/ascii_unicode_and_utf-8.html
+7,221,2012.05.31,互联网协议入门（一）,http://www.ruanyifeng.com/blog/2012/05/internet_protocol_suite_part_i.html
+8,205,2012.06.24,台北印象,http://www.ruanyifeng.com/blog/2012/06/taipei.html
+9,201,2010.12.10,"南京""外挂代练""事件判决书",http://www.ruanyifeng.com/blog/2010/12/the_ruling_of_the_case_of_gold-farming_bot.html
+10,199,2015.07.10,Flex 布局教程：语法篇,http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html
+11,196,2010.11.27,外挂代练何罪之有？,http://www.ruanyifeng.com/blog/2010/11/the_crime_of_gold-farming_bot.html
+12,195,2013.07.04,RSA算法原理（二）,http://www.ruanyifeng.com/blog/2013/07/rsa_algorithm_part_two.html
+13,190,2016.06.23,你的命运不是一头骡子,http://www.ruanyifeng.com/blog/2016/06/your-destiny-is-not-like-a-mule.html
+14,188,2012.08.25,搭建一个免费的，无限流量的Blog----github Pages和Jekyll入门,http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html
+15,185,2017.12.26,区块链入门教程,http://www.ruanyifeng.com/blog/2017/12/blockchain-tutorial.html
+16,179,2016.11.15,JavaScript 全栈工程师培训教程,http://www.ruanyifeng.com/blog/2016/11/javascript.html
+17,170,2007.01.04,卡尔维诺中文站留言板,http://www.ruanyifeng.com/blog/2007/01/guestbook.html
+18,169,2014.05.29,我的博客文集上架了！,http://www.ruanyifeng.com/blog/2014/05/my_blog_book.html
+19,166,2008.10.08,即将到来的中国大萧条,http://www.ruanyifeng.com/blog/2008/10/chinas_great_depression.html
+20,165,2014.05.12,理解OAuth 2.0,http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html
+21,161,2013.04.09,熵的社会学意义,http://www.ruanyifeng.com/blog/2013/04/entropy.html
+22,158,2010.10.14,为什么Lisp语言如此先进？（译文）,http://www.ruanyifeng.com/blog/2010/10/why_lisp_is_superior.html
+23,157,2014.10.08,JavaScript 运行机制详解：再谈Event Loop,http://www.ruanyifeng.com/blog/2014/10/event-loop.html
+24,154,2010.05.17,Javascript 面向对象编程（一）：封装,http://www.ruanyifeng.com/blog/2010/05/object-oriented_javascript_encapsulation.html
+25,153,2011.04.23,谈谈书价,http://www.ruanyifeng.com/blog/2011/04/on_book_price.html
+26,151,2011.09.12,理解RESTful架构,http://www.ruanyifeng.com/blog/2011/09/restful.html
+27,150,2012.07.31,小额支付试验的结果,http://www.ruanyifeng.com/blog/2012/07/micropayment_result.html
+28,149,2016.12.20,我的 2016 年,http://www.ruanyifeng.com/blog/2016/12/year_summary.html
+29,147,2018.01.04,比特币入门教程,http://www.ruanyifeng.com/blog/2018/01/bitcoin-tutorial.html
+30,147,2013.05.01,字符串匹配的KMP算法,http://www.ruanyifeng.com/blog/2013/05/Knuth–Morris–Pratt_algorithm.html
+31,146,2014.01.02,技术有什么未来？,http://www.ruanyifeng.com/blog/2014/01/technology_s_future.html
+32,145,2016.10.12,网络文凭，你要不要,http://www.ruanyifeng.com/blog/2016/10/online_education.html
+33,144,2014.05.22,RESTful API 设计指南,http://www.ruanyifeng.com/blog/2014/05/restful_api.html
+34,143,2010.01.23,为什么要容忍错误言论？,http://www.ruanyifeng.com/blog/2010/01/why_we_should_tolerate_wrong_words.html
+35,142,2009.11.21,为什么我喜欢海盗湾？,http://www.ruanyifeng.com/blog/2009/11/why_i_love_piratebay.html
+36,141,2010.07.28,探望白血病儿童马粒之,http://www.ruanyifeng.com/blog/2010/07/saving_the_boy_ma_lizhi.html
+37,140,2017.09.12,卡辛斯基的警告,http://www.ruanyifeng.com/blog/2017/09/unabomber.html
+38,140,2010.03.26,一封博士研究生的遗书,http://www.ruanyifeng.com/blog/2010/03/last_words_of_a_doctoral_suicide.html
+39,139,2010.05.23,Javascript面向对象编程（二）：构造函数的继承,http://www.ruanyifeng.com/blog/2010/05/object-oriented_javascript_inheritance.html
+40,135,2009.12.31,2009年我的网志总结,http://www.ruanyifeng.com/blog/2009/12/2009_my_blogging_summary.html
+41,134,2011.07.09,数学常数e的含义,http://www.ruanyifeng.com/blog/2011/07/mathematical_constant_e.html
+42,134,2007.08.01,比尔·盖茨在哈佛大学毕业典礼上的演讲,http://www.ruanyifeng.com/blog/2007/08/remarks_of_bill_gates_in_harvard_commencement_2007.html
+43,133,2017.06.29,45岁以后的人生,http://www.ruanyifeng.com/blog/2017/06/life-after-45.html
+44,132,2012.06.19,SASS用法指南,http://www.ruanyifeng.com/blog/2012/06/sass.html
+45,132,2018.01.11,加密货币的本质,http://www.ruanyifeng.com/blog/2018/01/cryptocurrency-tutorial.html
+46,129,2007.11.11,"什么是""人民民主专政""？",http://www.ruanyifeng.com/blog/2007/11/what_is_the_people_s_democratic_dictatorship.html
+47,127,2016.04.12,跨域资源共享 CORS 详解,http://www.ruanyifeng.com/blog/2016/04/cors.html
+48,126,2011.05.09,人生只有900个月,http://www.ruanyifeng.com/blog/2011/05/900-month_lifespan.html
+49,124,2012.11.07,Javascript模块化编程（三）：require.js的用法,http://www.ruanyifeng.com/blog/2012/11/require_js.html
+50,122,2009.02.24,外挂代练是什么罪？,http://www.ruanyifeng.com/blog/2009/02/is_gold-farming_bot_in_online_games_a_crime.html
+51,122,2011.08.16,jQuery的deferred对象详解,http://www.ruanyifeng.com/blog/2011/08/a_detailed_explanation_of_jquery_deferred_object.html
+52,121,2009.08.30,学习Javascript闭包（Closure）,http://www.ruanyifeng.com/blog/2009/08/learning_javascript_closures.html
+53,120,2015.07.14,Flex 布局教程：实例篇,http://www.ruanyifeng.com/blog/2015/07/flex-examples.html
+54,120,2014.02.05,SSL/TLS协议运行机制的概述,http://www.ruanyifeng.com/blog/2014/02/ssl_tls.html
+55,118,2015.02.03,图灵访谈,http://www.ruanyifeng.com/blog/2015/02/turing-interview.html
+56,118,2015.12.15,有没有安全的工作？,http://www.ruanyifeng.com/blog/2015/12/safe-job.html
+57,118,2013.04.24,进程与线程的一个简单解释,http://www.ruanyifeng.com/blog/2013/04/processes_and_threads.html
+58,117,2014.12.19,《如何变得有思想》出版了！,http://www.ruanyifeng.com/blog/2014/12/my-blog-book.html
+59,116,2012.06.11,互联网协议入门（二）,http://www.ruanyifeng.com/blog/2012/06/internet_protocol_suite_part_ii.html
+60,115,2016.05.25,React Router 使用教程,http://www.ruanyifeng.com/blog/2016/05/react_router.html
+61,115,2011.04.16,Dan计划：重新定义人生的10000个小时,http://www.ruanyifeng.com/blog/2011/04/the_dan_plan.html
+62,115,2010.05.08,Dropbox的创业经历,http://www.ruanyifeng.com/blog/2010/05/dropbox_startup_lessons_learned.html
+63,114,2011.05.19,我的Google Adsense帐户被关（续）,http://www.ruanyifeng.com/blog/2011/05/google_adsense_continued.html
+64,114,2012.05.01,自适应网页设计（Responsive Web Design）,http://www.ruanyifeng.com/blog/2012/05/responsive_web_design.html
+65,114,2016.09.23,React 技术栈系列教程,http://www.ruanyifeng.com/blog/2016/09/react-technology-stack.html
+66,114,2016.09.18,Redux 入门教程（一）：基本用法,http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_one_basic_usages.html
+67,114,2007.10.10,令人失望的周曙光,http://www.ruanyifeng.com/blog/2007/10/very_disappointed_at_zhou_shuguang.html
+68,113,2017.07.26,穷忙的人生,http://www.ruanyifeng.com/blog/2017/07/working-poor.html
+69,113,2009.11.08,关于唐家岭,http://www.ruanyifeng.com/blog/2009/11/tang_jia_ling.html
+70,111,2009.06.19,宁为玉碎，不为瓦全,http://www.ruanyifeng.com/blog/2009/06/an_honourable_death_is_better_than_a_disgraceful_life.html
+71,111,2011.06.05,Javascript继承机制的设计思想,http://www.ruanyifeng.com/blog/2011/06/designing_ideas_of_inheritance_mechanism_in_javascript.html
+72,110,2008.09.17,Are we falling or flying?,http://www.ruanyifeng.com/blog/2008/09/are_we_falling_or_flying.html
+73,109,2010.02.04,Android，开源还是封闭？,http://www.ruanyifeng.com/blog/2010/02/open_android_or_not.html
+74,108,2008.08.20,10条最糟糕的中国法律,http://www.ruanyifeng.com/blog/2008/08/the_10_worst_laws_in_china.html
+75,108,2017.08.09,Koa 框架教程,http://www.ruanyifeng.com/blog/2017/08/koa.html
+76,107,2012.09.24,虚数的意义,http://www.ruanyifeng.com/blog/2012/09/imaginary_number.html
+77,106,2011.01.01,2010年我的网志总结,http://www.ruanyifeng.com/blog/2011/01/2010_my_blogging_summary.html
+78,105,2012.11.16,中国医疗改革的失败原因,http://www.ruanyifeng.com/blog/2012/11/failure_of_healthcare_reform.html
+79,105,2008.09.04,想念母亲----与脑胶质瘤的5年抗争（转载）,http://www.ruanyifeng.com/blog/2008/09/missing_mother_5_year_fight_against_brain_tumor.html
+80,103,2011.09.18,学习C语言的教材,http://www.ruanyifeng.com/blog/2011/09/c_programming_language_textbooks.html
+81,102,2015.02.01,MVC，MVP 和 MVVM 的图示,http://www.ruanyifeng.com/blog/2015/02/mvcmvp_mvvm.html
+82,101,2011.02.22,电费翻倍的秘密,http://www.ruanyifeng.com/blog/2011/02/secrets_of_doubled_ charge_for_electricity.html
+83,101,2010.04.06,新版样式测试,http://www.ruanyifeng.com/blog/2010/04/new_styling_test.html
+84,100,2017.04.23,熵：宇宙的终极规则,http://www.ruanyifeng.com/blog/2017/04/entropy.html
+85,100,2017.03.01,高级人类的崛起,http://www.ruanyifeng.com/blog/2017/03/crispr.html
+86,99,2013.01.02,反Secure Boot垄断：兼谈如何在Windows 8电脑上安装Linux,http://www.ruanyifeng.com/blog/2013/01/secure_boot.html
+87,99,2018.01.21,汇编语言入门教程,http://www.ruanyifeng.com/blog/2018/01/assembly-language-primer.html
+88,98,2009.07.19,关于卫星上网,http://www.ruanyifeng.com/blog/2009/07/satellite_internet.html
+89,97,2016.08.16,那些无用的人----《人类简史》读后感,http://www.ruanyifeng.com/blog/2016/08/useless-people.html
+90,95,2013.02.28,《蒋介石与现代中国的奋斗》读后感,http://www.ruanyifeng.com/blog/2013/02/chiang_kai-shek.html
+91,95,2009.10.24,[读者来信] 我不想一辈子和代码打交道,http://www.ruanyifeng.com/blog/2009/10/what_career_is_my_future.html
+92,94,2009.04.27,学历证书的终结,http://www.ruanyifeng.com/blog/2009/04/after_credentials.html
+93,93,2016.07.26,母鸡与前端工程师,http://www.ruanyifeng.com/blog/2016/07/hen-and-front-end-engineer.html
+94,92,2018.07.23,JSON Web Token 入门教程,http://www.ruanyifeng.com/blog/2018/07/json_web_token-tutorial.html
+95,92,2009.03.31,一封来自上海夹心层的信,http://www.ruanyifeng.com/blog/2009/03/a_letter_from_shanghai_sandwich_class.html
+96,91,2005.08.04,美丽心灵的永恒阳光,http://www.ruanyifeng.com/blog/2005/08/post_134.html
+97,91,2009.09.09,关于网站备案,http://www.ruanyifeng.com/blog/2009/09/about_chinese_website_licensing_system.html
+98,91,2012.10.03,网站的无密码登录,http://www.ruanyifeng.com/blog/2012/10/password-less_login.html
+99,91,2011.04.04,快速排序（Quicksort）的Javascript实现,http://www.ruanyifeng.com/blog/2011/04/quicksort_in_javascript.html
+100,90,2012.12.21,Javascript异步编程的4种方法,http://www.ruanyifeng.com/blog/2012/12/asynchronous＿javascript.html
+101,90,2011.06.20,与父亲在一起的日子（组图）,http://www.ruanyifeng.com/blog/2011/06/days_with_my_father.html
+102,88,2009.12.28,我要翻译Paul Graham了,http://www.ruanyifeng.com/blog/2009/12/i_will_translate_paul_graham.html
+103,88,2012.07.05,Git分支管理策略,http://www.ruanyifeng.com/blog/2012/07/git.html
+104,88,2012.10.26,Javascript模块化编程（一）：模块的写法,http://www.ruanyifeng.com/blog/2012/10/javascript_module.html
+105,88,2010.02.22,"""熔模铸造""图解",http://www.ruanyifeng.com/blog/2010/02/investment_casting.html
+106,87,2009.05.14,硕士学位的贬值,http://www.ruanyifeng.com/blog/2009/05/depreciated_masters_degree.html
+107,87,2011.08.25,贝叶斯推断及其互联网应用（一）：定理简介,http://www.ruanyifeng.com/blog/2011/08/bayesian_inference_part_one.html
+108,87,2013.02.16,计算机是如何启动的？,http://www.ruanyifeng.com/blog/2013/02/booting.html
+109,86,2017.03.28,技术的边界,http://www.ruanyifeng.com/blog/2017/03/boundary.html
+110,85,2017.08.22,你的鞋都比你聪明,http://www.ruanyifeng.com/blog/2017/08/smart-shoes.html
+111,85,2017.05.15,WebSocket 教程,http://www.ruanyifeng.com/blog/2017/05/websocket.html
+112,85,2016.01.18,《ES6 标准入门》（第二版）出版了,http://www.ruanyifeng.com/blog/2016/01/ecmascript-6-primer.html
+113,85,2010.04.30,Javascript 的 this 用法,http://www.ruanyifeng.com/blog/2010/04/using_this_keyword_in_javascript.html
+114,85,2010.06.26,如何让员工忠于公司？,http://www.ruanyifeng.com/blog/2010/06/how_to_keep_someone_with_you_forever.html
+115,84,2015.09.01,理解矩阵乘法,http://www.ruanyifeng.com/blog/2015/09/matrix-multiplication.html
+116,84,2016.09.21,Redux 入门教程（三）：React-Redux 的用法,http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_three_react-redux.html
+117,84,2011.07.14,不要在功能上竞争,http://www.ruanyifeng.com/blog/2011/07/dont_compete_on_features.html
+118,83,2016.05.29,要聊天，先付费,http://www.ruanyifeng.com/blog/2016/05/group-chat.html
+119,83,2009.02.12,《劳动合同法》是不够的！,http://www.ruanyifeng.com/blog/2009/02/a_labor_law_is_not_enough.html
+120,83,2013.11.29,Stack的三种含义,http://www.ruanyifeng.com/blog/2013/11/stack.html
+121,83,2013.01.31,代码的抽象三原则,http://www.ruanyifeng.com/blog/2013/01/abstraction_principles.html
+122,83,2016.01.15,Flux 架构入门教程,http://www.ruanyifeng.com/blog/2016/01/flux.html
+123,83,2018.08.26,漂在旧金山,http://www.ruanyifeng.com/blog/2018/08/san-francisco.html
+124,83,2009.06.24,朱棣文在哈佛大学毕业典礼上的演讲,http://www.ruanyifeng.com/blog/2009/06/remarks_of_stenven_chu_in_harvard_commencement_2009.html
+125,82,2017.11.23,博客文集《前方的路》发布,http://www.ruanyifeng.com/blog/2017/11/road-ahead.html
+126,82,2011.10.07,乔布斯的告别,http://www.ruanyifeng.com/blog/2011/10/steve_jobs_farewell.html
+127,82,2009.04.09,AIG副总裁的辞职信,http://www.ruanyifeng.com/blog/2009/04/jake_desantis_aig_resignation_letter.html
+128,82,2018.06.26,DDOS 攻击的防范教程,http://www.ruanyifeng.com/blog/2018/06/ddos.html
+129,82,2013.06.27,RSA算法原理（一）,http://www.ruanyifeng.com/blog/2013/06/rsa_algorithm_part_one.html
+130,81,2009.03.22,经济学是无用的,http://www.ruanyifeng.com/blog/2009/03/economics_is_useless.html
+131,81,2013.03.21,TF-IDF与余弦相似性的应用（二）：找出相似文章,http://www.ruanyifeng.com/blog/2013/03/cosine_similarity.html
+132,80,2011.10.31,不要自称为程序员,http://www.ruanyifeng.com/blog/2011/10/dont_call_yourself_a_programmer.html
+133,79,2008.07.24,笔记：民主是一种普遍价值观,http://www.ruanyifeng.com/blog/2008/07/democracy_as_a_universal_value.html
+134,79,2011.12.21,SSH原理与运用（一）：远程登录,http://www.ruanyifeng.com/blog/2011/12/ssh_remote_login.html
+135,79,2008.12.07,Java语言学校的危险性（译文）,http://www.ruanyifeng.com/blog/2008/12/the_perils_of_javaschools.html
+136,78,2018.02.09,Docker 入门教程,http://www.ruanyifeng.com/blog/2018/02/docker-tutorial.html
+137,78,2017.08.17,全文搜索引擎 Elasticsearch 入门教程,http://www.ruanyifeng.com/blog/2017/08/elasticsearch.html
+138,78,2012.10.30,Javascript模块化编程（二）：AMD规范,http://www.ruanyifeng.com/blog/2012/10/asynchronous_module_definition.html
+139,78,2008.01.25,关于十进制网络,http://www.ruanyifeng.com/blog/2008/01/chinese_decimal_web_system.html
+140,78,2010.02.02,我的新手机三星i8000（续）,http://www.ruanyifeng.com/blog/2010/02/samsung_omnia_ii_i8000_part_ii.html
+141,78,2010.01.18,个人论坛出路何在？,http://www.ruanyifeng.com/blog/2010/01/how_can_chinese_web_forum_survive.html
+142,77,2013.05.21,如何理解当代中国----《十亿消费者》读后感,http://www.ruanyifeng.com/blog/2013/05/one-billion-consumers.html
+143,77,2008.07.15,机房见闻和一些其他事,http://www.ruanyifeng.com/blog/2008/07/one_scene_in_the_data_center.html
+144,77,2012.02.17,墙上的44句话,http://www.ruanyifeng.com/blog/2012/02/44_weeks_of_words.html
+145,76,2010.01.27,等他们老了，死了,http://www.ruanyifeng.com/blog/2010/01/until_they_are_old_and_dead.html
+146,76,2010.01.07,16世纪的英国，21世纪的中国,http://www.ruanyifeng.com/blog/2010/01/england_in_16th_century_vs_china_in_21st_century.html
+147,76,2011.08.30,经济增长是如何换来的？,http://www.ruanyifeng.com/blog/2011/08/the_pains_of_economic_growth.html
+148,76,2010.09.23,全球空气颗粒污染形势图,http://www.ruanyifeng.com/blog/2010/09/global_map_of_pm25.html
+149,76,2009.08.26,Web service是什么？,http://www.ruanyifeng.com/blog/2009/08/what_is_web_service.html
+150,76,2010.08.26,别为大公司拼命（译文）,http://www.ruanyifeng.com/blog/2010/08/not_working_hard_for_a_big_company.html
+151,75,2011.08.01,论文的版权属于谁？,http://www.ruanyifeng.com/blog/2011/08/copyright_of_academic_papers.html
+152,75,2010.10.26,什么是主权？ ,http://www.ruanyifeng.com/blog/2010/10/sovereignty.html
+153,75,2015.02.22,也许，DOM 不是答案,http://www.ruanyifeng.com/blog/2015/02/future-of-dom.html
+154,75,2013.08.17,Linux 的启动流程,http://www.ruanyifeng.com/blog/2013/08/linux_boot_process.html
+155,75,2018.06.18,JavaScript 的 this 原理,http://www.ruanyifeng.com/blog/2018/06/javascript-this.html
+156,75,2013.10.25,比特币的用途,http://www.ruanyifeng.com/blog/2013/10/bitcoin.html
+157,74,2013.03.08,苹果公司与分工原理,http://www.ruanyifeng.com/blog/2013/03/apple_inc_and_division_of_labor.html
+158,74,2017.10.17,换头术,http://www.ruanyifeng.com/blog/2017/10/head-transplant.html
+159,74,2011.08.27,贝叶斯推断及其互联网应用（二）：过滤垃圾邮件,http://www.ruanyifeng.com/blog/2011/08/bayesian_inference_part_two.html
+160,74,2015.12.03,测试框架 Mocha 实例教程,http://www.ruanyifeng.com/blog/2015/12/a-mocha-tutorial-of-examples.html
+161,74,2008.12.29,一个直肠癌患者的最后50天,http://www.ruanyifeng.com/blog/2008/12/final_50_days_of_a_rectal_cancer_patient.html
+162,74,2011.05.25,南京外挂代练案的二审判决,http://www.ruanyifeng.com/blog/2011/05/final_ruling_of_the_case_of_gold-farming_bot.html
+163,73,2008.11.24,"""枪炮与玫瑰""乐队的新专辑：Chinese Democracy",http://www.ruanyifeng.com/blog/2008/11/guns_n_roses_new_album_chinese_democracy.html
+164,73,2015.12.09,常用 Git 命令清单,http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html
+165,73,2013.05.03,字符串匹配的Boyer-Moore算法,http://www.ruanyifeng.com/blog/2013/05/boyer-moore_string_search_algorithm.html
+166,73,2011.07.23,日本刀的制造过程,http://www.ruanyifeng.com/blog/2011/07/making_of_a_katana.html
+167,73,2008.10.06,关于摩西英语,http://www.ruanyifeng.com/blog/2008/10/moses_english.html
+168,72,2019.01.03,站在未来的十字路口,http://www.ruanyifeng.com/blog/2019/01/survivor-preface.html
+169,72,2008.12.31,2008年我的网志总结,http://www.ruanyifeng.com/blog/2008/12/2008_my_blogging_summary.html
+170,72,2008.12.15,陶哲轩的数学题,http://www.ruanyifeng.com/blog/2008/12/a_puzzle_from_terrence_tao.html
+171,72,2013.07.16,如何让搜索引擎抓取AJAX内容？,http://www.ruanyifeng.com/blog/2013/07/how_to_make_search_engines_find_ajax_content.html
+172,72,2017.09.19,《ES6 标准入门（第3版）》上市了！,http://www.ruanyifeng.com/blog/2017/09/es6_primer_3rd_edition.html
+173,72,2013.07.16,如何让搜索引擎抓取AJAX内容？,http://www.ruanyifeng.com/blog/2013/07/how_to_make_search_engines_find_ajax_content.html
+174,72,2009.12.02,《Joel谈软件》出版了,http://www.ruanyifeng.com/blog/2009/12/chinese_version_of_mjos_is_on_sale.html
+175,71,2011.10.20,活着的三个理由,http://www.ruanyifeng.com/blog/2011/10/what_I_have_lived_for.html
+176,71,2012.04.06,函数式编程初探,http://www.ruanyifeng.com/blog/2012/04/functional_programming.html
+177,70,2010.09.01,何去何从----读六六的《心术》,http://www.ruanyifeng.com/blog/2010/09/where_i_am_going.html
+178,70,2014.06.12,Git远程操作详解,http://www.ruanyifeng.com/blog/2014/06/git_remote.html
+179,70,2011.12.04,理解inode,http://www.ruanyifeng.com/blog/2011/12/inode.html
+180,70,2010.07.13,我眼中的中国科研：一个中科院退学博士生的感想,http://www.ruanyifeng.com/blog/2010/07/my_thoughts_on_china_scientific_research.html
+181,69,2018.08.13,API 之下,http://www.ruanyifeng.com/blog/2018/08/api-below.html
+182,69,2016.03.24,技术会带来社会平等吗？,http://www.ruanyifeng.com/blog/2016/03/techonology-vs-equality.html
+183,69,2011.07.16,Stephen Wolfram自述,http://www.ruanyifeng.com/blog/2011/07/stephen_wolfram.html
+184,69,2008.10.22,走近奥巴马,http://www.ruanyifeng.com/blog/2008/10/travels_with_barack_obama.html
+185,68,2011.06.19,小说集《夹边沟记事》,http://www.ruanyifeng.com/blog/2011/06/jiabian_ditch.html
+186,68,2017.02.22,函数式编程入门教程,http://www.ruanyifeng.com/blog/2017/02/fp-tutorial.html
+187,68,2010.06.06,浮点数的二进制表示,http://www.ruanyifeng.com/blog/2010/06/ieee_floating-point_representation.html
+188,68,2010.09.13,被拒绝，也是一种肯定,http://www.ruanyifeng.com/blog/2010/09/getting_rejected.html
+189,67,2008.03.22,暴力的根源,http://www.ruanyifeng.com/blog/2008/03/the_origin_of_violence.html
+190,67,2012.01.19,理查德·斯托曼一直是对的,http://www.ruanyifeng.com/blog/2012/01/richard_stallman_was_right_all_along.html
+191,67,2014.03.28,undefined与null的区别,http://www.ruanyifeng.com/blog/2014/03/undefined-vs-null.html
+192,67,2005.08.13,《万物简史》中文版翻译质量低劣,http://www.ruanyifeng.com/blog/2005/08/post_136.html
+193,66,2011.10.25,保持简单----纪念丹尼斯•里奇（Dennis Ritchie）,http://www.ruanyifeng.com/blog/2011/10/dennis_ritchie.html
+194,66,2012.10.07,Google日历简易版 2.0,http://www.ruanyifeng.com/blog/2012/10/google_calendar_lite_reloaded.html
+195,66,2011.04.13,差生学什么？,http://www.ruanyifeng.com/blog/2011/04/how_to_get_a_real_education.html
+196,66,2006.06.10,威廉·布莱克《从一颗沙子看世界》（To see a world in a grain of sand）,http://www.ruanyifeng.com/blog/2006/06/to_see_a_world_in_a_grain_of_s.html
+197,66,2009.10.03,配眼镜的遭遇,http://www.ruanyifeng.com/blog/2009/10/an_experience_of_buying_eyeglasses.html
+198,65,2016.05.13,时间管理的七句话,http://www.ruanyifeng.com/blog/2016/05/time-management.html
+199,65,2016.07.04,YAML 语言教程,http://www.ruanyifeng.com/blog/2016/07/yaml.html
+200,65,2013.10.14,为什么寄存器比内存快？,http://www.ruanyifeng.com/blog/2013/10/register.html
+201,65,2019.05.17,每周分享第 56 期,http://www.ruanyifeng.com/blog/2019/05/weekly-issue-56.html
+202,64,2017.05.23,技术决定历史,http://www.ruanyifeng.com/blog/2017/05/technology-is-future.html
+203,64,2011.07.21,相似图片搜索的原理,http://www.ruanyifeng.com/blog/2011/07/principle_of_similar_image_search.html
+204,64,2010.02.19,再谈Android的许可证,http://www.ruanyifeng.com/blog/2010/02/revisiting_android_licenses.html
+205,64,2011.02.20,蛋屋的建造,http://www.ruanyifeng.com/blog/2011/02/building_an_egg-shaped_house.html
+206,64,2012.01.15,王实味的《野百合花》,http://www.ruanyifeng.com/blog/2012/01/wang_shiwei.html
+207,64,2010.02.01,我的新手机三星i8000,http://www.ruanyifeng.com/blog/2010/02/samsung_omnia_ii_i8000_part_i.html
+208,63,2012.04.13,胡适的三个主义,http://www.ruanyifeng.com/blog/2012/04/hu_shih.html
+209,63,2016.08.19,HTTP 协议入门,http://www.ruanyifeng.com/blog/2016/08/http.html
+210,63,2016.09.20,Redux 入门教程（二）：中间件与异步操作,http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_two_async_operations.html
+211,63,2011.07.26,jQuery设计思想,http://www.ruanyifeng.com/blog/2011/07/jquery_fundamentals.html
+212,63,2009.08.06,曾经待定义的我的31岁,http://www.ruanyifeng.com/blog/2009/08/my_waiting-defined_age_31.html
+213,63,2007.08.09,查建英《国家公敌》（转贴）,http://www.ruanyifeng.com/blog/2007/08/enemy_of_the_state.html
+214,63,2011.04.20,黑客的含义,http://www.ruanyifeng.com/blog/2011/04/on_hacker.html
+215,62,2013.08.23,人类的心理行为模式----《影响力》笔记,http://www.ruanyifeng.com/blog/2013/08/influence_the_psychology_of_persuasion.html
+216,62,2012.07.25,蒋经国与台湾民主进程,http://www.ruanyifeng.com/blog/2012/07/chiang_ching-kuo.html
+217,62,2017.02.10,为什么文件名要小写？,http://www.ruanyifeng.com/blog/2017/02/filename-should-be-lowercase.html
+218,62,2009.05.30,数据类型和Json格式,http://www.ruanyifeng.com/blog/2009/05/data_types_and_json.html
+219,62,2011.08.04,jQuery最佳实践,http://www.ruanyifeng.com/blog/2011/08/jquery_best_practices.html
+220,62,2010.05.24,Javascript面向对象编程（三）：非构造函数的继承,http://www.ruanyifeng.com/blog/2010/05/object-oriented_javascript_inheritance_continued.html
+221,62,2019.05.10,每周分享第 55 期,http://www.ruanyifeng.com/blog/2019/05/weekly-issue-55.html
+222,62,2015.06.02,能量墙与家庭电厂,http://www.ruanyifeng.com/blog/2015/06/powerwall.html
+223,62,2010.04.24,纪录片《软件专利的荒谬性》,http://www.ruanyifeng.com/blog/2010/04/patent_absurdity.html
+224,62,2009.10.18,我为什么喜欢编程,http://www.ruanyifeng.com/blog/2009/10/why_i_love_programming.html
+225,61,2008.07.26,这鸡蛋真难吃,http://www.ruanyifeng.com/blog/2008/07/when_you_say_this_egg_is_not_good.html
+226,61,2012.09.15,台湾四极,http://www.ruanyifeng.com/blog/2012/09/extreme_points_of_taiwan.html
+227,61,2017.07.13,神经网络入门,http://www.ruanyifeng.com/blog/2017/07/neural-network.html
+228,61,2013.03.15,TF-IDF与余弦相似性的应用（一）：自动提取关键词,http://www.ruanyifeng.com/blog/2013/03/tf-idf.html
+229,61,2019.03.15,每周分享第 47 期,http://www.ruanyifeng.com/blog/2019/03/weekly-issue-47.html
+230,61,2007.09.19,一个晚期癌症病人的Blog,http://www.ruanyifeng.com/blog/2007/09/a_late_period_cancer_patient_s_blog.html
+231,61,2004.01.16,李振盛《红色新闻兵》,http://www.ruanyifeng.com/blog/2004/01/post_19.html
+232,60,2017.11.07,技术教育的兴起,http://www.ruanyifeng.com/blog/2017/11/technology-training.html
+233,60,2010.02.11,关于URL编码,http://www.ruanyifeng.com/blog/2010/02/url_encoding.html
+234,60,2009.08.05,关于2的补码,http://www.ruanyifeng.com/blog/2009/08/twos_complement.html
+235,60,2008.06.19,Google日历简易版,http://www.ruanyifeng.com/blog/2008/06/google_calendar_lite.html
+236,60,2008.05.18,四川大地震图片墙,http://www.ruanyifeng.com/blog/2008/05/2008_sichuan_earthquake_image_wall.html
+237,59,2009.12.10,美丽岛事件30周年纪念及其启示,http://www.ruanyifeng.com/blog/2009/12/30th_anniversary_of_kaohsiung_incident.html
+238,59,2018.04.07,彩票的数学知识,http://www.ruanyifeng.com/blog/2018/04/lottery-mathematics.html
+239,59,2013.12.16,朴素贝叶斯分类器的应用,http://www.ruanyifeng.com/blog/2013/12/naive_bayes_classifier.html
+240,59,2014.09.20,图解SSL/TLS协议,http://www.ruanyifeng.com/blog/2014/09/illustration-ssl.html
+241,59,2007.11.08,谈谈MVC模式,http://www.ruanyifeng.com/blog/2007/11/mvc.html
+242,59,2016.04.08,浏览器同源政策及其规避方法,http://www.ruanyifeng.com/blog/2016/04/same-origin-policy.html
+243,59,2016.01.25,Babel 入门教程,http://www.ruanyifeng.com/blog/2016/01/babel.html
+244,59,2014.04.30,《ECMAScript 6入门》上线了,http://www.ruanyifeng.com/blog/2014/04/ecmascript_6_primer.html
+245,59,2013.01.14,Javascript 严格模式详解,http://www.ruanyifeng.com/blog/2013/01/javascript_strict_mode.html
+246,59,2010.04.21,告诉你一个真实的美国（转贴）,http://www.ruanyifeng.com/blog/2010/04/tell_you_a_real_states.html
+247,59,2009.01.12,"北京拓尔思公司的""网络舆情监控系统""",http://www.ruanyifeng.com/blog/2009/01/china_s_public_opinion_monitoring_control_system.html
+248,58,2011.12.18,《禅与摩托车维修艺术》读后感,http://www.ruanyifeng.com/blog/2011/12/zen_and_the_art_of_motorcycle_maintenance.html
+249,58,2011.02.18,孙中山的三种革命,http://www.ruanyifeng.com/blog/2011/02/three_kinds_of_chinese_revolution.html
+250,58,2015.06.10,泊松分布和指数分布：10分钟教程,http://www.ruanyifeng.com/blog/2015/06/poisson-distribution.html
+251,58,2013.01.08,泊松分布与美国枪击案,http://www.ruanyifeng.com/blog/2013/01/poisson_distribution.html
+252,58,2016.06.10,CSS Modules 用法教程,http://www.ruanyifeng.com/blog/2016/06/css_modules.html
+253,58,2014.07.15,中文字体网页开发指南,http://www.ruanyifeng.com/blog/2014/07/chinese_fonts.html
+254,58,2019.05.24,每周分享第 57 期,http://www.ruanyifeng.com/blog/2019/05/weekly-issue-57.html
+255,58,2018.06.08,每周分享第 8 期,http://www.ruanyifeng.com/blog/2018/06/weekly-issue-8.html
+256,58,2009.09.04,在这里，你终究会真正地失败,http://www.ruanyifeng.com/blog/2009/09/idealist_must_die_in_china.html
+257,58,2011.08.13,神奇的图像处理算法,http://www.ruanyifeng.com/blog/2011/08/amazing_algorithms_of_image_processing.html
+258,57,2018.07.10,关于《未来世界的幸存者》,http://www.ruanyifeng.com/blog/2018/07/my-books.html
+259,57,2010.09.25,日本何时崩溃？,http://www.ruanyifeng.com/blog/2010/09/when_japan_collapses.html
+260,57,2009.05.20,关于王建硕儿子的上学问题,http://www.ruanyifeng.com/blog/2009/05/about_wang_yifan_s_education.html
+261,57,2008.10.10,关于上海最豪华的学校,http://www.ruanyifeng.com/blog/2008/10/the_most_luxury_school_in_shanghai.html
+262,57,2014.07.04,数据库的最简单实现,http://www.ruanyifeng.com/blog/2014/07/database_implementation.html
+263,57,2009.06.18,关于Unix哲学,http://www.ruanyifeng.com/blog/2009/06/unix_philosophy.html
+264,57,2010.05.04,要创业，先退学（译文）,http://www.ruanyifeng.com/blog/2010/05/dropout_entrepreneur.html
+265,57,2007.05.31,二起政府行为,http://www.ruanyifeng.com/blog/2007/05/how_government_operates_in_china.html
+266,56,2011.08.18,做饭技术革新运动,http://www.ruanyifeng.com/blog/2011/08/cooking_technology_innovation_movement.html
+267,56,2018.03.08,日本70岁退休谈起,http://www.ruanyifeng.com/blog/2018/03/retire-at-70.html
+268,56,2010.04.29,与王建硕的对话,http://www.ruanyifeng.com/blog/2010/04/talk_with_wangjianshuo.html
+269,56,2008.08.04,对一起突发事件的观察和思考,http://www.ruanyifeng.com/blog/2008/08/thoughts_on_a_breaking_news.html
+270,56,2012.11.14,高斯模糊的算法,http://www.ruanyifeng.com/blog/2012/11/gaussian_blur.html
+271,56,2019.04.26,每周分享第 53 期,http://www.ruanyifeng.com/blog/2019/04/weekly-issue-53.html
+272,56,2012.12.26,纪录片《Minecraft：Mojang的故事》,http://www.ruanyifeng.com/blog/2012/12/minecraft_the_story_of_mojang.html
+273,56,2010.11.21,生活在富士康（续）,http://www.ruanyifeng.com/blog/2010/11/living_at_foxconn_continued.html
+274,56,2014.01.31,浙江温州的鲸鲨屠宰场,http://www.ruanyifeng.com/blog/2014/01/whale_shark.html
+275,55,2011.03.30,MP3是如何颠覆音乐行业的,http://www.ruanyifeng.com/blog/2011/03/how_mp3_changed_the_music_industry.html
+276,55,2010.04.01,关于高晓松，以及其他的记忆,http://www.ruanyifeng.com/blog/2010/04/about_campus_folk.html
+277,55,2019.05.31,每周分享第 58 期,http://www.ruanyifeng.com/blog/2019/05/weekly-issue-58.html
+278,55,2019.02.22,每周分享第 44 期,http://www.ruanyifeng.com/blog/2019/02/weekly-issue-44.html
+279,55,2010.10.24,从0到1亿美元 ---- PopCap创始人John Vechey自述,http://www.ruanyifeng.com/blog/2010/10/how_john_vechey_the_founder_of_popcap_did_it.html
+280,55,2010.01.20,朝鲜，一个牛仔裤的故事,http://www.ruanyifeng.com/blog/2010/01/north_korea_a_jeans_story.html
+281,55,2009.06.05,受害者的人权在哪？（转贴）,http://www.ruanyifeng.com/blog/2009/06/who_will_speak_for_the_victim.html
+282,55,2009.03.15,白介夫：我与萧光琰的苦涩友谊（转贴）,http://www.ruanyifeng.com/blog/2009/03/my_bitter_friendship_with_mr_xiao_guangyan.html
+283,55,2008.08.28,Philip Pan 访谈,http://www.ruanyifeng.com/blog/2008/08/philip_pan.html
+284,54,2016.01.22,白领的消亡,http://www.ruanyifeng.com/blog/2016/01/white-collar.html
+285,54,2011.01.31,当埃及切断了互联网,http://www.ruanyifeng.com/blog/2011/01/egypt_shut_down_the_internet.html
+286,54,2010.07.30,关于马粒之的捐款,http://www.ruanyifeng.com/blog/2010/07/contributions_for_ma_lizhi.html
+287,54,2015.02.10,JavaScript 有多灵活？,http://www.ruanyifeng.com/blog/2015/02/flexible-javascript.html
+288,54,2013.05.11,如何做到 jQuery-free？,http://www.ruanyifeng.com/blog/2013/05/jquery-free.html
+289,54,2019.04.19,每周分享第 52 期,http://www.ruanyifeng.com/blog/2019/04/weekly-issue-52.html
+290,54,2019.03.29,每周分享第 49 期,http://www.ruanyifeng.com/blog/2019/03/weekly-issue-49.html
+291,54,2008.10.21,"从""救楼市""说起",http://www.ruanyifeng.com/blog/2008/10/is_saving_the_property_market_possible.html
+292,54,2011.11.24,珠海印象,http://www.ruanyifeng.com/blog/2011/11/zhuhai.html
+293,53,2012.04.20,居延汉简和安阳殷墟1001号大墓,http://www.ruanyifeng.com/blog/2012/04/museum_of_institute_of_history_and_philology.html
+294,53,2010.07.09,蓝狮子与唐骏博士之绝配,http://www.ruanyifeng.com/blog/2010/07/what_the_blue_lion_publishing_house_is_like.html
+295,53,2017.06.15,树莓派新手入门教程,http://www.ruanyifeng.com/blog/2017/06/raspberry-pi-tutorial.html
+296,53,2012.07.09,Javascript定义类（class）的三种方法,http://www.ruanyifeng.com/blog/2012/07/three_ways_to_define_a_javascript_class.html
+297,53,2019.03.22,每周分享第 48 期,http://www.ruanyifeng.com/blog/2019/03/weekly-issue-48.html
+298,53,2018.09.28,每周分享第 24 期,http://www.ruanyifeng.com/blog/2018/09/weekly-issue-24.html
+299,53,2006.01.14,《J.阿尔弗瑞德.普鲁弗洛克的情歌》阅读笔记（上）,http://www.ruanyifeng.com/blog/2006/01/j.html
+300,53,2009.11.19,BT下载的未来,http://www.ruanyifeng.com/blog/2009/11/future_of_bittorrent.html
+301,53,2009.06.11,对Unix40岁的一些感想,http://www.ruanyifeng.com/blog/2009/06/unix_turns_40.html
+302,53,2009.11.25,关于杨宪益先生,http://www.ruanyifeng.com/blog/2009/11/an_autobiography_of_yang_xianyi.html
+303,53,2010.02.07,【活在中国】谁是恶意软件？,http://www.ruanyifeng.com/blog/2010/02/who_is_malicious_software.html
+304,53,2009.02.15,美国的软件公司是什么样？---- 以Fog Creek为例,http://www.ruanyifeng.com/blog/2009/02/fog_creek_s_new_office.html
+305,52,2008.05.15,What can men do against such reckless hate?,http://www.ruanyifeng.com/blog/2008/05/what_can_men_do_against_such_reckless_hate.html
+306,52,2019.03.25,CSS Grid 网格布局教程,http://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html
+307,52,2016.10.18,中文技术文档的写作规范,http://www.ruanyifeng.com/blog/2016/10/document_style_guide.html
+308,52,2009.01.05,PDF文件使用指南,http://www.ruanyifeng.com/blog/2009/01/pdf_guide.html
+309,52,2007.11.30,1TB字节有多大？,http://www.ruanyifeng.com/blog/2007/11/how_big_is_one_terabyte.html
+310,52,2007.10.17,用GoogleEarth看中国各城市的排污（转贴）,http://www.ruanyifeng.com/blog/2007/10/seeing_china_waste_water_discharging_by_google_earth.html
+311,52,2010.02.13,推荐一支台湾广告《蔡莺妹的故事》,http://www.ruanyifeng.com/blog/2010/02/a_taiwan_ad.html
+312,51,2006.05.07,凡高的星星为什么如此明亮？（Starry Night）,http://www.ruanyifeng.com/blog/2006/05/starry_night.html
+313,51,2016.03.15,你的B计划在哪里？,http://www.ruanyifeng.com/blog/2016/03/plan-b.html
+314,51,2012.01.17,SOPA为什么是一部恶法,http://www.ruanyifeng.com/blog/2012/01/why_sopa_is_evil.html
+315,51,2008.04.09,它与全部自由权利有关,http://www.ruanyifeng.com/blog/2008/04/it_is_about_all_freedom_rights.html
+316,51,2011.04.11,云储存时代的到来,http://www.ruanyifeng.com/blog/2011/04/dawn_of_cloud_storage.html
+317,51,2009.04.21,招待所里的那些事儿,http://www.ruanyifeng.com/blog/2009/04/what_happened_in_the_hostel.html
+318,51,2008.04.08,上海的房价,http://www.ruanyifeng.com/blog/2008/04/shanghai_house_prices.html
+319,50,2012.06.21,卡耐基人际关系指南,http://www.ruanyifeng.com/blog/2012/06/how_to_win_friends_and_influence_people.html
+320,50,2010.08.03,内华达如何发展经济？,http://www.ruanyifeng.com/blog/2010/08/how_did_nevada_develop_its_economy.html
+321,50,2009.08.13,现代人为什么焦虑？,http://www.ruanyifeng.com/blog/2009/08/why_we_are_anxious.html
+322,50,2013.11.09,向着未来而生----《黑客与画家（精装本）》序言,http://www.ruanyifeng.com/blog/2013/11/being-toward-future.html
+323,50,2013.03.31,相似图片搜索的原理（二）,http://www.ruanyifeng.com/blog/2013/03/similar_image_search_part_ii.html
+324,50,2017.05.09,CSS 变量教程,http://www.ruanyifeng.com/blog/2017/05/css-variables.html
+325,50,2015.09.17,网页性能管理详解,http://www.ruanyifeng.com/blog/2015/09/web-page-performance-in-depth.html
+326,50,2014.02.14,CSS动画简介,http://www.ruanyifeng.com/blog/2014/02/css_transition_and_animation.html
+327,50,2013.01.23,JavaScript Source Map 详解,http://www.ruanyifeng.com/blog/2013/01/javascript_source_map.html
+328,50,2012.04.27,Javascript编程风格,http://www.ruanyifeng.com/blog/2012/04/javascript_programming_style.html
+329,50,2018.04.22,每周分享第 1 期,http://www.ruanyifeng.com/blog/2018/04/weekly-issue-1.html
+330,50,2009.07.31,活着，并且不撒谎（译文）,http://www.ruanyifeng.com/blog/2009/07/live_not_by_lies.html
+331,50,2010.11.04,生活在富士康（组图）,http://www.ruanyifeng.com/blog/2010/11/living_at_foxconn.html
+332,50,2010.08.08,关于马粒之的捐款（二）,http://www.ruanyifeng.com/blog/2010/08/contributions_for_ma_lizhi_part_ii.html
+333,50,2008.08.23,关于Nokia N73手机,http://www.ruanyifeng.com/blog/2008/08/nokia_n73.html
+334,49,2011.06.03,不正义的法律，不服从的公民,http://www.ruanyifeng.com/blog/2011/06/unjust_laws_and_disobedient_citizens.html
+335,49,2010.12.07,《黑客英雄》书摘,http://www.ruanyifeng.com/blog/2010/12/hackers_heroes_of_the_computer_revolution.html
+336,49,2009.09.24,风雨如晦，夜深似海,http://www.ruanyifeng.com/blog/2009/09/we_are_in_the_gloomy_dark_night_of_storm.html
+337,49,2008.08.11,同一个世界，同一个梦想,http://www.ruanyifeng.com/blog/2008/08/one_world_one_dream.html
+338,49,2011.05.02,如何选择开源许可证？,http://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html
+339,49,2015.07.16,图解 Monad,http://www.ruanyifeng.com/blog/2015/07/monad.html
+340,49,2014.11.11,编译器的工作过程,http://www.ruanyifeng.com/blog/2014/11/compiler.html
+341,49,2011.04.18,Facebook的俄勒冈机房,http://www.ruanyifeng.com/blog/2011/04/facebook_s_prineville_datacenter.html
+342,49,2013.11.03,柯文哲《生死的智慧》,http://www.ruanyifeng.com/blog/2013/11/ko_wen-je.html
+343,49,2009.12.30,关注现实，关注底层,http://www.ruanyifeng.com/blog/2009/12/focus_on_the_bottom_of_society.html
+344,49,2008.10.19,我的新笔记本：宏基 Aspire 2420,http://www.ruanyifeng.com/blog/2008/10/acer_aspire_2420.html
+345,48,2012.05.13,失败的总和----读《黄河青山：黄仁宇回忆录》,http://www.ruanyifeng.com/blog/2012/05/ray_huang_s_memoir.html
+346,48,2011.07.06,高尔泰的《寻找家园》,http://www.ruanyifeng.com/blog/2011/07/gao_ertai.html
+347,48,2017.01.20,未来的娱乐业,http://www.ruanyifeng.com/blog/2017/01/entainment.html
+348,48,2009.04.17,对海盗湾一审败诉的感想,http://www.ruanyifeng.com/blog/2009/04/some_thoughts_on_the_pirate_bay_guilty.html
+349,48,2016.01.06,Commit message 和 Change log 编写指南,http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html
+350,48,2015.08.05,Git 使用规范流程,http://www.ruanyifeng.com/blog/2015/08/git-use-process.html
+351,48,2018.07.16,CAP 定理的含义,http://www.ruanyifeng.com/blog/2018/07/cap.html
+352,48,2016.06.16,DNS 原理入门,http://www.ruanyifeng.com/blog/2016/06/dns.html
+353,48,2014.12.11,Unicode与JavaScript详解,http://www.ruanyifeng.com/blog/2014/12/unicode.html
+354,48,2019.03.08,每周分享第 46 期,http://www.ruanyifeng.com/blog/2019/03/weekly-issue-46.html
+355,48,2018.12.14,每周分享第 35 期,http://www.ruanyifeng.com/blog/2018/12/weekly-issue-35.html
+356,48,2009.01.11,Wikipedia的方言版本,http://www.ruanyifeng.com/blog/2009/01/wikipedia_s_chinese_dialect_versions.html
+357,48,2008.04.15,一些新闻媒体的全文Feed,http://www.ruanyifeng.com/blog/2008/04/some_full-text_news_feeds.html
+358,48,2010.04.27,Kim Laughton 的上海摄影集,http://www.ruanyifeng.com/blog/2010/04/shanghai_right_now_by_kim_laughton.html
+359,48,2009.05.21,推荐一个摄影项目《面孔》,http://www.ruanyifeng.com/blog/2009/05/project_the_faces.html
+360,48,2004.02.06,2003年的网络照片（转载）,http://www.ruanyifeng.com/blog/2004/02/2003_1.html
+361,48,2008.10.25,我要翻译《Joel on Software》了！,http://www.ruanyifeng.com/blog/2008/10/i_will_translate_more_joel_on_software.html
+362,47,2008.06.26,北京欢迎您,http://www.ruanyifeng.com/blog/2008/06/beijing_welcome_you.html
+363,47,2018.02.13,Docker 微服务教程,http://www.ruanyifeng.com/blog/2018/02/docker-wordpress-tutorial.html
+364,47,2012.08.29,读懂diff,http://www.ruanyifeng.com/blog/2012/08/how_to_read_diff.html
+365,47,2017.06.08,TCP 协议简介,http://www.ruanyifeng.com/blog/2017/06/tcp-protocol.html
+366,47,2013.10.21,什么是 Event Loop？,http://www.ruanyifeng.com/blog/2013/10/event_loop.html
+367,47,2018.12.28,每周分享第 37 期,http://www.ruanyifeng.com/blog/2018/12/weekly-issue-37.html
+368,47,2018.07.20,每周分享第 14 期,http://www.ruanyifeng.com/blog/2018/07/weekly-issue-14.html
+369,47,2015.09.18,七个对我最重要的职业建议（译文）,http://www.ruanyifeng.com/blog/2015/09/career-advice.html
+370,47,2008.03.28,荣赫鹏《英国侵略西藏史》,http://www.ruanyifeng.com/blog/2008/03/francis_younghusband.html
+371,47,2009.01.02,电子书的时代正在来临,http://www.ruanyifeng.com/blog/2009/01/e-books_start_to_take_hold.html
+372,46,2011.02.05,《巨流河》书摘,http://www.ruanyifeng.com/blog/2011/02/book_excerpt_of_the_ju_liu_river.html
+373,46,2010.10.22,什么是边际？,http://www.ruanyifeng.com/blog/2010/10/what_is_margin.html
+374,46,2008.09.07,李鸿章百年祭（旧文重贴）,http://www.ruanyifeng.com/blog/2008/09/thoughts_on_one_hundredth_anniversaries_of_li_hongzhang_s_death.html
+375,46,2012.11.29,Compass用法指南,http://www.ruanyifeng.com/blog/2012/11/compass.html
+376,46,2011.01.14,在PHP语言中使用JSON,http://www.ruanyifeng.com/blog/2011/01/json_in_php.html
+377,46,2008.05.06,utf-8编码已经成为主流,http://www.ruanyifeng.com/blog/2008/05/growth_of_utf-8_on_the_web.html
+378,46,2018.10.12,每周分享第 26 期,http://www.ruanyifeng.com/blog/2018/10/weekly-issue-26.html
+379,46,2011.11.06,天使湾创业之夏Demo Day见闻,http://www.ruanyifeng.com/blog/2011/11/tisiwi_demo_day.html
+380,46,2010.07.18,荒诞世界的生存方法（译文）,http://www.ruanyifeng.com/blog/2010/07/how_to_live_in_an_absurd_world.html
+381,46,2012.12.06,为什么数码相机可以拍出彩色照片？,http://www.ruanyifeng.com/blog/2012/12/bayer_filter.html
+382,46,2018.08.20,微信的历史,http://www.ruanyifeng.com/blog/2018/08/weixin.html
+383,46,2009.02.02,怀疑的价值,http://www.ruanyifeng.com/blog/2009/02/value_of_doubt.html
+384,46,2008.11.12,读者来信：失物招领可以收费吗？,http://www.ruanyifeng.com/blog/2008/11/lost_and_found_service_is_not_free.html
+385,46,2011.12.27,iDaily的诞生,http://www.ruanyifeng.com/blog/2011/12/idaily.html
+386,46,2010.03.22,《摩西英语》出书了！,http://www.ruanyifeng.com/blog/2010/03/book_of_mosesenglish_published.html
+387,46,2008.11.15,UseNext下载教程,http://www.ruanyifeng.com/blog/2008/11/usenext_tutorial.html
+388,45,2010.05.21,善于说，善于做,http://www.ruanyifeng.com/blog/2010/05/good_at_talking_good_at_doing.html
+389,45,2008.11.10,中国经济增长率的下限,http://www.ruanyifeng.com/blog/2008/11/floor_level_of_chinese_economy_growth.html
+390,45,2008.08.29,关于伦敦市长Boris Johnson,http://www.ruanyifeng.com/blog/2008/08/boris_johnson.html
+391,45,2008.08.07,北京天空下,http://www.ruanyifeng.com/blog/2008/08/under_beijing_sky.html
+392,45,2009.01.13,关于圆的定义,http://www.ruanyifeng.com/blog/2009/01/what_is_a_circle.html
+393,45,2013.12.22,PostgreSQL新手入门,http://www.ruanyifeng.com/blog/2013/12/getting_started_with_postgresql.html
+394,45,2014.09.07,数据压缩与信息熵,http://www.ruanyifeng.com/blog/2014/09/information-entropy.html
+395,45,2011.03.12,四位计算机的原理及其实现,http://www.ruanyifeng.com/blog/2011/03/4-bit_computer.html
+396,45,2019.01.25,每周分享第 41 期,http://www.ruanyifeng.com/blog/2019/01/weekly-issue-41.html
+397,45,2018.11.23,每周分享第 32 期,http://www.ruanyifeng.com/blog/2018/11/weekly-issue-32.html
+398,45,2018.05.11,每周分享第 4 期,http://www.ruanyifeng.com/blog/2018/05/weekly-issue-4.html
+399,45,2011.08.23,影响力的静模式,http://www.ruanyifeng.com/blog/2011/08/the_quiet_mode_of_influence.html
+400,45,2011.05.22,保护蓝鳍金枪鱼的海报,http://www.ruanyifeng.com/blog/2011/05/bluefin_tuna.html
+401,45,2010.01.09,PHP很烂？我的看法,http://www.ruanyifeng.com/blog/2010/01/does_php_suck.html
+402,44,2011.03.28,《美丽新世界》读后感,http://www.ruanyifeng.com/blog/2011/03/brave_new_world.html
+403,44,2011.03.15,中国经济：转变和对策,http://www.ruanyifeng.com/blog/2011/03/what_chinese_government_should_do_now.html
+404,44,2018.10.03,RESTful API 最佳实践,http://www.ruanyifeng.com/blog/2018/10/restful-api-best-practices.html
+405,44,2012.01.31,Twitter同步新浪微博的一个解决方案,http://www.ruanyifeng.com/blog/2012/01/how_to_synchronize_weibo_with_twitter.html
+406,44,2017.03.13,Pointfree 编程风格指南,http://www.ruanyifeng.com/blog/2017/03/pointfree.html
+407,44,2019.01.04,每周分享第 38 期,http://www.ruanyifeng.com/blog/2019/01/weekly-issue-38.html
+408,44,2018.12.21,每周分享第 36 期,http://www.ruanyifeng.com/blog/2018/12/weekly-issue-36.html
+409,44,2018.11.09,每周分享第 30 期,http://www.ruanyifeng.com/blog/2018/11/weekly-issue-30.html
+410,44,2018.07.27,每周分享第 15 期,http://www.ruanyifeng.com/blog/2018/07/weekly-issue-15.html
+411,44,2010.05.15,HTML5的视频格式之争,http://www.ruanyifeng.com/blog/2010/05/html5_codec_fight.html
+412,44,2007.08.06,网志更换样式,http://www.ruanyifeng.com/blog/2007/08/new_style_switched.html
+413,43,2017.12.05,北方的空地,http://www.ruanyifeng.com/blog/2017/12/qiang-tang.html
+414,43,2012.09.03,《Linus Torvalds自传》摘录,http://www.ruanyifeng.com/blog/2012/09/linus_torvalds.html
+415,43,2013.02.11,纪录片《TPB AFK》与现行版权制度,http://www.ruanyifeng.com/blog/2013/02/tpb.html
+416,43,2009.12.25,海盗湾的圣诞祝词,http://www.ruanyifeng.com/blog/2009/12/merry_christmas_from_tpb.html
+417,43,2008.05.19,关于中国红十字会,http://www.ruanyifeng.com/blog/2008/05/red_cross_society_of_china.html
+418,43,2011.02.13,HTTPS的七个误解（译文）,http://www.ruanyifeng.com/blog/2011/02/seven_myths_about_https.html
+419,43,2010.06.18,莫斯科地铁交通图,http://www.ruanyifeng.com/blog/2010/06/moscow_metro_map.html
+420,43,2010.01.03,12种不宜使用的Javascript语法,http://www.ruanyifeng.com/blog/2010/01/12_javascript_syntax_structures_you_should_not_use.html
+421,43,2018.11.16,每周分享第 31 期,http://www.ruanyifeng.com/blog/2018/11/weekly-issue-31.html
+422,43,2018.06.22,每周分享第 10 期,http://www.ruanyifeng.com/blog/2018/06/weekly-issue-10.html
+423,43,2009.11.23,免费经济学,http://www.ruanyifeng.com/blog/2009/11/freenomics.html
+424,43,2010.08.17,世界海底光缆分布图,http://www.ruanyifeng.com/blog/2010/08/cable_world_map.html
+425,43,2010.02.27,为什么GPL是更好的开源许可证?,http://www.ruanyifeng.com/blog/2010/02/why_gpl_is_a_better_choice.html
+426,43,2009.06.14,"从""山寨机""看手机的未来",http://www.ruanyifeng.com/blog/2009/06/the_future_of_mobile_phone.html
+427,43,2018.12.09,腾讯的历史,http://www.ruanyifeng.com/blog/2018/12/tencent.html
+428,43,2007.10.31,请推荐笔记本电脑,http://www.ruanyifeng.com/blog/2007/10/laptop_recommendation.html
+429,42,2010.05.25,上海的酸雨,http://www.ruanyifeng.com/blog/2010/05/shanghai_acid_rain.html
+430,42,2008.05.21,国有经济的衰弱与中国的未来,http://www.ruanyifeng.com/blog/2008/05/decline_of_public_ownership_and_china_future.html
+431,42,2012.03.20,基于用户投票的排名算法（五）：威尔逊区间,http://www.ruanyifeng.com/blog/2012/03/ranking_algorithm_wilson_score_interval.html
+432,42,2011.09.04,curl网站开发指南,http://www.ruanyifeng.com/blog/2011/09/curl.html
+433,42,2017.09.07,asm.js 和 Emscripten 入门教程,http://www.ruanyifeng.com/blog/2017/09/asmjs_emscripten.html
+434,42,2017.04.16,JavaScript 内存泄漏教程,http://www.ruanyifeng.com/blog/2017/04/memory-leak.html
+435,42,2015.05.11,async 函数的含义和用法,http://www.ruanyifeng.com/blog/2015/05/async.html
+436,42,2018.11.30,每周分享第 33 期,http://www.ruanyifeng.com/blog/2018/11/weekly-issue-33.html
+437,42,2009.06.03,如何在家庭网络中使用两台路由器？,http://www.ruanyifeng.com/blog/2009/06/how_to_connect_2_routers_in_home_networking.html
+438,42,2007.11.19,绕过GFW的方法,http://www.ruanyifeng.com/blog/2007/11/some_ways_to_break_the_great_firewall.html
+439,42,2010.04.15,"""草原新城""康巴什",http://www.ruanyifeng.com/blog/2010/04/kangbashi.html
+440,42,2009.07.12,飙高音（译文）,http://www.ruanyifeng.com/blog/2009/07/hitting_the_high_notes.html
+441,41,2011.12.06,痛苦造就性格（也许还造就产品）,http://www.ruanyifeng.com/blog/2011/12/pain_builds_character.html
+442,41,2008.12.09,关于《2006-2010下一个大泡泡（续）》一书的声明,http://www.ruanyifeng.com/blog/2008/12/my_state_of_the_chinese_edition_of_the_next_great_bubble_boom.html
+443,41,2017.10.24,CSS 框架 Bulma 教程,http://www.ruanyifeng.com/blog/2017/10/bulma.html
+444,41,2016.01.03,网站的肥胖症危机,http://www.ruanyifeng.com/blog/2016/01/website-obesity-crisis.html
+445,41,2016.08.05,布尔代数入门,http://www.ruanyifeng.com/blog/2016/08/boolean-algebra.html
+446,41,2018.02.23,Node 定时器详解,http://www.ruanyifeng.com/blog/2018/02/node-event-loop.html
+447,41,2019.04.05,每周分享第 50 期,http://www.ruanyifeng.com/blog/2019/04/weekly-issue-50.html
+448,41,2018.11.02,每周分享第 29 期,http://www.ruanyifeng.com/blog/2018/11/weekly-issue-29.html
+449,41,2011.01.25,为什么起床后不能收邮件？,http://www.ruanyifeng.com/blog/2011/01/never_check_email_first_thing_in_the_morning.html
+450,41,2008.06.17,J·K·罗琳在哈佛大学毕业典礼上的演讲,http://www.ruanyifeng.com/blog/2008/06/remarks_of_jk_rowling_in_harvard_commencement_2008.html
+451,41,2010.09.15,如何在大海中上网？,http://www.ruanyifeng.com/blog/2010/09/how_to_access_the_internet_from_the_middle_of_the_ocean.html
+452,41,2009.07.02,海盗湾的出售和Usenet的败诉,http://www.ruanyifeng.com/blog/2009/07/the_pirate_bay_sold_and_usenet_being_guilty.html
+453,41,2008.11.02,寻找优秀的程序员（译文）,http://www.ruanyifeng.com/blog/2008/11/finding_great_developers.html
+454,40,2016.01.17,更多的人死于心碎,http://www.ruanyifeng.com/blog/2016/01/ian-murdock.html
+455,40,2008.08.05,Randy Pausch教授的《最后一课》,http://www.ruanyifeng.com/blog/2008/08/randy_pausch_the_last_lecture.html
+456,40,2009.10.22,一份超级搞笑的判决书,http://www.ruanyifeng.com/blog/2009/10/a_ridiculous_ruling.html
+457,40,2016.09.08,程序员小测试：保守派 vs 自由派,http://www.ruanyifeng.com/blog/2016/09/conservative_vs_liberal_programmer.html
+458,40,2011.12.23,SSH原理与运用（二）：远程操作与端口转发,http://www.ruanyifeng.com/blog/2011/12/ssh_port_forwarding.html
+459,40,2015.04.10,尾调用优化,http://www.ruanyifeng.com/blog/2015/04/tail-call.html
+460,40,2018.06.01,每周分享第 7 期,http://www.ruanyifeng.com/blog/2018/06/weekly-issue-7.html
+461,40,2018.05.18,每周分享第 5 期,http://www.ruanyifeng.com/blog/2018/05/weekly-issue-5.html
+462,40,2009.07.21,大坑和小铲子,http://www.ruanyifeng.com/blog/2009/07/big_hole_and_little_shovel.html
+463,40,2008.05.09,为什么欧美工人的工资高？,http://www.ruanyifeng.com/blog/2008/05/why_western_workers_have_a_higher_salary.html
+464,39,2013.09.29,梁漱溟：做学问的八个境界,http://www.ruanyifeng.com/blog/2013/09/liang_shuming.html
+465,39,2009.12.14,决定，还是做决定,http://www.ruanyifeng.com/blog/2009/12/deciding_or_making_a_decision.html
+466,39,2015.08.18,密码疲劳,http://www.ruanyifeng.com/blog/2015/08/password-fatigue.html
+467,39,2012.02.24,基于用户投票的排名算法（一）：Delicious和Hacker News,http://www.ruanyifeng.com/blog/2012/02/ranking_algorithm_hacker_news.html
+468,39,2017.11.02,双因素认证（2FA）教程,http://www.ruanyifeng.com/blog/2017/11/2fa-tutorial.html
+469,39,2013.06.11,HTML代码简写法：Emmet和Haml,http://www.ruanyifeng.com/blog/2013/06/emmet_and_haml.html
+470,39,2011.08.14,Just A Kiss 的 MV,http://www.ruanyifeng.com/blog/2011/08/just_a_kiss.html
+471,39,2010.08.10,什么是博士？,http://www.ruanyifeng.com/blog/2010/08/illustrated_guide_to_a_phd.html
+472,39,2006.06.15,汉语家族称谓表,http://www.ruanyifeng.com/blog/2006/06/post_242.html
+473,39,2008.10.20,中国畅销书的销量,http://www.ruanyifeng.com/blog/2008/10/circulation_of_chinese_bestsellers.html
+474,39,2011.09.01,思思诞生记（转载）,http://www.ruanyifeng.com/blog/2011/09/birth_of_sisi.html
+475,39,2008.11.27,Usenet免费试用,http://www.ruanyifeng.com/blog/2008/11/usenet_free_trial.html
+476,38,2010.06.11,移民公司的广告（转贴）,http://www.ruanyifeng.com/blog/2010/06/immigration_company_ad.html
+477,38,2007.12.31,2007年我的Blog总结,http://www.ruanyifeng.com/blog/2007/12/2007_my_blogging_summary.html
+478,38,2017.12.13,图像与滤波,http://www.ruanyifeng.com/blog/2017/12/image-and-wave-filters.html
+479,38,2011.04.29,Dropbox的成本估算,http://www.ruanyifeng.com/blog/2011/04/the_economics_of_dropbox.html
+480,38,2010.03.09,搭建了一个图片库,http://www.ruanyifeng.com/blog/2010/03/built_a_image_server.html
+481,38,2008.05.07,CSS中背景图片定位方法,http://www.ruanyifeng.com/blog/2008/05/css_background_image_positioning.html
+482,38,2017.07.23,IaaS，PaaS，SaaS 的区别,http://www.ruanyifeng.com/blog/2017/07/iaas-paas-saas.html
+483,38,2011.06.24,Javascript诞生记,http://www.ruanyifeng.com/blog/2011/06/birth_of_javascript.html
+484,38,2010.08.15,防止网页被嵌入框架的代码（续）,http://www.ruanyifeng.com/blog/2010/08/anti-frameset_javascript_codes_continued.html
+485,38,2019.04.12,每周分享第 51 期,http://www.ruanyifeng.com/blog/2019/04/weekly-issue-51.html
+486,38,2018.09.21,每周分享第 23 期,http://www.ruanyifeng.com/blog/2018/09/weekly-issue-23.html
+487,38,2018.09.07,每周分享第 21 期,http://www.ruanyifeng.com/blog/2018/09/weekly-issue-21.html
+488,38,2010.11.07,何毓琦：一个大学教授在美国的生活,http://www.ruanyifeng.com/blog/2010/11/life_of_an_academic_in_the_us.html
+489,38,2010.03.11,碧姬·巴铎,http://www.ruanyifeng.com/blog/2010/03/brigitte_bardot.html
+490,38,2010.08.06,致徐继哲先生的道歉声明,http://www.ruanyifeng.com/blog/2010/08/an_apology_to_bill_xu.html
+491,38,2009.05.31,购入一台EeePC 900a,http://www.ruanyifeng.com/blog/2009/05/eeepc_900a.html
+492,37,2016.03.20,《最好的告别》读后感,http://www.ruanyifeng.com/blog/2016/03/death.html
+493,37,2015.05.17,"Stay hungry, Stay foolish 的原义",http://www.ruanyifeng.com/blog/2015/05/stay_hungry_stay_foolish.html
+494,37,2015.01.06,版权的边界,http://www.ruanyifeng.com/blog/2015/01/border-of-copyright.html
+495,37,2009.08.02,房价高不是道德问题,http://www.ruanyifeng.com/blog/2009/08/house_price_is_not_a_moral_problem.html
+496,37,2019.03.06,敏捷开发入门教程,http://www.ruanyifeng.com/blog/2019/03/agile-development.html
+497,37,2013.07.12,GPG入门教程,http://www.ruanyifeng.com/blog/2013/07/gpg.html
+498,37,2012.12.14,奥巴马筹款网站的制作过程,http://www.ruanyifeng.com/blog/2012/12/obama_fundraising_website.html
+499,37,2011.03.09,URL的井号,http://www.ruanyifeng.com/blog/2011/03/url_hash.html
+500,37,2010.03.20,几种计算机语言的评价（修订版）,http://www.ruanyifeng.com/blog/2010/03/programming_language_evaluations_revised.html
+501,37,2017.03.09,Ramda 函数库参考教程,http://www.ruanyifeng.com/blog/2017/03/ramda.html
+502,37,2019.01.18,每周分享第 40 期,http://www.ruanyifeng.com/blog/2019/01/weekly-issue-40.html
+503,37,2010.07.02,保持愚蠢,http://www.ruanyifeng.com/blog/2010/07/stay_foolish.html
+504,37,2009.10.29,关于网上论坛,http://www.ruanyifeng.com/blog/2009/10/about_web_forum.html
+505,36,2008.09.22,鲁迅是乐观主义者吗？,http://www.ruanyifeng.com/blog/2008/09/is_luxun_a_optimist.html
+506,36,2010.05.18,不会沉没的海盗湾,http://www.ruanyifeng.com/blog/2010/05/an_unsinkable_tpb.html
+507,36,2008.10.02,Google的10年和我的这10年,http://www.ruanyifeng.com/blog/2008/10/google_10th_birthday_and_my_last_10_years.html
+508,36,2012.01.06,处理Apache日志的Bash脚本,http://www.ruanyifeng.com/blog/2012/01/a_bash_script_of_apache_log_analysis.html
+509,36,2011.01.16,Google短网址的API,http://www.ruanyifeng.com/blog/2011/01/api_for_google_s_url_shortener.html
+510,36,2017.05.31,XOR 加密简介,http://www.ruanyifeng.com/blog/2017/05/xor.html
+511,36,2016.01.21,npm 模块安装机制简介,http://www.ruanyifeng.com/blog/2016/01/npm-install.html
+512,36,2015.05.26,Node.js 命令行程序开发教程,http://www.ruanyifeng.com/blog/2015/05/command-line-with-node.html
+513,36,2011.06.30,Javascript的10个设计缺陷,http://www.ruanyifeng.com/blog/2011/06/10_design_defects_in_javascript.html
+514,36,2018.06.14,每周分享第 9 期,http://www.ruanyifeng.com/blog/2018/06/weekly-issue-9.html
+515,36,2009.08.17,十年前的十个网站,http://www.ruanyifeng.com/blog/2009/08/ten_web_sites_ten_years_ago.html
+516,36,2010.11.12,室内设计公司Studio O+a,http://www.ruanyifeng.com/blog/2010/11/studio_o_plus_a.html
+517,36,2009.07.26,谁剥夺了我们的探索精神？,http://www.ruanyifeng.com/blog/2009/07/who_deprived_us_of_the_exploratory_spirit.html
+518,36,2009.06.13,山寨机揭秘（转贴）,http://www.ruanyifeng.com/blog/2009/06/revealing_the_secrets_of_bootleg_mobile.html
+519,36,2010.12.23,中国的税种（2010版）,http://www.ruanyifeng.com/blog/2010/12/types_of_tax_in_china_2010_version.html
+520,36,2010.05.06,赫德里克·史密斯的《俄国人》,http://www.ruanyifeng.com/blog/2010/05/the_russians_by_hedrick_smith.html
+521,36,2007.01.05,东方医院的刘中民医生,http://www.ruanyifeng.com/blog/2007/01/liu_zhongmin.html
+522,36,2012.01.01,2011年的两首歌,http://www.ruanyifeng.com/blog/2012/01/2011.html
+523,35,2011.12.01,济慈的《夜莺颂》,http://www.ruanyifeng.com/blog/2011/12/ode_to_a_nightingale.html
+524,35,2008.04.19,谁来养活中国？,http://www.ruanyifeng.com/blog/2008/04/who_will_feed_china.html
+525,35,2016.04.21,个性也是一种竞争力,http://www.ruanyifeng.com/blog/2016/04/personality.html
+526,35,2009.07.17,他山之石，不可攻玉,http://www.ruanyifeng.com/blog/2009/07/up_the_tata_without_a_tutu.html
+527,35,2008.04.01,愚人节的最佳笑话,http://www.ruanyifeng.com/blog/2008/04/best_joke_on_april_1st.html
+528,35,2012.10.16, 贝叶斯推断及其互联网应用（三）：拼写检查,http://www.ruanyifeng.com/blog/2012/10/spelling_corrector.html
+529,35,2012.03.07,基于用户投票的排名算法（二）：Reddit,http://www.ruanyifeng.com/blog/2012/03/ranking_algorithm_reddit.html
+530,35,2010.03.31,CSS使用技巧,http://www.ruanyifeng.com/blog/2010/03/css_cookbook.html
+531,35,2018.10.16,exFAT 文件系统指南,http://www.ruanyifeng.com/blog/2018/10/exfat.html
+532,35,2016.02.13,React 测试入门教程,http://www.ruanyifeng.com/blog/2016/02/react-testing-tutorial.html
+533,35,2018.07.13,每周分享第 13 期,http://www.ruanyifeng.com/blog/2018/07/weekly-issue-13.html
+534,35,2010.07.25,钢琴的原理,http://www.ruanyifeng.com/blog/2010/07/principle_of_piano.html
+535,35,2009.10.21,Windows的版本号,http://www.ruanyifeng.com/blog/2009/10/windows_os_version_numbers.html
+536,35,2009.08.10,毁灭世界需要多少核武器？,http://www.ruanyifeng.com/blog/2009/08/how_many_nuclear_weapons_to_destroy_the_world.html
+537,35,2007.03.11,元数据（MetaData）,http://www.ruanyifeng.com/blog/2007/03/metadata.html
+538,35,2010.04.12,北京故事：1990-1993,http://www.ruanyifeng.com/blog/2010/04/a beijing story 1990-1993.html
+539,35,2010.03.04,Jacob Holdt 的美国往事,http://www.ruanyifeng.com/blog/2010/03/jacob_holdt.html
+540,35,2010.10.17,朱学恒 vs 卢映洁,http://www.ruanyifeng.com/blog/2010/10/zhu_xueheng_vs_lu_yingjie.html
+541,35,2010.03.06,我所知道的深圳八卦岭小印刷厂,http://www.ruanyifeng.com/blog/2010/03/some_printing_workshops_in_shenzhen.html
+542,34,2006.04.17,生命中那些虚无的期待,http://www.ruanyifeng.com/blog/2006/04/post_207.html
+543,34,2018.10.31,软件开发就像长跑，最佳状态要留给最重要的比赛,http://www.ruanyifeng.com/blog/2018/10/runner.html
+544,34,2010.07.10,咖啡，还有一首歌,http://www.ruanyifeng.com/blog/2010/07/sky_blue_and_black.html
+545,34,2008.12.22,普通法和大陆法的区别,http://www.ruanyifeng.com/blog/2008/12/the_difference_between_common_law_and_civil_law.html
+546,34,2008.06.03,谈谈行政管理费,http://www.ruanyifeng.com/blog/2008/06/talking_about_the_chinese_government_expenditure.html
+547,34,2007.09.02,《纽约时报》：中国的污染已经到了极限,http://www.ruanyifeng.com/blog/2007/09/as_china_roars_pollution_reaches_deadly_extremes.html
+548,34,2015.07.27,蒙特卡罗方法入门,http://www.ruanyifeng.com/blog/2015/07/monte-carlo-method.html
+549,34,2019.02.07,找回密码的功能设计,http://www.ruanyifeng.com/blog/2019/02/password.html
+550,34,2018.02.27,Nginx 容器教程,http://www.ruanyifeng.com/blog/2018/02/nginx-docker.html
+551,34,2017.04.05,CSS in JS 简介,http://www.ruanyifeng.com/blog/2017/04/css_in_js.html
+552,34,2016.11.22,理解字节序,http://www.ruanyifeng.com/blog/2016/11/byte-order.html
+553,34,2011.07.31,理解Linux系统负荷,http://www.ruanyifeng.com/blog/2011/07/linux_load_average_explained.html
+554,34,2011.02.10,最常见的电话号码,http://www.ruanyifeng.com/blog/2011/02/the_most_common_phone_number.html
+555,34,2016.11.03,IntersectionObserver API 使用教程,http://www.ruanyifeng.com/blog/2016/11/intersectionobserver_api.html
+556,34,2009.09.14,用Javascript获取页面元素的位置,http://www.ruanyifeng.com/blog/2009/09/find_element_s_position_using_javascript.html
+557,34,2019.03.01,每周分享第 45 期,http://www.ruanyifeng.com/blog/2019/03/weekly-issue-45.html
+558,34,2018.12.07,每周分享第 34 期,http://www.ruanyifeng.com/blog/2018/12/weekly-issue-34.html
+559,34,2009.06.27,朱棣文演讲的翻译勘误,http://www.ruanyifeng.com/blog/2009/06/errata_of_steven_chus_harvard_commencement_speech.html
+560,34,2011.01.08,ARM的历史,http://www.ruanyifeng.com/blog/2011/01/brief_history_of_arm.html
+561,34,2008.02.07,四种免费英汉电子词典软件简评,http://www.ruanyifeng.com/blog/2008/02/chinese_english_dictionary_software.html
+562,34,2009.08.24,机器能否被骗？,http://www.ruanyifeng.com/blog/2009/08/can_a_machine_be_deceived.html
+563,34,2010.11.17,我的英文网志,http://www.ruanyifeng.com/blog/2010/11/my_english_blog.html
+564,34,2009.01.08,关于电子相框,http://www.ruanyifeng.com/blog/2009/01/about_the_digital_photo_frame.html
+565,33,2017.08.02,正态分布为什么常见？,http://www.ruanyifeng.com/blog/2017/08/normal-distribution.html
+566,33,2017.03.03,技术的热门度曲线,http://www.ruanyifeng.com/blog/2017/03/gartner-hype-cycle.html
+567,33,2018.05.09,根域名的知识,http://www.ruanyifeng.com/blog/2018/05/root-domain.html
+568,33,2018.07.04,浏览器数据库 IndexedDB 入门教程,http://www.ruanyifeng.com/blog/2018/07/indexeddb.html
+569,33,2011.05.13,如何判断Javascript对象是否存在,http://www.ruanyifeng.com/blog/2011/05/how_to_judge_the_existence_of_a_global_object_in_javascript.html
+570,33,2019.05.03,每周分享第 54 期,http://www.ruanyifeng.com/blog/2019/05/weekly-issue-54.html
+571,33,2009.06.15,为什么在大公司工作，总是很无聊？,http://www.ruanyifeng.com/blog/2009/06/why_working_in_a_big_company_is_so_boring.html
+572,33,2009.02.22,低俗技术大观,http://www.ruanyifeng.com/blog/2009/02/gross_technology.html
+573,33,2008.10.26,关于《Joel on Software》副书名的翻译,http://www.ruanyifeng.com/blog/2008/10/the_translation_of_joel_on_software_s_subtitle.html
+574,32,2009.12.18,网络接入商不应承担连带责任,http://www.ruanyifeng.com/blog/2009/12/should_isp_bear_joint_liabilities.html
+575,32,2009.09.25,关于上海房价的政府观点,http://www.ruanyifeng.com/blog/2009/09/what_the_government_said_about_shanghai_house_price.html
+576,32,2009.01.24,全民医保的第一步,http://www.ruanyifeng.com/blog/2009/01/first_step_of_national_medical_care_system.html
+577,32,2007.04.30,人生的真相就是一场病,http://www.ruanyifeng.com/blog/2007/04/illness_reveals_true_life_in_china.html
+578,32,2019.01.28,Prolog 语言入门教程,http://www.ruanyifeng.com/blog/2019/01/prolog.html
+579,32,2015.03.13,使用 Make 构建网站,http://www.ruanyifeng.com/blog/2015/03/build-website-with-make.html
+580,32,2015.02.20,Make 命令教程,http://www.ruanyifeng.com/blog/2015/02/make.html
+581,32,2014.09.24, SSL延迟有多大？,http://www.ruanyifeng.com/blog/2014/09/ssl-latency.html
+582,32,2014.03.14,Linux服务器的初步配置流程,http://www.ruanyifeng.com/blog/2014/03/server_setup.html
+583,32,2012.02.06,Unix目录结构的来历,http://www.ruanyifeng.com/blog/2012/02/a_history_of_unix_directory_structure.html
+584,32,2018.07.08,Web Worker 使用教程,http://www.ruanyifeng.com/blog/2018/07/web-worker.html
+585,32,2015.05.01,Thunk 函数的含义和用法,http://www.ruanyifeng.com/blog/2015/05/thunk.html
+586,32,2015.04.24,Generator 函数的含义与用法,http://www.ruanyifeng.com/blog/2015/04/generator.html
+587,32,2018.10.26,每周分享第 28 期,http://www.ruanyifeng.com/blog/2018/10/weekly-issue-28.html
+588,32,2018.05.25,每周分享第 6 期,http://www.ruanyifeng.com/blog/2018/05/weekly-issue-6.html
+589,32,2009.01.17,什么是重要的事情？,http://www.ruanyifeng.com/blog/2009/01/stuff_that_matters.html
+590,32,2010.03.01,美国人怎么拔网线----DMCA入门,http://www.ruanyifeng.com/blog/2010/03/dmca.html
+591,32,2009.09.01,纪录片《Code Rush》,http://www.ruanyifeng.com/blog/2009/09/code_rush.html
+592,32,2009.12.20,推荐日本电视剧《坂上之云》,http://www.ruanyifeng.com/blog/2009/12/clouds_over_the_hill.html
+593,32,2011.03.04,民国名人的婚姻与情爱,http://www.ruanyifeng.com/blog/2011/03/china_celebrity_gossips_pre-1949.html
+594,32,2008.09.27,15张最有趣的乏味图片,http://www.ruanyifeng.com/blog/2008/09/15_most_interesting_boring_photos_on_flickr.html
+595,32,2006.06.27,人吃人的中国,http://www.ruanyifeng.com/blog/2006/06/post_251.html
+596,31,2010.08.21,关于IT出版业,http://www.ruanyifeng.com/blog/2010/08/it_book_publishing.html
+597,31,2008.10.15,行动起来，消除贫穷,http://www.ruanyifeng.com/blog/2008/10/fighting_poverty.html
+598,31,2017.10.11,开源许可证教程,http://www.ruanyifeng.com/blog/2017/10/open-source-license-tutorial.html
+599,31,2016.02.28,Linux 守护进程的启动方法,http://www.ruanyifeng.com/blog/2016/02/linux-daemon.html
+600,31,2012.09.08,XMLHttpRequest Level 2 使用指南,http://www.ruanyifeng.com/blog/2012/09/xmlhttprequest_level_2.html
+601,31,2008.10.12,防止网页被嵌入框架的代码,http://www.ruanyifeng.com/blog/2008/10/anti-frameset_javascript_codes.html
+602,31,2019.02.01,每周分享第 42 期,http://www.ruanyifeng.com/blog/2019/02/weekly-issue-42.html
+603,31,2018.07.06,每周分享第 12 期,http://www.ruanyifeng.com/blog/2018/07/weekly-issue-12.html
+604,31,2012.08.17,面试时，如何向公司提问？,http://www.ruanyifeng.com/blog/2012/08/questions_you_need_to_ask_in_an_interview.html
+605,31,2011.07.11,数学公式生成器,http://www.ruanyifeng.com/blog/2011/07/formula_online_generator.html
+606,31,2009.01.26,谈谈历法知识,http://www.ruanyifeng.com/blog/2009/01/calendar_primer.html
+607,31,2006.01.08,如何使用RSS,http://www.ruanyifeng.com/blog/2006/01/rss.html
+608,31,2006.11.16,中美政府建筑比较（转贴）,http://www.ruanyifeng.com/blog/2006/11/government_building_comparison_between_us_and_china.html
+609,31,2007.01.14,电影《面纱》,http://www.ruanyifeng.com/blog/2007/01/the_painted_veil.html
+610,30,2011.09.22,德国盗版党选举获胜的感想,http://www.ruanyifeng.com/blog/2011/09/germany_pirate_party_s_victory.html
+611,30,2008.08.31,关于2008年美国大选,http://www.ruanyifeng.com/blog/2008/08/2008_presidential_election.html
+612,30,2010.10.16,排版六原则,http://www.ruanyifeng.com/blog/2010/10/six_principles_of_layout_design.html
+613,30,2009.03.12,CSS选择器笔记,http://www.ruanyifeng.com/blog/2009/03/css_selectors.html
+614,30,2011.11.12,EOF是什么？,http://www.ruanyifeng.com/blog/2011/11/eof.html
+615,30,2018.03.20,Node 调试工具入门教程,http://www.ruanyifeng.com/blog/2018/03/node-debugger.html
+616,30,2018.08.10,每周分享第 17 期,http://www.ruanyifeng.com/blog/2018/08/weekly-issue-17.html
+617,30,2010.12.16,如何面试程序员？,http://www.ruanyifeng.com/blog/2010/12/how_to_interview_a_programmer.html
+618,30,2008.10.27,朱敏谈互联网创业,http://www.ruanyifeng.com/blog/2008/10/an_interview_with_zhu_min_on_internet_start-up.html
+619,30,2018.12.25,埃隆·马斯克和特斯拉汽车的故事,http://www.ruanyifeng.com/blog/2018/12/elon-musk.html
+620,30,2010.08.24,五天四夜的流浪试验,http://www.ruanyifeng.com/blog/2010/08/a_homeless_experiment.html
+621,30,2008.09.19,关于宋以朗,http://www.ruanyifeng.com/blog/2008/09/roland_soong.html
+622,29,2011.09.09,Michael S. Hart去世了,http://www.ruanyifeng.com/blog/2011/09/michael_s_hart_passed_away.html
+623,29,2011.08.07,我的诗歌,http://www.ruanyifeng.com/blog/2011/08/my_poems.html
+624,29,2008.12.25,整个爱尔兰都在下雪,http://www.ruanyifeng.com/blog/2008/12/snow_was_general_all_over_ireland.html
+625,29,2008.05.24,贪婪的地产商,http://www.ruanyifeng.com/blog/2008/05/covetous_chinese_real_estate_developers.html
+626,29,2016.07.22,如何识别图像边缘？,http://www.ruanyifeng.com/blog/2016/07/edge-recognition.html
+627,29,2018.10.18,Flexbox 布局的最简单表单,http://www.ruanyifeng.com/blog/2018/10/flexbox-form.html
+628,29,2018.09.16,Vim 配置入门,http://www.ruanyifeng.com/blog/2018/09/vimrc.html
+629,29,2017.04.13,Emoji 简介,http://www.ruanyifeng.com/blog/2017/04/emoji.html
+630,29,2010.12.09,CSS3圆角详解,http://www.ruanyifeng.com/blog/2010/12/detailed_explanation_of_css3_rounded_corners.html
+631,29,2008.07.08,PHP SPL笔记,http://www.ruanyifeng.com/blog/2008/07/php_spl_notes.html
+632,29,2011.07.28,DOS的历史,http://www.ruanyifeng.com/blog/2011/07/history_of_dos.html
+633,29,2010.03.18,Unix版权史,http://www.ruanyifeng.com/blog/2010/03/unix_copyright_history.html
+634,29,2006.04.30,回车和换行,http://www.ruanyifeng.com/blog/2006/04/post_213.html
+635,29,2014.09.14,前端模块管理器简介,http://www.ruanyifeng.com/blog/2014/09/package-management.html
+636,29,2019.02.15,每周分享第 43 期,http://www.ruanyifeng.com/blog/2019/02/weekly-issue-43.html
+637,29,2018.08.31,每周分享第 20 期,http://www.ruanyifeng.com/blog/2018/08/weekly-issue-20.html
+638,29,2018.06.29,每周分享第 11 期,http://www.ruanyifeng.com/blog/2018/06/weekly-issue-11.html
+639,29,2014.10.02,乔布斯的管理课,http://www.ruanyifeng.com/blog/2014/10/real-leadership-lessons-of-steve-jobs.html
+640,29,2010.12.19,Paul Graham：撼动硅谷的人（译文）,http://www.ruanyifeng.com/blog/2010/12/paul_graham_the_disruptor_in_the_valley.html
+641,29,2011.09.26,全文Feed重新发布,http://www.ruanyifeng.com/blog/2011/09/full-text_feed_reloaded.html
+642,29,2011.01.05,公共场所英文译写规范,http://www.ruanyifeng.com/blog/2011/01/guidelines_for_english_translations_in_public_places.html
+643,29,2009.08.12,《通用规范汉字表》发布了！,http://www.ruanyifeng.com/blog/2009/08/general_table_of_standard_chinese_characters.html
+644,29,2008.12.03,"《绍兴晚报》的""每月悲情""",http://www.ruanyifeng.com/blog/2008/12/monthly_laments_on_the_shaoxing_evening_news.html
+645,29,2008.09.23,金融危机的好处,http://www.ruanyifeng.com/blog/2008/09/bright_side_of_a_total_financial_market_collapse.html
+646,29,2005.12.02,英国史笔记（一）,http://www.ruanyifeng.com/blog/2005/12/post_157.html
+647,29,2007.12.28,工作多少年才能买房？,http://www.ruanyifeng.com/blog/2007/12/how_many_years_do_you_have_to_work_for_buying_a_house.html
+648,28,2018.11.28,最有效的五步推销法,http://www.ruanyifeng.com/blog/2018/11/most-effective-sales-promotion.html
+649,28,2018.10.23,保罗·艾伦的故事,http://www.ruanyifeng.com/blog/2018/10/paul-allen.html
+650,28,2009.10.14,一切皆有可能,http://www.ruanyifeng.com/blog/2009/10/everything_is_possible.html
+651,28,2006.12.08,如何变得有思想？,http://www.ruanyifeng.com/blog/2006/12/how_to_get_an_idea.html
+652,28,2007.09.05,世界上最脏的城市,http://www.ruanyifeng.com/blog/2007/09/dirtiest_city_in_the_world.html
+653,28,2018.09.10,如何降低软件的复杂性？,http://www.ruanyifeng.com/blog/2018/09/complexity.html
+654,28,2017.05.02,Fish shell 入门教程,http://www.ruanyifeng.com/blog/2017/05/fish_shell.html
+655,28,2016.03.07,Systemd 入门教程：命令篇,http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html
+656,28,2011.08.20,云平台服务商一览,http://www.ruanyifeng.com/blog/2011/08/list_of_cloud_platforms.html
+657,28,2010.09.17,网页设计的12种颜色,http://www.ruanyifeng.com/blog/2010/09/12_colors_used_in_web_design.html
+658,28,2015.05.20,require() 源码解读,http://www.ruanyifeng.com/blog/2015/05/require.html
+659,28,2019.01.11,每周分享第 39 期,http://www.ruanyifeng.com/blog/2019/01/weekly-issue-39.html
+660,28,2018.09.14,每周分享第 22 期,http://www.ruanyifeng.com/blog/2018/09/weekly-issue-22.html
+661,28,2010.06.15,David Souter在哈佛大学毕业典礼上的演讲,http://www.ruanyifeng.com/blog/2010/06/remarks_of_david_souter_in_harvard_commencement_2010.html
+662,28,2008.06.10,希拉里的退选演说,http://www.ruanyifeng.com/blog/2008/06/hillary_suspending_campaign_speech.html
+663,28,2009.11.13,标准体重和饮食控制计算器,http://www.ruanyifeng.com/blog/2009/11/body_weight_and_daily_diet.html
+664,28,2009.07.10,因地制宜，创造优势,http://www.ruanyifeng.com/blog/2009/07/positioning_on_local_conditions.html
+665,28,2008.11.07,《纽约时报》的特大标题,http://www.ruanyifeng.com/blog/2008/11/the_biggest_headlines_of_ny_times.html
+666,28,2004.05.13,谁屏蔽了《金融时报》和《华尔街日报》？,http://www.ruanyifeng.com/blog/2004/05/post_68.html
+667,28,2009.08.21,五个为什么（译文）,http://www.ruanyifeng.com/blog/2009/08/five_whys.html
+668,28,2008.02.03,Usenet：P2P下载的替代方法,http://www.ruanyifeng.com/blog/2008/02/newsgroups_the_ultimate_p2p_alternative.html
+669,27,2008.07.29,一个寻找作者的读者,http://www.ruanyifeng.com/blog/2008/07/a_reader_in_search_of_the_author.html
+670,27,2010.08.01,未完成的革命,http://www.ruanyifeng.com/blog/2010/08/unaccomplished_revolution.html
+671,27,2008.06.04,地球，这个黯淡的蓝点,http://www.ruanyifeng.com/blog/2008/06/pale_blue_dot.html
+672,27,2014.11.29,数据可视化：基本图表,http://www.ruanyifeng.com/blog/2014/11/basic-charts.html
+673,27,2013.06.16,HTML Email 编写指南,http://www.ruanyifeng.com/blog/2013/06/html_email.html
+674,27,2008.06.23,Base64笔记,http://www.ruanyifeng.com/blog/2008/06/base64.html
+675,27,2018.08.17,每周分享第 18 期,http://www.ruanyifeng.com/blog/2018/08/weekly-issue-18.html
+676,27,2018.08.03,每周分享第 16 期,http://www.ruanyifeng.com/blog/2018/08/weekly-issue-16.html
+677,27,2010.10.07,经济学家Mark Blaug的自传,http://www.ruanyifeng.com/blog/2010/10/not_only_an_economist.html
+678,27,2010.04.28,回忆录《在暴风雨的夜里》,http://www.ruanyifeng.com/blog/2010/04/in_stormy_night.html
+679,27,2010.09.30,图形化简历,http://www.ruanyifeng.com/blog/2010/09/infographic_resume.html
+680,27,2009.06.04,向秀《思旧赋》疏注,http://www.ruanyifeng.com/blog/2009/06/verse_of_my_dead_friends.html
+681,27,2010.06.05,创业途径：手工杂志,http://www.ruanyifeng.com/blog/2010/06/zine.html
+682,27,2010.04.14,文集功能上线,http://www.ruanyifeng.com/blog/2010/04/blog_anthology_is_online.html
+683,26,2009.04.18,苹果电脑的包装,http://www.ruanyifeng.com/blog/2009/04/apple_notebook_packaging_comparison.html
+684,26,2018.10.10,Git 原理入门,http://www.ruanyifeng.com/blog/2018/10/git-internals.html
+685,26,2018.08.06,SVG 图像入门教程,http://www.ruanyifeng.com/blog/2018/08/svg.html
+686,26,2016.09.03,软件架构入门,http://www.ruanyifeng.com/blog/2016/09/software-architecture.html
+687,26,2010.04.17,全文Feed的终极解决方案,http://www.ruanyifeng.com/blog/2010/04/the_solution_of_full_text_feed.html
+688,26,2015.11.02,JavaScript 模块的循环加载,http://www.ruanyifeng.com/blog/2015/11/circular-dependency.html
+689,26,2012.02.03,Facebook的标语,http://www.ruanyifeng.com/blog/2012/02/facebook_slogans.html
+690,26,2009.06.29,关于Da Code,http://www.ruanyifeng.com/blog/2009/06/da_code.html
+691,26,2011.06.17,瑟利夫夫人在哈佛大学毕业典礼上的演讲,http://www.ruanyifeng.com/blog/2011/06/sirleaf_s_speech_in_harvard_commencement_2011.html
+692,26,2010.04.18,网络时代的音乐家生存指南,http://www.ruanyifeng.com/blog/2010/04/musician_survival_manual_in_the_information_age.html
+693,26,2009.02.04,如何制作DVDrip？,http://www.ruanyifeng.com/blog/2009/02/how_to_create_a_dvdrip.html
+694,26,2007.12.21,国内用户访问维基百科（Wikipedia）的几种方法,http://www.ruanyifeng.com/blog/2007/12/wikipedia.html
+695,26,2007.10.05,中文菜单英文译法,http://www.ruanyifeng.com/blog/2007/10/chinese_food_menu_translation.html
+696,26,2011.02.01,Tiffany Arment的情侣照,http://www.ruanyifeng.com/blog/2011/02/bridal_portraits_by_tiffany_arment.html
+697,26,2007.09.30,《〈江泽民文选〉成语典故》出版发行,http://www.ruanyifeng.com/blog/2007/09/idiom_notes_of_jiang_zemin_s_anthology.html
+698,26,2010.09.04,施一公、饶毅的《科学》杂志社论,http://www.ruanyifeng.com/blog/2010/09/china_s_research_culture.html
+699,26,2008.11.28,关于MP4播放器,http://www.ruanyifeng.com/blog/2008/11/mp4_player.html
+700,26,2011.10.14,usenet下载最简教程,http://www.ruanyifeng.com/blog/2011/10/usenet_downloading_crash_tutorial.html
+701,25,2016.02.21,库切的《青春》,http://www.ruanyifeng.com/blog/2016/02/youth-by-coetzee.html
+702,25,2007.12.24,利率和职业,http://www.ruanyifeng.com/blog/2007/12/interest_rate_and_job.html
+703,25,2008.02.11,绝望的生命,http://www.ruanyifeng.com/blog/2008/02/life_is_despair.html
+704,25,2008.01.15,为什么中国人爱储蓄？,http://www.ruanyifeng.com/blog/2008/01/why_chinese_love_saving_money.html
+705,25,2012.03.28,基于用户投票的排名算法（六）：贝叶斯平均,http://www.ruanyifeng.com/blog/2012/03/ranking_algorithm_bayesian_average.html
+706,25,2019.04.04,OAuth 2.0 的一个简单解释,http://www.ruanyifeng.com/blog/2019/04/oauth_design.html
+707,25,2018.03.30,Systemd 定时器教程,http://www.ruanyifeng.com/blog/2018/03/systemd-timer.html
+708,25,2017.08.29,如何使用 Issue 管理软件项目？,http://www.ruanyifeng.com/blog/2017/08/issue.html
+709,25,2015.12.24,Git 工作流程,http://www.ruanyifeng.com/blog/2015/12/git-workflow.html
+710,25,2015.04.14,fortune 命令简介,http://www.ruanyifeng.com/blog/2015/04/fortune.html
+711,25,2008.06.08,Firebug入门指南,http://www.ruanyifeng.com/blog/2008/06/firebug_tutorial.html
+712,25,2012.08.10,文件上传的渐进式增强,http://www.ruanyifeng.com/blog/2012/08/file_upload.html
+713,25,2005.10.06,日出之前（Before Sunrise）,http://www.ruanyifeng.com/blog/2005/10/before_sunrise.html
+714,25,2010.11.14,解剖CPU,http://www.ruanyifeng.com/blog/2010/11/cpu_autopsy.html
+715,25,2008.05.03,Twine试用感想,http://www.ruanyifeng.com/blog/2008/05/twine_trial_report.html
+716,25,2010.10.05,硅谷观光指南,http://www.ruanyifeng.com/blog/2010/10/where_to_see_silicon_valley.html
+717,25,2009.06.22,2009年哈佛大学毕业典礼图集,http://www.ruanyifeng.com/blog/2009/06/photo_album_of_harvard_commencement_2009.html
+718,25,2009.01.18,"字体平滑，反锯齿,和次像素渲染（译文）",http://www.ruanyifeng.com/blog/2009/01/font_smoothing_anti-aliasing_and_sub-pixel_rendering.html
+719,24,2008.06.01,土豆和清朝农民起义,http://www.ruanyifeng.com/blog/2008/06/potato_and_peasant_uprisings_of_qing_dynasty.html
+720,24,2008.08.19,"关于""网线被拔""的合法性",http://www.ruanyifeng.com/blog/2008/08/the_legality_of_unplugging_server_cable.html
+721,24,2017.12.19,持续集成服务 Travis CI 教程,http://www.ruanyifeng.com/blog/2017/12/travis_ci_tutorial.html
+722,24,2016.07.02,谷歌的代码管理,http://www.ruanyifeng.com/blog/2016/07/google-monolithic-source-repository.html
+723,24,2016.03.08,Systemd 入门教程：实战篇,http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-part-two.html
+724,24,2015.09.23,持续集成是什么？,http://www.ruanyifeng.com/blog/2015/09/continuous-integration.html
+725,24,2010.11.25,网站开发人员应该知道的61件事,http://www.ruanyifeng.com/blog/2010/11/61_things_every_web_developer_should_know.html
+726,24,2017.06.25,如何验证 Email 地址：SMTP 协议入门教程,http://www.ruanyifeng.com/blog/2017/06/smtp-protocol.html
+727,24,2015.09.28,为什么主引导记录的内存地址是0x7C00？,http://www.ruanyifeng.com/blog/2015/09/0x7c00.html
+728,24,2011.06.11,Bookmarklet编写指南,http://www.ruanyifeng.com/blog/2011/06/a_guide_for_writing_bookmarklet.html
+729,24,2018.08.24,每周分享第 19 期,http://www.ruanyifeng.com/blog/2018/08/weekly-issue-19.html
+730,24,2018.05.04,每周分享第 3 期,http://www.ruanyifeng.com/blog/2018/05/weekly-issue-3.html
+731,24,2018.04.28,每周分享第 2 期,http://www.ruanyifeng.com/blog/2018/04/weekly-issue-2.html
+732,24,2010.09.08,创业者需要知道的50句话,http://www.ruanyifeng.com/blog/2010/09/50_things_every_startup_should_know.html
+733,24,2009.05.01,创业失败的10个教训（上）,http://www.ruanyifeng.com/blog/2009/05/10_lessons_from_a_failed_startup_part_one.html
+734,24,2008.12.12,Paul Graham：为什么在经济危机中创业？,http://www.ruanyifeng.com/blog/2008/12/why_to_start_a_startup_in_a_bad_economy.html
+735,24,2008.11.05,麦凯恩的败选演说----2008美国大选之夜（上）,http://www.ruanyifeng.com/blog/2008/11/john_mccains_concession_speech.html
+736,24,2010.10.29,迷失·上海（组图） ,http://www.ruanyifeng.com/blog/2010/10/lost_shanghai.html
+737,24,2009.02.28,夜眠八尺（附《增广贤文》）,http://www.ruanyifeng.com/blog/2009/02/ancient_chinese_proverbs.html
+738,24,2010.03.14,美国电影《以眼杀人》,http://www.ruanyifeng.com/blog/2010/03/the_men_who_stare_at_goats.html
+739,24,2006.08.18,如果一个吻是一滴水，我给你整个的海,http://www.ruanyifeng.com/blog/2006/08/if_kisses_were_water_i_will_give_you_sea.html
+740,24,2008.02.01,推广Usenet,http://www.ruanyifeng.com/blog/2008/02/talk_about_usenet.html
+741,23,2010.07.15,《经济史的趣味》书摘,http://www.ruanyifeng.com/blog/2010/07/interesting_economic_history.html
+742,23,2009.10.10,2009年10月10日,http://www.ruanyifeng.com/blog/2009/10/october_10th_2009.html
+743,23,2008.06.11,中国畅销书真相,http://www.ruanyifeng.com/blog/2008/06/truth_of_chinese_best_sellers.html
+744,23,2011.11.26,骰子作画的算法,http://www.ruanyifeng.com/blog/2011/11/dice_portrait.html
+745,23,2017.06.22,HTML 自定义元素教程,http://www.ruanyifeng.com/blog/2017/06/custom-elements.html
+746,23,2010.06.23,插图式主页,http://www.ruanyifeng.com/blog/2010/06/illustration_web_design.html
+747,23,2010.05.12,我的Tweet档案,http://www.ruanyifeng.com/blog/2010/05/my_wp_tweet_archive.html
+748,23,2016.12.02,User space 与 Kernel space,http://www.ruanyifeng.com/blog/2016/12/user_space_vs_kernel_space.html
+749,23,2010.10.31,云主机是什么？,http://www.ruanyifeng.com/blog/2010/10/what_is_cloud_hosting.html
+750,23,2013.09.02,JavaScript与有限状态机,http://www.ruanyifeng.com/blog/2013/09/finite-state_machine_for_javascript.html
+751,23,2018.10.05,每周分享第 25 期,http://www.ruanyifeng.com/blog/2018/10/weekly-issue-25.html
+752,23,2010.08.29,技术与贫富分化（译文）,http://www.ruanyifeng.com/blog/2010/08/technology_and_income_disparity.html
+753,23,2005.03.17,白朗宁夫人和《我怎样爱你》,http://www.ruanyifeng.com/blog/2005/03/post_106.html
+754,23,2010.02.16,文件分享的新动向（2010年1月~2月）,http://www.ruanyifeng.com/blog/2010/02/new_developments_of_file-sharing_in_early_2010.html
+755,23,2009.12.16,AOL为什么会失败？,http://www.ruanyifeng.com/blog/2009/12/why_aol_fail.html
+756,23,2010.06.21,痛（诗歌）,http://www.ruanyifeng.com/blog/2010/06/pain_the_poem.html
+757,23,2013.02.19,玉门人家照相馆,http://www.ruanyifeng.com/blog/2013/02/yumen_photo_studio.html
+758,23,2010.07.04,北京酒店业揭秘（一）,http://www.ruanyifeng.com/blog/2010/07/beijing_hotels_unlocked_part_one.html
+759,23,2007.10.01,李锐访谈录,http://www.ruanyifeng.com/blog/2007/10/lirui_s_interview.html
+760,23,2009.12.07,买基金，就买指数基金,http://www.ruanyifeng.com/blog/2009/12/index_fund.html
+761,23,2008.08.26,奥运会背后的电视经济学,http://www.ruanyifeng.com/blog/2008/08/tv_economics_behind_the_olympics_games.html
+762,22,2011.04.27,詹宏志谈教育、阅读和创业,http://www.ruanyifeng.com/blog/2011/04/zhan_hongzhi.html
+763,22,2007.05.09,自我和自由（续）,http://www.ruanyifeng.com/blog/2007/05/self_and_freedom_part_ii.html
+764,22,2009.10.02,在图书馆定居,http://www.ruanyifeng.com/blog/2009/10/living_in_a_library.html
+765,22,2008.06.16,面孔2007（续）,http://www.ruanyifeng.com/blog/2008/06/face_2008.html
+766,22,2008.01.30,学位的作用,http://www.ruanyifeng.com/blog/2008/01/degree_and_capability.html
+767,22,2007.09.16,"禁止""群租""是否合法？",http://www.ruanyifeng.com/blog/2007/09/the_prohibition_against_multipie_dwelling_is_illegal.html
+768,22,2007.05.08,自我和自由,http://www.ruanyifeng.com/blog/2007/05/self_and_freedom.html
+769,22,2018.09.05,哈希碰撞与生日攻击,http://www.ruanyifeng.com/blog/2018/09/hash-collision-and-birthday-attack.html
+770,22,2019.01.15,数据库表连接的简单解释,http://www.ruanyifeng.com/blog/2019/01/table-join.html
+771,22,2017.11.15,Bash 脚本 set 命令教程,http://www.ruanyifeng.com/blog/2017/11/bash-set.html
+772,22,2016.09.13,Content Security Policy 入门教程,http://www.ruanyifeng.com/blog/2016/09/csp.html
+773,22,2009.03.20,TCP/IP模型的一个简单解释,http://www.ruanyifeng.com/blog/2009/03/tcp-ip_model.html
+774,22,2005.03.31,比尔·盖茨和理查德·斯托曼,http://www.ruanyifeng.com/blog/2005/03/post_112.html
+775,22,2011.10.03,Javascript文件加载：LABjs和RequireJS,http://www.ruanyifeng.com/blog/2011/10/javascript_loading.html
+776,22,2011.03.26,Firebug控制台详解,http://www.ruanyifeng.com/blog/2011/03/firebug_console_tutorial.html
+777,22,2009.05.25,IE8开发人员工具教程（一）,http://www.ruanyifeng.com/blog/2009/05/ie8_developer_tools_tutorial_part_i.html
+778,22,2018.10.19,每周分享第 27 期,http://www.ruanyifeng.com/blog/2018/10/weekly-issue-27.html
+779,22,2014.06.26,Airbnb与创投,http://www.ruanyifeng.com/blog/2014/06/airbnb.html
+780,22,2010.09.05,爱迪生的第一项专利,http://www.ruanyifeng.com/blog/2010/09/thomas_edison_s_first_patent.html
+781,22,2012.01.23,现代医学200年,http://www.ruanyifeng.com/blog/2012/01/modern_medicine_timeline.html
+782,22,2010.10.10,ARM芯片介绍（转贴）,http://www.ruanyifeng.com/blog/2010/10/arm_chips.html
+783,22,2010.06.07,一张土耳其海报,http://www.ruanyifeng.com/blog/2010/06/a_turkey_poster.html
+784,22,2010.05.31,1979年的电子打字机,http://www.ruanyifeng.com/blog/2010/05/word-processing_system_in_1979.html
+785,22,2004.02.08,几张产生视觉错觉的图片,http://www.ruanyifeng.com/blog/2004/02/post_35.html
+786,22,2012.01.28,革命中的埃及青年（组图）,http://www.ruanyifeng.com/blog/2012/01/egypts_youth_in_ongoing_revolution.html
+787,22,2009.12.05,图说西兰公国,http://www.ruanyifeng.com/blog/2009/12/principality_of_sealand.html
+788,22,2009.11.16,李晓斌的八十年代老照片,http://www.ruanyifeng.com/blog/2009/11/li_xiaobins_photos_of_the_1980s.html
+789,22,2008.07.04,米兰的私人藏书室,http://www.ruanyifeng.com/blog/2008/07/a_private_library_in_milan.html
+790,22,2009.01.20,2009年美国人最想改变的10件事,http://www.ruanyifeng.com/blog/2009/01/top_10_american_s_most_wanted_changes_in_2009.html
+791,22,2008.05.28,谢国忠：通货膨胀将持续十年,http://www.ruanyifeng.com/blog/2008/05/inflation_will_last_10_years.html
+792,22,2009.11.03,电影制片人Dan Lin,http://www.ruanyifeng.com/blog/2009/11/dan_lin.html
+793,22,2007.08.26,一个卖菜的互联网记者,http://www.ruanyifeng.com/blog/2007/08/story_of_zhou_shuguang.html
+794,22,2007.03.22,一个被辞退警察的公开信（转帖）,http://www.ruanyifeng.com/blog/2007/03/an_open_letter_of_a_fired_ex-policeman.html
+795,22,2007.11.06,USENET简介,http://www.ruanyifeng.com/blog/2007/11/usenet.html
+796,21,2016.02.17," ""人工智能之父""马文・明斯基",http://www.ruanyifeng.com/blog/2016/02/minsky.html
+797,21,2008.01.17,纸张的价格,http://www.ruanyifeng.com/blog/2008/01/paper_price_rising.html
+798,21,2018.07.30,CSS 的空格处理,http://www.ruanyifeng.com/blog/2018/07/white-space.html
+799,21,2009.03.01,制作Gmail式按钮,http://www.ruanyifeng.com/blog/2009/03/creating_gmail-like_buttons.html
+800,21,2016.10.11,npm scripts 使用指南,http://www.ruanyifeng.com/blog/2016/10/npm_scripts.html
+801,21,2007.06.07,Emily Dickinson的诗歌《My Life Closed Twice Before Its Close》,http://www.ruanyifeng.com/blog/2007/06/my_life_closed_twice_before_its_close_by_emily_dickinson.html
+802,21,2009.11.26,海盗湾的其他项目,http://www.ruanyifeng.com/blog/2009/11/projects_of_piratebay.html
+803,21,2008.11.29,如何著录书名？,http://www.ruanyifeng.com/blog/2008/11/how_to_bibliographically_describe_a_book_title.html
+804,21,2008.09.30,关于健康饮食,http://www.ruanyifeng.com/blog/2008/09/healthy_eating.html
+805,21,2008.09.01,Torrent Relay：BT下载代理网站,http://www.ruanyifeng.com/blog/2008/09/torrent_relay.html
+806,21,2007.12.20,全球主要城市实时天气查询,http://www.ruanyifeng.com/blog/2007/12/world_weather_live_report.html
+807,21,2007.12.06,嫦娥一号的月球照片是真的吗？,http://www.ruanyifeng.com/blog/2007/12/moon_photo_mystery_solved.html
+808,21,2011.02.04,台湾电视广告《梦骑士》,http://www.ruanyifeng.com/blog/2011/02/dream_ranger.html
+809,21,2008.10.15,中国和美国的一些数字比较（续）,http://www.ruanyifeng.com/blog/2008/10/some_economic_comparisons_of_china_and_us_part_ii.html
+810,21,2007.09.07,权证的骗局：12000亿人民币买卖一张废纸,http://www.ruanyifeng.com/blog/2007/09/warrant_hoaxes.html
+811,20,2008.11.22,互联网和改造社会 ,http://www.ruanyifeng.com/blog/2008/11/internet_and_rebuilding_society.html
+812,20,2009.11.01,关于唐德刚先生,http://www.ruanyifeng.com/blog/2009/11/professor_tang_degang.html
+813,20,2009.02.01,电影《Gran Torino》,http://www.ruanyifeng.com/blog/2009/02/gran_torino.html
+814,20,2008.07.21,"从""零分上大学""说起",http://www.ruanyifeng.com/blog/2008/07/you_got_a_zero_score_and_still_go_to_university.html
+815,20,2007.12.17,关于中国图书出版业的一些想法,http://www.ruanyifeng.com/blog/2007/12/some_thoughts_about_china_book_market.html
+816,20,2012.03.16,基于用户投票的排名算法（四）：牛顿冷却定律,http://www.ruanyifeng.com/blog/2012/03/ranking_algorithm_newton_s_law_of_cooling.html
+817,20,2012.03.11,基于用户投票的排名算法（三）：Stack Overflow,http://www.ruanyifeng.com/blog/2012/03/ranking_algorithm_stack_overflow.html
+818,20,2019.03.16,普通人的网页配色方案,http://www.ruanyifeng.com/blog/2019/03/coloring-scheme.html
+819,20,2019.02.18,ORM 实例教程,http://www.ruanyifeng.com/blog/2019/02/orm-tutorial.html
+820,20,2018.12.12,异步 API 的设计,http://www.ruanyifeng.com/blog/2018/12/async-api-design.html
+821,20,2017.09.26,如何读懂火焰图？,http://www.ruanyifeng.com/blog/2017/09/flame-graph.html
+822,20,2017.07.29,窗口管理器 xmonad 教程,http://www.ruanyifeng.com/blog/2017/07/xmonad.html
+823,20,2009.10.08,Linux的五个查找命令,http://www.ruanyifeng.com/blog/2009/10/5_ways_to_search_for_files_using_the_terminal.html
+824,20,2009.04.06,浮动元素容器的clearing问题,http://www.ruanyifeng.com/blog/2009/04/float_clearing.html
+825,20,2012.02.13,网页开发的6种在线调试环境,http://www.ruanyifeng.com/blog/2012/02/6_online_playgrounds_for_web_developing.html
+826,20,2011.05.31,庞小伟谈互联网创业,http://www.ruanyifeng.com/blog/2011/05/pang_xiaowei.html
+827,20,2010.06.20,创业公司打工指南,http://www.ruanyifeng.com/blog/2010/06/work_at_a_startup.html
+828,20,2009.09.12,小企业的生存之道,http://www.ruanyifeng.com/blog/2009/09/the_secret_of_surviving_bootstrappers.html
+829,20,2009.05.03,创业失败的10个教训（下）,http://www.ruanyifeng.com/blog/2009/05/10_lessons_from_a_failed_startup_part_two.html
+830,20,2008.01.24,Paul Graham：未来的互联网创业（上）,http://www.ruanyifeng.com/blog/2008/01/the_future_of_web_startups_part_i.html
+831,20,2007.05.19,WebEx的朱敏,http://www.ruanyifeng.com/blog/2007/05/zhu_min.html
+832,20,2008.04.26,纪录片《抢救切尔诺贝利》（Battle of Chernobyl）,http://www.ruanyifeng.com/blog/2008/04/battle_of_chernobyl.html
+833,20,2006.06.15,文言书信书写指南,http://www.ruanyifeng.com/blog/2006/06/post_241.html
+834,20,2010.01.29,引言摘录之五,http://www.ruanyifeng.com/blog/2010/01/quotes_part_v.html
+835,20,2008.04.12,宋祖德评余秋雨,http://www.ruanyifeng.com/blog/2008/04/song_zude_s_comments_on_yu_qiuyu.html
+836,20,2007.04.18,娟子的故事,http://www.ruanyifeng.com/blog/2007/04/yuan_xiao-juan.html
+837,20,2007.03.30,李胜利之死,http://www.ruanyifeng.com/blog/2007/03/death_of_mr_li_shengli.html
+838,20,2004.01.15,章诒和《往事并不如烟》,http://www.ruanyifeng.com/blog/2004/01/post_18.html
+839,20,2009.03.30,关于战略问题的通信之六（译文）,http://www.ruanyifeng.com/blog/2009/03/strategy_letter_vi.html
+840,19,2018.11.07,awk 入门教程,http://www.ruanyifeng.com/blog/2018/11/awk.html
+841,19,2017.03.18,Reduce 和 Transduce 的含义,http://www.ruanyifeng.com/blog/2017/03/reduce_transduce.html
+842,19,2016.03.29,谷歌的绩效管理,http://www.ruanyifeng.com/blog/2016/03/performance-management.html
+843,19,2008.09.15,如何度过职业生涯？,http://www.ruanyifeng.com/blog/2008/09/how_do_you_live_out_your_career_life.html
+844,19,2009.09.19,对于Rails Rumble 2009的一点感想,http://www.ruanyifeng.com/blog/2009/09/some_thoughts_of_rails_rumble_2009.html
+845,19,2008.04.05,Freebase再研究,http://www.ruanyifeng.com/blog/2008/04/freebase_reloaded.html
+846,19,2007.12.21,关于BT下载电影,http://www.ruanyifeng.com/blog/2007/12/bittorrent_download.html
+847,19,2009.04.25,美国最长的地名，以及其他,http://www.ruanyifeng.com/blog/2009/04/the_longest_place_name_in_the_us.html
+848,19,2011.12.10,诗意摄影《生活场景》,http://www.ruanyifeng.com/blog/2011/12/scenes_of_life.html
+849,19,2008.01.22,Life is too short,http://www.ruanyifeng.com/blog/2008/01/life_is_too_short.html
+850,19,2009.12.12,垃圾单,http://www.ruanyifeng.com/blog/2009/12/worthless_order.html
+851,19,2009.07.25,猫的梯子,http://www.ruanyifeng.com/blog/2009/07/cat_ladder.html
+852,19,2007.01.08,生命中不能承受之重,http://www.ruanyifeng.com/blog/2007/01/the_unbearable_heaviness_of_being.html
+853,19,2008.11.17,高科技公司能否采用军事化管理？（译文）,http://www.ruanyifeng.com/blog/2008/11/the_command_and_control_management_method.html
+854,18,2006.12.15,王尔德的几句话,http://www.ruanyifeng.com/blog/2006/12/quotes_from_oscar_wilde.html
+855,18,2004.12.11,奥威尔：在神化和真实之间,http://www.ruanyifeng.com/blog/2004/12/post_94.html
+856,18,2019.01.31,一段音频,http://www.ruanyifeng.com/blog/2019/01/a-piece-of-audio.html
+857,18,2008.01.06,关于中国土地制度,http://www.ruanyifeng.com/blog/2008/01/china_land_ownership_system.html
+858,18,2006.07.16,民生和民权重于经济增长,http://www.ruanyifeng.com/blog/2006/07/post_267.html
+859,18,2017.05.27,Server-Sent Events 教程,http://www.ruanyifeng.com/blog/2017/05/server-sent_events.html
+860,18,2015.09.30,Github 的清点对象算法,http://www.ruanyifeng.com/blog/2015/09/git-bitmap.html
+861,18,2009.05.17,HTML语言编写指南,http://www.ruanyifeng.com/blog/2009/05/guide_to_semantic_html_elements.html
+862,18,2009.03.08,Openid托管服务RPX试用感想,http://www.ruanyifeng.com/blog/2009/03/rpx_trial_thoughts.html
+863,18,2008.01.09,学习Javascript的书籍,http://www.ruanyifeng.com/blog/2008/01/javascript_book_recommendation.html
+864,18,2006.03.09,几种计算机语言的评价,http://www.ruanyifeng.com/blog/2006/03/programming_language_evaluations.html
+865,18,2015.06.30,ES6 的功能侦测库 ES-Checker,http://www.ruanyifeng.com/blog/2015/06/es-checker.html
+866,18,2015.06.08,代码覆盖率工具 Istanbul 入门教程,http://www.ruanyifeng.com/blog/2015/06/istanbul.html
+867,18,2008.05.27,侯捷的职业建议,http://www.ruanyifeng.com/blog/2008/05/jjhou_s_career_suggestions.html
+868,18,2011.03.20,IETF：互联网精神的典范,http://www.ruanyifeng.com/blog/2011/03/ietf.html
+869,18,2010.05.20,VP8视频格式初探,http://www.ruanyifeng.com/blog/2010/05/the_first_view_of_vp8.html
+870,18,2009.04.11,关于Lorem ipsum,http://www.ruanyifeng.com/blog/2009/04/lorem_ipsum.html
+871,18,2009.02.12,六个词的回忆录,http://www.ruanyifeng.com/blog/2009/02/six_word_memoirs.html
+872,18,2008.12.17,10大英语套话,http://www.ruanyifeng.com/blog/2008/12/top_10_irritating_english_phrases.html
+873,18,2012.08.21,斑头雁守护日记（转载）,http://www.ruanyifeng.com/blog/2012/08/diary_of_wildlife_conservation.html
+874,18,2010.06.01,2009年美国电影市场回顾,http://www.ruanyifeng.com/blog/2010/06/2009_us_film_industry_by_the_numbers.html
+875,18,2009.07.14,最悲惨的办公室小隔间,http://www.ruanyifeng.com/blog/2009/07/saddest_cubicle_contest.html
+876,18,2008.05.01,纪录片《抢救切尔诺贝利》（五）：遗产,http://www.ruanyifeng.com/blog/2008/05/battle_of_chernobyl_part_v.html
+877,18,2007.11.28,中国式标语,http://www.ruanyifeng.com/blog/2007/11/chinese_political_slogans.html
+878,18,2006.05.20,Peter Hessler的《甲骨》（ Oracle Bones ）,http://www.ruanyifeng.com/blog/2006/05/peter_hessler_oracle_bones.html
+879,18,2008.12.24,研究生完全求生手册,http://www.ruanyifeng.com/blog/2008/12/a_graduate_school_survival_guide.html
+880,18,2008.10.13,关于2008年诺贝尔经济学奖,http://www.ruanyifeng.com/blog/2008/10/2008_nobel_prize_in_economics.html
+881,18,2007.11.09,美国纪录片《医疗内幕》（sicko）,http://www.ruanyifeng.com/blog/2007/11/sicko.html
+882,18,2007.04.17,国际标准书号（ISBN）,http://www.ruanyifeng.com/blog/2007/04/isbn.html
+883,18,2006.05.29,蔷薇，月季和玫瑰,http://www.ruanyifeng.com/blog/2006/05/post_232.html
+884,18,2004.06.13,请为新的LOGO投票,http://www.ruanyifeng.com/blog/2004/06/logo.html
+885,17,2006.06.23,爱因斯坦语录（转贴）,http://www.ruanyifeng.com/blog/2006/06/albert_einstein.html
+886,17,2006.05.25,追求生活的道路----读卡尔维诺《树上的男爵》,http://www.ruanyifeng.com/blog/2006/05/post_229.html
+887,17,2009.04.14,油画《春天来了》,http://www.ruanyifeng.com/blog/2009/04/spring_is_coming_the_painting.html
+888,17,2007.07.31,一篇政治类读书笔记,http://www.ruanyifeng.com/blog/2007/07/a_political_book_review.html
+889,17,2019.04.21,GitHub OAuth 第三方登录示例教程,http://www.ruanyifeng.com/blog/2019/04/github-oauth.html
+890,17,2010.04.03,制作CSS气泡框,http://www.ruanyifeng.com/blog/2010/04/css_speech_bubbles.html
+891,17,2010.03.15,CSS3常用功能的写法,http://www.ruanyifeng.com/blog/2010/03/cross-browser_css3_features.html
+892,17,2006.12.10,密码学笔记,http://www.ruanyifeng.com/blog/2006/12/notes_on_cryptography.html
+893,17,2015.11.12,读懂 ECMAScript 规格,http://www.ruanyifeng.com/blog/2015/11/ecmascript-specification.html
+894,17,2007.11.02,远东国际军事法庭判决书,http://www.ruanyifeng.com/blog/2007/11/international_military_tribunal_for_the_far_east_judgment.html
+895,17,2008.05.06,巧用Photoshop进行科学研究,http://www.ruanyifeng.com/blog/2008/05/using-adobe-photoshop-for-research-and-profit.html
+896,17,2009.09.30,图书馆的世界纪录,http://www.ruanyifeng.com/blog/2009/09/library_world_records.html
+897,17,2008.11.06,Don't Stop Thinking About Tomorrow ---- 2008美国大选之夜（下）,http://www.ruanyifeng.com/blog/2008/11/dont_stop_thinking_about_tomorrow.html
+898,17,2008.05.29,说说我在阿富汗卖电视机的事（转贴）,http://www.ruanyifeng.com/blog/2008/05/my_days_in_afghanistan.html
+899,17,2008.04.10,我做服装的这五年（转贴）,http://www.ruanyifeng.com/blog/2008/04/my_5_years_in_clothing_business.html
+900,17,2006.11.03,一个在北京街头乞讨的小姑娘之死：杨丹的故事（转载）,http://www.ruanyifeng.com/blog/2006/11/the_story_of_yang_dan.html
+901,17,2011.02.03,查尔斯·凯特灵语录,http://www.ruanyifeng.com/blog/2011/02/charles_kettering_quotes.html
+902,17,2009.10.05,书籍的世界纪录,http://www.ruanyifeng.com/blog/2009/10/book_world_records.html
+903,17,2009.01.22,Tao播放器的字幕功能,http://www.ruanyifeng.com/blog/2009/01/the_subtitle_function_of_tao_player.html
+904,17,2007.01.20,章诒和《我的声明和态度》（转贴）,http://www.ruanyifeng.com/blog/2007/01/zhangyihe_s_declaration.html
+905,17,2006.11.25,方舟子又败诉了！,http://www.ruanyifeng.com/blog/2006/11/fangzhouzi_loses_lawsuits_again.html
+906,17,2010.03.16,为什么Joel不谈软件了？,http://www.ruanyifeng.com/blog/2010/03/why_joel_stopped_blogging.html
+907,16,2016.04.16,理查德·汉明《你和你的研究》,http://www.ruanyifeng.com/blog/2016/04/you-and-your-research.html
+908,16,2007.05.24,美国电视剧《英雄》（Heroes）,http://www.ruanyifeng.com/blog/2007/05/heroes.html
+909,16,2006.10.30,《富爸爸，穷爸爸》摘录（一）,http://www.ruanyifeng.com/blog/2006/10/quotes_from_rich_dad_poor_dad.html
+910,16,2006.06.06,江声浩荡：《约翰·克里斯朵夫》,http://www.ruanyifeng.com/blog/2006/06/post_236.html
+911,16,2005.04.05,居里夫人的不伦之恋,http://www.ruanyifeng.com/blog/2005/04/post_114.html
+912,16,2009.05.10,精通HTML表格的使用,http://www.ruanyifeng.com/blog/2009/05/html_table_mastering.html
+913,16,2008.07.27,最佳网页宽度及其实现,http://www.ruanyifeng.com/blog/2008/07/best_webpage_width_and_realization.html
+914,16,2015.02.08,强类型 JavaScript 的解决方案,http://www.ruanyifeng.com/blog/2015/02/strong-typing-javascript.html
+915,16,2005.07.03,Beatles的《Hey Jude》,http://www.ruanyifeng.com/blog/2005/07/beatleshey_jude.html
+916,16,2008.11.16,一次性Email地址,http://www.ruanyifeng.com/blog/2008/11/temporary_and_disposable_email_services.html
+917,16,2008.09.11,Media RSS的屏幕保护程序,http://www.ruanyifeng.com/blog/2008/09/media_rss_screensaver.html
+918,16,2007.03.14,Happy Pi Day!,http://www.ruanyifeng.com/blog/2007/03/happy_pi_day.html
+919,16,2007.05.16,痛苦的翻译,http://www.ruanyifeng.com/blog/2007/05/a_painful_translation.html
+920,16,2009.04.22,107房间：底楼的12个故事,http://www.ruanyifeng.com/blog/2009/04/room_107_by_lyndon_wade.html
+921,16,2008.03.06,16年前的希拉里·克林顿,http://www.ruanyifeng.com/blog/2008/03/hillary_clinton_before_16_years.html
+922,16,2008.02.23,一个急诊科医生的手记（转贴）,http://www.ruanyifeng.com/blog/2008/02/an_emergency_doctor_s_notes.html
+923,16,2008.01.13,《纽约时报》：北京的奥运蓝天任务,http://www.ruanyifeng.com/blog/2008/01/beijing_s_olympic_quest.html
+924,16,2011.01.18,知识产权案件的新规定,http://www.ruanyifeng.com/blog/2011/01/new_regulations_of_intellectual_property_cases.html
+925,16,2008.12.17,2009年美国经济预测和投资建议,http://www.ruanyifeng.com/blog/2008/12/2009_us_economic_predictions.html
+926,16,2006.10.26,事实判断和价值判断,http://www.ruanyifeng.com/blog/2006/10/fact-value_distinction.html
+927,16,2009.01.30,易用性是不够的（译文）,http://www.ruanyifeng.com/blog/2009/01/it_s_not_just_usability.html
+928,15,2008.07.03,电影《P.S. I love you》,http://www.ruanyifeng.com/blog/2008/07/ps_i_love_you.html
+929,15,2006.03.28,李银河：采访我，请付费,http://www.ruanyifeng.com/blog/2006/03/post_201.html
+930,15,2019.04.09,OAuth 2.0 的四种方式,http://www.ruanyifeng.com/blog/2019/04/oauth-grant-types.html
+931,15,2009.03.24,网页打开速度的心理学,http://www.ruanyifeng.com/blog/2009/03/the_psychology_of_web_performance.html
+932,15,2008.07.21,关于颜色理论,http://www.ruanyifeng.com/blog/2008/07/color_theory.html
+933,15,2011.10.23,每行字符数（CPL）的起源,http://www.ruanyifeng.com/blog/2011/10/characters_per_line.html
+934,15,2016.03.12,Node 应用的 Systemd 启动,http://www.ruanyifeng.com/blog/2016/03/node-systemd-tutorial.html
+935,15,2015.05.06,co 函数库的含义和用法,http://www.ruanyifeng.com/blog/2015/05/co.html
+936,15,2009.11.05,关于经营模式,http://www.ruanyifeng.com/blog/2009/11/business_model.html
+937,15,2009.09.07,癌症的根源----《细胞叛逆者》笔记,http://www.ruanyifeng.com/blog/2009/09/cause_of_cancer.html
+938,15,2009.04.05,Wikipedia创始人访谈,http://www.ruanyifeng.com/blog/2009/04/interview_with_wikipedia_founder_jimmy_wales.html
+939,15,2008.02.12,感冒小知识,http://www.ruanyifeng.com/blog/2008/02/common_cold.html
+940,15,2007.11.18,关于电子书阅读器,http://www.ruanyifeng.com/blog/2007/11/some_thoughts_about_ebook_readers.html
+941,15,2008.10.04,翻译家方平去世了,http://www.ruanyifeng.com/blog/2008/10/translator_fang_ping_passed_away.html
+942,15,2008.06.21,邬达克在上海,http://www.ruanyifeng.com/blog/2008/06/a_hungarian_architect_in_shanghai.html
+943,15,2008.02.17,米老排：胰腺癌日记,http://www.ruanyifeng.com/blog/2008/02/pancreatic_cancer_diary.html
+944,15,2008.01.05,《纽约时报》：中国成为世界烟囱,http://www.ruanyifeng.com/blog/2008/01/china_grabs_wests_smoke-spewing_factories.html
+945,15,2006.03.13,世界是平的（The World Is Flat）,http://www.ruanyifeng.com/blog/2006/03/the_world_is_flat.html
+946,15,2009.01.03,美元的历史,http://www.ruanyifeng.com/blog/2009/01/the_history_of_us_dollar.html
+947,15,2008.12.20,中美两国中央银行的资产比较,http://www.ruanyifeng.com/blog/2008/12/an_asset_comparison_of_the_central_banks_of_china_and_us.html
+948,15,2008.09.06,关于江南制造局翻译馆,http://www.ruanyifeng.com/blog/2008/09/translation_department_of_the_jiangnan_arsenal.html
+949,15,2006.12.18,"制片人谈""Sex and the City""的人物设计",http://www.ruanyifeng.com/blog/2006/12/sex_and_the_city.html
+950,15,2008.09.28,我的联系方式,http://www.ruanyifeng.com/blog/2008/09/my_contact_info.html
+951,15,2005.04.18,班禅喇嘛最喜欢的玩具,http://www.ruanyifeng.com/blog/2005/04/post_116.html
+952,14,2006.10.25,冬天有没有蟋蟀？,http://www.ruanyifeng.com/blog/2006/10/does_the_cricket_chirp_in_winter.html
+953,14,2008.06.30,北京的水危机,http://www.ruanyifeng.com/blog/2008/06/beijing_s_water_crisis.html
+954,14,2018.12.24,git bisect 命令教程,http://www.ruanyifeng.com/blog/2018/12/git-bisect.html
+955,14,2018.03.05,HTTP/2 服务器推送（Server Push）教程,http://www.ruanyifeng.com/blog/2018/03/http2_server_push.html
+956,14,2010.12.27,PHP最佳实践,http://www.ruanyifeng.com/blog/2010/12/php_best_practices.html
+957,14,2008.06.28,字体笔记,http://www.ruanyifeng.com/blog/2008/06/typography_notes.html
+958,14,2009.03.02,Michael Moritz谈创业,http://www.ruanyifeng.com/blog/2009/03/michael_moritz_on_start-up.html
+959,14,2007.12.12,Joel Spolsky在耶鲁大学的演讲（上）,http://www.ruanyifeng.com/blog/2007/12/joel_spolsky_talk_at_yale_part_i.html
+960,14,2010.02.20,再谈Android的许可证（续）,http://www.ruanyifeng.com/blog/2010/02/revisiting_android_licenses_continued.html
+961,14,2009.07.20,PC硬件接口一览图,http://www.ruanyifeng.com/blog/2009/07/a_pictorial_guide_to_computer_hardware.html
+962,14,2007.03.19,关于上海证券交易所Level-2行情,http://www.ruanyifeng.com/blog/2007/03/level2.html
+963,14,2007.01.13,"这就是我们叫做""祖国""的地方",http://www.ruanyifeng.com/blog/2007/01/a_land_we_call_homeland.html
+964,14,2008.01.10,迷宫和一本无限的书,http://www.ruanyifeng.com/blog/2008/01/maze_and_an_infinite_book.html
+965,14,2005.12.25,Del James的《Without You》,http://www.ruanyifeng.com/blog/2005/12/del_jameswithout_you.html
+966,14,2007.08.26,什么是介词,http://www.ruanyifeng.com/blog/2007/08/what_is_preposition.html
+967,14,2007.07.31,标点符号的英语名称,http://www.ruanyifeng.com/blog/2007/07/english_punctuation.html
+968,14,2006.09.19,舍伍德·安德森的小说《鸡蛋》（The Egg）,http://www.ruanyifeng.com/blog/2006/09/the_egg_by_sherwood_anderson.html
+969,14,2010.07.07,北京酒店业揭秘（四）,http://www.ruanyifeng.com/blog/2010/07/beijing_hotels_unlocked_part_four.html
+970,14,2010.04.10,一个家庭的头像史，以及其他,http://www.ruanyifeng.com/blog/2010/04/a_family_s_head_picture_history.html
+971,14,2008.05.11,摄影集《生命的肖像》,http://www.ruanyifeng.com/blog/2008/05/life_before_death.html
+972,14,2006.05.08,100个常见别字测验,http://www.ruanyifeng.com/blog/2006/05/100.html
+973,14,2007.10.03,无比残忍的活熊取胆,http://www.ruanyifeng.com/blog/2007/10/china_bear_rescue.html
+974,14,2009.02.07,HTML模板和CSS基准样式（一）,http://www.ruanyifeng.com/blog/2009/02/basic_html_template_and_css_styling_part_i.html
+975,14,2008.11.25,音乐时间：年青的心,http://www.ruanyifeng.com/blog/2008/11/music_time_young_heart.html
+976,14,2008.04.17,谈谈263,http://www.ruanyifeng.com/blog/2008/04/someting_about_263_net.html
+977,14,2006.09.13,大学里要做的20件事,http://www.ruanyifeng.com/blog/2006/09/20_to-dos_now_to_get_a_good_job_later.html
+978,14,2003.12.03,一个美国人和他领养的中国孤儿,http://www.ruanyifeng.com/blog/2003/12/post.html
+979,13,2008.04.24,A Lonely Drifter Off To See The World,http://www.ruanyifeng.com/blog/2008/04/a_lonely_drifter_off_to_see_th.html
+980,13,2006.10.18,马悦然回忆录（Memoirs of Goran Malmqvist）,http://www.ruanyifeng.com/blog/2006/10/memoirs_of_goran_malmqvist.html
+981,13,2004.01.27,贝克特《等待戈多》,http://www.ruanyifeng.com/blog/2004/01/post_26.html
+982,13,2008.04.01,苏州扫墓,http://www.ruanyifeng.com/blog/2008/04/sweeping_a_grave_in_suzhou.html
+983,13,2008.01.26,中国美术界的现状,http://www.ruanyifeng.com/blog/2008/01/status_quo_of_chinese_artists.html
+984,13,2007.08.15,"关于""互联网出版许可证""",http://www.ruanyifeng.com/blog/2007/08/china_internet_publishing_license_system.html
+985,13,2004.05.19,国有工厂的工人为什么要下岗？(下),http://www.ruanyifeng.com/blog/2004/05/post_70.html
+986,13,2013.03.26,TF-IDF与余弦相似性的应用（三）：自动摘要,http://www.ruanyifeng.com/blog/2013/03/automatic_summarization.html
+987,13,2018.11.05,Page Lifecycle API 教程,http://www.ruanyifeng.com/blog/2018/11/page_lifecycle_api.html
+988,13,2011.08.11,Java开源建站工具,http://www.ruanyifeng.com/blog/2011/08/opensource_java_web_development_tools.html
+989,13,2008.08.14,Jacobsen v. Katzer：开源运动的一个重大胜利,http://www.ruanyifeng.com/blog/2008/08/jacobsen_v_katzer.html
+990,13,2008.03.23,Google的设计原则,http://www.ruanyifeng.com/blog/2008/03/googles_design_guidelines.html
+991,13,2008.03.12,人体数字,http://www.ruanyifeng.com/blog/2008/03/numbers_of_human_body.html
+992,13,2007.08.03,什么是血常规检验？,http://www.ruanyifeng.com/blog/2007/08/blood_test_primer.html
+993,13,2009.11.14,格非《师大忆旧》（转贴）,http://www.ruanyifeng.com/blog/2009/11/recollections_of_east_china_normal_university.html
+994,13,2006.08.06,弗吉尼亚·伍尔夫《达洛卫夫人》（Mrs. Dalloway）,http://www.ruanyifeng.com/blog/2006/08/mrs_dalloway.html
+995,13,2007.09.04,《纽约时报》：一个被煤矿埋葬的中国村庄,http://www.ruanyifeng.com/blog/2007/09/victims_of_a_coal_boom.html
+996,13,2011.01.19,股价，物价和战争,http://www.ruanyifeng.com/blog/2011/01/stock_price_and_cpi_and_war.html
+997,13,2008.10.29,关于道琼斯指数的历史走势,http://www.ruanyifeng.com/blog/2008/10/historical_prices_for_the_dow_jones.html
+998,13,2008.09.26,美国历史上最大的10宗破产保护,http://www.ruanyifeng.com/blog/2008/09/biggest_chapter_11_cases.html
+999,13,2008.04.19,中国和美国的一些数字比较,http://www.ruanyifeng.com/blog/2008/04/some_consumption_comparisons_of_china_and_us.html
+1000,13,2006.06.10,理查德·斯托曼的征婚启事（Richard Stallman）,http://www.ruanyifeng.com/blog/2006/06/richard_stallman.html
+1001,13,2006.06.09,约翰·劳的错误（John Law）,http://www.ruanyifeng.com/blog/2006/06/john_law.html
+1002,13,2009.03.16,MID和UMPC的区别,http://www.ruanyifeng.com/blog/2009/03/differences_between_mid_and_umpc.html
+1003,13,2007.04.01,Wordpress 和 Movable Type 的比较,http://www.ruanyifeng.com/blog/2007/04/wordpress_vs_movable_type.html
+1004,13,2006.12.01,2006年美国动画长片一览,http://www.ruanyifeng.com/blog/2006/12/an_overview_of_us_animated_features_produced_in_2006.html
+1005,12,2019.01.17,罗杰·克劳利的作品读后感,http://www.ruanyifeng.com/blog/2019/01/roger-crowley.html
+1006,12,2006.11.28,一则邪恶的报道,http://www.ruanyifeng.com/blog/2006/11/a_wicked_report.html
+1007,12,2006.05.12,亚洲：经济增长没有失业快（pro-poor growth）,http://www.ruanyifeng.com/blog/2006/05/propoor_growth.html
+1008,12,2004.02.04,阿特伍德《盲刺客》,http://www.ruanyifeng.com/blog/2004/02/post_31.html
+1009,12,2010.12.29,悼任兰,http://www.ruanyifeng.com/blog/2010/12/in_memory_of_renlan.html
+1010,12,2006.12.22,为什么要写Blog？,http://www.ruanyifeng.com/blog/2006/12/why_i_keep_blogging.html
+1011,12,2006.10.20,南京路上的抢劫案,http://www.ruanyifeng.com/blog/2006/10/a_robbery_on_nanjing_road.html
+1012,12,2006.03.27,谢国忠《改革的成本》,http://www.ruanyifeng.com/blog/2006/03/post_200.html
+1013,12,2018.10.25,Page Visibility API 教程,http://www.ruanyifeng.com/blog/2018/10/page_visibility_api.html
+1014,12,2018.09.20,命令行通配符教程,http://www.ruanyifeng.com/blog/2018/09/bash-wildcards.html
+1015,12,2011.05.28,短网址还原的Bookmarklet,http://www.ruanyifeng.com/blog/2011/05/bookmarklet_of_unshortening_url.html
+1016,12,2011.01.09,产品五问,http://www.ruanyifeng.com/blog/2011/01/five_questions_to_develope_a_project.html
+1017,12,2006.07.07,印欧语系（Indo-European Family）,http://www.ruanyifeng.com/blog/2006/07/indo_european_family.html
+1018,12,2009.11.07,水彩故事《阿波罗11号登月记》,http://www.ruanyifeng.com/blog/2009/11/moonshot_the_flight_of_apollo_11.html
+1019,12,2008.12.12,新竹清泉：三毛的爱恋与张学良的青春,http://www.ruanyifeng.com/blog/2008/12/zhang_xueliang_and_echo_chen_in_hsinchu_taiwan.html
+1020,12,2008.06.15,X光下的世界,http://www.ruanyifeng.com/blog/2008/06/x-ray_photography.html
+1021,12,2007.10.26,《新编高中文言文助读》原文及翻译,http://www.ruanyifeng.com/blog/2007/10/selections_of_short_chinese_classical_articles_for_high_schoolstudents.html
+1022,12,2007.08.30,三峡大坝之忧,http://www.ruanyifeng.com/blog/2007/08/three_gorges_dam_exacts_its_toll.html
+1023,12,2007.08.05,起诉中国电信干扰互联网通信,http://www.ruanyifeng.com/blog/2007/08/a_practical_lawsuit_against_china_internet_censorship.html
+1024,12,2007.04.17,我的第二本书,http://www.ruanyifeng.com/blog/2007/04/my_second_book.html
+1025,12,2006.11.08,鲁宾《在不确定的世界》,http://www.ruanyifeng.com/blog/2006/11/in_an_uncertain_world_by_robert_rubin.html
+1026,12,2006.09.09,一万亿美元外汇储备之痛,http://www.ruanyifeng.com/blog/2006/09/a_difficult_dilemma_of_a_trillion_china_foreign_exchange_reserve.html
+1027,12,2006.04.28,汉字的数量：词涯七千,http://www.ruanyifeng.com/blog/2006/04/post_210.html
+1028,12,2005.08.22,《张五常论文集》阅读笔记（一）,http://www.ruanyifeng.com/blog/2005/08/post_140.html
+1029,12,2007.04.15,意大利电影《消逝的星星》（The Missing Star）,http://www.ruanyifeng.com/blog/2007/04/the_missing_star.html
+1030,12,2006.10.17,电影《The Lake House》,http://www.ruanyifeng.com/blog/2006/10/the_lake_house.html
+1031,12,2005.04.12,王小波去世8年了！,http://www.ruanyifeng.com/blog/2005/04/8.html
+1032,12,2008.02.14,Usenet下载教程（高级篇）,http://www.ruanyifeng.com/blog/2008/02/usenet_download_tutorial_part_ii.html
+1033,11,2005.07.06,在等待中消失----读哈金的小说《等待》,http://www.ruanyifeng.com/blog/2005/07/post_126.html
+1034,11,2005.05.02,爱因斯坦的私生活（三）,http://www.ruanyifeng.com/blog/2005/05/post_120.html
+1035,11,2008.06.22,电影《霍乱时期的爱情》,http://www.ruanyifeng.com/blog/2008/06/movie_love_in_the_time_of_cholera.html
+1036,11,2007.08.27,医科毕业生到哪里去了？,http://www.ruanyifeng.com/blog/2007/08/where_are_the_medical_graduates.html
+1037,11,2006.12.31,民主，先行还是后行？,http://www.ruanyifeng.com/blog/2006/12/democracy_to_be_or_not_to_be.html
+1038,11,2016.09.10,亚马逊如何变成 SOA（面向服务的架构）？,http://www.ruanyifeng.com/blog/2016/09/how_amazon_take_soa.html
+1039,11,2009.07.06,xpath路径表达式笔记,http://www.ruanyifeng.com/blog/2009/07/xpath_path_expressions.html
+1040,11,2009.04.20,关于网页设计的一些统计数字,http://www.ruanyifeng.com/blog/2009/04/some_website_statistics.html
+1041,11,2008.12.30,版本控制入门插图教程,http://www.ruanyifeng.com/blog/2008/12/a_visual_guide_to_version_control.html
+1042,11,2008.02.05,《大教堂和集市》笔记,http://www.ruanyifeng.com/blog/2008/02/notes_on_the_cathedral_and_the_bazaar.html
+1043,11,2007.12.26,Google发现的十条真理,http://www.ruanyifeng.com/blog/2007/12/ten_things_google_has_found_to_be_true.html
+1044,11,2008.05.12,摄影集《生命的肖像》（续）,http://www.ruanyifeng.com/blog/2008/05/life_before_death_part_ii.html
+1045,11,2008.02.29,一个普通美国人看2008年大选,http://www.ruanyifeng.com/blog/2008/02/shelley_powers_talks_of_2008_election.html
+1046,11,2007.08.19,尼克松对白宫职员的告别演讲,http://www.ruanyifeng.com/blog/2007/08/richard_nixons_farewell_speech_to_white_house_staff.html
+1047,11,2007.02.20,电影《日落之前》（Before Sunset）,http://www.ruanyifeng.com/blog/2007/02/before_sunset.html
+1048,11,2016.01.08,世界第一个机器人,http://www.ruanyifeng.com/blog/2016/01/first-robot.html
+1049,11,2009.10.11,书目和数据库的世界纪录,http://www.ruanyifeng.com/blog/2009/10/catlogue_and_database_world_records.html
+1050,11,2009.07.28,技术爱好者的地球漫游指南,http://www.ruanyifeng.com/blog/2009/07/geek_atlas.html
+1051,11,2008.03.04,地球有多大？,http://www.ruanyifeng.com/blog/2008/03/how_big_is_the_earth.html
+1052,11,2008.05.13,马原《白卵石海滩》,http://www.ruanyifeng.com/blog/2008/05/white_pebble_beach.html
+1053,11,2006.08.14,英语史系列笔记,http://www.ruanyifeng.com/blog/2006/08/serial_notes_on_the_story_of_english.html
+1054,11,2010.07.05,北京酒店业揭秘（二）,http://www.ruanyifeng.com/blog/2010/07/beijing_hotels_unlocked_part_two.html
+1055,11,2009.10.20,照片中的1972年,http://www.ruanyifeng.com/blog/2009/10/the_year_in_pictures_1972.html
+1056,11,2008.01.08,《纽约时报》：中国工人断了手指，赚不到钱,http://www.ruanyifeng.com/blog/2008/01/in_chinese_factories_lost_fingers_and_low_pay.html
+1057,11,2006.12.13,2005年全国人口姓氏数量排名,http://www.ruanyifeng.com/blog/2006/12/the_ranking_of_chinese_surnames_in_2005.html
+1058,11,2007.11.11,"从""馆长风波""看图书馆的未来",http://www.ruanyifeng.com/blog/2007/11/the_future_of_library.html
+1059,11,2008.04.07,我写的一些互联网小程序,http://www.ruanyifeng.com/blog/2008/04/my_web_applications.html
+1060,11,2008.01.01,大连之行的照片,http://www.ruanyifeng.com/blog/2008/01/dalian_photos.html
+1061,11,2007.05.27,猪斯拉（Hogzilla）,http://www.ruanyifeng.com/blog/2007/05/hogzilla.html
+1062,11,2007.01.06,为官之道,http://www.ruanyifeng.com/blog/2007/01/how_to_be_an_official.html
+1063,11,2006.08.31,新东方学校要上市了,http://www.ruanyifeng.com/blog/2006/08/new_oriental_education_is_seeking_its_ipo.html
+1064,11,2006.08.30,八月的最后一天,http://www.ruanyifeng.com/blog/2006/08/the_last_day_of_august.html
+1065,11,2006.08.16,有时哭，有时笑,http://www.ruanyifeng.com/blog/2006/08/sometimes_i_cry.html
+1066,11,2006.08.02,可笑又可怕的判决,http://www.ruanyifeng.com/blog/2006/08/a_ridiculous_and_terrible_verdict.html
+1067,10,2006.12.13,月圆之夜（Full Moon）,http://www.ruanyifeng.com/blog/2006/12/full_moon.html
+1068,10,2006.06.07,《傲慢与偏见》中的几句翻译,http://www.ruanyifeng.com/blog/2006/06/post_238.html
+1069,10,2005.09.26,谈谈《曾国藩家书》,http://www.ruanyifeng.com/blog/2005/09/post_151.html
+1070,10,2005.08.22,"陈寅恪的""恪""怎么读？",http://www.ruanyifeng.com/blog/2005/08/post_139.html
+1071,10,2005.04.07,《进步与贫困》读后感,http://www.ruanyifeng.com/blog/2005/04/post_115.html
+1072,10,2005.03.24,春天，想起海子,http://www.ruanyifeng.com/blog/2005/03/post_109.html
+1073,10,2008.08.02,"什么是""分配不平等""？",http://www.ruanyifeng.com/blog/2008/08/distribution_inequity.html
+1074,10,2007.02.15,演讲的好处,http://www.ruanyifeng.com/blog/2007/02/the_benefits_of_giving_a_speech.html
+1075,10,2006.10.04,中国外交的又一个失败,http://www.ruanyifeng.com/blog/2006/10/another_failure_of_china_diplomacy.html
+1076,10,2019.06.04,HTTP Referer 教程,http://www.ruanyifeng.com/blog/2019/06/http-referer.html
+1077,10,2016.08.26,HTTPS 升级指南,http://www.ruanyifeng.com/blog/2016/08/migrate-from-http-to-https.html
+1078,10,2007.12.27,Google遵循的软件行为准则,http://www.ruanyifeng.com/blog/2007/12/google_s_software_principles.html
+1079,10,2019.04.15,如何用网页脚本追踪用户,http://www.ruanyifeng.com/blog/2019/04/user-tracking.html
+1080,10,2007.12.14,Joel Spolsky在耶鲁大学的演讲（下）,http://www.ruanyifeng.com/blog/2007/12/joel_spolsky_talk_at_yale_part_ii.html
+1081,10,2007.07.06,安装了Ubuntu,http://www.ruanyifeng.com/blog/2007/07/ubuntu.html
+1082,10,2007.02.28,佛的境界（转贴）,http://www.ruanyifeng.com/blog/2007/02/buddha_s_level.html
+1083,10,2006.11.14,安·兰德《阿特拉斯耸耸肩》,http://www.ruanyifeng.com/blog/2006/11/atlas_shrugged_by_ayn_rand.html
+1084,10,2006.09.04,余华的《兄弟》：杰作还是垃圾？,http://www.ruanyifeng.com/blog/2006/09/brothers_is_tremendous_or_trash.html
+1085,10,2008.08.10,Such的用法,http://www.ruanyifeng.com/blog/2008/08/usage_of_such.html
+1086,10,2006.07.13,乔叟《坎特伯雷故事集》（Geoffrey Chaucer）,http://www.ruanyifeng.com/blog/2006/07/geoffrey_chaucer.html
+1087,10,2006.06.26,get的被动用法（get-passive）,http://www.ruanyifeng.com/blog/2006/06/get-passive.html
+1088,10,2006.04.08,《美国日常口语 情景会话实践》（American Situational Conversations）,http://www.ruanyifeng.com/blog/2006/04/_american_situational_conversa.html
+1089,10,2010.07.06,北京酒店业揭秘（三）,http://www.ruanyifeng.com/blog/2010/07/beijing_hotels_unlocked_part_three.html
+1090,10,2009.04.22,《五星招待所》的幕后花絮,http://www.ruanyifeng.com/blog/2009/04/the_making_of_red-star_motel.html
+1091,10,2008.04.27,纪录片《抢救切尔诺贝利》（二）,http://www.ruanyifeng.com/blog/2008/04/battle_of_chernobyl_part_ii.html
+1092,10,2007.09.20,日本动画电影《秒速5厘米》,http://www.ruanyifeng.com/blog/2007/09/byousoku_5_senchimeetoru.html
+1093,10,2007.08.30,诺贝尔化学奖得主田中耕一的故事,http://www.ruanyifeng.com/blog/2007/08/koichi_tanaka.html
+1094,10,2008.09.03,关于信托的法律关系,http://www.ruanyifeng.com/blog/2008/09/legal_relationship_of_trust.html
+1095,10,2007.10.18,2007年搞笑诺贝尔奖,http://www.ruanyifeng.com/blog/2007/10/ig_nobel_prize_2007.html
+1096,10,2007.09.18,《波士顿法律》中的一个案例,http://www.ruanyifeng.com/blog/2007/09/a_case_in_boston_legal.html
+1097,10,2007.06.13,女权和人口,http://www.ruanyifeng.com/blog/2007/06/feminism_and_population.html
+1098,10,2006.11.06,关于经济学家的笑话,http://www.ruanyifeng.com/blog/2006/11/jokes_about_economist.html
+1099,10,2006.10.27,二八定律和长尾理论,http://www.ruanyifeng.com/blog/2006/10/pareto_principle_and_the_long_tail.html
+1100,10,2006.04.28,老子说：知其雄，守其雌,http://www.ruanyifeng.com/blog/2006/04/post_211.html
+1101,10,2006.04.07,一点点科学哲学（A Bit of Scientific Philosophy）,http://www.ruanyifeng.com/blog/2006/04/a_bit_of_scientific_philosophy.html
+1102,10,2008.09.05,中国的墙,http://www.ruanyifeng.com/blog/2008/09/the_walls_of_china.html
+1103,10,2007.05.16,"骗子公司""上海翁般扎""",http://www.ruanyifeng.com/blog/2007/05/a_swindler_company.html
+1104,10,2006.12.14,白鳍豚灭绝了！,http://www.ruanyifeng.com/blog/2006/12/yangtze_river_dolphin_is_extinct_now.html
+1105,10,2006.12.03,政府为谁服务？,http://www.ruanyifeng.com/blog/2006/12/who_does_the_government_serve.html
+1106,10,2006.03.31,记者的收入,http://www.ruanyifeng.com/blog/2006/03/post_203.html
+1107,10,2006.03.02,为什么不能当职业翻译,http://www.ruanyifeng.com/blog/2006/03/post_182.html
+1108,10,2005.12.19,"Nothing lasts forever, Even cold November rain",http://www.ruanyifeng.com/blog/2005/12/nothing_lasts_forever_even_col.html
+1109,10,2005.03.22,无法沉默,http://www.ruanyifeng.com/blog/2005/03/post_108.html
+1110,9,2006.10.16,技术类专业和思想类专业,http://www.ruanyifeng.com/blog/2006/10/technology_disciplines_and_thought_disciplines.html
+1111,9,2005.03.05,10年可以发生什么？,http://www.ruanyifeng.com/blog/2005/03/10.html
+1112,9,2008.05.25,地震和全国一年死亡人数,http://www.ruanyifeng.com/blog/2008/05/earthquake_and_annual_death_toll_in_china.html
+1113,9,2007.08.21,长眠矿底的172名矿工,http://www.ruanyifeng.com/blog/2007/08/172_disappeared_miners.html
+1114,9,2006.07.27,比100万美元更重要的,http://www.ruanyifeng.com/blog/2006/07/something_more_important_than_a_million_dollars.html
+1115,9,2006.07.20,从学部委员看中国社会科学的尴尬,http://www.ruanyifeng.com/blog/2006/07/post_266.html
+1116,9,2017.07.18,Pull Request 的命令行管理,http://www.ruanyifeng.com/blog/2017/07/pull_request.html
+1117,9,2019.02.09,npx 使用教程,http://www.ruanyifeng.com/blog/2019/02/npx.html
+1118,9,2007.10.06,学历重要吗？,http://www.ruanyifeng.com/blog/2007/10/does_a_college_degree_matter.html
+1119,9,2007.04.27,唱佛机（Buddha Machine）,http://www.ruanyifeng.com/blog/2007/04/buddha_machine.html
+1120,9,2005.07.21,卡尔维诺《近视眼的故事》,http://www.ruanyifeng.com/blog/2005/07/post_129.html
+1121,9,2008.05.17,酸奶机与酸奶,http://www.ruanyifeng.com/blog/2008/05/yogurt.html
+1122,9,2007.12.07,十六世纪的中国地图,http://www.ruanyifeng.com/blog/2007/12/16th_century_s_china_maps.html
+1123,9,2007.07.21,一个站长的遭遇（转贴）,http://www.ruanyifeng.com/blog/2007/07/a_website_owner_s_experience.html
+1124,9,2007.06.09,网页实时天气插件,http://www.ruanyifeng.com/blog/2007/06/yahoo_weather_js_parser.html
+1125,9,2007.02.13,没有DRM的时代,http://www.ruanyifeng.com/blog/2007/02/an_era_withour_drm.html
+1126,9,2007.01.24,图书分类法,http://www.ruanyifeng.com/blog/2007/01/classification.html
+1127,9,2007.01.24,信息的分类,http://www.ruanyifeng.com/blog/2007/01/categories.html
+1128,9,2006.08.17,小说是写给女人看的,http://www.ruanyifeng.com/blog/2006/08/fictions_is_just_for_the_female.html
+1129,9,2007.08.10,查建英《国家公敌》的英语学习笔记,http://www.ruanyifeng.com/blog/2007/08/notes_on_enemy_of_the_state.html
+1130,9,2006.07.26,艾伦·坡《梦中梦》（A Dream Within A Dream）,http://www.ruanyifeng.com/blog/2006/07/a_dream_within_a_dream.html
+1131,9,2009.03.27,一个知识分子眼中的三十年：1978--2007,http://www.ruanyifeng.com/blog/2009/03/a_chinese_intellectual_s_memoir_1978-2007.html
+1132,9,2008.04.29,纪录片《抢救切尔诺贝利》（三）,http://www.ruanyifeng.com/blog/2008/04/battle_of_chernobyl_part_iii.html
+1133,9,2007.11.24,"莫妮卡·贝鲁奇的一组照片：One Woman, Five Senses",http://www.ruanyifeng.com/blog/2007/11/one_woman_five_senses.html
+1134,9,2006.11.20,《千与千寻》原画欣赏,http://www.ruanyifeng.com/blog/2006/11/spirited_away_s_original_manuscript.html
+1135,9,2008.12.22,银行的起源,http://www.ruanyifeng.com/blog/2008/12/the_origin_of_bank.html
+1136,9,2008.04.22,谈谈创作共用许可证（Creative Commons licenses）,http://www.ruanyifeng.com/blog/2008/04/creative_commons_licenses.html
+1137,9,2008.03.17,中央情报局的《各国概况》,http://www.ruanyifeng.com/blog/2008/03/the_world_factbook.html
+1138,9,2007.11.28,美国电影《女招待》（Waitress）,http://www.ruanyifeng.com/blog/2007/11/waitress.html
+1139,9,2007.09.11,美国1946年就业法（Employment Act of 1946）,http://www.ruanyifeng.com/blog/2007/09/employment_act_of_1946.html
+1140,9,2007.02.10,美国历史上的几个时期,http://www.ruanyifeng.com/blog/2007/02/some_episodes_in_the_history_of_the_united_states.html
+1141,9,2006.11.02,基本价值判断,http://www.ruanyifeng.com/blog/2006/11/basic_value_judgment.html
+1142,9,2006.10.11,如何写一篇论文（How to write a thesis）,http://www.ruanyifeng.com/blog/2006/10/how_to_write_a_thesis.html
+1143,9,2006.09.23,基督教笔记（一）,http://www.ruanyifeng.com/blog/2006/09/notes_on_christianity_part_i.html
+1144,9,2006.06.13,引言摘录之一,http://www.ruanyifeng.com/blog/2006/06/post_243.html
+1145,9,2006.05.02,有这样一个男孩,http://www.ruanyifeng.com/blog/2006/05/post_215.html
+1146,9,2004.04.22,王军《城记》,http://www.ruanyifeng.com/blog/2004/04/post_59.html
+1147,9,2007.12.30,关于委内瑞拉总统查韦斯（Hugo Chavez）,http://www.ruanyifeng.com/blog/2007/12/hugo_chavez.html
+1148,9,2007.12.04,图书馆的墙,http://www.ruanyifeng.com/blog/2007/12/post_270.html
+1149,9,2007.09.06,神奇的水龙头,http://www.ruanyifeng.com/blog/2007/09/magic_tap.html
+1150,9,2007.06.27,十五年前的房租,http://www.ruanyifeng.com/blog/2007/06/rent_in_10_years_ago.html
+1151,9,2007.06.02,"Xiamen - June 1, 2007",http://www.ruanyifeng.com/blog/2007/06/june_1_2007_xiamen.html
+1152,9,2007.04.24,日本电影《松子被嫌弃的一生》（Memories of Matsuko）,http://www.ruanyifeng.com/blog/2007/04/memories_of_matsuko.html
+1153,9,2007.02.02,人民币汇率预测（2007年1月）,http://www.ruanyifeng.com/blog/2007/02/prediction_of_exchange_rate_in_january_2007.html
+1154,9,2006.12.24,Blog首页改版了！,http://www.ruanyifeng.com/blog/2006/12/blog_homepage_is_redesigned.html
+1155,9,2006.08.28,卡尔维诺著作出版单行本了！,http://www.ruanyifeng.com/blog/2006/08/the_works_of_italo_calvino_have_separate_edition_now.html
+1156,9,2006.03.16,朗咸平的普通话,http://www.ruanyifeng.com/blog/2006/03/post_189.html
+1157,9,2004.01.05,一些生活态度,http://www.ruanyifeng.com/blog/2004/01/post_13.html
+1158,9,2003.12.25,第三个以-gry结尾的单词？,http://www.ruanyifeng.com/blog/2003/12/the_third_word_ending_in_gry.html
+1159,8,2007.10.02,为什么给坏人辩护？,http://www.ruanyifeng.com/blog/2007/10/alan_dershowitz.html
+1160,8,2006.05.11,电椅的故事（Electric Chair）,http://www.ruanyifeng.com/blog/2006/05/electric_chair.html
+1161,8,2006.02.27,人生真相,http://www.ruanyifeng.com/blog/2006/02/post_180.html
+1162,8,2005.04.01,需要爱,http://www.ruanyifeng.com/blog/2005/04/post_113.html
+1163,8,2005.03.03,一个美国政治家的理想,http://www.ruanyifeng.com/blog/2005/03/post_103.html
+1164,8,2004.02.20,80G硬盘送修了......,http://www.ruanyifeng.com/blog/2004/02/80g.html
+1165,8,2007.10.25,Daniele Mattioli 眼中的上海,http://www.ruanyifeng.com/blog/2007/10/daniele_mattioli.html
+1166,8,2007.04.28,郭台铭,http://www.ruanyifeng.com/blog/2007/04/guo_taiming.html
+1167,8,2007.03.16,电影《血钻》（Blood Diamond）,http://www.ruanyifeng.com/blog/2007/03/blood_diamond.html
+1168,8,2006.12.05,为什么学习经济学？----庇古的故事,http://www.ruanyifeng.com/blog/2006/12/why_to_study_economics.html
+1169,8,2006.06.22,不造汽车就是傻瓜,http://www.ruanyifeng.com/blog/2006/06/post_246.html
+1170,8,2005.08.11,命比煤贱,http://www.ruanyifeng.com/blog/2005/08/post_135.html
+1171,8,2006.08.10,网站设计的最简主义,http://www.ruanyifeng.com/blog/2006/08/minimalism_of_web_design.html
+1172,8,2015.05.23,浏览器加载 CommonJS 模块的原理与实现,http://www.ruanyifeng.com/blog/2015/05/commonjs-in-browser.html
+1173,8,2008.01.29,Paul Graham：未来的互联网创业（下）,http://www.ruanyifeng.com/blog/2008/01/the_future_of_web_startups_part_ii.html
+1174,8,2008.02.19,1975年毛泽东主席与福特总统的会谈（一）,http://www.ruanyifeng.com/blog/2008/02/memorandum_of_conversation_between_mao_and_ford_in_1975.html
+1175,8,2006.08.18,"去吧，去抓住一颗流星（GO, and catch a falling star）",http://www.ruanyifeng.com/blog/2006/08/go_and_catch_a_falling_star.html
+1176,8,2008.05.14,路透社开放API了,http://www.ruanyifeng.com/blog/2008/05/reuters_frees_content_with_new_api.html
+1177,8,2008.01.11,关于Slashdot,http://www.ruanyifeng.com/blog/2008/01/slashdot.html
+1178,8,2007.12.01,微软的MyLifeBits项目,http://www.ruanyifeng.com/blog/2007/12/mylifebits.html
+1179,8,2007.11.22,信息机器Memex,http://www.ruanyifeng.com/blog/2007/11/memex.html
+1180,8,2006.11.03,键盘之争：QWERTY还是Dvorak,http://www.ruanyifeng.com/blog/2006/11/disputation_of_keyboards_qwerty_or_dvorak.html
+1181,8,2006.07.29,"博尔赫斯，卡尔维诺和艾柯（Borgers, Calvino, Eco）",http://www.ruanyifeng.com/blog/2006/07/borgers_calvino_eco.html
+1182,8,2008.02.18,多情只有春庭月，犹为离人照落花,http://www.ruanyifeng.com/blog/2008/02/a_message_by_zhangmi.html
+1183,8,2004.04.25,蒋捷《客舟听雨》,http://www.ruanyifeng.com/blog/2004/04/post_60.html
+1184,8,2007.08.07,英语文学的免费网络资源,http://www.ruanyifeng.com/blog/2007/08/free_internet_resources_of_english_literature.html
+1185,8,2006.09.25,句法的发展,http://www.ruanyifeng.com/blog/2006/09/the_development_of_the_syntax.html
+1186,8,2005.07.02,谈谈-cracy,http://www.ruanyifeng.com/blog/2005/07/cracy.html
+1187,8,2004.06.04,Seperate 还是 Separate?,http://www.ruanyifeng.com/blog/2004/06/seperate_separate.html
+1188,8,2007.11.04,果子走了,http://www.ruanyifeng.com/blog/2007/11/guozi_passed_away.html
+1189,8,2007.09.23,工资条,http://www.ruanyifeng.com/blog/2007/09/salary_strips.html
+1190,8,2007.09.15,A4纸做的雕塑,http://www.ruanyifeng.com/blog/2007/09/papercut_sculptures_from_single_sheets_of_a4.html
+1191,8,2007.07.27,乞丐之死背后的器官交易,http://www.ruanyifeng.com/blog/2007/07/organ_trade_under_a_beggar_s_death.html
+1192,8,2007.05.07,陆定一晚年的几点反思,http://www.ruanyifeng.com/blog/2007/05/lu_ding-yi_s_introspections_in_his_old_age.html
+1193,8,2007.12.09,中国图书出版监管制度（续）,http://www.ruanyifeng.com/blog/2007/12/china_publishing_censorship_system.html
+1194,8,2007.08.12,永别了，绝色台北,http://www.ruanyifeng.com/blog/2007/08/farewell_jocelyn.html
+1195,8,2007.04.07,核心期刊的涵义（Core Journal）,http://www.ruanyifeng.com/blog/2007/04/core_journal.html
+1196,8,2007.03.06,幸福学（Hedonomics）,http://www.ruanyifeng.com/blog/2007/03/hedonomics.html
+1197,8,2007.01.22,花生牛轧糖,http://www.ruanyifeng.com/blog/2007/01/nougat.html
+1198,8,2006.06.13,说谎者悖论,http://www.ruanyifeng.com/blog/2006/06/post_240.html
+1199,8,2006.05.27,川端康成《雪国》,http://www.ruanyifeng.com/blog/2006/05/post_231.html
+1200,8,2005.03.30,两次世界大战中德国进攻法国的路线比较,http://www.ruanyifeng.com/blog/2005/03/post_111.html
+1201,8,2004.02.03,辣椒占领中国史,http://www.ruanyifeng.com/blog/2004/02/post_30.html
+1202,8,2007.11.12,黄舒骏《你》,http://www.ruanyifeng.com/blog/2007/11/you_by_huang_shujun.html
+1203,8,2007.09.01,一次关于偷拍的网络实验,http://www.ruanyifeng.com/blog/2007/09/web_experiment_of_candid_snapshot.html
+1204,8,2007.07.18,沉默的国家,http://www.ruanyifeng.com/blog/2007/07/slient_country.html
+1205,8,2007.07.17,中国记者网,http://www.ruanyifeng.com/blog/2007/07/china_press_web.html
+1206,8,2007.06.30,"新书《没有""中国制造""的一年》（A Year Without ""Made in China""）",http://www.ruanyifeng.com/blog/2007/06/a_year_without_made_in_china.html
+1207,8,2007.02.12,真正的中国,http://www.ruanyifeng.com/blog/2007/02/the_real_china.html
+1208,8,2006.11.12,无法上网，太郁闷了,http://www.ruanyifeng.com/blog/2006/11/internet_unavailable_it_is_so_depressing.html
+1209,8,2006.10.19,咽喉炎复发,http://www.ruanyifeng.com/blog/2006/10/sore_throat_recur.html
+1210,8,2006.10.02,和朋友在一起的一个中午,http://www.ruanyifeng.com/blog/2006/10/lunch_with_kate.html
+1211,8,2006.09.23,霍华德·休斯（Howard Hughes）,http://www.ruanyifeng.com/blog/2006/09/howard_hughes.html
+1212,8,2006.08.19,巴别塔（Tower of Babel）,http://www.ruanyifeng.com/blog/2006/08/tower_of_babel.html
+1213,8,2006.08.10,[奇文一篇] 让我们决斗吧！,http://www.ruanyifeng.com/blog/2006/08/a_freak_post_let_us_duel.html
+1214,8,2006.06.19,摩西十诫（Ten Commandments）,http://www.ruanyifeng.com/blog/2006/06/ten_commandments.html
+1215,8,2006.05.24,法官的枉法和记者的无知,http://www.ruanyifeng.com/blog/2006/05/post_228.html
+1216,8,2006.04.23,《赛点》（Match Point）：做一个幸运儿,http://www.ruanyifeng.com/blog/2006/04/match_point.html
+1217,8,2006.03.16,一个底层银行职员妻子的信,http://www.ruanyifeng.com/blog/2006/03/post_188.html
+1218,8,2005.02.04,为动物呐喊，也为中国人呐喊！,http://www.ruanyifeng.com/blog/2005/02/post_98.html
+1219,8,2004.05.09,东风破,http://www.ruanyifeng.com/blog/2004/05/post_67.html
+1220,7,2007.09.29,世界上最稀缺的资源,http://www.ruanyifeng.com/blog/2007/09/the_scarcest_resource_in_the_world.html
+1221,7,2007.07.08,米兰多拉《论人的尊严》中的一段话,http://www.ruanyifeng.com/blog/2007/07/oration_on_the_dignity_of_man_by_mirandola.html
+1222,7,2007.03.26,Where the hell is Matt?,http://www.ruanyifeng.com/blog/2007/03/where_the_hell_is_matt.html
+1223,7,2006.08.11,福克纳《喧哗与骚动》：昆丁的自杀,http://www.ruanyifeng.com/blog/2006/08/quentin_suicide_from_sound_and_fury_by_william_faulkner.html
+1224,7,2006.07.29,电影《黑客帝国》的台词,http://www.ruanyifeng.com/blog/2006/07/control.html
+1225,7,2006.07.21,《哈姆莱特》（Hamlet）：摘录（第一部分）,http://www.ruanyifeng.com/blog/2006/07/hamlet_1.html
+1226,7,2006.12.20,沃尔玛成立党支部了！,http://www.ruanyifeng.com/blog/2006/12/party_branch_has_been_set_up_in_wal-mart_china.html
+1227,7,2006.05.17,道成肉身（Word Made Flesh）,http://www.ruanyifeng.com/blog/2006/05/word_made_flesh.html
+1228,7,2008.06.27,Helvetica字体的50年,http://www.ruanyifeng.com/blog/2008/06/helvetica_50th_anniversary.html
+1229,7,2008.06.22,MIME笔记,http://www.ruanyifeng.com/blog/2008/06/mime.html
+1230,7,2008.03.18,编程语言的六个标准,http://www.ruanyifeng.com/blog/2008/03/six_criteria_of_a_business-critical_programming_language.html
+1231,7,2007.08.16,深深的海洋,http://www.ruanyifeng.com/blog/2007/08/ocean_deep.html
+1232,7,2006.01.15,电影《It's a wonderful life》,http://www.ruanyifeng.com/blog/2006/01/its_a_wonderful_life.html
+1233,7,2005.08.27,乌龟大王亚特尔,http://www.ruanyifeng.com/blog/2005/08/post_142.html
+1234,7,2005.06.30,Sting的《Every Breath You Take》,http://www.ruanyifeng.com/blog/2005/06/stingevery_breath_you_take.html
+1235,7,2008.07.22,带字幕的Youtube,http://www.ruanyifeng.com/blog/2008/07/youtube_subtitle_editor.html
+1236,7,2008.03.16,IMDB的数据库结构,http://www.ruanyifeng.com/blog/2008/03/imdb_database_structure.html
+1237,7,2008.03.03,中国的互联网审查,http://www.ruanyifeng.com/blog/2008/03/chinese_internet_censorship.html
+1238,7,2007.06.04,Google推出面部搜索,http://www.ruanyifeng.com/blog/2007/06/face_search_is_introduced_by_google.html
+1239,7,2007.05.29,Freebase.com 介绍,http://www.ruanyifeng.com/blog/2007/05/freebase_com.html
+1240,7,2007.01.10,站在新技术的门槛上,http://www.ruanyifeng.com/blog/2007/01/on_the_threshold_of_new_technology.html
+1241,7,2007.06.29,洛尔迦《哑孩子》,http://www.ruanyifeng.com/blog/2007/06/the_little_mute_boy_by_federico_garcia_lorca.html
+1242,7,2007.03.22,杜拉斯的西贡,http://www.ruanyifeng.com/blog/2007/03/the_saigon_of_marguerite_duras.html
+1243,7,2006.08.24,如何使用Thesaurus？,http://www.ruanyifeng.com/blog/2006/08/how_to_use_a_thesaurus.html
+1244,7,2006.07.10,英语史上的三次文化入侵,http://www.ruanyifeng.com/blog/2006/07/post_260.html
+1245,7,2008.01.16,摄影集《感受地球呼吸》（La Terre vue du Ciel）,http://www.ruanyifeng.com/blog/2008/01/la_terre_vue_du_ciel.html
+1246,7,2006.05.06,八个案件八句话,http://www.ruanyifeng.com/blog/2006/05/post_217.html
+1247,7,2006.04.10,美国法典（United States Code）,http://www.ruanyifeng.com/blog/2006/04/united_states_code.html
+1248,7,2005.08.01,一个人的旅程,http://www.ruanyifeng.com/blog/2005/08/post_132.html
+1249,7,2007.12.05,1507年Waldseemuller地图,http://www.ruanyifeng.com/blog/2007/12/1507_waldseemuller_map.html
+1250,7,2007.10.19,卡尔维诺中文站初步完工,http://www.ruanyifeng.com/blog/2007/10/basically_italo_calvino_in_china_is_completed.html
+1251,7,2007.09.12,美国70年代的价格管制,http://www.ruanyifeng.com/blog/2007/09/price_controls_of_usa_in_1970s.html
+1252,7,2007.08.13,新书《即将到来的中国战争》（The Coming China Wars）,http://www.ruanyifeng.com/blog/2007/08/the_coming_china_wars.html
+1253,7,2007.03.05,电影《人类之子》（Children of Men）,http://www.ruanyifeng.com/blog/2007/03/children_of_men.html
+1254,7,2007.03.03,《胡适口述自传》笔记,http://www.ruanyifeng.com/blog/2007/03/notes_on_hu_shih_oral_autobiography.html
+1255,7,2009.02.10,HTML模板和CSS基准样式（三）,http://www.ruanyifeng.com/blog/2009/02/basic_html_template_and_css_styling_part_iii.html
+1256,7,2008.03.25,Google翻译的API,http://www.ruanyifeng.com/blog/2008/03/google_language_api.html
+1257,7,2007.11.18,李胜利之死（续）,http://www.ruanyifeng.com/blog/2007/11/death_of_mr_li_shengli_part_ii.html
+1258,7,2007.07.19,世界上最大的鲤鱼,http://www.ruanyifeng.com/blog/2007/07/biggest_carp_in_the_world.html
+1259,7,2007.05.18,服务器被黑,http://www.ruanyifeng.com/blog/2007/05/my_hacked_server.html
+1260,7,2007.03.08,学校的新图书馆,http://www.ruanyifeng.com/blog/2007/03/new_library_of_shufe.html
+1261,7,2007.02.25,我们都是无家可归的人,http://www.ruanyifeng.com/blog/2007/02/we_are_all_homeless.html
+1262,7,2006.12.29,挥手自兹去,http://www.ruanyifeng.com/blog/2006/12/the_end_of_the_year.html
+1263,7,2006.12.16,最伟大的100首英语流行歌曲,http://www.ruanyifeng.com/blog/2006/12/100_greatest_pop_songs.html
+1264,7,2006.09.06,翻译完了一本书,http://www.ruanyifeng.com/blog/2006/09/say_goodbye_to_book_translating.html
+1265,7,2006.03.26,电影《人兔的诅咒》（Wallace & Gromit in The Curse of the Were-Rabbit）,http://www.ruanyifeng.com/blog/2006/03/in_the_curse_of_the_wererabbit.html
+1266,7,2005.08.17,中国共产党和朝鲜人民军,http://www.ruanyifeng.com/blog/2005/08/post_137.html
+1267,7,2004.02.24,戈登被杀之地,http://www.ruanyifeng.com/blog/2004/02/post_44.html
+1268,7,2004.02.01,《可爱的骨头》（The Lovely Bones）,http://www.ruanyifeng.com/blog/2004/02/the_lovely_bones.html
+1269,7,2004.01.11,2003年中国最畅销的50本书,http://www.ruanyifeng.com/blog/2004/01/200350.html
+1270,6,2007.01.30,《论语》摘抄,http://www.ruanyifeng.com/blog/2007/01/quotes_of_confucius.html
+1271,6,2006.08.29,欲望已成记忆----卡尔维诺《看不见的城市》,http://www.ruanyifeng.com/blog/2006/08/desires_are_already_memories.html
+1272,6,2005.11.23,关于黄仲则,http://www.ruanyifeng.com/blog/2005/11/post_156.html
+1273,6,2005.08.24,石油和未来的世界经济,http://www.ruanyifeng.com/blog/2005/08/post_141.html
+1274,6,2005.04.27,爱因斯坦的私生活（一）,http://www.ruanyifeng.com/blog/2005/04/post_118.html
+1275,6,2004.10.19,北美殖民地的初婚年龄,http://www.ruanyifeng.com/blog/2004/10/post_86.html
+1276,6,2004.06.05,回了一次母校,http://www.ruanyifeng.com/blog/2004/06/post_75.html
+1277,6,2004.03.26,手机被窃,http://www.ruanyifeng.com/blog/2004/03/post_51.html
+1278,6,2004.02.14,致维克多.雨果的1001封情书,http://www.ruanyifeng.com/blog/2004/02/1001.html
+1279,6,2007.08.31,烟囱是怎么拆的,http://www.ruanyifeng.com/blog/2007/08/how_to_dismantle_a_chimney.html
+1280,6,2007.05.10,一对不幸的熊猫,http://www.ruanyifeng.com/blog/2007/05/a_pair_of_misable_pandas.html
+1281,6,2006.09.05,学者和媒体的关系,http://www.ruanyifeng.com/blog/2006/09/the_relationship_between_scholars_and_media.html
+1282,6,2006.07.03,大学的农村生源,http://www.ruanyifeng.com/blog/2006/07/post_257.html
+1283,6,2006.01.22,《金刚》：美女与野兽,http://www.ruanyifeng.com/blog/2006/01/post_170.html
+1284,6,2004.05.17,国有工厂的工人为什么要下岗？(上),http://www.ruanyifeng.com/blog/2004/05/post_69.html
+1285,6,2008.07.23,一些颜色工具网站,http://www.ruanyifeng.com/blog/2008/07/color_tools.html
+1286,6,2008.02.24,语种名称代码,http://www.ruanyifeng.com/blog/2008/02/codes_for_language_names.html
+1287,6,2006.05.15,"懒惰、急躁和傲慢（Laziness, Impatience and hubris）",http://www.ruanyifeng.com/blog/2006/05/laziness_impatience_and_hubris.html
+1288,6,2009.05.26,IE8开发人员工具教程（二）,http://www.ruanyifeng.com/blog/2009/05/ie8_developer_tools_tutorial_part_ii.html
+1289,6,2007.10.14,21世纪最差的10个行业,http://www.ruanyifeng.com/blog/2007/10/the_worst_jobs_for_the_21st_century.html
+1290,6,2007.10.22,Answers.com创意征文大赛,http://www.ruanyifeng.com/blog/2007/10/answerscom_creative_writing_challenge.html
+1291,6,2006.03.10,弥尔顿的《十四行诗之十九》,http://www.ruanyifeng.com/blog/2006/03/post_186.html
+1292,6,2005.09.06,燕子，记住他们,http://www.ruanyifeng.com/blog/2005/09/post_145.html
+1293,6,2008.04.04,欧美流行音乐数据库,http://www.ruanyifeng.com/blog/2008/04/western_pop_music_database.html
+1294,6,2008.03.15,如何分类？,http://www.ruanyifeng.com/blog/2008/03/howto_build_a_classification_system.html
+1295,6,2008.02.15,人类世（Anthropocene）,http://www.ruanyifeng.com/blog/2008/02/anthropocene.html
+1296,6,2007.11.25,自助出版网站Lulu.com,http://www.ruanyifeng.com/blog/2007/11/lulu_com.html
+1297,6,2007.11.16,互联网档案计划（Internet Archive）,http://www.ruanyifeng.com/blog/2007/11/internet_archive.html
+1298,6,2007.08.22,PhotoSynth：图像识别建模技术,http://www.ruanyifeng.com/blog/2007/08/photosynth.html
+1299,6,2007.07.02,"网络操作系统和""鲜果在线""",http://www.ruanyifeng.com/blog/2007/07/browser-os_and_xianguo_online.html
+1300,6,2006.07.05,美国盗版党（Pirate Party）,http://www.ruanyifeng.com/blog/2006/07/pirate_party.html
+1301,6,2006.11.12,爱默生的超验主义文学,http://www.ruanyifeng.com/blog/2006/11/ralph_waldo_emersons_transcendentalism_literature.html
+1302,6,2006.09.24,"舍伍德·安德森的《小镇畸人》（Winesburg, Ohio）",http://www.ruanyifeng.com/blog/2006/09/winesburg_ohio_by_sherwood_anderson.html
+1303,6,2006.08.21,[小说] 花，电话，姑娘,http://www.ruanyifeng.com/blog/2006/08/a_flower_a_phone_call_and_a_girl.html
+1304,6,2008.07.07,组织机构、职务职称英文译法,http://www.ruanyifeng.com/blog/2008/07/general_principles_of_english_translation_of_organization_names_and_professional_titles.html
+1305,6,2007.10.17,UP北，DOWN南,http://www.ruanyifeng.com/blog/2007/10/north_up_south_down.html
+1306,6,2007.06.10,12 a.m. 到底是几点？,http://www.ruanyifeng.com/blog/2007/06/12_am_are_noon_and_midnight.html
+1307,6,2006.07.16,无所不在的莎士比亚,http://www.ruanyifeng.com/blog/2006/07/post_265.html
+1308,6,2006.07.13,英语姓名的由来,http://www.ruanyifeng.com/blog/2006/07/post_264.html
+1309,6,2006.06.16,前缀un-和in-,http://www.ruanyifeng.com/blog/2006/06/un_in.html
+1310,6,2004.10.16,The Great Gatsby的读书笔记（一）,http://www.ruanyifeng.com/blog/2004/10/the_great_gatsby.html
+1311,6,2004.01.13,《关雎》的两种英译,http://www.ruanyifeng.com/blog/2004/01/post_17.html
+1312,6,2007.07.01,香港回归十周年,http://www.ruanyifeng.com/blog/2007/07/10th_anniversary_of_hongkong_return_to_china.html
+1313,6,2007.06.11,本人成分代码,http://www.ruanyifeng.com/blog/2007/06/codes_for_personal_class_stats.html
+1314,6,2006.04.19,《纽约时报》系列报道：《依法治国》之一（Rule by Law）,http://www.ruanyifeng.com/blog/2006/04/rule_by_law.html
+1315,6,2008.04.25,版权笔记的一个总结,http://www.ruanyifeng.com/blog/2008/04/a_summary_of_my_copyright_notes.html
+1316,6,2008.04.23,Copyleft和GFDL许可证,http://www.ruanyifeng.com/blog/2008/04/copyleft_and_gfdl.html
+1317,6,2007.12.16,图书出版流程,http://www.ruanyifeng.com/blog/2007/12/book_publishing_process_in_china.html
+1318,6,2007.06.03,印度电影《皇家卫兵》（Eklavya）,http://www.ruanyifeng.com/blog/2007/06/eklavya.html
+1319,6,2007.02.19,一种性格分类,http://www.ruanyifeng.com/blog/2007/02/a_kind_of_personal_nature_classification.html
+1320,6,2007.02.08,犹太人的历史,http://www.ruanyifeng.com/blog/2007/02/the_history_of_the_jew.html
+1321,6,2006.05.14,天才从哪里来？（Where Does Talent Really Come From?）,http://www.ruanyifeng.com/blog/2006/05/where_does_talent_really_come.html
+1322,6,2005.08.15,重温80年前的美国,http://www.ruanyifeng.com/blog/2005/08/80.html
+1323,6,2007.12.26,"2007年的50张""十大""名单",http://www.ruanyifeng.com/blog/2007/12/50_top_10_lists_of_2007.html
+1324,6,2007.11.13,同一天的两份声明（转贴）,http://www.ruanyifeng.com/blog/2007/11/two_announcements_at_the_same_day.html
+1325,6,2007.10.07,楼夷《美国媒体见闻录》,http://www.ruanyifeng.com/blog/2007/10/my_experience_of_american_media_by_lou_yi.html
+1326,6,2007.09.26,中国电影《香巴拉信使》,http://www.ruanyifeng.com/blog/2007/09/xiangbala_postman.html
+1327,6,2007.08.02,Open Library 项目,http://www.ruanyifeng.com/blog/2007/08/open_library.html
+1328,6,2007.07.28,美国电影《1408》（又名《幻影凶间》）,http://www.ruanyifeng.com/blog/2007/07/1408.html
+1329,6,2007.06.21,大连之行的一些感受,http://www.ruanyifeng.com/blog/2007/06/some_thoughts_on_my_trip_of_dalian.html
+1330,6,2007.04.01,0号的故事,http://www.ruanyifeng.com/blog/2007/04/impossible_is_0.html
+1331,6,2007.02.20,一点关于免疫系统的笔记,http://www.ruanyifeng.com/blog/2007/02/simple_notes_on_immune_system.html
+1332,6,2007.02.19,陈洁如故居,http://www.ruanyifeng.com/blog/2007/02/the_former_residence_of_miss_chen_jieru.html
+1333,6,2006.12.28,[照片] 冬日里的校园草地,http://www.ruanyifeng.com/blog/2006/12/a_winter_photo_of_schools_grassland.html
+1334,6,2006.12.25,杜琪峰《放逐》,http://www.ruanyifeng.com/blog/2006/12/johnny_to_s_exiled.html
+1335,6,2006.10.01,人民币的汇率：2006年9月,http://www.ruanyifeng.com/blog/2006/10/chinese_yuan_exchange_rate_september_2006.html
+1336,6,2006.09.15,石油价格走势图：1970－2006,http://www.ruanyifeng.com/blog/2006/09/the_chart_of_oil_price_from_1970_to_2006.html
+1337,6,2006.09.07,几个互联网小工具,http://www.ruanyifeng.com/blog/2006/09/my_web_toolkits.html
+1338,6,2006.02.07,春去春来,http://www.ruanyifeng.com/blog/2006/02/post_176.html
+1339,6,2005.12.31,生活在谎言和欺骗的包围中,http://www.ruanyifeng.com/blog/2005/12/post_165.html
+1340,6,2005.12.23,关于幸福，你知道多少？（下）,http://www.ruanyifeng.com/blog/2005/12/post_163.html
+1341,6,2005.04.22,自然科学和社会科学的区别,http://www.ruanyifeng.com/blog/2005/04/post_117.html
+1342,6,2004.10.22,关于统计软件SAS的一点感想,http://www.ruanyifeng.com/blog/2004/10/sas.html
+1343,6,2004.02.07,我也爱Firebird浏览器,http://www.ruanyifeng.com/blog/2004/02/firebird.html
+1344,6,2003.12.22,《冷山》：电影和小说,http://www.ruanyifeng.com/blog/2003/12/post_12.html
+1345,5,2007.02.13,胡适的改行,http://www.ruanyifeng.com/blog/2007/02/hushih_s_switch_part_i.html
+1346,5,2006.05.11,黑塞摘录（一）,http://www.ruanyifeng.com/blog/2006/05/post_220.html
+1347,5,2005.11.08,罗马的三位一体,http://www.ruanyifeng.com/blog/2005/11/post_155.html
+1348,5,2005.07.28,《罗马假日》电影剧本节选,http://www.ruanyifeng.com/blog/2005/07/post_131.html
+1349,5,2005.03.28,重获自由,http://www.ruanyifeng.com/blog/2005/03/post_110.html
+1350,5,2005.02.26,乒乓球水平提高了,http://www.ruanyifeng.com/blog/2005/02/post_101.html
+1351,5,2004.12.30,上海下雪了,http://www.ruanyifeng.com/blog/2004/12/post_95.html
+1352,5,2007.12.14,《上海基本医保施行办法》公布,http://www.ruanyifeng.com/blog/2007/12/shanghai_trial_measures_of_basic_medical_insurance_promulgated.html
+1353,5,2007.05.18,教材的利润有多高？,http://www.ruanyifeng.com/blog/2007/05/how_high_is_the_profit_of_textbook.html
+1354,5,2006.05.04,裙带资本主义（Crony Capitalism）,http://www.ruanyifeng.com/blog/2006/05/crony_capitalism.html
+1355,5,2007.12.10,Google Chart API,http://www.ruanyifeng.com/blog/2007/12/google_chart_api.html
+1356,5,2007.07.10,巴菲特语录,http://www.ruanyifeng.com/blog/2007/07/warrent_buffet_quotes.html
+1357,5,2007.06.26,创业的好处与坏处,http://www.ruanyifeng.com/blog/2007/06/why_not_to_do_a_startup.html
+1358,5,2006.10.31,Google创始人的公开信,http://www.ruanyifeng.com/blog/2006/10/letter_from_the_google_founders.html
+1359,5,2008.02.21,1975年毛泽东主席与福特总统的会谈（二）,http://www.ruanyifeng.com/blog/2008/02/memorandum_of_conversation_between_mao_and_ford_in_1975_part_ii.html
+1360,5,2007.05.27,即将来临的季节,http://www.ruanyifeng.com/blog/2007/05/cruel_season_to_come.html
+1361,5,2005.06.01,Cranberries 的《Dreams》,http://www.ruanyifeng.com/blog/2005/06/cranberries_dreams.html
+1362,5,2008.07.07,全球BT下载网站排名,http://www.ruanyifeng.com/blog/2008/07/top_torrent_sites_ranked_by_google.html
+1363,5,2007.05.17,自由流动的世界,http://www.ruanyifeng.com/blog/2007/05/a_freely_flowing_world.html
+1364,5,2007.03.12,都柏林核心（Dublin Core）,http://www.ruanyifeng.com/blog/2007/03/dublin_core.html
+1365,5,2006.12.21,中国开通根域名镜像服务器,http://www.ruanyifeng.com/blog/2006/12/china_to_launch_root_domain_name_server.html
+1366,5,2006.08.13,10个最重视读书的中国城市,http://www.ruanyifeng.com/blog/2006/08/top_ten_chinese_cities_which_like_books_most.html
+1367,5,2007.09.10,莎士比亚名言选,http://www.ruanyifeng.com/blog/2007/09/william_shakespeare_quotations.html
+1368,5,2007.02.09,泰戈尔摘录,http://www.ruanyifeng.com/blog/2007/02/quotes_from_ranbindranath_tagore.html
+1369,5,2006.02.02,宋玉《九辩》（文白对照）,http://www.ruanyifeng.com/blog/2006/02/post_174.html
+1370,5,2007.06.13,拉丁字母的历史（History of the Latin alphabet）,http://www.ruanyifeng.com/blog/2007/06/history_of_the_latin_alphabet.html
+1371,5,2007.02.01,中世纪英语词典,http://www.ruanyifeng.com/blog/2007/02/middle_english_dictionary.html
+1372,5,2006.09.30,最好的汉英词典,http://www.ruanyifeng.com/blog/2006/09/the_best_chinese-english_dictionary.html
+1373,5,2006.07.24,钦定版《圣经》（King James Bible）,http://www.ruanyifeng.com/blog/2006/07/king_james_bible.html
+1374,5,2006.09.04,公务员职务层次,http://www.ruanyifeng.com/blog/2006/09/civil_servant_position_rank.html
+1375,5,2006.05.11,世界是平的（续）,http://www.ruanyifeng.com/blog/2006/05/post_221.html
+1376,5,2006.04.27,赵丹《管得太具体 文艺没希望》,http://www.ruanyifeng.com/blog/2006/04/post_209.html
+1377,5,2009.02.26,传统媒体如何防止网络侵权,http://www.ruanyifeng.com/blog/2009/02/how_traditional_media_prevent_copyright_infringement_in_cyberspace.html
+1378,5,2008.06.15,1997年的三件事,http://www.ruanyifeng.com/blog/2008/06/last_decade_in_books.html
+1379,5,2007.11.14,Book People Mailing List 宣布关闭,http://www.ruanyifeng.com/blog/2007/11/book_people_mailing_list_to_end_at_the_end_of_the_month.html
+1380,5,2007.10.15,怎样看电影----从李安的《色戒》说起,http://www.ruanyifeng.com/blog/2007/10/internal_connections_in_lust_caution.html
+1381,5,2007.08.25,引言摘录之四,http://www.ruanyifeng.com/blog/2007/08/quotes_part_iv.html
+1382,5,2007.07.05,Mae West 语录,http://www.ruanyifeng.com/blog/2007/07/mae_west.html
+1383,5,2007.05.26,草地上的夜,http://www.ruanyifeng.com/blog/2007/05/night_on_the_grass.html
+1384,5,2006.12.02,经济学和人类行为,http://www.ruanyifeng.com/blog/2006/12/economics_and_human_behavior.html
+1385,5,2006.10.07,基督教笔记（七）：摩门教（Mormon）,http://www.ruanyifeng.com/blog/2006/10/notes_on_christianity_part_vii.html
+1386,5,2006.03.20,日本外相说了些什么？,http://www.ruanyifeng.com/blog/2006/03/post_194.html
+1387,5,2005.05.11,"伪装的""刀锋""",http://www.ruanyifeng.com/blog/2005/05/post_121.html
+1388,5,2004.11.17,丹布朗《数字城堡》读后感,http://www.ruanyifeng.com/blog/2004/11/post_90.html
+1389,5,2004.06.02,满文版《圣经》,http://www.ruanyifeng.com/blog/2004/06/post_73.html
+1390,5,2007.06.22,张之洞的尸骨找到了（转贴）,http://www.ruanyifeng.com/blog/2007/06/zhangzhidong_s_remains_is_found.html
+1391,5,2007.06.21,关于大连之行的直播试验,http://www.ruanyifeng.com/blog/2007/06/my_live_blogging_experiment.html
+1392,5,2007.05.02,738亿国有资产的消失,http://www.ruanyifeng.com/blog/2007/05/disappearanceof_billions_of_assets.html
+1393,5,2007.04.08,重庆和巴格达,http://www.ruanyifeng.com/blog/2007/04/chongqing.html
+1394,5,2007.03.26,英语作文：What's a Healthy Family,http://www.ruanyifeng.com/blog/2007/03/whats_a_healthy_family.html
+1395,5,2007.02.18,网络语言（Internet Slang）,http://www.ruanyifeng.com/blog/2007/02/internet_slang.html
+1396,5,2006.12.25,圣诞节的一则新闻,http://www.ruanyifeng.com/blog/2006/12/a_news_in_christmas.html
+1397,5,2006.09.05,Solidot 将要关闭,http://www.ruanyifeng.com/blog/2006/09/solidot_is_about_to_close_down.html
+1398,5,2006.07.30,股市内幕一则,http://www.ruanyifeng.com/blog/2006/07/truth_of_the_chinese_stock_market.html
+1399,5,2006.03.19,考研成绩高说明了什么？,http://www.ruanyifeng.com/blog/2006/03/post_193.html
+1400,5,2005.04.23,卡尔维诺中文站4周岁了！,http://www.ruanyifeng.com/blog/2005/04/4_1.html
+1401,5,2004.10.31,读书公园的四个版本,http://www.ruanyifeng.com/blog/2004/10/post_87.html
+1402,5,2004.05.31,关于Linux,http://www.ruanyifeng.com/blog/2004/05/linux.html
+1403,5,2004.05.05,世界真奇妙图片展（转贴）,http://www.ruanyifeng.com/blog/2004/05/post_65.html
+1404,5,2004.03.28,我们的睡姿,http://www.ruanyifeng.com/blog/2004/03/post_53.html
+1405,5,2004.01.17,四种Blog程序,http://www.ruanyifeng.com/blog/2004/01/blog.html
+1406,5,2003.12.16,卖菜的父子,http://www.ruanyifeng.com/blog/2003/12/post_7.html
+1407,5,2003.12.15,生活的哲学：高尔夫球和啤酒,http://www.ruanyifeng.com/blog/2003/12/post_6.html
+1408,4,2007.02.17,弱与力,http://www.ruanyifeng.com/blog/2007/02/weakness_and_strength.html
+1409,4,2007.01.01,骆一禾《世界的血》,http://www.ruanyifeng.com/blog/2007/01/the_blood_of_the_world.html
+1410,4,2006.10.15,保罗·格蒂（Paul Getty）,http://www.ruanyifeng.com/blog/2006/10/paul_getty.html
+1411,4,2006.07.22,《哈姆莱特》（Hamlet）：摘录（第二部分）,http://www.ruanyifeng.com/blog/2006/07/hamlet.html
+1412,4,2006.06.03,托马斯·林奇《殡葬人手记》（Undertaking）,http://www.ruanyifeng.com/blog/2006/06/undertaking.html
+1413,4,2006.05.27,《复仇者V》：思想改变世界（V for Vendetta）,http://www.ruanyifeng.com/blog/2006/05/v_for_vendetta.html
+1414,4,2006.01.10,身之察察，物之汶汶,http://www.ruanyifeng.com/blog/2006/01/post_167.html
+1415,4,2005.09.14,《天演论》的第一段,http://www.ruanyifeng.com/blog/2005/09/post_147.html
+1416,4,2005.07.19,关于爱德蒙·伯克的笔记,http://www.ruanyifeng.com/blog/2005/07/post_128.html
+1417,4,2004.11.28,冬季一日游,http://www.ruanyifeng.com/blog/2004/11/post_93.html
+1418,4,2004.04.28,体制与个性,http://www.ruanyifeng.com/blog/2004/04/post_63.html
+1419,4,2004.03.08,两个永恒之间的布尔斯廷,http://www.ruanyifeng.com/blog/2004/03/post_48.html
+1420,4,2006.11.17,托马斯·弗里德曼《中国需要一只绿猫》,http://www.ruanyifeng.com/blog/2006/11/bring_in_the_green_cat_by_thomas_freedman.html
+1421,4,2006.03.25,知识经济中的贫富差距固定化,http://www.ruanyifeng.com/blog/2006/03/post_199.html
+1422,4,2005.08.18,两则新闻,http://www.ruanyifeng.com/blog/2005/08/post_138.html
+1423,4,2005.05.30,鸟进了森林怎会再投笼？,http://www.ruanyifeng.com/blog/2005/05/post_123.html
+1424,4,2008.02.26,1975年毛泽东主席与福特总统的会谈（三）,http://www.ruanyifeng.com/blog/2008/02/memorandum_of_conversation_between_mao_and_ford_in_1975_part_iii.html
+1425,4,2008.01.07,首页增加内容聚合,http://www.ruanyifeng.com/blog/2008/01/adding_a_mashup_module_into_the_homepage.html
+1426,4,2007.11.20,关于 public.resource.org,http://www.ruanyifeng.com/blog/2007/11/public_resource_org.html
+1427,4,2007.06.23,自动售书机问世了！,http://www.ruanyifeng.com/blog/2007/06/first_espresso_book_machine.html
+1428,4,2007.03.24,中餐与健康,http://www.ruanyifeng.com/blog/2007/03/chinese_food_and_your_health.html
+1429,4,2007.03.14,国际标准书目著录（ISBD）,http://www.ruanyifeng.com/blog/2007/03/isbd.html
+1430,4,2007.01.28,微软面试100题,http://www.ruanyifeng.com/blog/2007/01/a_hundred_interview_questions_of_microsoft.html
+1431,4,2007.01.03,生活中必不可少的15个Web2.0网站,http://www.ruanyifeng.com/blog/2007/01/2007_web_20_companies_i_couldnt_live_without.html
+1432,4,2006.09.06,公众分类法（Folksonomy）,http://www.ruanyifeng.com/blog/2006/09/folksonomy.html
+1433,4,2006.05.02,如何使用mIRC下载电子书,http://www.ruanyifeng.com/blog/2006/05/mirc.html
+1434,4,2004.02.08,中国Web信息博物馆,http://www.ruanyifeng.com/blog/2004/02/web.html
+1435,4,2004.01.26,过去半年中死亡的知名人士,http://www.ruanyifeng.com/blog/2004/01/post_25.html
+1436,4,2006.09.21,《午夜的孩子》中文版开始连载了！,http://www.ruanyifeng.com/blog/2006/09/midnight_s_children_now_published_on_the_internet.html
+1437,4,2007.10.09,公共场所双语标识英文译法,http://www.ruanyifeng.com/blog/2007/10/english_translation_of_public_signs.html
+1438,4,2007.02.16,有趣的范甘迪语录,http://www.ruanyifeng.com/blog/2007/02/poignant_comments_from_jeff_van_gundy.html
+1439,4,2006.10.14,"""闪光的""单词",http://www.ruanyifeng.com/blog/2006/10/shining_words.html
+1440,4,2006.09.04,拉丁语成语表,http://www.ruanyifeng.com/blog/2006/09/latin_idiom_glossary.html
+1441,4,2006.07.30,美国英语中的古风,http://www.ruanyifeng.com/blog/2006/07/archaic_usages_in_american_english.html
+1442,4,2006.05.22,英语诗歌的格律,http://www.ruanyifeng.com/blog/2006/05/post_226.html
+1443,4,2006.05.10,关于司法的英语单词,http://www.ruanyifeng.com/blog/2006/05/post_222.html
+1444,4,2006.03.11,马太福音和马太效应,http://www.ruanyifeng.com/blog/2006/03/post_187.html
+1445,4,2005.09.04,你能分清e.g.和i.e.吗？,http://www.ruanyifeng.com/blog/2005/09/egie.html
+1446,4,2007.12.08,关于春风文艺出版社,http://www.ruanyifeng.com/blog/2007/12/spring_breeze_publishing_house.html
+1447,4,2007.09.17,地主，谋士和长工的故事（转贴）,http://www.ruanyifeng.com/blog/2007/09/landlord_counsellor_and_laborers.html
+1448,4,2007.08.05,藏传佛教活佛转世管理办法,http://www.ruanyifeng.com/blog/2007/08/regulation_on_reincarnation_of_living_buddha_of_tibetan_buddhism.html
+1449,4,2007.06.12,拿什么拯救你，太湖！,http://www.ruanyifeng.com/blog/2007/06/how_to_save_you_tai_lake.html
+1450,4,2007.05.06,2007年普利策奖回顾之四：解释性报道奖,http://www.ruanyifeng.com/blog/2007/05/the_pulitzer_prizes_2007_part_iv.html
+1451,4,2006.04.25,中国的大学改名（转贴）,http://www.ruanyifeng.com/blog/2006/04/post_208.html
+1452,4,2004.01.29,美国士兵条例（中英对照）,http://www.ruanyifeng.com/blog/2004/01/post_28.html
+1453,4,2008.03.24,《数学精英·导言》笔记,http://www.ruanyifeng.com/blog/2008/03/notes_on_men_of_mathematics.html
+1454,4,2007.09.22,Alan Shore 妙语录,http://www.ruanyifeng.com/blog/2007/09/alan_shore_quotations.html
+1455,4,2007.09.14,呼拉圈的来历,http://www.ruanyifeng.com/blog/2007/09/hula_hoop.html
+1456,4,2007.06.14,汉字拉丁化的历史,http://www.ruanyifeng.com/blog/2007/06/history_of_chinese_romanization.html
+1457,4,2007.04.02,古籍的数量,http://www.ruanyifeng.com/blog/2007/04/the_amount_of_chinese_ancient_books.html
+1458,4,2007.02.21,关于高等教育的三篇文章,http://www.ruanyifeng.com/blog/2007/02/three_articles_about_higher_education.html
+1459,4,2007.02.04,清朝科举制度,http://www.ruanyifeng.com/blog/2007/02/imperial_examinations_of_qing_dynasty.html
+1460,4,2007.02.03,老狼《北京的冬天》,http://www.ruanyifeng.com/blog/2007/02/beijing_winter.html
+1461,4,2006.11.15,奥尔森《集体行动的逻辑》,http://www.ruanyifeng.com/blog/2006/11/the_logic_of_collective_action_public_goods_and_the_theory_of_groups.html
+1462,4,2006.11.09,格林斯潘的青年时代,http://www.ruanyifeng.com/blog/2006/11/alan_greenspan_s_youthful_years.html
+1463,4,2006.10.07,香港模式与自由主义经济学,http://www.ruanyifeng.com/blog/2006/10/the_hong_kong_model_and_liberalism_economics.html
+1464,4,2006.10.07,基督教笔记（八）：基督教科学派（Christian Science）,http://www.ruanyifeng.com/blog/2006/10/notes_on_christianity_part_viii.html
+1465,4,2006.09.02,两则报摘（2006年9月2日）,http://www.ruanyifeng.com/blog/2006/09/two_piece_of_newspaper_digest.html
+1466,4,2006.08.03,总有一些时刻，考验你的灵魂,http://www.ruanyifeng.com/blog/2006/08/these_are_the_times_that_try_mens_souls.html
+1467,4,2006.07.16,张五常《欧文·费雪与红卫兵》（Irving Fisher and the Red Guards）,http://www.ruanyifeng.com/blog/2006/07/irving_fisher_and_the_red_guards.html
+1468,4,2006.06.21,引言摘录之二,http://www.ruanyifeng.com/blog/2006/06/post_249.html
+1469,4,2006.06.18,权利法案（Bill of Rights）,http://www.ruanyifeng.com/blog/2006/06/bill_of_rights.html
+1470,4,2006.05.22,马克思的一则轶事,http://www.ruanyifeng.com/blog/2006/05/post_227.html
+1471,4,2009.04.03,清明节，墓碑,http://www.ruanyifeng.com/blog/2009/04/tombstones_in_hangzhou.html
+1472,4,2009.02.08,HTML模板和CSS基准样式（二）,http://www.ruanyifeng.com/blog/2009/02/basic_html_template_and_css_styling_part_ii.html
+1473,4,2007.07.14,美国电影《十二宫杀手》（Zodiac）,http://www.ruanyifeng.com/blog/2007/07/zodiac.html
+1474,4,2007.05.20,春天的校园,http://www.ruanyifeng.com/blog/2007/05/campus_in_spring.html
+1475,4,2007.05.14,一封读者来信,http://www.ruanyifeng.com/blog/2007/05/a_letter_from_a_reader.html
+1476,4,2007.03.17,2006年美国经济概况,http://www.ruanyifeng.com/blog/2007/03/a_brief_survey_of_the_economy_of_united_states_in_2006.html
+1477,4,2007.02.11,有趣的挂钟,http://www.ruanyifeng.com/blog/2007/02/interesting_clocks.html
+1478,4,2007.02.03,学校旁的一家书店,http://www.ruanyifeng.com/blog/2007/02/a_bookstore_beside_my_school.html
+1479,4,2007.01.07,最后一首歌（JUST A SONG BEFORE I GO）,http://www.ruanyifeng.com/blog/2007/01/just_a_song_before_i_go.html
+1480,4,2006.12.30,萨达姆被绞死的启示,http://www.ruanyifeng.com/blog/2006/12/enlightenment_of_saddam_s_death.html
+1481,4,2006.08.19,一则笑话：路标（转贴）,http://www.ruanyifeng.com/blog/2006/08/signpost_a_joke.html
+1482,4,2006.07.16,《反恐24小时》第五季,http://www.ruanyifeng.com/blog/2006/07/24.html
+1483,4,2006.07.01,恐怖分子的选择：美中差异,http://www.ruanyifeng.com/blog/2006/07/post_256.html
+1484,4,2005.09.18,英语《圣经》的版本,http://www.ruanyifeng.com/blog/2005/09/post_149.html
+1485,4,2005.08.28,Up Where We Belong（冲上云霄）,http://www.ruanyifeng.com/blog/2005/08/up_where_we_belong.html
+1486,4,2005.08.08,10年前写的歌词,http://www.ruanyifeng.com/blog/2005/08/10_1.html
+1487,4,2005.03.01,为什么基因疗法还没有取得重大进展？,http://www.ruanyifeng.com/blog/2005/03/post_102.html
+1488,4,2004.06.07,"""世界最佳摄影画册""的真面目",http://www.ruanyifeng.com/blog/2004/06/post_76.html
+1489,4,2003.12.18,《纽约时报书评》年度图书,http://www.ruanyifeng.com/blog/2003/12/post_9.html
+1490,3,2007.03.13,奈斯比特《大趋势》笔记（II）,http://www.ruanyifeng.com/blog/2007/03/megatrends_by_john_naisbitt_part_ii.html
+1491,3,2007.03.12,奈斯比特《大趋势》笔记（I）,http://www.ruanyifeng.com/blog/2007/03/megatrends_by_john_naisbitt_part_i.html
+1492,3,2006.11.23,世界银行说，中国的穷人正在变得更穷,http://www.ruanyifeng.com/blog/2006/11/world_bank_say_the_poor_in_china_is_getting_poorer.html
+1493,3,2006.09.12,朱丽叶·德鲁埃致雨果的情书,http://www.ruanyifeng.com/blog/2006/09/love_letters_of_juliette_drouet.html
+1494,3,2006.08.14,如何看待贫富差距扩大？,http://www.ruanyifeng.com/blog/2006/08/how_to_treat_the_increased_earnings_inequality.html
+1495,3,2005.09.09,两封信,http://www.ruanyifeng.com/blog/2005/09/post_146.html
+1496,3,2005.06.05,拉兹之歌,http://www.ruanyifeng.com/blog/2005/06/post_124.html
+1497,3,2004.06.30,限制房租对谁有利？,http://www.ruanyifeng.com/blog/2004/06/post_82.html
+1498,3,2007.02.05,记者是这样被打死的,http://www.ruanyifeng.com/blog/2007/02/how_the_journalist_was_killed.html
+1499,3,2006.08.07,虚无主义，庸人主义和肉欲主义,http://www.ruanyifeng.com/blog/2006/08/nihilism_bourgeois-ism_and_sensualism.html
+1500,3,2005.03.20,两种社会,http://www.ruanyifeng.com/blog/2005/03/post_107.html
+1501,3,2008.02.25,资源描述框架RDF,http://www.ruanyifeng.com/blog/2008/02/rdf.html
+1502,3,2007.06.12,骆驼拼写法（CamelCase）,http://www.ruanyifeng.com/blog/2007/06/camelcase.html
+1503,3,2007.04.01,制作工具的原则,http://www.ruanyifeng.com/blog/2007/04/principles_of_providing_a_tool.html
+1504,3,2004.06.20,自由软件许可证GPL,http://www.ruanyifeng.com/blog/2004/06/gpl.html
+1505,3,2007.07.13,创业的十个原则,http://www.ruanyifeng.com/blog/2007/07/guy_kawasaki.html
+1506,3,2007.07.03,史蒂夫·乔布斯语录（Steve Jobs Quotes）,http://www.ruanyifeng.com/blog/2007/07/steve_jobs_quotes.html
+1507,3,2006.04.09,跳舞的妹妹（Tiny Dancer）,http://www.ruanyifeng.com/blog/2006/04/tiny_dancer.html
+1508,3,2005.06.27,索尔仁尼琴在哈佛大学的演讲,http://www.ruanyifeng.com/blog/2005/06/post_125.html
+1509,3,2007.11.10,图书搜索：Google 和 Open Content Alliance,http://www.ruanyifeng.com/blog/2007/11/google_and_open_content_alliance.html
+1510,3,2007.06.27,关键词与主题分面公式,http://www.ruanyifeng.com/blog/2007/06/descriptor_and_subject_faceting.html
+1511,3,2006.08.16,马可尼的故事,http://www.ruanyifeng.com/blog/2006/08/the_story_of_marconi.html
+1512,3,2004.01.25,网络图像的拼贴画,http://www.ruanyifeng.com/blog/2004/01/post_24.html
+1513,3,2004.01.22,Google的Logo(第二部分),http://www.ruanyifeng.com/blog/2004/01/googlelogo_1.html
+1514,3,2008.03.09,戴望舒《洛尔迦诗抄》,http://www.ruanyifeng.com/blog/2008/03/federico_garcia_lorca_poems.html
+1515,3,2006.08.25,[小说]蓝天（转贴）,http://www.ruanyifeng.com/blog/2006/08/the_blue_sky.html
+1516,3,2006.08.20,但愿我和他一样，也有自焚的渴求,http://www.ruanyifeng.com/blog/2006/08/i_wanted_as_badly_as_he_wanted_to_fry_himself.html
+1517,3,2006.08.05,斯万的爱情,http://www.ruanyifeng.com/blog/2006/08/un_amour_de_swann.html
+1518,3,2006.05.22,一堂天文课（When I heard the Learn'd Astronomer）,http://www.ruanyifeng.com/blog/2006/05/when_i_heard_the_learnd_astron.html
+1519,3,2006.05.15,《日瓦戈医生》的结尾（Doctor Zhivago）,http://www.ruanyifeng.com/blog/2006/05/doctor_zhivago.html
+1520,3,2006.04.18,书评：《达尔文的阴谋》（The Darwin Conspiracy）,http://www.ruanyifeng.com/blog/2006/04/the_darwin_conspiracy.html
+1521,3,2007.02.17,College辨析,http://www.ruanyifeng.com/blog/2007/02/the_discrimination_of_the_word_college.html
+1522,3,2007.01.27,英语中动物的叫声,http://www.ruanyifeng.com/blog/2007/01/sounds_of_animals_in_english.html
+1523,3,2006.07.23,莎士比亚其人其事（William Shakespeare）,http://www.ruanyifeng.com/blog/2006/07/william_shakespeare.html
+1524,3,2006.07.10,英语地位的确立，中世纪,http://www.ruanyifeng.com/blog/2006/07/post_261.html
+1525,3,2006.05.16,crap 和 crapper,http://www.ruanyifeng.com/blog/2006/05/crap_crapper.html
+1526,3,2008.04.30,纪录片《抢救切尔诺贝利》（四）：石棺,http://www.ruanyifeng.com/blog/2008/04/battle_of_chernobyl_part_iv.html
+1527,3,2007.10.20,德国Anna Amalia图书馆重新开放,http://www.ruanyifeng.com/blog/2007/10/weimars_anna_amalia_library_to_re-open.html
+1528,3,2007.09.09,杨利甲的故事,http://www.ruanyifeng.com/blog/2007/09/story_of_yang_lijia.html
+1529,3,2007.07.07,张菊的故事,http://www.ruanyifeng.com/blog/2007/07/zhangju.html
+1530,3,2007.06.22,面孔2007,http://www.ruanyifeng.com/blog/2007/06/face_2007.html
+1531,3,2007.04.23,2007年普利策奖回顾之一：公众服务奖和国际报道奖,http://www.ruanyifeng.com/blog/2007/04/the_pulitzer_prizes_2007_part_i.html
+1532,3,2006.04.27,《纽约时报》系列报道：《依法治国》之八（Rule by Law）,http://www.ruanyifeng.com/blog/2006/04/rule_by_law_7.html
+1533,3,2004.03.05,程荣的美术作品,http://www.ruanyifeng.com/blog/2004/03/post_47.html
+1534,3,2003.12.12,人民日报版面备要,http://www.ruanyifeng.com/blog/2003/12/post_4.html
+1535,3,2007.10.13,一个美国记者对戈尔获得诺贝尔和平奖的感想,http://www.ruanyifeng.com/blog/2007/10/gore_laureatus.html
+1536,3,2007.09.27,为什么书价越来越贵？,http://www.ruanyifeng.com/blog/2007/09/why_have_textbooks_gotten_more_expensive.html
+1537,3,2007.07.05,大连之行（一）：星海公园,http://www.ruanyifeng.com/blog/2007/07/my_dalian_trip_part_i.html
+1538,3,2007.05.07,易患糖尿病的行为,http://www.ruanyifeng.com/blog/2007/05/behaviors_of_increasing_the_risk_of_diabetes.html
+1539,3,2007.02.25,实用主义和实验主义，偶然性和必然性,http://www.ruanyifeng.com/blog/2007/02/experimentalism.html
+1540,3,2007.02.16,《罗氏议事规程》和会议规范,http://www.ruanyifeng.com/blog/2007/02/robert_s_rules_of_order.html
+1541,3,2007.01.26,电影《Kenny》,http://www.ruanyifeng.com/blog/2007/01/kenny.html
+1542,3,2006.11.30,法国之谜,http://www.ruanyifeng.com/blog/2006/11/enigma_of_france.html
+1543,3,2006.09.25,基督教笔记（二）,http://www.ruanyifeng.com/blog/2006/09/notes_on_christianity_part_ii.html
+1544,3,2005.01.05,IT史记,http://www.ruanyifeng.com/blog/2005/01/it.html
+1545,3,2007.09.27,电影《大白鲨》中的插曲,http://www.ruanyifeng.com/blog/2007/09/farewell_and_adieu_to_you_fair_spanish_ladies.html
+1546,3,2007.07.12,2007年上半年最佳美国电影,http://www.ruanyifeng.com/blog/2007/07/2007_usa_new_movie_recommendation_list.html
+1547,3,2007.06.11,邹恒甫致中华人民共和国教育部周济部长的一封公开信,http://www.ruanyifeng.com/blog/2007/06/professor_zou_s_public_letter.html
+1548,3,2007.05.01,趣味电子产品,http://www.ruanyifeng.com/blog/2007/05/interesting_electronic_products.html
+1549,3,2007.04.22,活到老，学到老,http://www.ruanyifeng.com/blog/2007/04/never_too_old_to_learn.html
+1550,3,2007.04.11,韩国电影《无道里》（Moodori）,http://www.ruanyifeng.com/blog/2007/04/moodori.html
+1551,3,2007.04.04,零编辑的娱乐新闻系统：牛啦网,http://www.ruanyifeng.com/blog/2007/04/niula.html
+1552,3,2007.02.27,2007年流行网语（转贴）,http://www.ruanyifeng.com/blog/2007/02/popular_folk_sayings_in_2007.html
+1553,3,2006.12.26,2007年最有创意的10种新产品,http://www.ruanyifeng.com/blog/2006/12/the_ten_most_innovative_new_products_in_2007.html
+1554,3,2006.12.06,购买蓝牙适配器上当记,http://www.ruanyifeng.com/blog/2006/12/fooled_by_an_unhonest_bluetooth_adapter.html
+1555,3,2006.11.01,平等和效率的关系,http://www.ruanyifeng.com/blog/2006/11/the_relationship_between_equity_and_efficiency.html
+1556,3,2006.10.13,投资资金从何而来？,http://www.ruanyifeng.com/blog/2006/10/where_is_china_investment_money_from.html
+1557,3,2006.10.10,期望越来越低的年代（The Age of Diminished Expectations）,http://www.ruanyifeng.com/blog/2006/10/the_age_of_diminished_expectations.html
+1558,3,2006.09.18,大陆用户可以访问《中央日报》网站,http://www.ruanyifeng.com/blog/2006/09/mainland_netizens_now_can_visit_taiwan_central_daily_website.html
+1559,3,2006.09.15,中央银行的故事,http://www.ruanyifeng.com/blog/2006/09/the_story_of_central_bank.html
+1560,3,2006.09.02,人民币汇率法则,http://www.ruanyifeng.com/blog/2006/09/a_monetary_rule_for_china.html
+1561,3,2006.08.28,Whatever helps the farmer helps everybody,http://www.ruanyifeng.com/blog/2006/08/whatever_helps_the_farmer_helps_everybody.html
+1562,3,2006.06.12,中国银行的特别事件,http://www.ruanyifeng.com/blog/2006/06/post_239.html
+1563,3,2006.04.06,真实的塞缪尔·贝克特（Samuel Beckett）,http://www.ruanyifeng.com/blog/2006/04/samuel_beckett.html
+1564,3,2006.03.23,关于书的照片,http://www.ruanyifeng.com/blog/2006/03/post_196.html
+1565,3,2004.11.21,内地城市的产业困境,http://www.ruanyifeng.com/blog/2004/11/post_92.html
+1566,3,2004.10.14,重新开始发布网络日志,http://www.ruanyifeng.com/blog/2004/10/post_83.html
+1567,3,2004.04.27,一只鸟和另一只鸟的故事（转载）,http://www.ruanyifeng.com/blog/2004/04/post_62.html
+1568,3,2004.04.26,四则文化动态,http://www.ruanyifeng.com/blog/2004/04/post_61.html
+1569,3,2004.01.24,Mozilla浏览器,http://www.ruanyifeng.com/blog/2004/01/mozilla.html
+1570,3,2004.01.08,2004年1月美国财经类杂志封面报道,http://www.ruanyifeng.com/blog/2004/01/20041.html
+1571,3,2003.12.21,你好，加菲猫！,http://www.ruanyifeng.com/blog/2003/12/post_11.html
+1572,2,2006.11.21,《富爸爸，穷爸爸》摘录（二）,http://www.ruanyifeng.com/blog/2006/11/quotes_from_rich_dad_poor_dad_part_ii.html
+1573,2,2006.09.27,《纪念陈省身先生文集》摘录,http://www.ruanyifeng.com/blog/2006/09/quotes_from_shiing-shen_chern_a_commemorative_anthology.html
+1574,2,2006.06.19,美国建国的宗旨,http://www.ruanyifeng.com/blog/2006/06/post_250.html
+1575,2,2006.06.05,爱好读书的强盗,http://www.ruanyifeng.com/blog/2006/06/post_235.html
+1576,2,2006.02.08,《英国简史》的序言,http://www.ruanyifeng.com/blog/2006/02/post_177.html
+1577,2,2005.03.08,学术著作与可读性,http://www.ruanyifeng.com/blog/2005/03/post_104.html
+1578,2,2005.02.12,电影《Almost Famous》,http://www.ruanyifeng.com/blog/2005/02/almost_famous.html
+1579,2,2007.10.23,新闻和社论,http://www.ruanyifeng.com/blog/2007/10/news_n_editorial.html
+1580,2,2006.08.09,伽利略的一封信,http://www.ruanyifeng.com/blog/2006/08/galileo_galilei_letter_to_the_grand_duchess_christina_of_tuscany_1615.html
+1581,2,2006.02.25,学科和采矿,http://www.ruanyifeng.com/blog/2006/02/post_179.html
+1582,2,2006.02.18,什么是历史过程？,http://www.ruanyifeng.com/blog/2006/02/post_178.html
+1583,2,2007.07.27,工业设计三原则,http://www.ruanyifeng.com/blog/2007/07/three_principles_of_web_design.html
+1584,2,2007.03.02,RFC2119：表示要求的动词,http://www.ruanyifeng.com/blog/2007/03/rfc2119.html
+1585,2,2005.09.13,谁能当IBM公司的CEO？,http://www.ruanyifeng.com/blog/2005/09/ibmceo.html
+1586,2,2007.12.03,Book People Mailing List的告别信,http://www.ruanyifeng.com/blog/2007/12/farewell_letter_of_book_people_mailing_list.html
+1587,2,2006.03.24,弥尔顿的《十四行诗之十九》（续）,http://www.ruanyifeng.com/blog/2006/03/post_197.html
+1588,2,2005.05.17,擦身而过的命运,http://www.ruanyifeng.com/blog/2005/05/post_122.html
+1589,2,2004.06.08,《简爱》女作者的情书被曝光,http://www.ruanyifeng.com/blog/2004/06/post_77.html
+1590,2,2008.03.02,ODP数据的解析程序,http://www.ruanyifeng.com/blog/2008/03/odp_data_php_parser.html
+1591,2,2008.01.27,约翰·霍普金斯医学院的声明,http://www.ruanyifeng.com/blog/2008/01/johns_hopkins_email_hoax.html
+1592,2,2007.11.26,Web 2.0网站的九个特点,http://www.ruanyifeng.com/blog/2007/11/web_2_0.html
+1593,2,2007.10.21,玻璃的历史,http://www.ruanyifeng.com/blog/2007/10/a_history_of_glass_window.html
+1594,2,2007.06.02,国际标准刊号（ISSN）,http://www.ruanyifeng.com/blog/2007/06/issn.html
+1595,2,2007.03.10,信息的分类（续）：ODP（Open Directory Project） 和 FreeBase,http://www.ruanyifeng.com/blog/2007/03/odp_freebase.html
+1596,2,2007.02.06,发表论文的规范,http://www.ruanyifeng.com/blog/2007/02/the_norm_of_publishing_a_paper.html
+1597,2,2006.10.12,互联网卫星地图服务比较,http://www.ruanyifeng.com/blog/2006/10/the_comparison_of_internet_satellite_mapping_services.html
+1598,2,2006.09.11,生物分类法（Biological Classification）,http://www.ruanyifeng.com/blog/2006/09/biological_classification.html
+1599,2,2006.03.13,Bode定律,http://www.ruanyifeng.com/blog/2006/03/bode.html
+1600,2,2006.10.21,《我的名字是红》中的土耳其彩绘,http://www.ruanyifeng.com/blog/2006/10/miniatures_in_my_name_is_red.html
+1601,2,2006.08.21,一只蟑螂的诗,http://www.ruanyifeng.com/blog/2006/08/poems_by_a_cockroach.html
+1602,2,2006.08.12,查拉《正面与反面》,http://www.ruanyifeng.com/blog/2006/08/tristan_tzara.html
+1603,2,2006.01.20,福克纳的繁复,http://www.ruanyifeng.com/blog/2006/01/post_169.html
+1604,2,2006.09.24,英语的静态句和动态句,http://www.ruanyifeng.com/blog/2006/09/static_sentence_and_dynamic_setence_in_english.html
+1605,2,2006.09.15,Jabberwocky,http://www.ruanyifeng.com/blog/2006/09/jabberwocky.html
+1606,2,2006.04.03,"英语中消失的三个字母：thorn, yogh, eth",http://www.ruanyifeng.com/blog/2006/04/thorn_yogh_eth.html
+1607,2,2006.02.02,韦伯斯特的故事,http://www.ruanyifeng.com/blog/2006/02/post_175.html
+1608,2,2006.02.02,新的巨像（the new colossus）,http://www.ruanyifeng.com/blog/2006/02/the_new_colossus.html
+1609,2,2005.07.13,The Great Gatsby读书笔记（三）,http://www.ruanyifeng.com/blog/2005/07/the_great_gatsby_2.html
+1610,2,2005.01.02,Dollar（美元）的词源,http://www.ruanyifeng.com/blog/2005/01/dollar.html
+1611,2,2007.07.22,一位淋巴癌患者的妻子的话,http://www.ruanyifeng.com/blog/2007/07/words_of_a_cancer_patient_s_wife.html
+1612,2,2007.06.25,《中华人民共和国著作权法》笔记（I）,http://www.ruanyifeng.com/blog/2007/06/notes_on_chinese_copyright_law_part_i.html
+1613,2,2007.05.21,中国图书出版监管制度,http://www.ruanyifeng.com/blog/2007/05/china_book_censor_system.html
+1614,2,2006.09.14,领导人著作的出版级别,http://www.ruanyifeng.com/blog/2006/09/the_publication_rank_of_china_statesmen_works.html
+1615,2,2006.04.26,《纽约时报》系列报道：《依法治国》之七（Rule by Law）,http://www.ruanyifeng.com/blog/2006/04/rule_by_law_6.html
+1616,2,2006.04.20,《纽约时报》系列报道：《依法治国》之二（Rule by Law）,http://www.ruanyifeng.com/blog/2006/04/rule_by_law_1.html
+1617,2,2006.03.06,蔡元培的讲话,http://www.ruanyifeng.com/blog/2006/03/post_183.html
+1618,2,2004.01.28,一些趣味图片（第一部分）,http://www.ruanyifeng.com/blog/2004/01/post_27.html
+1619,2,2004.01.10,海浪涛天，一个老水兵的亲身经历,http://www.ruanyifeng.com/blog/2004/01/post_15.html
+1620,2,2007.04.18,学问乃天下之公器,http://www.ruanyifeng.com/blog/2007/04/knowledge_is_a_public_goods.html
+1621,2,2007.02.26,如何写好白话文,http://www.ruanyifeng.com/blog/2007/02/how_to_write_vernacular_chinese.html
+1622,2,2006.11.02,熊秉元的经济学散文,http://www.ruanyifeng.com/blog/2006/11/xiong_bingyuan_s_economics_essays.html
+1623,2,2006.10.07,基督教笔记（六）：阿弥士人（Amish）,http://www.ruanyifeng.com/blog/2006/10/notes_on_christianity_part_vi.html
+1624,2,2006.08.03,1989年的校史,http://www.ruanyifeng.com/blog/2006/08/some_fragments_of_a_university_history_in_1989.html
+1625,2,2006.08.02,谁的讣告可以上《纽约时报》？,http://www.ruanyifeng.com/blog/2006/08/whose_obituary_is_worthy_of_coverage_in_the_new_york_times.html
+1626,2,2006.06.28,引言摘录之三,http://www.ruanyifeng.com/blog/2006/06/post_252.html
+1627,2,2006.04.25,美联储（Federal Reserve）的英语,http://www.ruanyifeng.com/blog/2006/04/federal_reserve.html
+1628,2,2006.01.25,英国史笔记（三）,http://www.ruanyifeng.com/blog/2006/01/post_172.html
+1629,2,2005.12.13,生活不是五月天的游戏,http://www.ruanyifeng.com/blog/2005/12/post_160.html
+1630,2,2005.12.03,英国史笔记（二）,http://www.ruanyifeng.com/blog/2005/12/post_158.html
+1631,2,2005.08.31,中国经济，2005年不同于2000年,http://www.ruanyifeng.com/blog/2005/08/20052000.html
+1632,2,2007.11.03,大学课程《美国当代出版业》,http://www.ruanyifeng.com/blog/2007/11/contemporary_american_book_publishing.html
+1633,2,2007.10.30,2006年最佳政治漫画,http://www.ruanyifeng.com/blog/2007/10/25_best_editorial_cartoons_of_2006.html
+1634,2,2007.09.17,"三部美国电影：The Reaping, Surfs Up & Sunshine",http://www.ruanyifeng.com/blog/2007/09/the_reaping_surfs_up_sunshine.html
+1635,2,2007.07.22,苏州河,http://www.ruanyifeng.com/blog/2007/07/suzhou_river.html
+1636,2,2007.06.28,聚餐（2007.6.27）,http://www.ruanyifeng.com/blog/2007/06/feast_2007627.html
+1637,2,2007.06.26,向图书馆赠书,http://www.ruanyifeng.com/blog/2007/06/i_made_a_book_donation.html
+1638,2,2007.04.15,徐悲鸿《放下你的鞭子》,http://www.ruanyifeng.com/blog/2007/04/put_down_your_whip_by_xv_bei-hong.html
+1639,2,2007.04.07,李牧的故事,http://www.ruanyifeng.com/blog/2007/04/story_of_li_mu.html
+1640,2,2007.01.31,管理层收购MBO,http://www.ruanyifeng.com/blog/2007/01/mbo.html
+1641,2,2007.01.09,谈谈合作建房,http://www.ruanyifeng.com/blog/2007/01/lets_talk_about_cooperative_housing.html
+1642,2,2006.09.16,Red Taiwan,http://www.ruanyifeng.com/blog/2006/09/red_taiwan.html
+1643,2,2006.09.16,存款保险制度不可取,http://www.ruanyifeng.com/blog/2006/09/the_deposit_insurance_system_is_not_advisable.html
+1644,2,2006.09.03,爱情很短，叹息很长,http://www.ruanyifeng.com/blog/2006/09/affection_is_ephemeral_but_melancholy_is_perpetual.html
+1645,2,2006.08.26,千里之外,http://www.ruanyifeng.com/blog/2006/08/in_a_thousand_li_distance.html
+1646,2,2006.07.24,那个夏末的下午,http://www.ruanyifeng.com/blog/2006/07/post_268.html
+1647,2,2006.07.11,John Baez的上海一日游,http://www.ruanyifeng.com/blog/2006/07/john_baez.html
+1648,2,2006.05.17,新闻：律师受理群体性案件应告知政府,http://www.ruanyifeng.com/blog/2006/05/post_223.html
+1649,2,2006.02.23,工作在Google,http://www.ruanyifeng.com/blog/2006/02/google_4.html
+1650,2,2005.12.22,关于幸福，你知道多少（上）,http://www.ruanyifeng.com/blog/2005/12/post_162.html
+1651,2,2005.09.21,卓越，为公,http://www.ruanyifeng.com/blog/2005/09/post_150.html
+1652,2,2005.07.11,人民币汇率调整的五个问题,http://www.ruanyifeng.com/blog/2005/07/post_127.html
+1653,2,2005.02.22,60年前的今天：硫磺岛战役,http://www.ruanyifeng.com/blog/2005/02/60.html
+1654,2,2004.10.17,混乱的成人教育招生广告,http://www.ruanyifeng.com/blog/2004/10/post_85.html
+1655,2,2004.06.06,电影 The Day After  Tomorrow,http://www.ruanyifeng.com/blog/2004/06/_the_day_after_tomorrow.html
+1656,2,2004.06.01,《美国摄影》是一本什么样的杂志？,http://www.ruanyifeng.com/blog/2004/06/post_72.html
+1657,2,2004.04.07,2003国内经典语录 （转贴）,http://www.ruanyifeng.com/blog/2004/04/2003_4.html
+1658,2,2004.03.27,英国书店欲联手控制书价,http://www.ruanyifeng.com/blog/2004/03/post_52.html
+1659,2,2004.03.11,介绍民主党总统候选人凯利的一本新书,http://www.ruanyifeng.com/blog/2004/03/post_49.html
+1660,2,2004.03.02,一条新闻及其评论,http://www.ruanyifeng.com/blog/2004/03/post_46.html
+1661,1,2007.02.26,十年书剑皆抛却，一寸丹心半似灰,http://www.ruanyifeng.com/blog/2007/02/all_my_dreams_are_lost.html
+1662,1,2006.07.23,《哈姆莱特》（Hamlet）：摘录（第三部分）,http://www.ruanyifeng.com/blog/2006/07/hamlet_2.html
+1663,1,2005.04.28,爱因斯坦的私生活（二）,http://www.ruanyifeng.com/blog/2005/04/post_119.html
+1664,1,2004.11.07,"又见""达官贵人""",http://www.ruanyifeng.com/blog/2004/11/post_88.html
+1665,1,2004.06.23,创造力来自自由，还是来自财富？,http://www.ruanyifeng.com/blog/2004/06/post_81.html
+1666,1,2004.06.12,《光荣与梦想》作者去世了,http://www.ruanyifeng.com/blog/2004/06/post_79.html
+1667,1,2004.05.03,关于传记文学,http://www.ruanyifeng.com/blog/2004/05/post_64.html
+1668,1,2004.02.11,作者希特勒,http://www.ruanyifeng.com/blog/2004/02/post_38.html
+1669,1,2007.07.20,郞咸平在多伦多的演讲,http://www.ruanyifeng.com/blog/2007/07/lang_xianping_s_speech_in_toronto.html
+1670,1,2006.11.17,米尔顿·弗里德曼去世了！,http://www.ruanyifeng.com/blog/2006/11/milton_friedman_is_gone.html
+1671,1,2014.12.11,Unicode与JavaScript详解,http://www.ruanyifeng.com/blog/2014/12/unicodejavascript.html
+1672,1,2007.11.12,中国扫黄打非网,http://www.ruanyifeng.com/blog/2007/11/china_anti-pornography_and_anti-illegal-publication_web.html
+1673,1,2007.07.11,西伯利亚发现万年猛犸干尸,http://www.ruanyifeng.com/blog/2007/07/baby_mammoth_kept_on_ice_for_10000_years.html
+1674,1,2004.01.21,Google的Logo(第一部分),http://www.ruanyifeng.com/blog/2004/01/googlelogo.html
+1675,1,2007.03.19,张承志《北方的河》,http://www.ruanyifeng.com/blog/2007/03/northern_rivers_by_zhang_chengzhi.html
+1676,1,2006.12.21,英语句子的基本结构,http://www.ruanyifeng.com/blog/2006/12/structure_patterns_of_english_sentence.html
+1677,1,2006.07.31,约翰逊博士的词典（Samuel Johnson）,http://www.ruanyifeng.com/blog/2006/07/samuel_johnson.html
+1678,1,2006.07.30,威廉·布莱福特总督（William Bradford）,http://www.ruanyifeng.com/blog/2006/07/william_bradford.html
+1679,1,2006.01.25,英语的借词,http://www.ruanyifeng.com/blog/2006/01/post_171.html
+1680,1,2004.10.20,The Great Gatsby读书笔记（二）,http://www.ruanyifeng.com/blog/2004/10/the_great_gatsby_1.html
+1681,1,2007.05.23,中国图书市场概况,http://www.ruanyifeng.com/blog/2007/05/a_brief_survey_of_chinese_book_market.html
+1682,1,2007.02.23,孔子的老子为何不姓孔？,http://www.ruanyifeng.com/blog/2007/02/confucius_s_father.html
+1683,1,2006.05.04,吴宓《文学与人生》课程阅读书单,http://www.ruanyifeng.com/blog/2006/05/post_216.html
+1684,1,2007.07.30,上海的高温,http://www.ruanyifeng.com/blog/2007/07/shanghai_is_getting_warmer.html
+1685,1,2007.06.30,版权保护期的历史回顾（III）：米老鼠诉讼,http://www.ruanyifeng.com/blog/2007/06/history_of_copyright_term_extension_part_iii.html
+1686,1,2007.03.07,产出，福利和幸福,http://www.ruanyifeng.com/blog/2007/03/output_welfare_and_happiness.html
+1687,1,2007.02.23,县的起源,http://www.ruanyifeng.com/blog/2007/02/the_origin_of_chinese_county.html
+1688,1,2006.11.24,庞式骗局（Ponzi scheme）,http://www.ruanyifeng.com/blog/2006/11/ponzi_scheme.html
+1689,1,2006.11.13,格林斯潘的中年时代,http://www.ruanyifeng.com/blog/2006/11/allan_greenspan_s_middle_age.html
+1690,1,2006.09.30,基督教笔记（五）：新教,http://www.ruanyifeng.com/blog/2006/09/notes_on_christianity_part_v.html
+1691,1,2006.08.25,I'm always packed,http://www.ruanyifeng.com/blog/2006/08/i_am_always_packed.html
+1692,1,2006.06.29,中世纪的五种判决方式,http://www.ruanyifeng.com/blog/2006/06/post_253.html
+1693,1,2007.11.05,美国电影《骗局》（The Hoax）,http://www.ruanyifeng.com/blog/2007/11/the_hoax.html
+1694,1,2007.04.03,搜索引擎的体系结构,http://www.ruanyifeng.com/blog/2007/04/structure_of_search_engine_system.html
+1695,1,2006.11.05,格雷厄姆：证券投资的原则,http://www.ruanyifeng.com/blog/2006/11/benjamin_graham_s_principles_of_investment.html
+1696,1,2006.09.06,吴道存,http://www.ruanyifeng.com/blog/2006/09/the_life_of_professor_wu_daocun.html
+1697,1,2006.09.04,[今日网摘] 高尔夫球场及其他（2006年9月4日）,http://www.ruanyifeng.com/blog/2006/09/20060904_web_digest.html
+1698,1,2006.09.02,人民币升值15％对出口有什么影响？,http://www.ruanyifeng.com/blog/2006/09/what_is_the_effect_on_export_if_yuan_appreciate_15_percent.html
+1699,1,2006.08.04,乌龟大王亚特尔的雕像,http://www.ruanyifeng.com/blog/2006/08/the_sculpture_of_yertle_the_turtle.html
+1700,1,2006.03.30,一起车祸,http://www.ruanyifeng.com/blog/2006/03/post_202.html
+1701,1,2006.02.27,从汉芯造假说起,http://www.ruanyifeng.com/blog/2006/02/post_181.html
+1702,1,2006.01.08,2005年中国新闻摄影作品选（转贴）,http://www.ruanyifeng.com/blog/2006/01/2005_2.html
+1703,1,2005.08.03,两本拉里.埃里森的传记,http://www.ruanyifeng.com/blog/2005/08/post_133.html
+1704,1,2005.07.07,中海油CEO的公开信,http://www.ruanyifeng.com/blog/2005/07/ceo.html
+1705,1,2004.02.29,我在村里开了一个图书馆(转贴),http://www.ruanyifeng.com/blog/2004/02/post_45.html
+1706,1,2004.02.02,大鲸爆炸,http://www.ruanyifeng.com/blog/2004/02/post_29.html
+1707,1,2004.01.23,迪恩州长的演讲,http://www.ruanyifeng.com/blog/2004/01/post_23.html
+1708,1,2004.01.18,丁松泉的文章,http://www.ruanyifeng.com/blog/2004/01/post_20.html
+1709,1,2004.01.05,"美国经济所谓的""繁荣""",http://www.ruanyifeng.com/blog/2004/01/post_14.html
+1710,1,2003.12.11,天空为什么这样红？,http://www.ruanyifeng.com/blog/2003/12/post_3.html
+1711,1,2003.12.04,马克.吐温的青蛙,http://www.ruanyifeng.com/blog/2003/12/post_1.html
+1712,0,2006.11.05,政府为什么会膨涨？,http://www.ruanyifeng.com/blog/2006/11/why_does_government_become_bigger_and_bigger.html
+1713,0,2005.11.05,中世纪的异端,http://www.ruanyifeng.com/blog/2005/11/post_154.html
+1714,0,2005.09.15,经济权利法案,http://www.ruanyifeng.com/blog/2005/09/post_148.html
+1715,0,2005.08.30,四种自由,http://www.ruanyifeng.com/blog/2005/08/post_144.html
+1716,0,2004.04.20,中国的四种文学,http://www.ruanyifeng.com/blog/2004/04/post_58.html
+1717,0,2006.06.20,一段很不容易的翻译,http://www.ruanyifeng.com/blog/2006/06/post_248.html
+1718,0,2007.07.26,互联网交通图,http://www.ruanyifeng.com/blog/2007/07/web_trend_map.html
+1719,0,2007.07.26,ubuntu的不同版本,http://www.ruanyifeng.com/blog/2007/07/versions_of_ubuntu.html
+1720,0,2007.07.15,Mozilla 浏览器四岁了！,http://www.ruanyifeng.com/blog/2007/07/fourth_anniversary_of_mozilla.html
+1721,0,2007.06.27,关键词组配,http://www.ruanyifeng.com/blog/2007/06/descriptor_grouping.html
+1722,0,2007.04.06,指数式增长（Exponential Growth）,http://www.ruanyifeng.com/blog/2007/04/exponential_growth.html
+1723,0,2007.03.15,信息的组织和呈现,http://www.ruanyifeng.com/blog/2007/03/information_s_organizing_and_display.html
+1724,0,2006.07.31,不要问丧钟为谁而鸣,http://www.ruanyifeng.com/blog/2006/07/never_send_to_know_for_whom_the_bell_tolls.html
+1725,0,2006.04.15,奥威尔的两任妻子（The Women in Orwell's Life: Eileen and Sonia）,http://www.ruanyifeng.com/blog/2006/04/the_women_in_orwells_life_eile.html
+1726,0,2006.03.07,安得促席，说彼平生,http://www.ruanyifeng.com/blog/2006/03/post_184.html
+1727,0,2006.09.14,动词短语（Phrasal Verb）,http://www.ruanyifeng.com/blog/2006/09/phrasal_verb.html
+1728,0,2006.08.07,Projectile，Trajectory和Parabola,http://www.ruanyifeng.com/blog/2006/08/projectile_trajectory_and_parabola.html
+1729,0,2006.07.09,比德《英吉利教会史》（Ecclesiastical History of the English People）,http://www.ruanyifeng.com/blog/2006/07/ecclesiastical_history_of_the_english_people.html
+1730,0,2011.04.09,一个被拆迁者的日记,http://www.ruanyifeng.com/blog/2011/04/demolition_diary.html
+1731,0,2008.01.28,2007年度中国艺术品界大事回顾,http://www.ruanyifeng.com/blog/2008/01/2007_chronicle_of_chinese_work_of_art.html
+1732,0,2007.08.30,2006年美国收入状况,http://www.ruanyifeng.com/blog/2007/08/income_poverty_and_health_insurance_coverage_in_the_united_states_2006_report.html
+1733,0,2007.06.26,网络著作权的相关法律,http://www.ruanyifeng.com/blog/2007/06/chinese_internet_copyright_law.html
+1734,0,2007.05.03,2007年普利策奖回顾之三：调查性报道奖,http://www.ruanyifeng.com/blog/2007/05/the_pulitzer_prizes_2007_part_iii.html
+1735,0,2007.04.26,2007年普利策奖回顾之二：突发新闻奖,http://www.ruanyifeng.com/blog/2007/04/the_pulitzer_prizes_2007_part_ii.html
+1736,0,2006.04.24,《纽约时报》系列报道：《依法治国》之六（Rule by Law）,http://www.ruanyifeng.com/blog/2006/04/rule_by_law_5.html
+1737,0,2006.04.23,《纽约时报》系列报道：《依法治国》之五（Rule by Law）,http://www.ruanyifeng.com/blog/2006/04/rule_by_law_4.html
+1738,0,2006.04.22,《纽约时报》系列报道：《依法治国》之四（Rule by Law）,http://www.ruanyifeng.com/blog/2006/04/rule_by_law_3.html
+1739,0,2006.04.21,《纽约时报》系列报道：《依法治国》之三（Rule by Law）,http://www.ruanyifeng.com/blog/2006/04/rule_by_law_2.html
+1740,0,2006.04.12,汉语异形词,http://www.ruanyifeng.com/blog/2006/04/post_205.html
+1741,0,2007.10.24,美国大报的社论版,http://www.ruanyifeng.com/blog/2007/10/some_famous_editorial_pages_of_american_newspapers.html
+1742,0,2007.07.06,大连之行（二）：旅顺清代海防炮台,http://www.ruanyifeng.com/blog/2007/07/my_dalian_trip_part_ii.html
+1743,0,2007.06.29,版权保护期的历史回顾（II）,http://www.ruanyifeng.com/blog/2007/06/history_of_copyright_term_extension_part_ii.html
+1744,0,2007.06.28,版权保护期的历史回顾（I）,http://www.ruanyifeng.com/blog/2007/06/history_of_copyright_term_extension_part_i.html
+1745,0,2007.06.24,版权制度的起源,http://www.ruanyifeng.com/blog/2007/06/origin_of_copyright.html
+1746,0,2007.03.01,"说""儒""",http://www.ruanyifeng.com/blog/2007/03/on_confucianist.html
+1747,0,2007.02.28,清代的学术,http://www.ruanyifeng.com/blog/2007/02/the_scholarship_of_the_qing_dynasty.html
+1748,0,2007.02.19,费利克斯·厄德诺语录（Felix Alder）,http://www.ruanyifeng.com/blog/2007/02/felix_alder.html
+1749,0,2007.02.07,为学之道,http://www.ruanyifeng.com/blog/2007/02/how_to_do_a_study.html
+1750,0,2006.11.11,萨缪尔森的自传,http://www.ruanyifeng.com/blog/2006/11/autobiography_of_paul_samuelson.html
+1751,0,2006.09.28,基督教笔记（四）：东正教,http://www.ruanyifeng.com/blog/2006/09/notes_on_christianity_part_iv.html
+1752,0,2006.09.26,基督教笔记（三）：天主教,http://www.ruanyifeng.com/blog/2006/09/notes_on_christianity_part_iii.html
+1753,0,2006.09.25,《华尔街日报》丛书摘录,http://www.ruanyifeng.com/blog/2006/09/quotes_from_wall_street_journal.html
+1754,0,2006.09.18,美元（Dollar）,http://www.ruanyifeng.com/blog/2006/09/dollar.html
+1755,0,2006.09.17,伟大的报纸是什么样的？,http://www.ruanyifeng.com/blog/2006/09/what_is_great_newspaper_like.html
+1756,0,2006.04.29,"书评：""最简主义者""贝克特",http://www.ruanyifeng.com/blog/2006/04/post_212.html
+1757,0,2006.01.26,英国史笔记（四）,http://www.ruanyifeng.com/blog/2006/01/post_173.html
+1758,0,2005.10.23,《约翰逊传》读后感,http://www.ruanyifeng.com/blog/2005/10/post_153.html
+1759,0,2005.06.28,古希腊女诗人萨福2600年前佚诗被发现,http://www.ruanyifeng.com/blog/2005/06/2600.html
+1760,0,2004.11.20,一个城镇的诞生,http://www.ruanyifeng.com/blog/2004/11/post_91.html
+1761,0,2007.07.01,互联网著作权案例（二）：廖恬 v. 无忧团购网,http://www.ruanyifeng.com/blog/2007/07/internet_copyright_case_part_ii.html
+1762,0,2007.06.30,互联网著作权案例（一）：刘胜京 v. 搜狐,http://www.ruanyifeng.com/blog/2007/06/internet_copyright_case_part_i.html
+1763,0,2007.04.12,港币的未来,http://www.ruanyifeng.com/blog/2007/04/future_of_hkd.html
+1764,0,2006.09.16,北京奥运期间拟劝返100万名农民工（转贴）,http://www.ruanyifeng.com/blog/2006/09/peasant_workers_may_be_forced_into_leaving_beijing_during_2008_olympic_games.html
+1765,0,2006.09.16,美国历史上最大的银行危机：伊利诺伊大陆银行,http://www.ruanyifeng.com/blog/2006/09/continental_illinois_national_bankthe_biggest_banking_crisis_in_us_history.html
+1766,0,2006.09.04,2005年中国出版业统计数据,http://www.ruanyifeng.com/blog/2006/09/2005_statistics_of_china_publishing_industry.html
+1767,0,2006.08.03,"谨防""网络钓鱼""（Anti-Phishing）",http://www.ruanyifeng.com/blog/2006/08/antiphishing.html
+1768,0,2006.06.20,夸张的解说词,http://www.ruanyifeng.com/blog/2006/06/post_247.html
+1769,0,2006.03.19,卡波特的处女作,http://www.ruanyifeng.com/blog/2006/03/post_192.html
+1770,0,2005.02.24,日本电影《在世界的中心呼唤爱》,http://www.ruanyifeng.com/blog/2005/02/post_100.html
+1771,0,2004.06.14,让你的电脑写书法,http://www.ruanyifeng.com/blog/2004/06/post_80.html
+1772,0,2004.06.11,欧洲杯就要开始了!,http://www.ruanyifeng.com/blog/2004/06/post_78.html
+1773,0,2004.06.03,两则文化动态,http://www.ruanyifeng.com/blog/2004/06/post_74.html
+1774,0,2004.05.27,鼠标的妙用（贴图）,http://www.ruanyifeng.com/blog/2004/05/post_71.html
+1775,0,2004.04.01,"英国书商发掘下一个""哈里波特""",http://www.ruanyifeng.com/blog/2004/04/post_55.html
+1776,0,2004.03.30,哈利波特令出版商大赚,http://www.ruanyifeng.com/blog/2004/03/post_54.html
+1777,0,2004.03.18,批评布什成美国出版热点,http://www.ruanyifeng.com/blog/2004/03/post_50.html
+1778,0,2004.02.12,鲍威尔的谈话,http://www.ruanyifeng.com/blog/2004/02/post_40.html
+1779,0,2004.02.10,重走斯坦贝克之旅,http://www.ruanyifeng.com/blog/2004/02/post_37.html
+1780,0,2004.02.08,成功投资者的4个习惯（转载）,http://www.ruanyifeng.com/blog/2004/02/4.html
+1781,0,2004.02.08,一次移植八个器官,http://www.ruanyifeng.com/blog/2004/02/post_34.html
+1782,0,2004.01.20,金星表面的照片,http://www.ruanyifeng.com/blog/2004/01/post_22.html
+1783,0,2004.01.19,"菜谱""凉拌摘耳根""怎么译？",http://www.ruanyifeng.com/blog/2004/01/post_21.html
+1784,0,2004.01.14,2003年美国电影市场回顾,http://www.ruanyifeng.com/blog/2004/01/2003.html
+1785,0,2004.01.12,"""不爱消费""的消费者",http://www.ruanyifeng.com/blog/2004/01/post_16.html
+1786,0,2003.12.23,2003年10大英语单词,http://www.ruanyifeng.com/blog/2003/12/top_10_english_words_in_2003.html
+1787,0,2003.12.20,第六届国家图书奖获奖名单,http://www.ruanyifeng.com/blog/2003/12/post_10.html
+1788,0,2003.12.05,十佳太阳照片,http://www.ruanyifeng.com/blog/2003/12/post_2.html
