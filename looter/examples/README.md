@@ -2,6 +2,8 @@
 
 - [appinn](appinn.py): 小众软件，按评价数排序
 
+- [baidu_index](baidu_index.py): 爬取百度指数的某一时间段内的特定关键词的所有指数
+
 - [bangumi](bangumi.py): bangumi上的追番记录
 
 - [bilibili_top_bangumi](bilibili_top_bangumi.py): bilibili番剧排行榜
