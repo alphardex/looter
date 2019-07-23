@@ -1,11 +1,13 @@
 import os
 import json
+from pathlib import Path
 import pytest
-import requests
 import looter as lt
 
 domain = 'https://konachan.com'
 broken_domain = 'https://konichee.com'
+
+read_json = lambda path: json.loads(Path(path).read_text())
 
 # test main functions
 
@@ -19,44 +21,17 @@ def test_fetch():
 
 
 @pytest.mark.ok
-def test_links():
-    res = requests.get(f'{domain}/post')
-    r = lt.links(res)
-    assert isinstance(r, list)
-    assert '#' not in r and '' not in r
-    assert len(set(r)) == len(r)
-
-    search_imgs = lt.links(res, search='image')
-    assert all(['image' in img for img in search_imgs])
-
-    re_imgs = lt.links(res, pattern='.*/image/.*')
-    assert all(['image' in img for img in re_imgs])
-
-
-@pytest.mark.ok
 def test_save():
-    data = [{
-        'rank': 2,
-        'name': 'python'
-    }, {
-        'rank': 1,
-        'name': 'js'
-    }, {
-        'rank': 3,
-        'name': 'java'
-    }]
-    lt.save(data, sort_by='rank')
-    with open('data.json', 'r') as f:
-        ordered_data = json.loads(f.read())
-    assert ordered_data[0]['rank'] == 1
-    os.remove('data.json')
+    # sort_by
+    unordered_data = [{'r': 2}, {'r': 3}, {'r': 1}]
+    lt.save(unordered_data, name='ordered.json', sort_by='r')
+    ordered_data = read_json('ordered.json')
+    assert ordered_data[0]['r'] == 1
+    os.remove('ordered.json')
 
+    # no_duplicate
     dup_data = [{'a': 1}, {'a': 1}, {'b': 2}]
-    lt.save(dup_data, no_duplicate=True)
-    with open('data.json', 'r') as f:
-        unique_data = json.loads(f.read())
+    lt.save(dup_data, name='unique.json', no_duplicate=True)
+    unique_data = read_json('unique.json')
     assert len(dup_data) > len(unique_data)
-    os.remove('data.json')
-
-    with pytest.raises(SystemExit):
-        lt.save(data, name='data.csv')
+    os.remove('unique.json')

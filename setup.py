@@ -4,11 +4,12 @@ from setuptools import setup, find_packages
 
 setup(
     name='looter',
-    version='2.18',
+    version='2.19',
     description=
     ('A python package aiming at avoiding unnecessary repetition in making common crawlers.'
      ),
-    long_description=open('README.rst', encoding='utf-8').read(),
+    long_description=open('README.md', encoding='utf-8').read(),
+    long_description_content_type='text/markdown',
     author='alphardex',
     author_email='2582347430@qq.com',
     python_requires='>=3.6.0',
@@ -29,4 +30,4 @@ setup(
     entry_points={'console_scripts': [
         'looter = looter.__init__:cli',
     ]},
-    install_requires=['requests', 'docopt', 'parsel', 'aiohttp', 'boltons'])
+    install_requires=['requests', 'docopt', 'parsel', 'aiohttp'])

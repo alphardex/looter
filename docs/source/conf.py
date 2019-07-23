@@ -26,7 +26,7 @@ author = 'alphardex'
 # The short X.Y version
 version = ''
 # The full version, including alpha/beta/rc tags
-release = '2.18'
+release = '2.19'
 
 
 # -- General configuration ---------------------------------------------------

@@ -5,5 +5,6 @@ source = looter
 exclude_lines =
     async def async_fetch
     def view
+    elif ext == 'csv':
     def cli
     if __name__ == '__main__': 

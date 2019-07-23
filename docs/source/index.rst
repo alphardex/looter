@@ -27,7 +27,6 @@ A super-lightweight crawler tool.
 -  blazing fast speed with concurrent.futures or asyncio
 -  provides shell to debug your spider
 -  easy web content extracting with parsel (just the same as Scrapy)
--  fake-useragent included (disguise as a web browser)
 -  built in some useful functions
 -  provides some examples for you to start
 
@@ -54,12 +53,6 @@ Then, you can extract all the urls of the images
 .. code:: python
 
     >>> imgs = tree.css('a.directlink::attr(href)').extract()
-
-Or another elegant way :d
-
-.. code:: python
-
-    >>> imgs = links(res, pattern=r'.*/(jpeg|image)/.*')
 
 Save these urls to 'konachan.txt'
 
@@ -137,8 +130,6 @@ There are \ `many example spiders <https://github.com/alphardex/looter/tree/mast
 Functions
 =========
 
-Looter also provides some useful functions for you.
-
 view
 ----
 
@@ -148,17 +139,6 @@ properly
 .. code:: python
 
     >>> view(url)
-
-links
------
-
-Get the links of the page.
-
-.. code:: python
-
-    >>> links(res)                  # get all the links
-    >>> links(res, search='...')    # search the links you want
-    >>> links(res, pattern=r'...')  # search the links with a regex pattern
 
 save
 --------------

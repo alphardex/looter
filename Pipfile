@@ -8,7 +8,6 @@ aiohttp = "*"
 docopt = "*"
 parsel = "*"
 requests = "*"
-boltons = "*"
 idna-ssl = "*"
 
 [dev-packages]

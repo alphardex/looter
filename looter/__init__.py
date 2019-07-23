@@ -1,7 +1,5 @@
-"""Looter, a python package designed for web crawler lovers :)
-Author: alphardex  QQ:2582347430
-If any suggestion, please contact me.
-Thank you for cooperation!
+"""
+Looter, Web-Scraping for Humans.
 
 Usage:
   looter genspider <name> [--async]
@@ -16,7 +14,6 @@ Options:
 import os
 import json
 import code
-import re
 import webbrowser
 from operator import itemgetter
 from itertools import groupby
@@ -26,9 +23,8 @@ import requests
 import aiohttp
 from parsel import Selector
 from docopt import docopt
-from boltons.urlutils import find_all_links
 
-VERSION = '2.18'
+VERSION = '2.19'
 DEFAULT_HEADERS = {
     'User-Agent':
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
@@ -36,22 +32,21 @@ DEFAULT_HEADERS = {
 DEFAULT_ENCODING = 'utf-8'
 BANNER = """
 Available objects:
-    url           The url of the site you crawled.
+    url           The url of the site.
     res           The response of the site.
-    tree          The element source tree to be parsed.
+    tree          The DOM selector tree.
 
 Available functions:
-    fetch         Send HTTP request to the site and parse it as a tree. [has async version]
+    fetch         Send HTTP request and parse it as a DOM selector. [has async version]
     view          View the page in your browser. (test rendering)
-    links         Get the links of the page.
     save          Save what you crawled as a file. (json or csv)
 
 Examples:
     Get all the <li> elements of a <ul> table:
-        >>> items = tree.css('ul li')
+        >>> items = tree.css('ul li').extract()
 
-    Get the links with a regex pattern:
-        >>> items = links(res, pattern=r'.*/(jpeg|image)/.*')
+    Get all the links of a page:
+        >>> items = tree.css('a::attr(href)').extract()
 
 For more info, plz refer to documentation:
     [looter]: https://looter.readthedocs.io/en/latest/
@@ -60,7 +55,7 @@ For more info, plz refer to documentation:
 
 def fetch(url: str, **kwargs) -> Selector:
     """
-    Send HTTP request and parse it as a DOM tree.
+    Send HTTP request and parse it as a DOM selector.
 
     Args:
         url (str): The url of the site.
@@ -117,28 +112,6 @@ def view(url: str, **kwargs) -> bool:
     return webbrowser.open(f'file://{fname}')
 
 
-def links(res: requests.models.Response,
-          search: str = None,
-          pattern: str = None) -> list:
-    """
-    Get the links of the page.
-
-    Args:
-        res (requests.models.Response): The response of the page.
-        search (str, optional): Defaults to None. Search the links you want.
-        pattern (str, optional): Defaults to None. Search the links use a regex pattern.
-
-    Returns:
-        list: All the links of the page.
-    """
-    hrefs = [link.to_text() for link in find_all_links(res.text)]
-    if search:
-        hrefs = [href for href in hrefs if search in href]
-    if pattern:
-        hrefs = [href for href in hrefs if re.findall(pattern, href)]
-    return list(set(hrefs))
-
-
 def save(total: list,
          name='data.json',
          sort_by: str = None,
@@ -155,8 +128,7 @@ def save(total: list,
         order (str, optional): Defaults to 'asc'. The opposite option is 'desc'.
     """
     if sort_by:
-        reverse = order == 'desc'
-        total = sorted(total, key=itemgetter(sort_by), reverse=reverse)
+        total = sorted(total, key=itemgetter(sort_by), reverse=order == 'desc')
     if no_duplicate:
         total = [key for key, _ in groupby(total)]
     _, ext = name.split('.')
@@ -168,9 +140,10 @@ def save(total: list,
             import pandas as pd
             pd.DataFrame(total).to_csv(name, encoding='utf-8')
         except ImportError:
-            exit('pandas not installed! Plz run `pip install pandas` for csv convertion.')
+            exit('pandas not installed! Plz run `pip install pandas`.')
     else:
-        exit('Sorry, other formats are not supported yet.\nSupported formats: json, csv')
+        exit('Sorry, other formats are not supported yet.')
+
 
 def cli():
     """
@@ -178,15 +151,11 @@ def cli():
     """
     argv = docopt(__doc__, version=VERSION)
     if argv['genspider']:
-        name = f"{argv['<name>']}.py"
-        use_async = argv['--async']
-        template = 'data_async.tmpl' if use_async else 'data.tmpl'
-        package_dir = Path(__file__).parent
-        template_text = package_dir.joinpath('templates', template).read_text()
-        Path(name).write_text(template_text)
+        template = 'data_async.tmpl' if argv['--async'] else 'data.tmpl'
+        template_path = Path(__file__).parent / 'templates' / template
+        Path(f"{argv['<name>']}.py").write_text(template_path.read_text())
     if argv['shell']:
-        url = argv['<url>'] if argv['<url>'] else input(
-            'Plz specific a site to crawl\nurl: ')
+        url = argv['<url>'] if argv['<url>'] else input('Spefific the url: ')
         res = requests.get(url, headers=DEFAULT_HEADERS)
         res.encoding = DEFAULT_ENCODING
         if not res:
