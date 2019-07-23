@@ -125,7 +125,7 @@ But before you finish this spider, you'd better debug your codes using shell pro
 
 After debugging, your spider is done. Very simple, isn't it :)
 
-There are \ `many example spiders <https://github.com/alphardex/looter/tree/master/looter/examples>`__ written by author.
+There are \ `many example spiders <https://github.com/alphardex/looter/tree/master/examples>`__ written by author.
 
 Functions
 =========
