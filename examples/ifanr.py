@@ -22,7 +22,9 @@ def crawl(url):
         item_data_list.append(item_data)
     ids = ','.join(item['post_id'] for item in items)
     stat_data_list = []
-    stats = requests.get(f'https://sso.ifanr.com/api/v5/wp/article/stats/?limit=50&post_id__in={ids}', headers=lt.DEFAULT_HEADERS).json()['objects']
+    stats = requests.get(
+        f'https://sso.ifanr.com/api/v5/wp/article/stats/?limit=50&post_id__in={ids}',
+        headers=lt.DEFAULT_HEADERS).json()['objects']
     for stat in stats:
         stat_data = {}
         stat_data['favorite_count'] = stat['favorite_count']
@@ -35,7 +37,10 @@ def crawl(url):
 
 
 if __name__ == '__main__':
-    tasklist = [f'https://sso.ifanr.com//api/v5/wp/web-feed/?published_at__lte=2019-05-25+07%3A00%3A11&limit=20&offset={n * 20}' for n in range(1900)]
+    tasklist = [
+        f'https://sso.ifanr.com//api/v5/wp/web-feed/?published_at__lte=2019-05-25+07%3A00%3A11&limit=20&offset={n * 20}'
+        for n in range(1900)
+    ]
     with futures.ThreadPoolExecutor(50) as executor:
         executor.map(crawl, tasklist)
     lt.save(total, name='ifanr.csv', no_duplicate=True, sort_by='like_count', order='desc')

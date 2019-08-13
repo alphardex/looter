@@ -51,10 +51,7 @@ def crawl(word):
         user_indexes = data['data']['userIndexes'][0]
         key = requests.get(f'{domain}/Interface/api/ptbk?uniqid={uniqid}', headers=headers).json()['data']
         encrypted_data = {kind: user_indexes[kind]['data'] for kind in kinds}
-        decrypted_data = {
-            kind: decrypt(key, d).split(',')
-            for kind, d in encrypted_data.items()
-        }
+        decrypted_data = {kind: decrypt(key, d).split(',') for kind, d in encrypted_data.items()}
         date_range = pd.date_range(start_date, end_date).to_native_types()
         result = []
         for kind, indexes in decrypted_data.items():

@@ -14,6 +14,8 @@
 
 - [gen_index](gen_index.py): 用来自动生成这篇README.md
 
+- [hacpai](hacpai.py): 黑客派上“好玩”领域的文章，按阅览数排序
+
 - [ifanr](ifanr.py): 爱范儿的文章，按点赞数排序
 
 - [jav](jav.py): 8说了你懂的

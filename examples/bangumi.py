@@ -10,11 +10,11 @@ from concurrent import futures
 
 domain = 'http://bangumi.tv'
 user_id = '399538'
-page_limit = 3
+page_limit = 4
 encoding = 'utf-8'
 total = []
 
-format_date = lambda date: '-'.join([f'0{d}' if len(d) == 1 else d for d in re.sub(r'年|月|日', '-', date)[:-1].split('-')])
+format_date = lambda date: '-'.join(f'0{d}' if len(d) == 1 else d for d in re.sub(r'年|月|日', '-', date)[:-1].split('-'))
 
 
 def crawl(url):
@@ -36,7 +36,7 @@ def generate():
 
 
 if __name__ == '__main__':
-    tasklist = [f'{domain}/anime/list/{user_id}/collect?orderby=date&page={n}' for n in range(1, page_limit+1)]
+    tasklist = [f'{domain}/anime/list/{user_id}/collect?orderby=date&page={n}' for n in range(1, page_limit + 1)]
     with futures.ThreadPoolExecutor(20) as executor:
         executor.map(crawl, tasklist)
     lt.save(total, name='bangumi.json', sort_by='date', order='desc')

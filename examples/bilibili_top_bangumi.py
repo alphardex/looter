@@ -33,7 +33,10 @@ def crawl(url):
 
 
 if __name__ == '__main__':
-    tasklist = [f'{domain}/media/web_api/search/result?order=3&sort=0&page={n}&season_type=1&pagesize=30' for n in range(1, 106)]
+    tasklist = [
+        f'{domain}/media/web_api/search/result?order=3&sort=0&page={n}&season_type=1&pagesize=30'
+        for n in range(1, 106)
+    ]
     with futures.ThreadPoolExecutor(20) as executor:
         executor.map(crawl, tasklist)
     lt.save(total, name='bilibili_top_bangumi.csv', sort_by='追番人数', order='desc')

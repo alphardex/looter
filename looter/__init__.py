@@ -112,11 +112,7 @@ def view(url: str, **kwargs) -> bool:
     return webbrowser.open(f'file://{fname}')
 
 
-def save(total: list,
-         name='data.json',
-         sort_by: str = None,
-         no_duplicate=False,
-         order='asc'):
+def save(total: list, *, name='data.json', sort_by: str = None, no_duplicate=False, order='asc'):
     """
     Save what you crawled as a file, default format is json.
 

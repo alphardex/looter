@@ -8,6 +8,7 @@ from concurrent import futures
 domain = 'https://book.douban.com'
 total = []
 
+
 def crawl(url):
     tree = lt.fetch(url)
     items = tree.css('ul.subject-list li.subject-item')
