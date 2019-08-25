@@ -40,8 +40,6 @@
 
 - [tieba](tieba.py): 百度贴吧的帖子，用HTML注释反爬，把注释去掉再解析HTML就行
 
-- [tldr_github](tldr_github.py): tldr手册上的关键字在github上的搜索结果
-
 - [unsplash](unsplash.py): unsplash上的免费壁纸排行
 
 - [v2ex](v2ex.py): v2ex上的Python板块
