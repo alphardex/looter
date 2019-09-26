@@ -1,6 +1,6 @@
 <h1 align="center">Looter 🗡️</h1>
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-2.18-blue.svg?cacheSeconds=2592000" />
+  <img alt="Version" src="https://img.shields.io/badge/version-2.21-blue.svg?cacheSeconds=2592000" />
   <a href="https://pepy.tech/project/looter">
     <img alt="Downloads" src="https://pepy.tech/badge/looter" target="_blank" />
   </a>
@@ -46,12 +46,13 @@ Options:
 
 👤 **alphardex**
 
-* Github: [@alphardex](https://github.com/alphardex)
-* Twitter: [@alphardex007](https://twitter.com/alphardex007)
+- Github: [@alphardex](https://github.com/alphardex)
+- Twitter: [@alphardex007](https://twitter.com/alphardex007)
 
 ## Show your support
 
 Give a ⭐️ if this project helped you!
 
-***
+---
+
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_

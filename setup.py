@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='looter',
-    version='2.20',
+    version='2.21',
     description=
     ('A python package aiming at avoiding unnecessary repetition in making common crawlers.'
      ),
@@ -30,4 +30,4 @@ setup(
     entry_points={'console_scripts': [
         'looter = looter.__init__:cli',
     ]},
-    install_requires=['requests', 'docopt', 'parsel', 'aiohttp'])
+    install_requires=['requests', 'docopt', 'parsel', 'aiohttp', 'tqdm'])
