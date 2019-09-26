@@ -4,11 +4,8 @@
 import requests
 import arrow
 import looter as lt
-from pprint import pprint
-from concurrent import futures
 
 domain = 'https://sspai.com'
-total = []
 
 
 def crawl(url):
@@ -23,12 +20,10 @@ def crawl(url):
         data['favorites_count'] = item['favorites_count']
         data['comments_count'] = item['comments_count']
         data['url'] = f"{domain}/post/{item['id']}"
-        pprint(data)
-        total.append(data)
+        yield data
 
 
 if __name__ == '__main__':
     tasklist = [f'{domain}/api/v1/articles?offset={n * 10}&limit=10&type=recommend_to_home&sort=recommend_to_home_at&include_total=false' for n in range(1170)]
-    with futures.ThreadPoolExecutor(50) as executor:
-        executor.map(crawl, tasklist)
+    total = lt.crawl_all(crawl, tasklist)
     lt.save(total, name='sspai.csv', sort_by='likes_count', order='desc')

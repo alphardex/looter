@@ -1,5 +1,3 @@
-from concurrent import futures
-from pprint import pprint
 import looter as lt
 
 domain = ''
@@ -11,10 +9,10 @@ def crawl(url):
     for item in items:
         data = {}
         # data[...] = item.css(...)
-        pprint(data)
+        yield data
 
 
 if __name__ == '__main__':
     tasklist = []
-    with futures.ThreadPoolExecutor(20) as executor:
-        executor.map(crawl, tasklist)
+    total = lt.crawl_all(crawl, tasklist)
+    lt.save(total)

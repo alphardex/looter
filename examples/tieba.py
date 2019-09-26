@@ -3,13 +3,11 @@
 """
 import looter as lt
 from pprint import pprint
-from concurrent import futures
 import requests
 from parsel import Selector
 
 domain = 'https://tieba.baidu.com'
 keyword = 'bilibili'
-total = []
 
 
 def crawl(url):
@@ -25,12 +23,10 @@ def crawl(url):
         data['author'] = item.css('a.frs-author-name::text').extract_first()
         data['reply'] = int(item.css('span.threadlist_rep_num::text').extract_first())
         data['date'] = item.css('.threadlist_reply_date::text').extract_first().strip()
-        pprint(data)
-        total.append(data)
+        yield data
 
 
 if __name__ == '__main__':
     tasklist = [f'{domain}/f?kw={keyword}&ie=utf-8&pn={n}' for n in range(501)]
-    with futures.ThreadPoolExecutor(50) as executor:
-        executor.map(crawl, tasklist)
+    total = lt.crawl_all(crawl, tasklist)
     lt.save(total, name=f'tieba_{keyword}.csv', sort_by='reply', order='desc', no_duplicate=True)

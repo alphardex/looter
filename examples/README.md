@@ -28,8 +28,6 @@
 
 - [maoyan_comments](maoyan_comments.py): 猫眼电影影评，以复联4为例，先把时间节点都爬下来，再组合成url用线程池爬，这样效率更高
 
-- [oreilly](oreilly.py): oreilly上的IT书籍
-
 - [ruanyifeng](ruanyifeng.py): 阮一峰的博客文章，按留言数排序
 
 - [salttiger](salttiger.py): salttiger上的免费国外编程电子书

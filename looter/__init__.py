@@ -17,14 +17,17 @@ import code
 import webbrowser
 from operator import itemgetter
 from itertools import groupby
+from concurrent import futures
 from pathlib import Path
+from typing import Callable
 import tempfile
 import requests
 import aiohttp
 from parsel import Selector
 from docopt import docopt
+from tqdm import tqdm
 
-VERSION = '2.19'
+VERSION = '2.20'
 DEFAULT_HEADERS = {
     'User-Agent':
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
@@ -141,6 +144,35 @@ def save(total: list, *, name='data.json', sort_by: str = None, no_duplicate=Fal
         exit('Sorry, other formats are not supported yet.')
 
 
+def crawl_all(crawl: Callable, tasklist: list, max_workers=50) -> list:
+    """
+    Crawl all the tasks in a tasklist.
+
+    Args:
+        crawl (Callable): The "crawl" function.
+        tasklist (list): A list of url.
+        max_workers (int, optional): Max thread count. Defaults to 50.
+
+    Returns:
+        list: Total of data you crawled.
+    """
+    with futures.ThreadPoolExecutor(max_workers) as executor:
+        fs = {executor.submit(crawl, task): task for task in tasklist}
+        completed = futures.as_completed(fs)
+        completed = tqdm(completed, total=len(tasklist))
+        total = []
+        for future in completed:
+            task = fs[future]
+            try:
+                result = future.result()
+            except Exception as e:
+                print(f'[{e}] {task}.')
+            else:
+                if result:
+                    total.extend(list(result))
+        return total
+
+
 def cli():
     """
     Commandline for looter :d
@@ -151,7 +183,7 @@ def cli():
         template_path = Path(__file__).parent / 'templates' / template
         Path(f"{argv['<name>']}.py").write_text(template_path.read_text())
     if argv['shell']:
-        url = argv['<url>'] if argv['<url>'] else input('Spefific the url: ')
+        url = argv['<url>'] if argv['<url>'] else input('Specify the url: ')
         res = requests.get(url, headers=DEFAULT_HEADERS)
         res.encoding = DEFAULT_ENCODING
         if not res:

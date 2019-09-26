@@ -1,8 +1,8 @@
 import asyncio
-from pprint import pprint
 import looter as lt
 
 domain = ''
+data = []
 
 
 async def crawl(url):
@@ -11,7 +11,7 @@ async def crawl(url):
     for item in items:
         data = {}
         # data[...] = item.css(...)
-        pprint(data)
+        total.append(data)
 
 
 if __name__ == '__main__':
@@ -19,3 +19,4 @@ if __name__ == '__main__':
     loop = asyncio.get_event_loop()
     result = [crawl(task) for task in tasklist]
     loop.run_until_complete(asyncio.wait(result))
+    lt.save(data)

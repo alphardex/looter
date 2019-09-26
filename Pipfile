@@ -1,5 +1,5 @@
 [[source]]
-url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+url = "https://pypi.doubanio.com/simple"
 verify_ssl = true
 name = "pypi"
 
@@ -9,13 +9,11 @@ docopt = "*"
 parsel = "*"
 requests = "*"
 idna-ssl = "*"
+tqdm = "*"
 
 [dev-packages]
 pytest = "*"
 pytest-cov = "*"
-
-[requires]
-python_version = "3.6"
 
 [scripts]
 coverage = "pytest --cov-report html --cov=looter --cov-config .coveragerc -v -m ok"

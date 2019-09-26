@@ -3,11 +3,8 @@
 """
 import requests
 import looter as lt
-from pprint import pprint
-from concurrent import futures
 
 domain = 'https://www.ifanr.com'
-total = []
 
 
 def crawl(url):
@@ -32,8 +29,7 @@ def crawl(url):
         stat_data['share_count'] = stat['share_count']
         stat_data_list.append(stat_data)
     data_list = [{**data[0], **data[1]} for data in zip(item_data_list, stat_data_list)]
-    pprint(data_list)
-    total.extend(data_list)
+    yield data_list
 
 
 if __name__ == '__main__':
@@ -41,6 +37,5 @@ if __name__ == '__main__':
         f'https://sso.ifanr.com//api/v5/wp/web-feed/?published_at__lte=2019-05-25+07%3A00%3A11&limit=20&offset={n * 20}'
         for n in range(1900)
     ]
-    with futures.ThreadPoolExecutor(50) as executor:
-        executor.map(crawl, tasklist)
+    total = lt.crawl_all(crawl, tasklist)
     lt.save(total, name='ifanr.csv', no_duplicate=True, sort_by='like_count', order='desc')
