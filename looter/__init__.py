@@ -105,10 +105,8 @@ def view(url: str, **kwargs) -> bool:
         url (str): The url of the site.
     """
     kwargs.setdefault('headers', DEFAULT_HEADERS)
-    html = requests.get(url, **kwargs).content
-    if b'<base' not in html:
-        repl = f'<head><base href="{url}">'
-        html = html.replace(b'<head>', repl.encode('utf-8'))
+    if b'<base' not in (html := requests.get(url, **kwargs).content):
+        html = html.replace(b'<head>', f'<head><base href={url}>'.encode('utf-8'))
     fd, fname = tempfile.mkstemp('.html')
     os.write(fd, html)
     os.close(fd)
