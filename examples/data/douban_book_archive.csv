@@ -1,17 +1,8 @@
 ,title,url,date,intro
 0,CSS世界,https://book.douban.com/subject/27615777/,2017-12,张鑫旭 / 人民邮电出版社 / 2017-12 / CNY 69.00
-1,SVG动画,https://book.douban.com/subject/30239781/,2018-5,【美】Sarah Drasner / 大漠 等 / 电子工业出版社 / 2018-5 / 79
-2,深入理解ES6,https://book.douban.com/subject/27072230/,2017-7-1,【美】Nicholas C. Zakas / 刘振涛 / 电子工业出版社 / 2017-7-1 / CNY 99.00
-3,CSS揭秘,https://book.douban.com/subject/26745943/,2016-4,[希] Lea Verou / CSS魔法 / 人民邮电出版社 / 2016-4 / 99.00元
-4,你不知道的JavaScript（上卷）,https://book.douban.com/subject/26351021/,2015-4,[美] Kyle Simpson / 赵望野 / 人民邮电出版社 / 2015-4 / 49.00元
-5,算法图解,https://book.douban.com/subject/26979890/,2017-3,[美] Aditya Bhargava / 袁国忠 / 人民邮电出版社 / 2017-3 / 49.00元
-6,图解HTTP,https://book.douban.com/subject/25863515/,2014-4-15,【日】上野宣 / 于均良 / 人民邮电出版社 / 2014-4-15 / 49.00元
-7,SQL基础教程,https://book.douban.com/subject/27055712/,2017-6-1,MICK / 孙淼 / 人民邮电出版社 / 2017-6-1 / CNY 79.00
-8,Flask Web开发实战,https://book.douban.com/subject/30310340/,2018-8-1,李辉 / 机械工业出版社 / 2018-8-1 / 129
-9,Python Cookbook 中文版，第 3 版,https://book.douban.com/subject/26381341/,2015-5-1,David M. Beazley / 陈舸 / 人民邮电出版社 / 2015-5-1 / 108.00元
-10,流畅的Python,https://book.douban.com/subject/27028517/,2017-5-15,[巴西] Luciano Ramalho / 安道 / 人民邮电出版社 / 2017-5-15 / 139元
-11,白夜行,https://book.douban.com/subject/10554308/,2013-1-1,[日] 东野圭吾 / 刘姿君 / 南海出版公司 / 2013-1-1 / CNY 39.50
-12,黑客与画家,https://book.douban.com/subject/6021440/,2011-4,[美] Paul Graham / 阮一峰 / 人民邮电出版社 / 2011-4 / 49.00元
-13,三体Ⅲ,https://book.douban.com/subject/5363767/,2010-11,刘慈欣 / 重庆出版社 / 2010-11 / 38.00元
-14,三体Ⅱ,https://book.douban.com/subject/3066477/,2008-5,刘慈欣 / 重庆出版社 / 2008-5 / 32.00
-15,三体,https://book.douban.com/subject/2567698/,2008-1,刘慈欣 / 重庆出版社 / 2008-1 / 23.00
+1,CSS揭秘,https://book.douban.com/subject/26745943/,2016-4,[希] Lea Verou / CSS魔法 / 人民邮电出版社 / 2016-4 / 99.00元
+2,流畅的Python,https://book.douban.com/subject/27028517/,2017-5-15,[巴西] Luciano Ramalho / 安道 / 人民邮电出版社 / 2017-5-15 / 139元
+3,白夜行,https://book.douban.com/subject/10554308/,2013-1-1,[日] 东野圭吾 / 刘姿君 / 南海出版公司 / 2013-1-1 / 39.50元
+4,三体Ⅲ,https://book.douban.com/subject/5363767/,2010-11,刘慈欣 / 重庆出版社 / 2010-11 / 38.00元
+5,三体Ⅱ,https://book.douban.com/subject/3066477/,2008-5,刘慈欣 / 重庆出版社 / 2008-5 / 32.00
+6,三体,https://book.douban.com/subject/2567698/,2008-1,刘慈欣 / 重庆出版社 / 2008-1 / 23.00

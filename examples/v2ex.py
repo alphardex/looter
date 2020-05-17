@@ -23,6 +23,6 @@ def crawl(url):
 
 
 if __name__ == '__main__':
-    tasklist = [f'{domain}/go/python?p={n}' for n in range(1, 572)]
+    tasklist = [f'{domain}/go/css?p={n}' for n in range(1, 572)]
     [crawl(task) for task in tasklist]
     lt.save(total, name='v2ex.csv', sort_by='reply', order='desc')

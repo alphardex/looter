@@ -8,8 +8,6 @@
 
 - [bilibili_top_bangumi](bilibili_top_bangumi.py): bilibili番剧排行榜
 
-- [codemyui](codemyui.py): codemyui网站归档
-
 - [dlsite](dlsite.py): DLsite上的黄油，按打分排序
 
 - [douban_books](douban_books.py): 豆瓣上的“计算机”标签的书籍
@@ -18,11 +16,11 @@
 
 - [douban_movie_archive](douban_movie_archive.py): 我看过的电影在豆瓣上的归档
 
+- [dribbble](dribbble.py): dribbble最火的shot
+
 - [gen_index](gen_index.py): 用来自动生成这篇README.md
 
 - [hacpai](hacpai.py): 黑客派上“好玩”领域的文章，按阅览数排序
-
-- [ifanr](ifanr.py): 爱范儿的文章，按点赞数排序
 
 - [jav](jav.py): 8说了你懂的
 
@@ -40,13 +38,7 @@
 
 - [sharecuts](sharecuts.py): 捷径社区的捷径排行榜
 
-- [sspai](sspai.py): 少数派的文章，按喜好数排序
-
 - [tieba](tieba.py): 百度贴吧的帖子，用HTML注释反爬，把注释去掉再解析HTML就行
-
-- [uimovement](uimovement.py): uimovement网站归档
-
-- [unsplash](unsplash.py): unsplash上的免费壁纸排行
 
 - [v2ex](v2ex.py): v2ex上的Python板块
 

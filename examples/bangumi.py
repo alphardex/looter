@@ -6,7 +6,7 @@ import looter as lt
 
 domain = 'https://bangumi.tv'
 user_id = '399538'
-page_limit = 5
+page_limit = 7
 
 format_date = lambda date: '-'.join(f'0{d}' if len(d) == 1 else d for d in re.sub(r'年|月|日', '-', date)[:-1].split('-'))
 
